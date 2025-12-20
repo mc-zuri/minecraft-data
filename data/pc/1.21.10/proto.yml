@@ -1,4 +1,4 @@
-!version: 1.21.11
+!version: 1.21.10
 !StartDocs: true
 
 ^types:
@@ -1877,7 +1877,7 @@
       x: f64
       y: f64
       z: f64
-      playerKnockback?: vec3f64
+      playerKnockback?: vec3f
       explosionParticle: Particle
       sound: ItemSoundHolder
    # MC: ClientboundForgetLevelChunkPacket
