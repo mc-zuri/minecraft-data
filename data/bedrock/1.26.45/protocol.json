@@ -4774,17 +4774,14 @@
           "type": "lf32"
         },
         {
-          "name": "has_spline_type",
-          "type": "bool"
-        },
-        {
           "name": "spline_type",
           "type": [
-            "switch",
+            "mapper",
             {
-              "compareTo": "has_spline_type",
-              "fields": {
-                "true": "string"
+              "type": "u8",
+              "mappings": {
+                "0": "catmullrom",
+                "1": "linear"
               }
             }
           ]
@@ -4805,7 +4802,23 @@
             "array",
             {
               "countType": "varint",
-              "type": "CameraProgressOption"
+              "type": [
+                "container",
+                [
+                  {
+                    "name": "value",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "time",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "ease_type",
+                    "type": "string"
+                  }
+                ]
+              ]
             }
           ]
         },
@@ -4815,23 +4828,33 @@
             "array",
             {
               "countType": "varint",
-              "type": "CameraRotationOption"
+              "type": [
+                "container",
+                [
+                  {
+                    "name": "value",
+                    "type": "vec3f"
+                  },
+                  {
+                    "name": "time",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "ease_type",
+                    "type": "string"
+                  }
+                ]
+              ]
             }
           ]
         },
         {
           "name": "spline_identifier",
-          "type": [
-            "option",
-            "string"
-          ]
+          "type": "string"
         },
         {
           "name": "load_from_json",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         }
       ]
     ],

@@ -2461,17 +2461,30 @@ CameraRotationOption:
 CameraSplineInstruction:
    # TotalTime is the total time for the spline animation.
    total_time: lf32
-   has_spline_type: bool
-   spline_type: has_spline_type ?
-      if true: string
+   spline_type: u8 =>
+      - catmullrom
+      - linear
    # Curve is the list of curve points defining the spline.
    curve: vec3f[]varint
-   # ProgressKeyFrames is a list of key frames for the spline progress.
-   progress_key_frames: CameraProgressOption[]varint
-   # RotationOptions is a list of rotation keyframes for the spline.
-   rotation_options: CameraRotationOption[]varint
-   spline_identifier?: string
-   load_from_json?: bool
+   # ProgressKeyFrames is a list of progress key frames for the spline.
+   progress_key_frames: []varint
+      # Value is the normalised progress of this frame along the spline, from 0.0 at the start to 1.0 at the
+      # end.
+      value: lf32
+      # Time is the time in seconds at which this progress should be applied.
+      time: lf32
+      # EaseType is the easing function used to interpolate towards this progress key frame.
+      ease_type: string
+   # RotationOptions is a list of rotation key frames for the spline.
+   rotation_options: []varint
+      # Value is the rotation value of this key frame.
+      value: vec3f
+      # Time is the time in seconds at which this rotation should be applied.
+      time: lf32
+      # EaseType is the easing function used to interpolate towards this rotation key frame.
+      ease_type: string
+   spline_identifier: string
+   load_from_json: bool
 
 CameraProgressOption:
    value: lf32
