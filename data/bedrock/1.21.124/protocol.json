@@ -5970,6 +5970,7 @@
                 "327": "clientbound_controls_scheme",
                 "328": "server_script_debug_drawer",
                 "329": "serverbound_pack_setting_change",
+                "330": "clientbound_data_store",
                 "331": "graphics_override_parameter"
               }
             }
@@ -6205,6 +6206,7 @@
                 "clientbound_controls_scheme": "packet_clientbound_controls_scheme",
                 "server_script_debug_drawer": "packet_server_script_debug_drawer",
                 "serverbound_pack_setting_change": "packet_serverbound_pack_setting_change",
+                "clientbound_data_store": "packet_clientbound_data_store",
                 "graphics_override_parameter": "packet_graphics_override_parameter"
               }
             }
@@ -14645,6 +14647,153 @@
                 ]
               }
             ]
+          ]
+        }
+      ]
+    ],
+    "packet_clientbound_data_store": [
+      "container",
+      [
+        {
+          "name": "entries",
+          "type": [
+            "array",
+            {
+              "countType": "varint",
+              "type": [
+                "container",
+                [
+                  {
+                    "name": "type",
+                    "type": [
+                      "mapper",
+                      {
+                        "type": "varint",
+                        "mappings": {
+                          "0": "update",
+                          "1": "change",
+                          "2": "removal"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "anon": true,
+                    "type": [
+                      "switch",
+                      {
+                        "compareTo": "type",
+                        "fields": {
+                          "update": [
+                            "container",
+                            [
+                              {
+                                "name": "name",
+                                "type": "string"
+                              },
+                              {
+                                "name": "property",
+                                "type": "string"
+                              },
+                              {
+                                "name": "path",
+                                "type": "string"
+                              },
+                              {
+                                "name": "data_type",
+                                "type": [
+                                  "mapper",
+                                  {
+                                    "type": "varint",
+                                    "mappings": {
+                                      "0": "double",
+                                      "1": "bool",
+                                      "2": "string"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "data",
+                                "type": [
+                                  "switch",
+                                  {
+                                    "compareTo": "data_type",
+                                    "fields": {
+                                      "double": "lf64",
+                                      "bool": "bool",
+                                      "string": "string"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "update_count",
+                                "type": "varint"
+                              }
+                            ]
+                          ],
+                          "change": [
+                            "container",
+                            [
+                              {
+                                "name": "name",
+                                "type": "string"
+                              },
+                              {
+                                "name": "property",
+                                "type": "string"
+                              },
+                              {
+                                "name": "update_count",
+                                "type": "varint"
+                              },
+                              {
+                                "name": "data_type",
+                                "type": [
+                                  "mapper",
+                                  {
+                                    "type": "varint",
+                                    "mappings": {
+                                      "0": "double",
+                                      "1": "bool",
+                                      "2": "string"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "data",
+                                "type": [
+                                  "switch",
+                                  {
+                                    "compareTo": "data_type",
+                                    "fields": {
+                                      "double": "lf64",
+                                      "bool": "bool",
+                                      "string": "string"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          ],
+                          "removal": [
+                            "container",
+                            [
+                              {
+                                "name": "name",
+                                "type": "string"
+                              }
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
           ]
         }
       ]
