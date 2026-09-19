@@ -4266,7 +4266,8 @@ packet_serverbound_diagnostics:
    entity_diagnostics: EntityDiagnosticTimingInfo[]varint
    system_diagnostics: SystemDiagnosticTimingInfo[]varint
    # Added in 1.26.40.
-   system_categories: SystemCategory[]varint
+   # Sent behind a presence bool.
+   system_categories?: SystemCategory[]varint
    whisker_scopes: WhiskerScopeDataSummary[]varint
 
 # CameraAimAssist is sent by the server to the client to set up aim assist for the client's camera.
