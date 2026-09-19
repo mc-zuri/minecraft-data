@@ -3331,14 +3331,7 @@ WorldClockData:
 
 AttributeLayerSettings:
    priority: li32
-   weight_type: varint =>
-      0: float
-      1: string
-   _: weight_type ?
-      if float:
-         float_weight: lf32
-      if string:
-         string_weight: string
+   weight: lf32
    enabled: bool
    transitions_paused: bool
 
