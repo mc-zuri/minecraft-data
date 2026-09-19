@@ -6897,7 +6897,34 @@
     ],
     "packet_structure_template_data_export_request": [
       "container",
-      []
+      [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "position",
+          "type": "BlockCoordinates"
+        },
+        {
+          "name": "settings",
+          "type": "StructureBlockSettings"
+        },
+        {
+          "name": "request_type",
+          "type": [
+            "mapper",
+            {
+              "type": "u8",
+              "mappings": {
+                "1": "export_from_save",
+                "2": "export_from_load",
+                "3": "query_saved_structure"
+              }
+            }
+          ]
+        }
+      ]
     ],
     "packet_structure_template_data_export_response": [
       "container",

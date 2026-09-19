@@ -2070,6 +2070,19 @@ packet_map_create_locked_copy:
 packet_structure_template_data_export_request:
    !id: 0x84
    !bound: server
+   # StructureName is the name of the structure that was set in the structure block's UI. This is the name
+   # used to export the structure to a file.
+   name: string
+   # Position is the position of the structure block that has its template data requested.
+   position: BlockCoordinates
+   # Settings is a struct of settings that should be used for exporting the structure. These settings are
+   # identical to the last sent in the StructureBlockUpdate packet by the client.
+   settings: StructureBlockSettings
+   # RequestType specifies the type of template data request that the player sent.
+   request_type: u8 =>
+      1: export_from_save
+      2: export_from_load
+      3: query_saved_structure
 
 packet_structure_template_data_export_response:
    !id: 0x85
