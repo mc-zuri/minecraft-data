@@ -1981,9 +1981,9 @@ SoundType: varint =>
    - goat_bass_7
    - goat_bass_8
    - goat_bass_9
-   - _
-   - _
-   - _
+   - _423
+   - _424
+   - _425
    - ImitateWarden
    - ListeningAngry
    - ItemGiven
@@ -2070,7 +2070,7 @@ SoundType: varint =>
    - wind_charge_burst
    - imitate_drowned
    - bundle_insert_failed
-   - _
+   - _512
    - armor_crack_wolf
    - armor_break_wolf
    - armor_repair_wolf
@@ -2082,7 +2082,7 @@ SoundType: varint =>
    - ominous_bottle_end_use
    - mace_smash_heavy_ground
    - ominous_item_spawner_spawn_item_begin
-   - _
+   - _524
    - apply_effect_bad_omen
    - apply_effect_raid_omen
    - apply_effect_trial_omen
