@@ -4122,10 +4122,12 @@ packet_camera_instruction:
       default?: bool
    clear?: bool
    fade?:
-      fade_in_duration: lf32
-      wait_duration: lf32
-      fade_out_duration: lf32
-      color_rgb: vec3f
+      # The time data and the colour are each optional.
+      time?:
+         fade_in_duration: lf32
+         wait_duration: lf32
+         fade_out_duration: lf32
+      color_rgb?: vec3f
    target?:
       offset?: vec3f
       entity_unique_id: li64
