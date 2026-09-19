@@ -15181,11 +15181,17 @@
         },
         {
           "name": "float_value",
-          "type": "lf32"
+          "type": [
+            "option",
+            "lf32"
+          ]
         },
         {
           "name": "vec3_value",
-          "type": "vec3f"
+          "type": [
+            "option",
+            "vec3f"
+          ]
         },
         {
           "name": "biome_identifier",

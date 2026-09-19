@@ -4603,8 +4603,8 @@ packet_graphics_override_parameter:
    !id: 0x14b
    !bound: client
    values: ParameterKeyframeValue[]varint
-   float_value: lf32
-   vec3_value: vec3f
+   float_value?: lf32
+   vec3_value?: vec3f
    biome_identifier: string
    parameter_type: GraphicsOverrideParameterType
    reset: bool
