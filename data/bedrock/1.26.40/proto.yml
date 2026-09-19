@@ -4269,8 +4269,8 @@ packet_serverbound_diagnostics:
    memory_category_values: MemoryCategoryCounter[]varint
    entity_diagnostics: EntityDiagnosticTimingInfo[]varint
    system_diagnostics: SystemDiagnosticTimingInfo[]varint
-   # Added in 1.26.40.
-   system_categories: SystemCategory[]varint
+   # SystemCategories maps diagnostics category names to the system indices used by SystemDiagnostics.
+   system_categories?: SystemCategory[]varint
    whisker_scopes: WhiskerScopeDataSummary[]varint
 
 # CameraAimAssist is sent by the server to the client to set up aim assist for the client's camera.
