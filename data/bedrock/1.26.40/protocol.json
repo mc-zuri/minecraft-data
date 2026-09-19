@@ -6631,46 +6631,8 @@
           "type": "li32"
         },
         {
-          "name": "weight_type",
-          "type": [
-            "mapper",
-            {
-              "type": "varint",
-              "mappings": {
-                "0": "float",
-                "1": "string"
-              }
-            }
-          ]
-        },
-        {
-          "anon": true,
-          "type": [
-            "switch",
-            {
-              "compareTo": "weight_type",
-              "fields": {
-                "float": [
-                  "container",
-                  [
-                    {
-                      "name": "float_weight",
-                      "type": "lf32"
-                    }
-                  ]
-                ],
-                "string": [
-                  "container",
-                  [
-                    {
-                      "name": "string_weight",
-                      "type": "string"
-                    }
-                  ]
-                ]
-              }
-            }
-          ]
+          "name": "weight",
+          "type": "lf32"
         },
         {
           "name": "enabled",
