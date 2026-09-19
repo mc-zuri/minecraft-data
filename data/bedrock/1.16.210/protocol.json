@@ -7134,7 +7134,16 @@
     ],
     "packet_map_create_locked_copy": [
       "container",
-      []
+      [
+        {
+          "name": "original_map_id",
+          "type": "zigzag64"
+        },
+        {
+          "name": "new_map_id",
+          "type": "zigzag64"
+        }
+      ]
     ],
     "packet_structure_template_data_export_request": [
       "container",

@@ -2116,6 +2116,12 @@ packet_on_screen_texture_animation:
 packet_map_create_locked_copy:
    !id: 0x83
    !bound: client
+   # OriginalMapID is the ID of the map that is being copied. The locked copy will obtain all content that
+   # is visible on this map, except the content will not change.
+   original_map_id: zigzag64
+   # NewMapID is the ID of the map that holds the locked copy of the map that OriginalMapID points to. Its
+   # contents will be impossible to change.
+   new_map_id: zigzag64
 
 packet_structure_template_data_export_request:
    !id: 0x84
