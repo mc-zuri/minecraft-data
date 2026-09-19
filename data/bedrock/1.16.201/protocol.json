@@ -4831,7 +4831,20 @@
     ],
     "packet_gui_data_pick_item": [
       "container",
-      []
+      [
+        {
+          "name": "item_name",
+          "type": "string"
+        },
+        {
+          "name": "item_effects",
+          "type": "string"
+        },
+        {
+          "name": "hotbar_slot",
+          "type": "li32"
+        }
+      ]
     ],
     "packet_adventure_settings": [
       "container",
