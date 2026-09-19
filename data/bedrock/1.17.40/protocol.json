@@ -9267,7 +9267,7 @@
         },
         {
           "name": "stop_condition_version",
-          "type": "li64"
+          "type": "li32"
         },
         {
           "name": "controller",

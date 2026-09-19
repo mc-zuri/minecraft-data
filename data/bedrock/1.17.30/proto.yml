@@ -3152,7 +3152,7 @@ packet_animate_entity:
    # StopCondition is a MoLang expression that specifies when the animation should be stopped.
    stop_condition: string
    # StopConditionVersion is the MoLang stop condition version.
-   stop_condition_version: li64
+   stop_condition_version: li32
    # Controller is the animation controller that is used to manage animations. These controllers decide when
    # to play which animation.
    controller: string
