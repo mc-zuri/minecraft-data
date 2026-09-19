@@ -13917,7 +13917,19 @@
           "name": "attach_to_entity",
           "type": [
             "option",
-            "li64"
+            [
+              "container",
+              [
+                {
+                  "name": "entity_unique_id",
+                  "type": "li64"
+                },
+                {
+                  "name": "actor_locator",
+                  "type": "li32"
+                }
+              ]
+            ]
           ]
         },
         {

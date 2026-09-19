@@ -4149,7 +4149,10 @@ packet_camera_instruction:
       ease_type: EaseType
       clear: bool
    spline?: CameraSplineInstruction
-   attach_to_entity?: li64
+   attach_to_entity?:
+      entity_unique_id: li64
+      # ActorLocator is the location on the entity that the camera attaches to.
+      actor_locator: li32
    detach_from_entity?: bool
 
 # Removed in 1.21.80
