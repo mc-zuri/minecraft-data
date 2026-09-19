@@ -4538,7 +4538,7 @@ packet_serverbound_data_store:
    name: string
    property: string
    path: string
-   data_type: lu32 =>
+   data_type: varint =>
       0: double
       1: bool
       2: string

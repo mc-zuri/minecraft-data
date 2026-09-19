@@ -16297,7 +16297,7 @@
           "type": [
             "mapper",
             {
-              "type": "lu32",
+              "type": "varint",
               "mappings": {
                 "0": "double",
                 "1": "bool",
