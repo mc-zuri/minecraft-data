@@ -7052,7 +7052,7 @@
           "type": [
             "mapper",
             {
-              "type": "varint64",
+              "type": "varint",
               "mappings": {
                 "0": "entity",
                 "1": "create",

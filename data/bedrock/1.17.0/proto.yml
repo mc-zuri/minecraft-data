@@ -2198,7 +2198,7 @@ packet_update_block_synced:
    # TransitionType is the type of the transition that happened. It is either BlockToEntityTransition, when
    # a block placed becomes a falling entity, or EntityToBlockTransition, when a falling entity hits the
    # ground and becomes a solid block again.
-   transition_type: varint64 =>
+   transition_type: varint =>
       # For falling sand, when a sand turns to an entity
       0: entity
       # When sand turns back to a new block
