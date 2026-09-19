@@ -15252,11 +15252,11 @@
         },
         {
           "name": "update_count",
-          "type": "varint"
+          "type": "lu32"
         },
         {
           "name": "path_update_count",
-          "type": "li32"
+          "type": "lu32"
         }
       ]
     ],

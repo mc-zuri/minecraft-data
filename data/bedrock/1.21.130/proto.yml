@@ -4627,4 +4627,4 @@ packet_serverbound_data_store:
       if double: lf64
       if bool: bool
       if string: string
-   update_count: varint
+   update_count: lu32
