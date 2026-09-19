@@ -4532,9 +4532,11 @@ packet_clientbound_controls_scheme:
 # ServerScriptDebugDrawer instructs the client to render debug shapes for development visualisations.
 packet_server_script_debug_drawer:
    !id: 0x148
-   !bound: server
+   !bound: client
    shapes: []varint
+      # NetworkID identifies the matching shape on the client and on the server.
       network_id: varint64
+      # ShapeType is the type of debug shape to draw.
       shape_type?: u8 =>
          - line
          - box
@@ -4542,17 +4544,45 @@ packet_server_script_debug_drawer:
          - circle
          - text
          - arrow
+      # Location is the location of the debug shape in the world.
       location?: vec3f
+      # Scale is the scale of the debug shape in the world.
       scale?: lf32
+      # Rotation is the rotation of the debug shape in the world, as Euler angles in radians, pitch yaw roll.
       rotation?: vec3f
+      # TimeLeft is the time left in seconds until the shape is removed, where 0 means never.
       time_left?: lf32
+      # Color is the ARGB colour of the debug shape.
       color?: li32
-      text?: string
-      box_bound?: vec3f
-      line_end_location?: vec3f
-      arrow_head_length?: lf32
-      arrow_head_radius?: lf32
-      segment_count?: u8
+      # DimensionID is the dimension the shape is drawn in: 0 the overworld, 1 the nether, 2 the end,
+      # 3 undefined.
+      dimension_id?: zigzag32
+      # AttachedToEntityID is the runtime ID of the entity the shape is attached to.
+      attached_to_entity_id?: varint64
+      # ExtraDataType selects which variant of the extra shape payload follows. The payload holds data
+      # specific to the kind of shape, such as the text string for a text shape.
+      extra_data_type: varint =>
+         0: none
+         1: arrow
+         2: text
+         3: box
+         4: line
+         5: sphere
+      extra_data: extra_data_type ?
+         if arrow:
+            end_location?: vec3f
+            arrow_head_length?: lf32
+            arrow_head_radius?: lf32
+            segment_count?: u8
+         if text:
+            text: string
+         if box:
+            box_bound: vec3f
+         if line:
+            line_end_location: vec3f
+         if sphere:
+            segment_count: u8
+         default: void
 
 # ServerBoundPackSettingChange
 packet_serverbound_pack_setting_change:

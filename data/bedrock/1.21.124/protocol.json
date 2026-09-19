@@ -14492,45 +14492,105 @@
                     ]
                   },
                   {
-                    "name": "text",
+                    "name": "dimension_id",
+                    "type": "zigzag32"
+                  },
+                  {
+                    "name": "extra_data_type",
                     "type": [
-                      "option",
-                      "string"
+                      "mapper",
+                      {
+                        "type": "varint",
+                        "mappings": {
+                          "0": "none",
+                          "1": "arrow",
+                          "2": "text",
+                          "3": "box",
+                          "4": "line",
+                          "5": "sphere"
+                        }
+                      }
                     ]
                   },
                   {
-                    "name": "box_bound",
+                    "name": "extra_data",
                     "type": [
-                      "option",
-                      "vec3f"
-                    ]
-                  },
-                  {
-                    "name": "line_end_location",
-                    "type": [
-                      "option",
-                      "vec3f"
-                    ]
-                  },
-                  {
-                    "name": "arrow_head_length",
-                    "type": [
-                      "option",
-                      "lf32"
-                    ]
-                  },
-                  {
-                    "name": "arrow_head_radius",
-                    "type": [
-                      "option",
-                      "lf32"
-                    ]
-                  },
-                  {
-                    "name": "segment_count",
-                    "type": [
-                      "option",
-                      "u8"
+                      "switch",
+                      {
+                        "compareTo": "extra_data_type",
+                        "fields": {
+                          "arrow": [
+                            "container",
+                            [
+                              {
+                                "name": "end_location",
+                                "type": [
+                                  "option",
+                                  "vec3f"
+                                ]
+                              },
+                              {
+                                "name": "arrow_head_length",
+                                "type": [
+                                  "option",
+                                  "lf32"
+                                ]
+                              },
+                              {
+                                "name": "arrow_head_radius",
+                                "type": [
+                                  "option",
+                                  "lf32"
+                                ]
+                              },
+                              {
+                                "name": "segment_count",
+                                "type": [
+                                  "option",
+                                  "u8"
+                                ]
+                              }
+                            ]
+                          ],
+                          "text": [
+                            "container",
+                            [
+                              {
+                                "name": "text",
+                                "type": "string"
+                              }
+                            ]
+                          ],
+                          "box": [
+                            "container",
+                            [
+                              {
+                                "name": "box_bound",
+                                "type": "vec3f"
+                              }
+                            ]
+                          ],
+                          "line": [
+                            "container",
+                            [
+                              {
+                                "name": "line_end_location",
+                                "type": "vec3f"
+                              }
+                            ]
+                          ],
+                          "sphere": [
+                            "container",
+                            [
+                              {
+                                "name": "segment_count",
+                                "type": "u8"
+                              }
+                            ]
+                          ]
+                        },
+                        "default": "void"
+                      }
                     ]
                   }
                 ]
