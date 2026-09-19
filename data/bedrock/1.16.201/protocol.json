@@ -7600,7 +7600,7 @@
           "type": [
             "switch",
             {
-              "compareTo": "types.feet",
+              "compareTo": "type.feet",
               "fields": {
                 "true": "zigzag32"
               }

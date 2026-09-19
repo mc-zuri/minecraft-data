@@ -2410,7 +2410,7 @@ packet_player_armor_damage:
       if true: zigzag32
    leggings_damage: type.legs ?
       if true: zigzag32
-   boots_damage: types.feet ?
+   boots_damage: type.feet ?
       if true: zigzag32
 
 ArmorDamageType: [ "bitflags",
