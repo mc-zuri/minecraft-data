@@ -2673,7 +2673,7 @@ StoreEntryPointInfo:
 PresenceInfo:
    experience_name?: string
    world_name?: string
-   rich_presence_id?: string
+   rich_presence_id: string
 
 ServerJoinInformation:
    has_gathering_info: bool
