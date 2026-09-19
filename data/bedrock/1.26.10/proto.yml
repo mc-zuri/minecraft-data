@@ -4481,9 +4481,8 @@ packet_player_video_capture:
 packet_player_update_entity_overrides:
    !id: 0x145
    !bound: client
-   # EntityRuntimeID is the runtime ID of the entity. The runtime ID is unique for each world session, and
-   # entities are generally identified in packets using this runtime ID.
-   runtime_id: varint64
+   # The entity's unique ID (a signed zigzag varint64), despite the field name, not its runtime ID.
+   runtime_id: zigzag64
    # PropertyIndex is the index of the property to modify. The index is unique for each property of an entity.
    property_index: varint
    # Type is the type of action to perform with the property. It is one of the constants above.
