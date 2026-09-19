@@ -4116,10 +4116,17 @@ packet_camera_instruction:
       default?: bool
    clear?: bool
    fade?:
-      fade_in_duration: lf32
-      wait_duration: lf32
-      fade_out_duration: lf32
-      color_rgb: vec3f
+      # Time is the time data for the fade: the fade in duration, the duration to wait, and the fade out
+      # duration.
+      time?:
+         # FadeInDuration is the time in seconds for the screen to fully fade in.
+         fade_in_duration: lf32
+         # WaitDuration is the time in seconds to wait before fading out.
+         wait_duration: lf32
+         # FadeOutDuration is the time in seconds for the screen to fully fade out.
+         fade_out_duration: lf32
+      # ColorRGB is the colour of the screen to fade to. Only the red, green and blue components are used.
+      color_rgb?: vec3f
    target?:
       offset?: vec3f
       entity_unique_id: li64
