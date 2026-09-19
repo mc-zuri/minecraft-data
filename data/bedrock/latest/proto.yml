@@ -1308,7 +1308,8 @@ packet_inventory_slot:
    !bound: both
    # WindowID is the ID of the window that the packet modifies. It must point to one of the windows that the
    # client currently has opened.
-   window_id: WindowIDVarint
+   # A single byte (0xff = none), not a varint.
+   window_id: WindowID
    # Slot is the index of the slot that the packet modifies. The new item will be set to the slot at this index.
    slot: varint
    # Container is the protocol.FullContainerName that describes the container that the content is for.
