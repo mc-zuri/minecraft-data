@@ -380,7 +380,9 @@ packet_start_game:
    limited_world_length: li32
    is_new_nether: bool
    edu_resource_uri: EducationSharedResourceURI
-   experimental_gameplay_override: bool
+   # ExperimentalGameplayOverride specifies if experimental gameplay should be force enabled or disabled. For
+   # servers this should always be left empty.
+   experimental_gameplay_override?: bool
    # ChatRestrictionLevel specifies the level of restriction on in-game chat.
    chat_restriction_level: u8 =>
       0: none
