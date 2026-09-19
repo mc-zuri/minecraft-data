@@ -2493,6 +2493,108 @@
         }
       ]
     ],
+    "TrackedObject": [
+      "container",
+      [
+        {
+          "name": "type",
+          "type": [
+            "mapper",
+            {
+              "type": "li32",
+              "mappings": {
+                "0": "entity",
+                "1": "block"
+              }
+            }
+          ]
+        },
+        {
+          "name": "entity_unique_id",
+          "type": [
+            "switch",
+            {
+              "compareTo": "type",
+              "fields": {
+                "entity": "zigzag64"
+              }
+            }
+          ]
+        },
+        {
+          "name": "block_position",
+          "type": [
+            "switch",
+            {
+              "compareTo": "type",
+              "fields": {
+                "block": "BlockCoordinates"
+              }
+            }
+          ]
+        }
+      ]
+    ],
+    "MapDecoration": [
+      "container",
+      [
+        {
+          "name": "type",
+          "type": [
+            "mapper",
+            {
+              "type": "u8",
+              "mappings": {
+                "0": "marker_white",
+                "1": "marker_green",
+                "2": "marker_red",
+                "3": "marker_blue",
+                "4": "cross_white",
+                "5": "triangle_red",
+                "6": "square_white",
+                "7": "marker_sign",
+                "8": "marker_pink",
+                "9": "marker_orange",
+                "10": "marker_yellow",
+                "11": "marker_teal",
+                "12": "triangle_green",
+                "13": "small_square_white",
+                "14": "mansion",
+                "15": "monument",
+                "16": "no_draw",
+                "17": "village_desert",
+                "18": "village_plains",
+                "19": "village_savanna",
+                "20": "village_snowy",
+                "21": "village_taiga",
+                "22": "jungle_temple",
+                "23": "witch_hut"
+              }
+            }
+          ]
+        },
+        {
+          "name": "rotation",
+          "type": "u8"
+        },
+        {
+          "name": "x",
+          "type": "u8"
+        },
+        {
+          "name": "y",
+          "type": "u8"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "color_abgr",
+          "type": "varint"
+        }
+      ]
+    ],
     "WindowID": [
       "mapper",
       {
@@ -5195,12 +5297,144 @@
         }
       ]
     ],
+    "UpdateMapFlags": [
+      "bitflags",
+      {
+        "type": "varint",
+        "flags": [
+          "void",
+          "texture",
+          "decoration",
+          "initialisation"
+        ]
+      }
+    ],
     "packet_clientbound_map_item_data": [
       "container",
       [
         {
-          "name": "mapinfo",
-          "type": "MapInfo"
+          "name": "map_id",
+          "type": "zigzag64"
+        },
+        {
+          "name": "update_flags",
+          "type": "UpdateMapFlags"
+        },
+        {
+          "name": "dimension",
+          "type": "u8"
+        },
+        {
+          "name": "locked",
+          "type": "bool"
+        },
+        {
+          "name": "included_in",
+          "type": [
+            "switch",
+            {
+              "compareTo": "update_flags.initialisation",
+              "fields": {
+                "true": [
+                  "array",
+                  {
+                    "countType": "varint",
+                    "type": "zigzag64"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "scale",
+          "type": [
+            "switch",
+            {
+              "compareTo": "update_flags.initialisation || update_flags.decoration || update_flags.texture",
+              "fields": {
+                "true": "u8"
+              }
+            }
+          ]
+        },
+        {
+          "name": "tracked",
+          "type": [
+            "switch",
+            {
+              "compareTo": "update_flags.decoration",
+              "fields": {
+                "true": [
+                  "container",
+                  [
+                    {
+                      "name": "objects",
+                      "type": [
+                        "array",
+                        {
+                          "countType": "varint",
+                          "type": "TrackedObject"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "decorations",
+                      "type": [
+                        "array",
+                        {
+                          "countType": "varint",
+                          "type": "MapDecoration"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "texture",
+          "type": [
+            "switch",
+            {
+              "compareTo": "update_flags.texture",
+              "fields": {
+                "true": [
+                  "container",
+                  [
+                    {
+                      "name": "width",
+                      "type": "zigzag32"
+                    },
+                    {
+                      "name": "height",
+                      "type": "zigzag32"
+                    },
+                    {
+                      "name": "x_offset",
+                      "type": "zigzag32"
+                    },
+                    {
+                      "name": "y_offset",
+                      "type": "zigzag32"
+                    },
+                    {
+                      "name": "pixels",
+                      "type": [
+                        "array",
+                        {
+                          "countType": "varint",
+                          "type": "varint"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
         }
       ]
     ],

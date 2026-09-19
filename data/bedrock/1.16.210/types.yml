@@ -1034,6 +1034,59 @@ StructureBlockSettings:
    # Pivot is the pivot around which the structure may be rotated.
    pivot: vec3f
 
+TrackedObject:
+   # Type is the type of the tracked object. It is either MapObjectTypeEntity or MapObjectTypeBlock.
+   type: li32 =>
+      0: entity
+      1: block
+   # EntityUniqueID is the unique ID of the entity, if the tracked object was an entity. It needs not to be
+   # filled out if Type is not MapObjectTypeEntity.
+   entity_unique_id: type ?
+      if entity: zigzag64
+   # BlockPosition is the position of the block, if the tracked object was a block. It needs not to be
+   # filled out if Type is not MapObjectTypeBlock.
+   block_position: type ?
+      if block: BlockCoordinates
+
+MapDecoration:
+   type: u8 =>
+   - marker_white
+   - marker_green
+   - marker_red
+   - marker_blue
+   - cross_white
+   - triangle_red
+   - square_white
+   - marker_sign
+   - marker_pink
+   - marker_orange
+   - marker_yellow
+   - marker_teal
+   - triangle_green
+   - small_square_white
+   - mansion
+   - monument
+   - no_draw
+   - village_desert
+   - village_plains
+   - village_savanna
+   - village_snowy
+   - village_taiga
+   - jungle_temple
+   - witch_hut
+   # Rotation is the rotation of the map decoration. It is byte due to the 16 fixed directions that the
+   # map decoration may face.
+   rotation: u8
+   # X is the offset on the X axis in pixels of the decoration.
+   x: u8
+   # Y is the offset on the Y axis in pixels of the decoration.
+   y: u8
+   # Label is the name of the map decoration. This name may be of any value.
+   label: string
+   # Colour is the colour of the map decoration. Some map decoration types have a specific colour set
+   # automatically, whereas others may be changed.
+   color_abgr: varint
+
 # Some arbitrary definitions from CBMC, Window IDs are normally
 # unique + sequential
 WindowID: i8 =>
