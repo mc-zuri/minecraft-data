@@ -16516,10 +16516,7 @@
       [
         {
           "name": "form_id",
-          "type": [
-            "option",
-            "lu32"
-          ]
+          "type": "lu32"
         },
         {
           "name": "close_reason",

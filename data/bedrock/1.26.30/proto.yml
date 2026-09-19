@@ -4658,13 +4658,10 @@ packet_party_changed:
 packet_serverbound_data_driven_screen_closed:
    !id: 0x157
    !bound: server
-   form_id?: lu32
-   # Options:
-	# "programmaticclose"
-	# "programmaticcloseall"
-	# "clientcanceled"
-	# "userbusy"
-	# "invalidform"
+   # FormID is the form ID of the screen that was closed.
+   form_id: lu32
+   # CloseReason is the reason the screen was closed. It is one of "programmaticclose",
+   # "programmaticcloseall", "clientcanceled", "userbusy" or "invalidform".
    close_reason: string
 
 packet_sync_world_clocks:

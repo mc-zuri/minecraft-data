@@ -4665,7 +4665,7 @@ packet_party_changed:
 packet_serverbound_data_driven_screen_closed:
    !id: 0x157
    !bound: server
-   form_id?: lu32
+   form_id: lu32
    close_reason: u8 =>
       0: programmatic_close
       1: programmatic_close_all
