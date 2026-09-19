@@ -4148,7 +4148,8 @@ packet_camera_instruction:
    fov?:
       field_of_view: lf32
       ease_time: lf32
-      ease_type: EaseType
+      # The name of the easing function, such as "linear" or "in_out_quad".
+      ease_type: string
       clear: bool
    spline?: CameraSplineInstruction
    attach_to_entity?: li64
