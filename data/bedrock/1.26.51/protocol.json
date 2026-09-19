@@ -11329,7 +11329,7 @@
         },
         {
           "name": "loop_count",
-          "type": "varint"
+          "type": "zigzag32"
         },
         {
           "name": "bypass_listener_range_check",

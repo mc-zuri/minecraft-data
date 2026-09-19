@@ -2129,7 +2129,7 @@ packet_play_sound:
    coordinates: BlockCoordinates
    volume: lf32
    pitch: lf32
-   loop_count: varint
+   loop_count: zigzag32
    bypass_listener_range_check: bool
    handle?: lu64
    playback_position_seconds?: lf32
