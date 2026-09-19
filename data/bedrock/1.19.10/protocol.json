@@ -4901,7 +4901,10 @@
         },
         {
           "name": "experimental_gameplay_override",
-          "type": "bool"
+          "type": [
+            "option",
+            "bool"
+          ]
         },
         {
           "name": "level_id",

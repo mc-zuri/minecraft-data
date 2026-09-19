@@ -5267,7 +5267,10 @@
         },
         {
           "name": "experimental_gameplay_override",
-          "type": "bool"
+          "type": [
+            "option",
+            "bool"
+          ]
         },
         {
           "name": "chat_restriction_level",
