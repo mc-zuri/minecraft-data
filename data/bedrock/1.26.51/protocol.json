@@ -5122,20 +5122,6 @@
       "container",
       [
         {
-          "name": "experience_name",
-          "type": [
-            "option",
-            "string"
-          ]
-        },
-        {
-          "name": "world_name",
-          "type": [
-            "option",
-            "string"
-          ]
-        },
-        {
           "name": "rich_presence_id",
           "type": [
             "option",

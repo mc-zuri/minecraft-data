@@ -2683,8 +2683,6 @@ StoreEntryPointInfo:
    store_name: string
 
 PresenceInfo:
-   experience_name?: string
-   world_name?: string
    rich_presence_id?: string
 
 ServerJoinInformation:
