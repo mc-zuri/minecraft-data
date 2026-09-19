@@ -4450,7 +4450,8 @@ packet_player_update_entity_overrides:
       - remove
       - set_int
       - set_float
-   legacy_type: u8
+   # The type is followed by its name: clearoverrides, removeoverride, setintoverride or setfloatoverride.
+   type_name: string
    value: type ?
       # IntValue is the new integer value of the property. It is only used when Type is set to
       # PlayerUpdateEntityOverridesTypeInt.
