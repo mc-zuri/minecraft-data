@@ -10738,6 +10738,19 @@
         {
           "name": "tick",
           "type": "varint64"
+        },
+        {
+          "name": "prediction_type",
+          "type": [
+            "mapper",
+            {
+              "type": "u8",
+              "mappings": {
+                "0": "player",
+                "1": "vehicle"
+              }
+            }
+          ]
         }
       ]
     ],

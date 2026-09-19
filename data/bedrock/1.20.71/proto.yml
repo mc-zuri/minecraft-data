@@ -3444,6 +3444,11 @@ packet_correct_player_move_prediction:
    on_ground: bool
    # Tick is the tick of the movement which was corrected by this packet.
    tick: varint64
+   # PredictionType is whether the prediction that was corrected was for the player or for the vehicle it
+   # rides.
+   prediction_type: u8 =>
+   - player
+   - vehicle
 
 # ItemComponent is sent by the server to attach client-side components to a custom item.
 packet_item_component:
