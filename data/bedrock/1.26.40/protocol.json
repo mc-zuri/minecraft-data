@@ -15952,19 +15952,19 @@
           "type": "string"
         },
         {
+          "name": "player_id",
+          "type": [
+            "option",
+            "string"
+          ]
+        },
+        {
           "name": "parameter_type",
           "type": "GraphicsOverrideParameterType"
         },
         {
           "name": "reset",
           "type": "bool"
-        },
-        {
-          "name": "player_id",
-          "type": [
-            "option",
-            "string"
-          ]
         }
       ]
     ],

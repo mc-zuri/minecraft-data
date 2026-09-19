@@ -4529,9 +4529,9 @@ packet_graphics_override_parameter:
    float_value?: lf32
    vec3_value?: vec3f
    biome_identifier: string
+   player_id?: string
    parameter_type: GraphicsOverrideParameterType
    reset: bool
-   player_id?: string
 
 packet_serverbound_data_store:
    !id: 0x14c
