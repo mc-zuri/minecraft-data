@@ -529,8 +529,8 @@ packet_add_painting:
    !id: 0x16
    !bound: client
    entity_id_self: zigzag64
-   runtime_entity_id: varint
-   coordinates: BlockCoordinates
+   runtime_entity_id: varint64
+   coordinates: vec3f
    direction: zigzag32
    title: string
 
