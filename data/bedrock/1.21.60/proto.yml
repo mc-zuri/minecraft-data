@@ -4301,7 +4301,7 @@ packet_set_hud:
    elements: Element[]varint
    # Visibility represents the new visibility of the specified Elements. It can be any of the HudVisibility
    # constants above.
-   visibility: varint =>
+   visibility: u8 =>
    - hide
    - reset
 

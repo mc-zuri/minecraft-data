@@ -12823,7 +12823,7 @@
           "type": [
             "mapper",
             {
-              "type": "varint",
+              "type": "u8",
               "mappings": {
                 "0": "hide",
                 "1": "reset"
