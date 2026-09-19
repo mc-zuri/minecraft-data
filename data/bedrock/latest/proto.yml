@@ -3922,8 +3922,10 @@ packet_editor_network:
    !id: 0xbe
    !bound: client
    route_to_manager: bool
-   # Payload is a network little endian compound tag holding data relevant to the editor.
-   payload: nbt
+   # As of 1.26.10 the payload is the name of the payload variant followed by its serialized data, instead of
+   # a network little endian compound tag.
+   raw_variant_name: string
+   raw_variant_data: string
 
 # FeatureRegistry is a packet used to notify the client about the world generation features the server is currently
 # using. This is used in combination with the client-side world generation system introduced in v1.19.20, allowing the
