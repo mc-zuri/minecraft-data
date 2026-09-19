@@ -2026,6 +2026,9 @@ packet_client_cache_status:
 packet_on_screen_texture_animation:
    !id: 0x82
    !bound: client
+   # AnimationType is the type of the animation to show. The packet provides no further extra data to allow
+   # modifying the duration or other properties of the animation.
+   animation_type: lu32
 
 packet_map_create_locked_copy:
    !id: 0x83

@@ -7125,7 +7125,12 @@
     ],
     "packet_on_screen_texture_animation": [
       "container",
-      []
+      [
+        {
+          "name": "animation_type",
+          "type": "lu32"
+        }
+      ]
     ],
     "packet_map_create_locked_copy": [
       "container",
