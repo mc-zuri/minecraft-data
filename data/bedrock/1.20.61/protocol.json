@@ -10126,18 +10126,6 @@
           ]
         },
         {
-          "name": "predicted_vehicle",
-          "type": [
-            "switch",
-            {
-              "compareTo": "input_data.client_predicted_vehicle",
-              "fields": {
-                "true": "zigzag64"
-              }
-            }
-          ]
-        },
-        {
           "name": "block_action",
           "type": [
             "switch",
@@ -10235,6 +10223,18 @@
                     ]
                   }
                 ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "predicted_vehicle",
+          "type": [
+            "switch",
+            {
+              "compareTo": "input_data.client_predicted_vehicle",
+              "fields": {
+                "true": "zigzag64"
               }
             }
           ]

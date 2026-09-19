@@ -3140,10 +3140,6 @@ packet_player_auth_input:
          data: TransactionUseItem
    item_stack_request: input_data.item_stack_request ?
       if true: ItemStackRequest
-   _: input_data.client_predicted_vehicle ?
-      if true:
-         vehicle_rotation: vec2f
-         predicted_vehicle: zigzag64
    block_action: input_data.block_action ?
       if true: []zigzag32
          action: Action
@@ -3155,6 +3151,10 @@ packet_player_auth_input:
                # BlockFace is the face of the target block that was touched. If the action with the ActionType set
                # concerned a block. If not, the face is always 0.
                face: zigzag32
+   _: input_data.client_predicted_vehicle ?
+      if true:
+         vehicle_rotation: vec2f
+         predicted_vehicle: zigzag64
    # AnalogueMoveVector is a Vec2 that specifies the direction in which the player moved, as a combination of X/Z
    # values which are created using an analogue input.
    analogue_move_vector: vec2f

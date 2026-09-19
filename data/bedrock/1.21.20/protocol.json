@@ -10422,30 +10422,6 @@
           ]
         },
         {
-          "anon": true,
-          "type": [
-            "switch",
-            {
-              "compareTo": "input_data.client_predicted_vehicle",
-              "fields": {
-                "true": [
-                  "container",
-                  [
-                    {
-                      "name": "vehicle_rotation",
-                      "type": "vec2f"
-                    },
-                    {
-                      "name": "predicted_vehicle",
-                      "type": "zigzag64"
-                    }
-                  ]
-                ]
-              }
-            }
-          ]
-        },
-        {
           "name": "block_action",
           "type": [
             "switch",
@@ -10542,6 +10518,30 @@
                       ]
                     ]
                   }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "anon": true,
+          "type": [
+            "switch",
+            {
+              "compareTo": "input_data.client_predicted_vehicle",
+              "fields": {
+                "true": [
+                  "container",
+                  [
+                    {
+                      "name": "vehicle_rotation",
+                      "type": "vec2f"
+                    },
+                    {
+                      "name": "predicted_vehicle",
+                      "type": "zigzag64"
+                    }
+                  ]
                 ]
               }
             }
