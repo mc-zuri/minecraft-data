@@ -1644,6 +1644,33 @@ packet_add_behavior_tree:
 packet_structure_block_update:
    !id: 0x5a
    !bound: client
+   # Position is the position of the structure block that is updated.
+   position: BlockCoordinates
+   # StructureName is the name of the structure that was set in the structure block's UI. This is the name
+   # used to export the structure to a file.
+   structure_name: string
+   # DataField is the name of a function to run, usually used during natural generation. A description can
+   # be found here: https://minecraft.wiki/w/Structure_Block#Data.
+   data_field: string
+   # IncludePlayers specifies if the 'Include Players' toggle has been enabled, meaning players are also
+   # exported by the structure block.
+   include_players: bool
+   # ShowBoundingBox specifies if the structure block should have its bounds outlined. A thin line will
+   # encapsulate the bounds of the structure if set to true.
+   show_bounding_box: bool
+   # StructureBlockType is the type of the structure block updated. A list of structure block types that
+   # will be used can be found in the constants above.
+   structure_block_type: zigzag32
+   # Settings is a struct of settings that should be used for exporting the structure. These settings are
+   # identical to the last sent in the StructureBlockUpdate packet by the client.
+   settings: StructureBlockSettings
+   # RedstoneSaveMode is the mode that should be used to save the structure when used with redstone. In
+   # Java Edition, this is always stored in memory, but in Bedrock Edition it can be stored either to disk
+   # or memory. See the constants above for the options.
+   redstone_save_mode: zigzag32
+   # ShouldTrigger specifies if the structure block should be triggered immediately after this packet
+   # reaches the server.
+   should_trigger: bool
 
 packet_show_store_offer:
    !id: 0x5b

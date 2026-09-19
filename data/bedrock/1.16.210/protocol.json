@@ -2661,6 +2661,55 @@
         }
       ]
     ],
+    "StructureBlockSettings": [
+      "container",
+      [
+        {
+          "name": "palette_name",
+          "type": "string"
+        },
+        {
+          "name": "ignore_entities",
+          "type": "bool"
+        },
+        {
+          "name": "ignore_blocks",
+          "type": "bool"
+        },
+        {
+          "name": "size",
+          "type": "BlockCoordinates"
+        },
+        {
+          "name": "structure_offset",
+          "type": "BlockCoordinates"
+        },
+        {
+          "name": "last_editing_player_unique_id",
+          "type": "zigzag64"
+        },
+        {
+          "name": "rotation",
+          "type": "u8"
+        },
+        {
+          "name": "mirror",
+          "type": "u8"
+        },
+        {
+          "name": "integrity",
+          "type": "lf32"
+        },
+        {
+          "name": "seed",
+          "type": "lu32"
+        },
+        {
+          "name": "pivot",
+          "type": "vec3f"
+        }
+      ]
+    ],
     "WindowID": [
       "mapper",
       {
@@ -6334,7 +6383,44 @@
     ],
     "packet_structure_block_update": [
       "container",
-      []
+      [
+        {
+          "name": "position",
+          "type": "BlockCoordinates"
+        },
+        {
+          "name": "structure_name",
+          "type": "string"
+        },
+        {
+          "name": "data_field",
+          "type": "string"
+        },
+        {
+          "name": "include_players",
+          "type": "bool"
+        },
+        {
+          "name": "show_bounding_box",
+          "type": "bool"
+        },
+        {
+          "name": "structure_block_type",
+          "type": "zigzag32"
+        },
+        {
+          "name": "settings",
+          "type": "StructureBlockSettings"
+        },
+        {
+          "name": "redstone_save_mode",
+          "type": "zigzag32"
+        },
+        {
+          "name": "should_trigger",
+          "type": "bool"
+        }
+      ]
     ],
     "packet_show_store_offer": [
       "container",
