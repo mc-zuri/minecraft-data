@@ -4684,27 +4684,14 @@ packet_clientbound_update_sound_data:
    !id: 0x15c
    !bound: client
    server_sound_handle: ServerSoundHandle
-   # As of 1.26.40 the string type identifier is replaced by one optional per update kind. Each optional
-   # payload starts with an unsigned varint that is currently always zero.
-   stop?:
-      unused: varint
-   volume?:
-      unused: varint
-      volume: lf32
-   pitch?:
-      unused: varint
-      pitch: lf32
-   fade?:
-      unused: varint
-      target_volume: lf32
-      duration: lf32
-   seek_to?:
-      unused: varint
-      seconds: lf32
-   pause?:
-      unused: varint
-   resume?:
-      unused: varint
+   # Each of the seven slots is a full SoundDataUpdate (type + payload); none is optional.
+   stop: SoundDataUpdate
+   set_volume: SoundDataUpdate
+   set_pitch: SoundDataUpdate
+   fade: SoundDataUpdate
+   seek_to: SoundDataUpdate
+   pause: SoundDataUpdate
+   resume: SoundDataUpdate
 
 packet_send_party_destination_cookie:
    !id: 0x15d

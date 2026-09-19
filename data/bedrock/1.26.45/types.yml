@@ -2284,6 +2284,27 @@ SoundType: varint =>
 ServerSoundHandle: lu64
 SoundEventIdentifier: string
 
+SoundDataUpdate:
+   type: varint =>
+      0: stop
+      1: set_volume
+      2: set_pitch
+      3: fade
+      4: seek_to
+      5: pause
+      6: resume
+   _: type ?
+      if set_volume:
+         volume: lf32
+      if set_pitch:
+         pitch: lf32
+      if fade:
+         duration: lf32
+         target_volume: lf32
+      if seek_to:
+         seconds: lf32
+      default: void
+
 # TODO: remove?
 LegacyEntityType: li32 =>
    10: chicken
