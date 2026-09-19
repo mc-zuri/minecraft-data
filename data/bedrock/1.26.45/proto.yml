@@ -3748,7 +3748,7 @@ packet_agent_action:
    !id: 0xb5
    !bound: client
    request_id: string
-   action_type: zigzag32 =>
+   action_type: li32 =>
    - none
    - attack
    - collect
