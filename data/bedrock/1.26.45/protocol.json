@@ -15707,7 +15707,7 @@
       [
         {
           "name": "runtime_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "property_index",
