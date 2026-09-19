@@ -16520,19 +16520,7 @@
         },
         {
           "name": "close_reason",
-          "type": [
-            "mapper",
-            {
-              "type": "u8",
-              "mappings": {
-                "0": "programmatic_close",
-                "1": "programmatic_close_all",
-                "2": "client_canceled",
-                "3": "user_busy",
-                "4": "invalid_form"
-              }
-            }
-          ]
+          "type": "string"
         }
       ]
     ],
