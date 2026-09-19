@@ -4694,7 +4694,7 @@ packet_locator_bar:
 packet_party_changed:
    !id: 0x156
    !bound: client
-   party_id: string
+   party_id?: string
 
 packet_serverbound_data_driven_screen_closed:
    !id: 0x157
