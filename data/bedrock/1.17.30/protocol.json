@@ -6878,6 +6878,11 @@
           "name": "as_chained_command",
           "size": 1,
           "signed": false
+        },
+        {
+          "name": "unknown2",
+          "size": 4,
+          "signed": false
         }
       ]
     ],

@@ -1665,10 +1665,11 @@ packet_available_commands:
 # with enums that have a big amount of options. To illustrate, it can make
 # <false|true|yes|no> <$Name: bool>.
 CommandFlags: [ "bitfield", [
-   { "name": "unused", "size": 1, "signed": false }, # 6 unused upper bits
+   { "name": "unused", "size": 1, "signed": false },
    { "name": "collapse_enum", "size": 1, "signed": false },
    { "name": "has_semantic_constraint", "size": 1, "signed": false },
    { "name": "as_chained_command", "size": 1, "signed": false },
+   { "name": "unknown2", "size": 4, "signed": false }, # 4 unused upper bits
 ]]
 
 # enum_size_based_on_values_len: native
