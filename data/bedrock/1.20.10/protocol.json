@@ -7986,7 +7986,7 @@
         },
         {
           "name": "size",
-          "type": "u8"
+          "type": "zigzag32"
         },
         {
           "name": "entity_id",

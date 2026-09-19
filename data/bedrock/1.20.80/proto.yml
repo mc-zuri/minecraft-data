@@ -2016,7 +2016,7 @@ packet_update_equipment:
    window_type: WindowType
    # Size is the size of the horse inventory that should be opened. A bigger size does, in fact, change the
    # amount of slots displayed.
-   size: u8
+   size: zigzag32
    # EntityUniqueID is the unique ID of the entity whose equipment was 'updated' to the player. It is
    # typically the horse entity that had its inventory opened.
    entity_id: zigzag64
