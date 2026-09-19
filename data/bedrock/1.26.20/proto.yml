@@ -4666,12 +4666,13 @@ packet_serverbound_data_driven_screen_closed:
    !id: 0x157
    !bound: server
    form_id: lu32
-   close_reason: u8 =>
-      0: programmatic_close
-      1: programmatic_close_all
-      2: client_canceled
-      3: user_busy
-      4: invalid_form
+   # Options:
+	# "programmaticclose"
+	# "programmaticcloseall"
+	# "clientcanceled"
+	# "userbusy"
+	# "invalidform"
+   close_reason: string
 
 packet_sync_world_clocks:
    !id: 0x158
