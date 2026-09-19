@@ -5455,7 +5455,11 @@
       "container",
       [
         {
-          "name": "health",
+          "name": "cause",
+          "type": "zigzag32"
+        },
+        {
+          "name": "damage",
           "type": "zigzag32"
         }
       ]

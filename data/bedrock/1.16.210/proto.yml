@@ -849,7 +849,8 @@ packet_player_action:
 packet_hurt_armor:
    !id: 0x26
    !bound: client
-   health: zigzag32
+   cause: zigzag32
+   damage: zigzag32
 
 packet_set_entity_data:
    !id: 0x27
