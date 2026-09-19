@@ -2087,6 +2087,15 @@ packet_structure_template_data_export_request:
 packet_structure_template_data_export_response:
    !id: 0x85
    !bound: client
+   name: string
+   success: bool
+   nbt: success ?
+      if true: nbt
+   # ResponseType specifies the response type of the packet. This depends on the RequestType field sent in
+   # the StructureTemplateDataRequest packet and is one of the constants above.
+   response_type: u8 =>
+      1: export
+      2: query
 
 packet_update_block_properties:
    !id: 0x86

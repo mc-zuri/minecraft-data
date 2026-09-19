@@ -7264,7 +7264,41 @@
     ],
     "packet_structure_template_data_export_response": [
       "container",
-      []
+      [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "success",
+          "type": "bool"
+        },
+        {
+          "name": "nbt",
+          "type": [
+            "switch",
+            {
+              "compareTo": "success",
+              "fields": {
+                "true": "nbt"
+              }
+            }
+          ]
+        },
+        {
+          "name": "response_type",
+          "type": [
+            "mapper",
+            {
+              "type": "u8",
+              "mappings": {
+                "1": "export",
+                "2": "query"
+              }
+            }
+          ]
+        }
+      ]
     ],
     "packet_update_block_properties": [
       "container",
