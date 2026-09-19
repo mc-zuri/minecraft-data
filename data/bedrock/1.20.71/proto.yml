@@ -2917,7 +2917,6 @@ packet_education_settings:
    has_external_link_settings: bool
    external_link_settings: has_external_link_settings ?
       if true:
-         has: bool
          url: string
          display_name: string
 

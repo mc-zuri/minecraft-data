@@ -10118,10 +10118,6 @@
                   "container",
                   [
                     {
-                      "name": "has",
-                      "type": "bool"
-                    },
-                    {
                       "name": "url",
                       "type": "string"
                     },
