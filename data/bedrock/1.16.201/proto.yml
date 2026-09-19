@@ -1283,20 +1283,41 @@ packet_boss_event:
       # S2C: Not implemented :( Intended to alter bar appearance, but these currently produce no effect on client-side whatsoever.
       7: texture
    _: type?
-      if register_player or unregister_player:
-         player_id: zigzag64
       if show_bar:
+         # BossBarTitle is the title shown above the boss bar. It currently does not function, and instead uses
+         # the name tag of the boss entity at all times. It is only set if the EventType is BossEventShow or
+         # BossEventTitle.
          title: string
-         bar_progress: lf32
+         # HealthPercentage is the percentage of health that is shown in the boss bar. It currently does not
+         # function, and instead uses the health percentage of the boss entity at all times. It is only set if the
+         # EventType is BossEventShow or BossEventHealthPercentage.
+         progress: lf32
+         # ScreenDarkening currently seems not to do anything.
+         screen_darkening: li16
+         # Colour is the colour of the boss bar that is shown when a player is subscribed. It currently does not
+         # function. It is only set if the EventType is BossEventShow, BossEventAppearanceProperties or
+         # BossEventTexture.
+         # Format is ARGB
+         color: varint
+         # Overlay is the overlay of the boss bar that is shown on top of the boss bar when a player is
+         # subscribed. It currently does not function. It is only set if the EventType is BossEventShow,
+         # BossEventAppearanceProperties or BossEventTexture.
+         overlay: varint
+      if register_player or unregister_player:
+         # PlayerUniqueID is the unique ID of the player that is registered to or unregistered from the boss
+         # fight. It is set if EventType is either BossEventRegisterPlayer or BossEventUnregisterPlayer.
+         player_id: zigzag64
+      if set_bar_progress:
+         progress: lf32
+      if set_bar_title:
+         title: string
       if update_properties:
-         darkness_factor: li16
+         screen_darkening: li16
+         color: varint
+         overlay: varint
       if texture:
          color: varint
          overlay: varint
-      if set_bar_progress:
-         bar_progress: lf32
-      if set_bar_title:
-         title: string
 
 packet_show_credits:
    !id: 0x4b
