@@ -3630,6 +3630,7 @@ packet_remove_volume_entity:
    !bound: client
    # The Runtime Entity ID
    entity_id: varint64
+   dimension: zigzag32
 
 # SimulationType is an in-progress packet. We currently do not know the use case.
 packet_simulation_type:
