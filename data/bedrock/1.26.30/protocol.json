@@ -5486,10 +5486,7 @@
         },
         {
           "name": "rich_presence_id",
-          "type": [
-            "option",
-            "string"
-          ]
+          "type": "string"
         }
       ]
     ],
