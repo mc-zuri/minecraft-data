@@ -4616,7 +4616,7 @@ packet_party_changed:
 packet_serverbound_data_driven_screen_closed:
    !id: 0x157
    !bound: server
-   form_id?: lu32
+   form_id: lu32
    # Options:
 	# "programmaticclose"
 	# "programmaticcloseall"
