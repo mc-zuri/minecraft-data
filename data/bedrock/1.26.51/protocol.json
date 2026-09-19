@@ -7410,7 +7410,7 @@
                 "161": "correct_player_move_prediction",
                 "162": "item_registry",
                 "163": "filter_text_packet",
-                "164": "primitive_shapes",
+                "164": "debug_renderer",
                 "165": "sync_entity_property",
                 "166": "add_volume_entity",
                 "167": "remove_volume_entity",
@@ -7666,7 +7666,7 @@
                 "correct_player_move_prediction": "packet_correct_player_move_prediction",
                 "item_registry": "packet_item_registry",
                 "filter_text_packet": "packet_filter_text_packet",
-                "primitive_shapes": "packet_primitive_shapes",
+                "debug_renderer": "packet_debug_renderer",
                 "sync_entity_property": "packet_sync_entity_property",
                 "add_volume_entity": "packet_add_volume_entity",
                 "remove_volume_entity": "packet_remove_volume_entity",
@@ -13638,16 +13638,26 @@
         }
       ]
     ],
-    "packet_primitive_shapes": [
+    "packet_debug_renderer": [
       "container",
       [
         {
-          "name": "shapes",
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "name": "has_data",
+          "type": "bool"
+        },
+        {
+          "name": "data",
           "type": [
-            "array",
+            "switch",
             {
-              "countType": "varint",
-              "type": "PrimitiveShape"
+              "compareTo": "has_data",
+              "fields": {
+                "true": "DebugMarkerData"
+              }
             }
           ]
         }
@@ -15839,112 +15849,7 @@
             "array",
             {
               "countType": "varint",
-              "type": [
-                "container",
-                [
-                  {
-                    "name": "network_id",
-                    "type": "varint64"
-                  },
-                  {
-                    "name": "shape_type",
-                    "type": [
-                      "option",
-                      [
-                        "mapper",
-                        {
-                          "type": "u8",
-                          "mappings": {
-                            "0": "line",
-                            "1": "box",
-                            "2": "sphere",
-                            "3": "circle",
-                            "4": "text",
-                            "5": "arrow"
-                          }
-                        }
-                      ]
-                    ]
-                  },
-                  {
-                    "name": "location",
-                    "type": [
-                      "option",
-                      "vec3f"
-                    ]
-                  },
-                  {
-                    "name": "scale",
-                    "type": [
-                      "option",
-                      "lf32"
-                    ]
-                  },
-                  {
-                    "name": "rotation",
-                    "type": [
-                      "option",
-                      "vec3f"
-                    ]
-                  },
-                  {
-                    "name": "time_left",
-                    "type": [
-                      "option",
-                      "lf32"
-                    ]
-                  },
-                  {
-                    "name": "color",
-                    "type": [
-                      "option",
-                      "li32"
-                    ]
-                  },
-                  {
-                    "name": "text",
-                    "type": [
-                      "option",
-                      "string"
-                    ]
-                  },
-                  {
-                    "name": "box_bound",
-                    "type": [
-                      "option",
-                      "vec3f"
-                    ]
-                  },
-                  {
-                    "name": "line_end_location",
-                    "type": [
-                      "option",
-                      "vec3f"
-                    ]
-                  },
-                  {
-                    "name": "arrow_head_length",
-                    "type": [
-                      "option",
-                      "lf32"
-                    ]
-                  },
-                  {
-                    "name": "arrow_head_radius",
-                    "type": [
-                      "option",
-                      "lf32"
-                    ]
-                  },
-                  {
-                    "name": "segment_count",
-                    "type": [
-                      "option",
-                      "u8"
-                    ]
-                  }
-                ]
-              ]
+              "type": "PrimitiveShape"
             }
           ]
         }
