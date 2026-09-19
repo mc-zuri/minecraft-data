@@ -4799,17 +4799,14 @@
           "type": "lf32"
         },
         {
-          "name": "has_spline_type",
-          "type": "bool"
-        },
-        {
           "name": "spline_type",
           "type": [
-            "switch",
+            "mapper",
             {
-              "compareTo": "has_spline_type",
-              "fields": {
-                "true": "u8"
+              "type": "u8",
+              "mappings": {
+                "0": "catmullrom",
+                "1": "linear"
               }
             }
           ]
@@ -4830,7 +4827,23 @@
             "array",
             {
               "countType": "varint",
-              "type": "CameraProgressOption"
+              "type": [
+                "container",
+                [
+                  {
+                    "name": "value",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "time",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "ease_type",
+                    "type": "EaseType"
+                  }
+                ]
+              ]
             }
           ]
         },
@@ -4840,9 +4853,33 @@
             "array",
             {
               "countType": "varint",
-              "type": "CameraRotationOption"
+              "type": [
+                "container",
+                [
+                  {
+                    "name": "value",
+                    "type": "vec3f"
+                  },
+                  {
+                    "name": "time",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "ease_type",
+                    "type": "EaseType"
+                  }
+                ]
+              ]
             }
           ]
+        },
+        {
+          "name": "spline_identifier",
+          "type": "string"
+        },
+        {
+          "name": "load_from_json",
+          "type": "bool"
         }
       ]
     ],
@@ -4883,8 +4920,54 @@
           "type": "string"
         },
         {
-          "name": "instruction",
-          "type": "CameraSplineInstruction"
+          "name": "total_time",
+          "type": "lf32"
+        },
+        {
+          "name": "has_spline_type",
+          "type": "bool"
+        },
+        {
+          "name": "spline_type",
+          "type": [
+            "switch",
+            {
+              "compareTo": "has_spline_type",
+              "fields": {
+                "true": "u8"
+              }
+            }
+          ]
+        },
+        {
+          "name": "control_points",
+          "type": [
+            "array",
+            {
+              "countType": "varint",
+              "type": "vec3f"
+            }
+          ]
+        },
+        {
+          "name": "progress_key_frames",
+          "type": [
+            "array",
+            {
+              "countType": "varint",
+              "type": "CameraProgressOption"
+            }
+          ]
+        },
+        {
+          "name": "rotation_key_frames",
+          "type": [
+            "array",
+            {
+              "countType": "varint",
+              "type": "CameraRotationOption"
+            }
+          ]
         }
       ]
     ],
