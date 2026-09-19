@@ -9823,7 +9823,7 @@
       [
         {
           "name": "window_id",
-          "type": "WindowIDVarint"
+          "type": "WindowID"
         },
         {
           "name": "slot",
