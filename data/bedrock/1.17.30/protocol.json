@@ -4092,8 +4092,25 @@
           "type": "bool"
         },
         {
-          "name": "message",
-          "type": "string"
+          "anon": true,
+          "type": [
+            "switch",
+            {
+              "compareTo": "hide_disconnect_reason",
+              "fields": {
+                "true": "void"
+              },
+              "default": [
+                "container",
+                [
+                  {
+                    "name": "message",
+                    "type": "string"
+                  }
+                ]
+              ]
+            }
+          ]
         }
       ]
     ],

@@ -118,8 +118,11 @@ packet_disconnect:
    # Specifies if the disconnection screen should be hidden when the client is disconnected, 
    # meaning it will be sent directly to the main menu.
    hide_disconnect_reason: bool
-   # An optional message to show when disconnected.
-   message: string
+   _: hide_disconnect_reason ?
+      if true: void
+      default:
+         # An optional message to show when disconnected.
+         message: string
 
 
 packet_resource_packs_info:
