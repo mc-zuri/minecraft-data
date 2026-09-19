@@ -14790,8 +14790,12 @@
           "type": "bool"
         },
         {
-          "name": "payload",
-          "type": "nbt"
+          "name": "raw_variant_name",
+          "type": "string"
+        },
+        {
+          "name": "raw_variant_data",
+          "type": "string"
         }
       ]
     ],

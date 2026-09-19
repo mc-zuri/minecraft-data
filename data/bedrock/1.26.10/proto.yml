@@ -3973,13 +3973,15 @@ packet_death_info:
    messages: string[]varint
 
 # EditorNetwork is a packet sent from the server to the client and vise-versa to communicate editor-mode related
-# information. It carries a single compound tag containing the relevant information.
+# information. It carries a payload of whatever serialized data the individual editor network payload generates.
 packet_editor_network:
    !id: 0xbe
    !bound: client
    route_to_manager: bool
-   # Payload is a network little endian compound tag holding data relevant to the editor.
-   payload: nbt
+   # RawVariantName is the name of the editor network payload variant that RawVariantData carries.
+   raw_variant_name: string
+   # RawVariantData is the serialized data that the named payload variant generated.
+   raw_variant_data: string
 
 # FeatureRegistry is a packet used to notify the client about the world generation features the server is currently
 # using. This is used in combination with the client-side world generation system introduced in v1.19.20, allowing the
