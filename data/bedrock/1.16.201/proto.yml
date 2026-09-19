@@ -1900,12 +1900,30 @@ packet_lab_table:
 packet_update_block_synced:
    !id: 0x6e
    !bound: client
-   coordinates: BlockCoordinates
+   # Position is the block position at which a block is updated.
+   position: BlockCoordinates
+   # NewBlockRuntimeID is the runtime ID of the block that is placed at Position after sending the packet
+   # to the client.
    block_runtime_id: varint
-   block_priority: varint
-   data_layer_id: varint
-   unknown0: varint
-   unknown1: varint
+   # Flags is a combination of flags that specify the way the block is updated client-side.
+   flags: varint
+   # Layer is the world layer on which the block is updated. For most blocks, this is the first layer, as
+   # that layer is the default layer to place blocks on, but for blocks inside of each other, this differs.
+   layer: varint
+   # EntityUniqueID is the unique ID of the falling block entity that the block transitions to or that the
+   # entity transitions from.
+   # Note that for both possible values for TransitionType, the EntityUniqueID should point to the falling
+   # block entity involved.
+   entity_unique_id: zigzag64
+   # TransitionType is the type of the transition that happened. It is either BlockToEntityTransition, when
+   # a block placed becomes a falling entity, or EntityToBlockTransition, when a falling entity hits the
+   # ground and becomes a solid block again.
+   transition_type: varint =>
+      # For falling sand, when a sand turns to an entity
+      0: entity
+      # When sand turns back to a new block
+      1: create
+      2: destroy
 
 # MoveActorDelta is sent by the server to move an entity. The packet is specifically optimised to save as
 # much space as possible, by only writing non-zero fields.

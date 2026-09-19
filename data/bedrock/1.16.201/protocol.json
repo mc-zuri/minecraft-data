@@ -6702,7 +6702,7 @@
       "container",
       [
         {
-          "name": "coordinates",
+          "name": "position",
           "type": "BlockCoordinates"
         },
         {
@@ -6710,20 +6710,30 @@
           "type": "varint"
         },
         {
-          "name": "block_priority",
+          "name": "flags",
           "type": "varint"
         },
         {
-          "name": "data_layer_id",
+          "name": "layer",
           "type": "varint"
         },
         {
-          "name": "unknown0",
-          "type": "varint"
+          "name": "entity_unique_id",
+          "type": "zigzag64"
         },
         {
-          "name": "unknown1",
-          "type": "varint"
+          "name": "transition_type",
+          "type": [
+            "mapper",
+            {
+              "type": "varint",
+              "mappings": {
+                "0": "entity",
+                "1": "create",
+                "2": "destroy"
+              }
+            }
+          ]
         }
       ]
     ],
