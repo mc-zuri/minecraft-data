@@ -2411,10 +2411,12 @@
          data: i64[]varint
       chunkData: ByteArray
       blockEntities: chunkBlockEntity[]varint
-      skyLightMask: i64[]varint
-      blockLightMask: i64[]varint
-      emptySkyLightMask: i64[]varint
-      emptyBlockLightMask: i64[]varint
+      # 26.3 moved these to ByteBufCodecs.BIT_SET: a var-int BYTE count followed by
+      # BitSet.toByteArray(), rather than a count of i64 words.
+      skyLightMask: ByteArray
+      blockLightMask: ByteArray
+      emptySkyLightMask: ByteArray
+      emptyBlockLightMask: ByteArray
       skyLight: []varint
          _: u8[]varint
       blockLight: []varint
@@ -2448,10 +2450,12 @@
    packet_update_light:
       chunkX: varint
       chunkZ: varint
-      skyLightMask: i64[]varint
-      blockLightMask: i64[]varint
-      emptySkyLightMask: i64[]varint
-      emptyBlockLightMask: i64[]varint
+      # 26.3 moved these to ByteBufCodecs.BIT_SET: a var-int BYTE count followed by
+      # BitSet.toByteArray(), rather than a count of i64 words.
+      skyLightMask: ByteArray
+      blockLightMask: ByteArray
+      emptySkyLightMask: ByteArray
+      emptyBlockLightMask: ByteArray
       skyLight: []varint
          _: u8[]varint
       blockLight: []varint
