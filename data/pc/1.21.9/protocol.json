@@ -4618,10 +4618,7 @@
         },
         {
           "name": "nbt",
-          "type": [
-            "option",
-            "anonymousNbt"
-          ]
+          "type": "ByteArray"
         }
       ]
     ]

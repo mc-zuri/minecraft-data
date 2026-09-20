@@ -1325,7 +1325,10 @@
    # MC: ServerboundCustomClickActionPacket
    packet_common_custom_click_action:
       id: string
-      nbt?: anonymousNbt
+      # optionalTagCodec wrapped in lengthPrefixed(65536): a var-int BYTE count followed by
+      # that many bytes of NBT. An absent payload is still written, as the single byte
+      # TAG_End, so the count is 1 rather than a presence flag of 0.
+      nbt: ByteArray
 
 ^handshaking.toClient.types:
    packet:
