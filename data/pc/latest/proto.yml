@@ -1643,6 +1643,9 @@
    # MC: ClientboundCookieRequestPacket
    packet_common_cookie_request:
       cookie: string
+   # MC: ClientboundPostEffectsPacket
+   packet_common_post_effects:
+      postEffects: string[]varint
    # MC: ClientboundStoreCookiePacket
    packet_common_store_cookie:
       key: string
@@ -1907,6 +1910,7 @@
          - registry_data
          - remove_resource_pack
          - add_resource_pack
+         - post_effects
          - store_cookie
          - transfer
          - feature_flags
@@ -1928,6 +1932,7 @@
          if registry_data: packet_registry_data
          if remove_resource_pack: packet_common_remove_resource_pack
          if add_resource_pack: packet_common_add_resource_pack
+         if post_effects: packet_common_post_effects
          if store_cookie: packet_common_store_cookie
          if transfer: packet_common_transfer
          if feature_flags: packet_feature_flags
@@ -3236,6 +3241,7 @@
       - reset_score
       - remove_resource_pack
       - add_resource_pack
+      - post_effects
       - respawn
       - entity_head_rotation
       - multi_block_change
@@ -3380,6 +3386,7 @@
          if remove_resource_pack: packet_common_remove_resource_pack
          if add_resource_pack: packet_common_add_resource_pack
          if respawn: packet_respawn
+         if post_effects: packet_common_post_effects
          if entity_head_rotation: packet_entity_head_rotation
          if multi_block_change: packet_multi_block_change
          if select_advancement_tab: packet_select_advancement_tab
