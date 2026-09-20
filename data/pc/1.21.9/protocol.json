@@ -7340,19 +7340,19 @@
                     [
                       {
                         "name": "position",
-                        "type": "vec3f"
+                        "type": "vec3f64"
                       },
                       {
                         "name": "velocity",
-                        "type": "vec3f"
+                        "type": "vec3f64"
                       },
                       {
                         "name": "yaw",
-                        "type": "f32"
+                        "type": "i8"
                       },
                       {
                         "name": "pitch",
-                        "type": "f32"
+                        "type": "i8"
                       },
                       {
                         "name": "weight",

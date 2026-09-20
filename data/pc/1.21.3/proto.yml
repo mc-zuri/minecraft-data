@@ -1904,10 +1904,10 @@
    packet_move_minecart: # 1.21.3
       entityId: varint
       steps: []varint
-         position: vec3f
-         movement: vec3f
-         yaw: f32
-         pitch: f32
+         position: vec3f64
+         movement: vec3f64
+         yaw: i8
+         pitch: i8
          weight: f32
    # MC: ClientboundMoveEntityPacket.Rot
    packet_entity_look:
