@@ -2516,9 +2516,9 @@
    # MC: ClientboundMoveEntityPacket.Rot
    packet_entity_look:
       entityId: varint
+      onGround: bool
       yaw: i8
       pitch: i8
-      onGround: bool
    # MC: ClientboundMoveVehiclePacket
    packet_vehicle_move:
       x: f64
