@@ -3684,6 +3684,9 @@
    # MC: ServerboundPlayerLoadedPacket
    packet_player_loaded:
       # Empty
+   # MC: ServerboundPunchPacket
+   packet_punch:
+      # Empty
    # MC: ServerboundPongPacket
    packet_pong:
       id: i32
@@ -3786,9 +3789,6 @@
    # entityId uses vanilla's OPTIONAL_VAR_INT sentinel encoding: raw varint, 0 = absent, n = entity id (n - 1).
    packet_spectator_action:
       entityId: optvarint
-   # MC: ServerboundSwingPacket
-   packet_arm_animation:
-      hand: varint
    # MC: ServerboundTeleportToEntityPacket
    packet_spectate:
       target: UUID
@@ -3869,6 +3869,7 @@
       - player_input
       - player_loaded
       - pong
+      - punch
       - recipe_book
       - displayed_recipe
       - name_item
@@ -3886,7 +3887,6 @@
       - set_test_block
       - update_sign
       - spectator_action
-      - arm_animation
       - spectate
       - test_instance_block_action
       - block_place
@@ -3939,6 +3939,7 @@
          if player_input: packet_player_input
          if player_loaded: packet_player_loaded
          if pong: packet_pong
+         if punch: packet_punch
          if recipe_book: packet_recipe_book
          if displayed_recipe: packet_displayed_recipe
          if name_item: packet_name_item
@@ -3956,7 +3957,6 @@
          if set_test_block: packet_set_test_block
          if update_sign: packet_update_sign
          if spectator_action: packet_spectator_action
-         if arm_animation: packet_arm_animation
          if spectate: packet_spectate
          if test_instance_block_action: packet_test_instance_block_action
          if block_place: packet_block_place

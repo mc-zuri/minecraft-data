@@ -11346,6 +11346,10 @@
           "container",
           []
         ],
+        "packet_punch": [
+          "container",
+          []
+        ],
         "packet_pong": [
           "container",
           [
@@ -11700,15 +11704,6 @@
             }
           ]
         ],
-        "packet_arm_animation": [
-          "container",
-          [
-            {
-              "name": "hand",
-              "type": "varint"
-            }
-          ]
-        ],
         "packet_spectate": [
           "container",
           [
@@ -11883,24 +11878,24 @@
                     "0x2b": "player_input",
                     "0x2c": "player_loaded",
                     "0x2d": "pong",
-                    "0x2e": "recipe_book",
-                    "0x2f": "displayed_recipe",
-                    "0x30": "name_item",
-                    "0x31": "resource_pack_receive",
-                    "0x32": "advancement_tab",
-                    "0x33": "select_trade",
-                    "0x34": "set_beacon_effect",
-                    "0x35": "held_item_slot",
-                    "0x36": "update_command_block",
-                    "0x37": "update_command_block_minecart",
-                    "0x38": "set_creative_slot",
-                    "0x39": "set_game_rule",
-                    "0x3a": "update_jigsaw_block",
-                    "0x3b": "update_structure_block",
-                    "0x3c": "set_test_block",
-                    "0x3d": "update_sign",
-                    "0x3e": "spectator_action",
-                    "0x3f": "arm_animation",
+                    "0x2e": "punch",
+                    "0x2f": "recipe_book",
+                    "0x30": "displayed_recipe",
+                    "0x31": "name_item",
+                    "0x32": "resource_pack_receive",
+                    "0x33": "advancement_tab",
+                    "0x34": "select_trade",
+                    "0x35": "set_beacon_effect",
+                    "0x36": "held_item_slot",
+                    "0x37": "update_command_block",
+                    "0x38": "update_command_block_minecart",
+                    "0x39": "set_creative_slot",
+                    "0x3a": "set_game_rule",
+                    "0x3b": "update_jigsaw_block",
+                    "0x3c": "update_structure_block",
+                    "0x3d": "set_test_block",
+                    "0x3e": "update_sign",
+                    "0x3f": "spectator_action",
                     "0x40": "spectate",
                     "0x41": "test_instance_block_action",
                     "0x42": "block_place",
@@ -11963,6 +11958,7 @@
                     "player_input": "packet_player_input",
                     "player_loaded": "packet_player_loaded",
                     "pong": "packet_pong",
+                    "punch": "packet_punch",
                     "recipe_book": "packet_recipe_book",
                     "displayed_recipe": "packet_displayed_recipe",
                     "name_item": "packet_name_item",
@@ -11980,7 +11976,6 @@
                     "set_test_block": "packet_set_test_block",
                     "update_sign": "packet_update_sign",
                     "spectator_action": "packet_spectator_action",
-                    "arm_animation": "packet_arm_animation",
                     "spectate": "packet_spectate",
                     "test_instance_block_action": "packet_test_instance_block_action",
                     "block_place": "packet_block_place",
