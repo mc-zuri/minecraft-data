@@ -9867,14 +9867,6 @@
                                           "default": "void"
                                         }
                                       ]
-                                    },
-                                    {
-                                      "name": "xCord",
-                                      "type": "f32"
-                                    },
-                                    {
-                                      "name": "yCord",
-                                      "type": "f32"
                                     }
                                   ]
                                 ]
@@ -9902,6 +9894,14 @@
                             }
                           ]
                         ]
+                      },
+                      {
+                        "name": "x",
+                        "type": "f32"
+                      },
+                      {
+                        "name": "y",
+                        "type": "f32"
                       }
                     ]
                   ]

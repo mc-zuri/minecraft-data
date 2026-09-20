@@ -3056,11 +3056,11 @@
                backgroundTexture: flags/has_background_texture ?
                   if 1: string
                   default: void
-               xCord: f32
-               yCord: f32
             requirements: []varint
                _: string[]varint
             sendsTelemtryData: bool
+         x: f32
+         y: f32
       identifiers: string[]varint
       progressMapping: []varint
          key: string
