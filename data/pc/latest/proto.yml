@@ -2394,6 +2394,7 @@
       global: bool
    # MC: ClientboundLevelParticlesPacket
    packet_world_particles:
+      particle: Particle
       longDistance: bool
       alwaysShow: bool
       x: f64
@@ -2402,9 +2403,14 @@
       offsetX: f32
       offsetY: f32
       offsetZ: f32
-      velocityOffset: f32
-      amount: i32
-      particle: Particle
+      velocityOffsetX: f32
+      velocityOffsetY: f32
+      velocityOffsetZ: f32
+      amount: varint
+      randomizationType: varint =>
+         - default
+         - alternative
+         - alternative_with_speed
    # MC: ClientboundLightUpdatePacket
    packet_update_light:
       chunkX: varint

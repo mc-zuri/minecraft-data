@@ -7417,6 +7417,10 @@
           "container",
           [
             {
+              "name": "particle",
+              "type": "Particle"
+            },
+            {
               "name": "longDistance",
               "type": "bool"
             },
@@ -7449,16 +7453,34 @@
               "type": "f32"
             },
             {
-              "name": "velocityOffset",
+              "name": "velocityOffsetX",
+              "type": "f32"
+            },
+            {
+              "name": "velocityOffsetY",
+              "type": "f32"
+            },
+            {
+              "name": "velocityOffsetZ",
               "type": "f32"
             },
             {
               "name": "amount",
-              "type": "i32"
+              "type": "varint"
             },
             {
-              "name": "particle",
-              "type": "Particle"
+              "name": "randomizationType",
+              "type": [
+                "mapper",
+                {
+                  "type": "varint",
+                  "mappings": {
+                    "0": "default",
+                    "1": "alternative",
+                    "2": "alternative_with_speed"
+                  }
+                }
+              ]
             }
           ]
         ],
