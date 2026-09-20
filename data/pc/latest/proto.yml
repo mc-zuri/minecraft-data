@@ -2581,7 +2581,7 @@
       unsignedChatContent?: anonymousNbt
       filterType: varint
       filterTypeMask: filterType ?
-         if 2: i64[]varint
+         if 2: ByteArray
          default: void
       type: ChatTypesHolder
       networkName: anonymousNbt

@@ -8166,13 +8166,7 @@
                 {
                   "compareTo": "filterType",
                   "fields": {
-                    "2": [
-                      "array",
-                      {
-                        "countType": "varint",
-                        "type": "i64"
-                      }
-                    ]
+                    "2": "ByteArray"
                   },
                   "default": "void"
                 }
