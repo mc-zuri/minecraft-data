@@ -842,9 +842,10 @@
             attackTarget?: varint
             jumpTarget?: position
          if GoalSelectors: # DebugSubscriptionDataGoalInfo
-            priority: varint
-            running: bool
-            name: string
+            goals: []varint
+               priority: varint
+               running: bool
+               name: string
          if EntityPaths: # DebugSubscriptionDataPathInfo
             path: Path
             maxNodeDistance: f32

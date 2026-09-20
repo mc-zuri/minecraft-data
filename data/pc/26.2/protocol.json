@@ -3182,16 +3182,30 @@
                   "container",
                   [
                     {
-                      "name": "priority",
-                      "type": "varint"
-                    },
-                    {
-                      "name": "running",
-                      "type": "bool"
-                    },
-                    {
-                      "name": "name",
-                      "type": "string"
+                      "name": "goals",
+                      "type": [
+                        "array",
+                        {
+                          "countType": "varint",
+                          "type": [
+                            "container",
+                            [
+                              {
+                                "name": "priority",
+                                "type": "varint"
+                              },
+                              {
+                                "name": "running",
+                                "type": "bool"
+                              },
+                              {
+                                "name": "name",
+                                "type": "string"
+                              }
+                            ]
+                          ]
+                        }
+                      ]
                     }
                   ]
                 ],
