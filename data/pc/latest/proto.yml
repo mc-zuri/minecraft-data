@@ -2034,7 +2034,9 @@
             component: SlotComponentType
          if item: varint
          if item_stack: ItemStackTemplate
-         if tag: string
+         # 26.3: TagSlotDisplay holds a HolderSet<Item>, not a bare TagKey, so it has both
+         # the named-tag and the inline id-list wire forms.
+         if tag: IDSet
          if dyed_slot_demo:
             dye: SlotDisplay
             target: SlotDisplay
