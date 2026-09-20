@@ -11784,10 +11784,6 @@
               "type": "position"
             },
             {
-              "name": "isFrontText",
-              "type": "bool"
-            },
-            {
               "name": "text1",
               "type": "string"
             },
@@ -11802,6 +11798,19 @@
             {
               "name": "text4",
               "type": "string"
+            },
+            {
+              "name": "slot",
+              "type": [
+                "mapper",
+                {
+                  "type": "varint",
+                  "mappings": {
+                    "0": "back",
+                    "1": "front"
+                  }
+                }
+              ]
             }
           ]
         ],

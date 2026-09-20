@@ -3815,11 +3815,13 @@
    # MC: ServerboundSignUpdatePacket
    packet_update_sign:
       location: position
-      isFrontText: bool
       text1: string
       text2: string
       text3: string
       text4: string
+      slot: varint =>
+         - back
+         - front
    # MC: ServerboundSpectatorActionPacket
    # entityId uses vanilla's OPTIONAL_VAR_INT sentinel encoding: raw varint, 0 = absent, n = entity id (n - 1).
    packet_spectator_action:
