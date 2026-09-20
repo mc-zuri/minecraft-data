@@ -7021,28 +7021,80 @@
               "type": "varint"
             },
             {
-              "name": "x",
-              "type": "f64"
+              "name": "pathType",
+              "type": [
+                "mapper",
+                {
+                  "type": "varint",
+                  "mappings": {
+                    "0": "linear",
+                    "1": "stepped"
+                  }
+                }
+              ]
             },
             {
-              "name": "y",
-              "type": "f64"
-            },
-            {
-              "name": "z",
-              "type": "f64"
-            },
-            {
-              "name": "dx",
-              "type": "f64"
-            },
-            {
-              "name": "dy",
-              "type": "f64"
-            },
-            {
-              "name": "dz",
-              "type": "f64"
+              "name": "path",
+              "type": [
+                "switch",
+                {
+                  "compareTo": "pathType",
+                  "fields": {
+                    "linear": [
+                      "container",
+                      [
+                        {
+                          "name": "x",
+                          "type": "f64"
+                        },
+                        {
+                          "name": "y",
+                          "type": "f64"
+                        },
+                        {
+                          "name": "z",
+                          "type": "f64"
+                        }
+                      ]
+                    ],
+                    "stepped": [
+                      "container",
+                      [
+                        {
+                          "name": "steps",
+                          "type": [
+                            "array",
+                            {
+                              "countType": "varint",
+                              "type": [
+                                "container",
+                                [
+                                  {
+                                    "name": "x",
+                                    "type": "f64"
+                                  },
+                                  {
+                                    "name": "y",
+                                    "type": "f64"
+                                  },
+                                  {
+                                    "name": "z",
+                                    "type": "f64"
+                                  },
+                                  {
+                                    "name": "tickOffset",
+                                    "type": "varint"
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  }
+                }
+              ]
             },
             {
               "name": "yaw",

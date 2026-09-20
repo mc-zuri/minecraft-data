@@ -2309,12 +2309,22 @@
    # MC: ClientboundEntityPositionSyncPacket
    packet_sync_entity_position:
       entityId: varint
-      x: f64
-      y: f64
-      z: f64
-      dx: f64
-      dy: f64
-      dz: f64
+      # PositionPath: an id-mapped type var-int dispatching to one of two payloads. 26.3
+      # dropped the delta-movement vector that used to follow the position.
+      pathType: varint =>
+         - linear
+         - stepped
+      path: pathType ?
+         if linear:
+            x: f64
+            y: f64
+            z: f64
+         if stepped:
+            steps: []varint
+               x: f64
+               y: f64
+               z: f64
+               tickOffset: varint
       yaw: f32
       pitch: f32
       onGround: bool
