@@ -1193,6 +1193,7 @@
       - quaternion
       - resolvable_profile
       - humanoid_arm
+      - dye_color
       value: type ?
          if byte: i8
          if int: varint
@@ -1248,6 +1249,23 @@
          if humanoid_arm: varint =>
             - left
             - right
+         if dye_color: varint =>
+            - white
+            - orange
+            - magenta
+            - light_blue
+            - yellow
+            - lime
+            - pink
+            - gray
+            - light_gray
+            - cyan
+            - purple
+            - blue
+            - brown
+            - green
+            - red
+            - black
    EntityMetadataPaintingVariant:
       width: i32
       height: i32
