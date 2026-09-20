@@ -34,6 +34,7 @@
    registryEntryHolder: native
    registryEntryHolderSet: native
    lpVec3: native
+   vecDelta: native
    ByteArray: ["buffer", { "countType": "varint" }]
    string: ["pstring", { "countType": "varint" }]
    vec2f:
@@ -2519,19 +2520,15 @@
    # MC: ClientboundMoveEntityPacket.Pos
    packet_rel_entity_move:
       entityId: varint
-      dX: i16
-      dY: i16
-      dZ: i16
-      onGround: bool
+      # A packed properties var-int - (onGround ? 1 : 0) | stepCount << 1 - followed by either
+      # three i16 deltas (stepCount 0) or stepCount x { varint ticks, 3x i16 }.
+      delta: vecDelta
    # MC: ClientboundMoveEntityPacket.PosRot
    packet_entity_move_look:
       entityId: varint
-      dX: i16
-      dY: i16
-      dZ: i16
+      delta: vecDelta
       yaw: i8
       pitch: i8
-      onGround: bool
    # MC: ClientboundMoveMinecartPacket
    packet_move_minecart: # 1.21.3
       entityId: varint
