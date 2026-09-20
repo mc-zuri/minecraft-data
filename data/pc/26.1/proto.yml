@@ -790,9 +790,14 @@
       type: DebugSubscriptionDataType
       _: type ?
          if DedicatedServerTickTime: void
+         # VillageSections carries an Optional whose value is zero bytes, so the presence
+         # byte is modelled explicitly. An option over a void inner type decodes to
+         # undefined and would be re-encoded as absent.
+         if VillageSections:
+            hasPayload: bool
          default:
             payload?: type ?
-               if DedicatedServerTickTime or VillageSections: void
+               if DedicatedServerTickTime: void
                if Bees: # DebugSubscriptionDataBeeInfo
                   hivePos?: position
                   flowerPos?: position

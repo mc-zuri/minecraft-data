@@ -2665,7 +2665,16 @@
             {
               "compareTo": "type",
               "fields": {
-                "DedicatedServerTickTime": "void"
+                "DedicatedServerTickTime": "void",
+                "VillageSections": [
+                  "container",
+                  [
+                    {
+                      "name": "hasPayload",
+                      "type": "bool"
+                    }
+                  ]
+                ]
               },
               "default": [
                 "container",
@@ -2680,7 +2689,6 @@
                           "compareTo": "type",
                           "fields": {
                             "DedicatedServerTickTime": "void",
-                            "VillageSections": "void",
                             "Bees": [
                               "container",
                               [
