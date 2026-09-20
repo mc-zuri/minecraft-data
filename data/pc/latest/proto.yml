@@ -2117,6 +2117,10 @@
    packet_block_change:
       location: position
       type: varint
+   # MC: ClientboundAddTransientBlockPacket
+   packet_add_transient_block:
+      location: position
+      type: varint
    # MC: ClientboundBossEventPacket
    packet_boss_bar:
       entityUUID: UUID
@@ -3186,6 +3190,7 @@
       - entity_status
       - sync_entity_position
       - explosion
+      - add_transient_block
       - unload_chunk
       - game_state_change
       - game_rule_values
@@ -3328,6 +3333,7 @@
          if entity_status: packet_entity_status
          if sync_entity_position: packet_sync_entity_position
          if explosion: packet_explosion
+         if add_transient_block: packet_add_transient_block
          if unload_chunk: packet_unload_chunk
          if game_state_change: packet_game_state_change
          if game_rule_values: packet_game_rule_values
