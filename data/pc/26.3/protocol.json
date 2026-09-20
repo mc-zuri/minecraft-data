@@ -9566,6 +9566,46 @@
             }
           ]
         ],
+        "packet_swing_animation": [
+          "container",
+          [
+            {
+              "name": "entityId",
+              "type": "varint"
+            },
+            {
+              "name": "hand",
+              "type": [
+                "mapper",
+                {
+                  "type": "varint",
+                  "mappings": {
+                    "0": "main_hand",
+                    "1": "off_hand"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "animation",
+              "type": [
+                "mapper",
+                {
+                  "type": "varint",
+                  "mappings": {
+                    "0": "none",
+                    "1": "whack",
+                    "2": "stab"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "duration",
+              "type": "varint"
+            }
+          ]
+        ],
         "packet_system_chat": [
           "container",
           [
@@ -10406,26 +10446,27 @@
                     "0x78": "start_configuration",
                     "0x79": "stop_sound",
                     "0x7a": "store_cookie",
-                    "0x7b": "system_chat",
-                    "0x7c": "playerlist_header",
-                    "0x7d": "nbt_query_response",
-                    "0x7e": "collect",
-                    "0x7f": "entity_teleport",
-                    "0x80": "test_instance_block_status",
-                    "0x81": "set_ticking_state",
-                    "0x82": "step_tick",
-                    "0x83": "transfer",
-                    "0x84": "advancements",
-                    "0x85": "entity_update_attributes",
-                    "0x86": "entity_effect",
-                    "0x87": "declare_recipes",
-                    "0x88": "tags",
-                    "0x89": "set_projectile_power",
-                    "0x8a": "custom_report_details",
-                    "0x8b": "server_links",
-                    "0x8c": "tracked_waypoint",
-                    "0x8d": "clear_dialog",
-                    "0x8e": "show_dialog"
+                    "0x7b": "swing_animation",
+                    "0x7c": "system_chat",
+                    "0x7d": "playerlist_header",
+                    "0x7e": "nbt_query_response",
+                    "0x7f": "collect",
+                    "0x80": "entity_teleport",
+                    "0x81": "test_instance_block_status",
+                    "0x82": "set_ticking_state",
+                    "0x83": "step_tick",
+                    "0x84": "transfer",
+                    "0x85": "advancements",
+                    "0x86": "entity_update_attributes",
+                    "0x87": "entity_effect",
+                    "0x88": "declare_recipes",
+                    "0x89": "tags",
+                    "0x8a": "set_projectile_power",
+                    "0x8b": "custom_report_details",
+                    "0x8c": "server_links",
+                    "0x8d": "tracked_waypoint",
+                    "0x8e": "clear_dialog",
+                    "0x8f": "show_dialog"
                   }
                 }
               ]
@@ -10560,6 +10601,7 @@
                     "start_configuration": "packet_start_configuration",
                     "stop_sound": "packet_stop_sound",
                     "store_cookie": "packet_common_store_cookie",
+                    "swing_animation": "packet_swing_animation",
                     "system_chat": "packet_system_chat",
                     "playerlist_header": "packet_playerlist_header",
                     "nbt_query_response": "packet_nbt_query_response",

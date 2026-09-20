@@ -2972,6 +2972,17 @@
          if 3: string
          default: void
    ## (Store Cookie is Common)
+   # MC: ClientboundSwingAnimationPacket
+   packet_swing_animation:
+      entityId: varint
+      hand: varint =>
+         - main_hand
+         - off_hand
+      animation: varint =>
+         - none
+         - whack
+         - stab
+      duration: varint
    # MC: ClientboundSystemChatPacket
    packet_system_chat:
       content: anonymousNbt
@@ -3281,6 +3292,7 @@
       - start_configuration
       - stop_sound
       - store_cookie
+      - swing_animation
       - system_chat
       - playerlist_header
       - nbt_query_response
@@ -3425,6 +3437,7 @@
          if start_configuration: packet_start_configuration
          if stop_sound: packet_stop_sound
          if store_cookie: packet_common_store_cookie
+         if swing_animation: packet_swing_animation
          if system_chat: packet_system_chat
          if playerlist_header: packet_playerlist_header
          if nbt_query_response: packet_nbt_query_response
