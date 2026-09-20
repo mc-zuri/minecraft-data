@@ -9056,7 +9056,7 @@
             },
             {
               "name": "seed",
-              "type": "varint"
+              "type": "varlong"
             },
             {
               "name": "flags",

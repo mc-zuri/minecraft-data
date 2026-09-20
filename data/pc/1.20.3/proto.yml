@@ -2258,7 +2258,7 @@
       rotation: varint
       metadata: string
       integrity: f32
-      seed: varint
+      seed: varlong
       flags: u8
    # MC: ServerboundCommandSuggestionPacket
    packet_tab_complete:

@@ -3199,7 +3199,7 @@
       rotation: varint
       metadata: string
       integrity: f32
-      seed: varint
+      seed: varlong
       flags: u8 =>
          - ignore_entities
          - show_air

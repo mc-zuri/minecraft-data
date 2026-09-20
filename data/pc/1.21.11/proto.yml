@@ -3655,7 +3655,7 @@
       rotation: varint
       metadata: string
       integrity: f32
-      seed: varint
+      seed: varlong
       # New `strict` flag
       flags: u8 =>
          - ignore_entities

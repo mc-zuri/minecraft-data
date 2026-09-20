@@ -1949,7 +1949,7 @@
       rotation: varint
       metadata: string
       integrity: f32
-      seed: varint
+      seed: varlong
       flags: u8
    packet_tab_complete:   
       transactionId: varint
