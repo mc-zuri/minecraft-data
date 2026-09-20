@@ -7101,6 +7101,10 @@
                   "type": "ExplosionParticleEntry"
                 }
               ]
+            },
+            {
+              "name": "playSound",
+              "type": "bool"
             }
           ]
         ],
