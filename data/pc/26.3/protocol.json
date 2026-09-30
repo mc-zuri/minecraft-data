@@ -6242,7 +6242,7 @@
             },
             {
               "name": "previousGamemode",
-              "type": "u8"
+              "type": "optvarint"
             },
             {
               "name": "isDebug",

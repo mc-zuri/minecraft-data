@@ -2093,7 +2093,7 @@
          - creative
          - adventure
          - spectator
-      previousGamemode: u8
+      previousGamemode: optvarint
       isDebug: bool
       isFlat: bool
       death?: GlobalPos
