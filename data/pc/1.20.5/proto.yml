@@ -382,7 +382,7 @@
       colorId: varint
 
    Slot:
-      itemCount: i8
+      itemCount: varint
       _: itemCount ?
          if 0: void
          default:
