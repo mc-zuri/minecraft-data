@@ -2064,7 +2064,7 @@
          - creative
          - adventure
          - spectator
-      previousGamemode: u8
+      previousGamemode: i8
       isDebug: bool
       isFlat: bool
       death?: GlobalPos
