@@ -3061,7 +3061,7 @@
          modifiers: []varint
             uuid: string
             amount: f64
-            operation: i8
+            operation: varint
    # MC: ClientboundUpdateMobEffectPacket
    packet_entity_effect:
       entityId: varint

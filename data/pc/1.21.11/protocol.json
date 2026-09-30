@@ -9688,7 +9688,7 @@
                                 },
                                 {
                                   "name": "operation",
-                                  "type": "i8"
+                                  "type": "varint"
                                 }
                               ]
                             ]
