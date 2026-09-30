@@ -658,31 +658,14 @@
          if optional_unsigned_int: optvarint
          if pose: varint
          if cat_variant: varint
-         if wolf_variant: ["registryEntryHolder", {
-            "baseName": "variantId",
-            "otherwise": { name: "variantData", type: "EntityMetadataWolfVariant" }
-         }]
+         if wolf_variant: varint
          if frog_variant: varint
          if optional_global_pos: ["option", "GlobalPos"]
-         if painting_variant: ["registryEntryHolder", {
-            "baseName": "variantId",
-            "otherwise": { name: "variantData", type: "EntityMetadataPaintingVariant" }
-         }]
+         if painting_variant: varint
          if sniffer_state: varint
          if armadillo_state: varint
          if vector3: vec3f
          if quaternion: vec4f
-   EntityMetadataPaintingVariant:
-      width: i32
-      height: i32
-      assetId: string
-      title?: anonymousNbt
-      author?: anonymousNbt
-   EntityMetadataWolfVariant:
-      wildTexture: string
-      tameTexture: string
-      angryTexture: string
-      biome: IDSet
 
    entityMetadata: ["entityMetadataLoop", { "endVal": 255, "type": "entityMetadataEntry" }]
    minecraft_simple_recipe_format:

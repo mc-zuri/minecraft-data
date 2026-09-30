@@ -1823,31 +1823,13 @@
                 "optional_unsigned_int": "optvarint",
                 "pose": "varint",
                 "cat_variant": "varint",
-                "wolf_variant": [
-                  "registryEntryHolder",
-                  {
-                    "baseName": "variantId",
-                    "otherwise": {
-                      "name": "variantData",
-                      "type": "EntityMetadataWolfVariant"
-                    }
-                  }
-                ],
+                "wolf_variant": "varint",
                 "frog_variant": "varint",
                 "optional_global_pos": [
                   "option",
                   "GlobalPos"
                 ],
-                "painting_variant": [
-                  "registryEntryHolder",
-                  {
-                    "baseName": "variantId",
-                    "otherwise": {
-                      "name": "variantData",
-                      "type": "EntityMetadataPaintingVariant"
-                    }
-                  }
-                ],
+                "painting_variant": "varint",
                 "sniffer_state": "varint",
                 "armadillo_state": "varint",
                 "vector3": "vec3f",
@@ -1855,58 +1837,6 @@
               }
             }
           ]
-        }
-      ]
-    ],
-    "EntityMetadataPaintingVariant": [
-      "container",
-      [
-        {
-          "name": "width",
-          "type": "i32"
-        },
-        {
-          "name": "height",
-          "type": "i32"
-        },
-        {
-          "name": "assetId",
-          "type": "string"
-        },
-        {
-          "name": "title",
-          "type": [
-            "option",
-            "anonymousNbt"
-          ]
-        },
-        {
-          "name": "author",
-          "type": [
-            "option",
-            "anonymousNbt"
-          ]
-        }
-      ]
-    ],
-    "EntityMetadataWolfVariant": [
-      "container",
-      [
-        {
-          "name": "wildTexture",
-          "type": "string"
-        },
-        {
-          "name": "tameTexture",
-          "type": "string"
-        },
-        {
-          "name": "angryTexture",
-          "type": "string"
-        },
-        {
-          "name": "biome",
-          "type": "IDSet"
         }
       ]
     ],
