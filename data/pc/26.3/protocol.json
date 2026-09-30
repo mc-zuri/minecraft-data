@@ -6230,7 +6230,7 @@
               "type": [
                 "mapper",
                 {
-                  "type": "i8",
+                  "type": "varint",
                   "mappings": {
                     "0": "survival",
                     "1": "creative",

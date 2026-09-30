@@ -2088,7 +2088,7 @@
       dimension: varint
       name: string
       hashedSeed: i64
-      gamemode: i8 =>
+      gamemode: varint =>
          - survival
          - creative
          - adventure
