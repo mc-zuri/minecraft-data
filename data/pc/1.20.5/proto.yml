@@ -1453,7 +1453,7 @@
       value: i16
    # MC: ClientboundContainerSetSlotPacket
    packet_set_slot:
-      windowId: ContainerID
+      windowId: i8
       stateId: varint
       slot: i16
       item: Slot
@@ -1735,7 +1735,7 @@
       id: i64
    # MC: ClientboundPlaceGhostRecipePacket
    packet_craft_recipe_response:
-      windowId: ContainerID
+      windowId: i8
       recipe: string
    # MC: ClientboundPlayerAbilitiesPacket
    packet_abilities:
@@ -2635,7 +2635,7 @@
       enchantment: varint
    # MC: ServerboundContainerClickPacket
    packet_window_click:
-      windowId: ContainerID
+      windowId: i8
       stateId: varint
       slot: i16
       mouseButton: i8
@@ -2646,7 +2646,7 @@
       cursorItem: Slot
    # MC: ServerboundContainerClosePacket
    packet_close_window:
-      windowId: ContainerID
+      windowId: i8
    # MC: ServerboundContainerSlotStateChangedPacket
    packet_set_slot_state:
       slot_id: varint

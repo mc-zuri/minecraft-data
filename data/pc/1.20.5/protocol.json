@@ -3972,7 +3972,7 @@
           [
             {
               "name": "windowId",
-              "type": "ContainerID"
+              "type": "i8"
             },
             {
               "name": "stateId",
@@ -5109,7 +5109,7 @@
           [
             {
               "name": "windowId",
-              "type": "ContainerID"
+              "type": "i8"
             },
             {
               "name": "recipe",
@@ -7550,7 +7550,7 @@
           [
             {
               "name": "windowId",
-              "type": "ContainerID"
+              "type": "i8"
             },
             {
               "name": "stateId",
@@ -7601,7 +7601,7 @@
           [
             {
               "name": "windowId",
-              "type": "ContainerID"
+              "type": "i8"
             }
           ]
         ],
