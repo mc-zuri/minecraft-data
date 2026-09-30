@@ -4814,7 +4814,7 @@
           [
             {
               "name": "windowId",
-              "type": "ContainerID"
+              "type": "varint"
             },
             {
               "name": "trades",

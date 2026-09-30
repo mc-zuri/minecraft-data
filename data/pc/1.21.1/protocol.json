@@ -5064,7 +5064,7 @@
           [
             {
               "name": "windowId",
-              "type": "ContainerID"
+              "type": "varint"
             },
             {
               "name": "trades",
@@ -7791,7 +7791,7 @@
           [
             {
               "name": "windowId",
-              "type": "ContainerID"
+              "type": "varint"
             },
             {
               "name": "enchantment",

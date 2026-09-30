@@ -1730,7 +1730,7 @@
          ]
    # MC: ClientboundMerchantOffersPacket
    packet_trade_list:
-      windowId: ContainerID
+      windowId: varint
       ## https://github.com/extremeheat/extracted_minecraft_data/blob/client1.20.5/client/net/minecraft/world/item/trading/MerchantOffer.java#L210
       trades: []varint
          inputItem1:
@@ -2703,7 +2703,7 @@
       # Empty
    # MC: ServerboundContainerButtonClickPacket
    packet_enchant_item:
-      windowId: ContainerID
+      windowId: varint
       enchantment: varint
    # MC: ServerboundContainerClickPacket
    packet_window_click:
