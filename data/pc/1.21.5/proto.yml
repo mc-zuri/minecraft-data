@@ -3315,8 +3315,8 @@
       - set_test_block
       - update_sign
       - arm_animation
-      - test_instance_block_action
       - spectate
+      - test_instance_block_action
       - block_place
       - use_item
       params: name ?
@@ -3380,7 +3380,7 @@
          if set_test_block: packet_set_test_block
          if update_sign: packet_update_sign
          if arm_animation: packet_arm_animation
-         if test_instance_block_action: packet_test_instance_block_action
          if spectate: packet_spectate
+         if test_instance_block_action: packet_test_instance_block_action
          if block_place: packet_block_place
          if use_item: packet_use_item

@@ -9765,8 +9765,8 @@
                     "0x39": "set_test_block",
                     "0x3a": "update_sign",
                     "0x3b": "arm_animation",
-                    "0x3c": "test_instance_block_action",
-                    "0x3d": "spectate",
+                    "0x3c": "spectate",
+                    "0x3d": "test_instance_block_action",
                     "0x3e": "block_place",
                     "0x3f": "use_item"
                   }
@@ -9840,8 +9840,8 @@
                     "set_test_block": "packet_set_test_block",
                     "update_sign": "packet_update_sign",
                     "arm_animation": "packet_arm_animation",
-                    "test_instance_block_action": "packet_test_instance_block_action",
                     "spectate": "packet_spectate",
+                    "test_instance_block_action": "packet_test_instance_block_action",
                     "block_place": "packet_block_place",
                     "use_item": "packet_use_item"
                   }
