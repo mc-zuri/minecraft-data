@@ -6338,7 +6338,7 @@
             },
             {
               "name": "destroyStage",
-              "type": "i8"
+              "type": "u8"
             }
           ]
         ],

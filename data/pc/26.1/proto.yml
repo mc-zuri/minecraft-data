@@ -2085,7 +2085,7 @@
    packet_block_break_animation:
       entityId: varint
       location: position
-      destroyStage: i8
+      destroyStage: u8
    # MC: ClientboundBlockEntityDataPacket
    packet_tile_entity_data:
       location: position
