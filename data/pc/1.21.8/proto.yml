@@ -51,6 +51,9 @@
       x: f64
       y: f64
       z: f64
+   GlobalPos:
+      dimensionName: string
+      location: position
    vec3i:
       x: varint
       y: varint
@@ -884,7 +887,7 @@
          if frog_variant: varint
          if pig_variant: varint
          if chicken_variant: varint
-         if optional_global_pos: ["option", "string"]
+         if optional_global_pos: ["option", "GlobalPos"]
          if painting_variant: ["registryEntryHolder", {
             "baseName": "variantId",
             "otherwise": { name: "variantData", type: "EntityMetadataPaintingVariant" }

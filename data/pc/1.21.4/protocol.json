@@ -111,6 +111,19 @@
         }
       ]
     ],
+    "GlobalPos": [
+      "container",
+      [
+        {
+          "name": "dimensionName",
+          "type": "string"
+        },
+        {
+          "name": "location",
+          "type": "position"
+        }
+      ]
+    ],
     "vec3i16": [
       "container",
       [
@@ -2142,7 +2155,7 @@
                 "frog_variant": "varint",
                 "optional_global_pos": [
                   "option",
-                  "string"
+                  "GlobalPos"
                 ],
                 "painting_variant": [
                   "registryEntryHolder",
