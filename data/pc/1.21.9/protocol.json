@@ -8175,7 +8175,7 @@
                 "array",
                 {
                   "countType": "varint",
-                  "type": "varint"
+                  "type": "varlong"
                 }
               ]
             }

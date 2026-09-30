@@ -2713,7 +2713,7 @@
          { "name": "z", "size": 22, "signed": true },
          { "name": "y", "size": 20, "signed": true }
       ]]
-      records: varint[]varint
+      records: varlong[]varint
    # MC: ClientboundSelectAdvancementsTabPacket
    packet_select_advancement_tab:
       id?: string
