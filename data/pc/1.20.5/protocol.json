@@ -7596,11 +7596,11 @@
           [
             {
               "name": "windowId",
-              "type": "i8"
+              "type": "varint"
             },
             {
               "name": "enchantment",
-              "type": "i8"
+              "type": "varint"
             }
           ]
         ],

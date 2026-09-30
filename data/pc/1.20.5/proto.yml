@@ -2647,8 +2647,8 @@
       # Empty
    # MC: ServerboundContainerButtonClickPacket
    packet_enchant_item:
-      windowId: i8
-      enchantment: i8
+      windowId: varint
+      enchantment: varint
    # MC: ServerboundContainerClickPacket
    packet_window_click:
       windowId: ContainerID
