@@ -3561,7 +3561,7 @@
             "count": 3
          }
       ]
-      checksum: u8
+      checksum: i8
    # MC: ServerboundChatPacket
    packet_chat_message:
       message: string
@@ -3580,7 +3580,7 @@
             "count": 3
          }
       ]
-      checksum: u8
+      checksum: i8
    # MC: ServerboundChatSessionUpdatePacket
    packet_chat_session_update:
       sessionUUID: UUID

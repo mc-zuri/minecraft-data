@@ -10145,7 +10145,7 @@
             },
             {
               "name": "checksum",
-              "type": "u8"
+              "type": "i8"
             }
           ]
         ],
@@ -10191,7 +10191,7 @@
             },
             {
               "name": "checksum",
-              "type": "u8"
+              "type": "i8"
             }
           ]
         ],
