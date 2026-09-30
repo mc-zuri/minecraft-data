@@ -2578,7 +2578,9 @@
    # MC: ClientboundOpenSignEditorPacket
    packet_open_sign_entity:
       location: position
-      isFrontText: bool
+      slot: varint =>
+         - back
+         - front
    # MC: ClientboundPingPacket
    packet_ping:
       id: i32

@@ -8058,8 +8058,17 @@
               "type": "position"
             },
             {
-              "name": "isFrontText",
-              "type": "bool"
+              "name": "slot",
+              "type": [
+                "mapper",
+                {
+                  "type": "varint",
+                  "mappings": {
+                    "0": "back",
+                    "1": "front"
+                  }
+                }
+              ]
             }
           ]
         ],
