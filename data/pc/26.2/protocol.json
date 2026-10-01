@@ -11616,15 +11616,15 @@
             {
               "name": "flags",
               "type": [
-                "mapper",
+                "bitflags",
                 {
                   "type": "u8",
-                  "mappings": {
-                    "0": "ignore_entities",
-                    "1": "show_air",
-                    "2": "show_bounding_box",
-                    "3": "strict"
-                  }
+                  "flags": [
+                    "ignore_entities",
+                    "show_air",
+                    "show_bounding_box",
+                    "strict"
+                  ]
                 }
               ]
             }

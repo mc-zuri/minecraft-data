@@ -3203,11 +3203,10 @@
       metadata: string
       integrity: f32
       seed: varlong
-      flags: u8 =>
-         - ignore_entities
-         - show_air
-         - show_bounding_box
-         - strict
+      flags: ["bitflags", {
+         "type": "u8",
+         "flags": ["ignore_entities", "show_air", "show_bounding_box", "strict"]
+      }]
    # MC: ServerboundSetTestBlockPacket
    packet_set_test_block:
       position: position
