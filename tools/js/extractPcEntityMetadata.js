@@ -48,6 +48,27 @@ function getEntityTypes (versionDir) {
       }
     }
   }
+  // 26.3+: the registrations moved to EntityTypes.java and take the id from EntityTypeIds.java:
+  //   ALLAY = register(EntityTypeIds.ALLAY, EntityType.Builder.of(Allay::new, ...))
+  //   ALLAY = create("allay")
+  const typesFile = `${versionDir}/client/net/minecraft/world/entity/EntityTypes.java`
+  const idsFile = `${versionDir}/client/net/minecraft/world/entity/EntityTypeIds.java`
+  if (fs.existsSync(typesFile) && fs.existsSync(idsFile)) {
+    const idNames = {}
+    for (const line of prepLines(fs.readFileSync(idsFile, 'utf8'))) {
+      const regex = line.match(/ ([A-Z0-9_]+) = create\(\W*"([a-z0-9_]+)"/)
+      if (regex) idNames[regex[1]] = regex[2]
+    }
+    for (const line of prepLines(fs.readFileSync(typesFile, 'utf8'))) {
+      const regex = line.match(/EntityType<(.*)> (.*) = register\(\W*EntityTypeIds\.([A-Z0-9_]+)/)
+      if (regex && idNames[regex[3]]) {
+        const [, type] = regex
+        const name = idNames[regex[3]]
+        classNameTo[type] = name
+        nameToClass[name] = type
+      }
+    }
+  }
   return [classNameTo, nameToClass]
 }
 
