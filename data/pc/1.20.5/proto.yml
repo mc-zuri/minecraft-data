@@ -2261,8 +2261,8 @@
                category: varint
                gridWidth: varint
                gridHeight: varint
-               ingredients: []$gridWidth
-                  _: ingredient[]$gridHeight
+               ingredients: []$gridHeight
+                  _: ingredient[]$gridWidth
                result: Slot
                showNotification: bool
             if minecraft:crafting_special_armordye: minecraft_simple_recipe_format

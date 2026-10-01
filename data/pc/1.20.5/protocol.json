@@ -6908,11 +6908,11 @@
                                     "type": [
                                       "array",
                                       {
-                                        "count": "gridWidth",
+                                        "count": "gridHeight",
                                         "type": [
                                           "array",
                                           {
-                                            "count": "gridHeight",
+                                            "count": "gridWidth",
                                             "type": "ingredient"
                                           }
                                         ]
