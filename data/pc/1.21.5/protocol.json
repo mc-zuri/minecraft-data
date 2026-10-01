@@ -5178,9 +5178,9 @@
           {
             "type": "varint",
             "mappings": {
-              "0": "content",
-              "1": "sender",
-              "2": "target"
+              "0": "sender",
+              "1": "target",
+              "2": "content"
             }
           }
         ],

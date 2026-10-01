@@ -1807,9 +1807,9 @@
    ## client\net\minecraft\network\chat\ChatTypeDecoration.java
    ## via client\net\minecraft\network\chat\ChatType.java
    ChatTypeParameterType: varint =>
-      - content
       - sender
       - target
+      - content
    ChatType:
       translationKey: string
       parameters: ChatTypeParameterType[]varint
