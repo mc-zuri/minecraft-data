@@ -3597,7 +3597,7 @@
           [
             {
               "name": "id",
-              "type": "varint"
+              "type": "optvarint"
             },
             {
               "name": "signature",
@@ -6613,7 +6613,7 @@
           [
             {
               "name": "id",
-              "type": "varint"
+              "type": "optvarint"
             },
             {
               "name": "signature",

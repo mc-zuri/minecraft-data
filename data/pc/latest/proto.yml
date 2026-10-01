@@ -1139,7 +1139,7 @@
       z: i32
       x: i32
    previousMessages: []varint
-      id: varint
+      id: optvarint
       signature: id ?
          if 0: [
             "buffer",
@@ -2270,7 +2270,7 @@
       type: varint
    # MC: ClientboundDeleteChatPacket
    packet_hide_message:
-      id: varint
+      id: optvarint
       signature: id ?
          if 0: [
             "buffer",
