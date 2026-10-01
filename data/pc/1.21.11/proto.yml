@@ -2134,8 +2134,8 @@
    packet_damage_event:
       entityId: varint
       sourceTypeId: varint
-      sourceCauseId: varint
-      sourceDirectId: varint
+      sourceCauseId: optvarint
+      sourceDirectId: optvarint
       sourcePosition?: vec3f64
    # MC: ClientboundDebugBlockValuePacket
    packet_debug_block_value:

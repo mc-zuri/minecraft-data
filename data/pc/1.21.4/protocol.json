@@ -4749,11 +4749,11 @@
             },
             {
               "name": "sourceCauseId",
-              "type": "varint"
+              "type": "optvarint"
             },
             {
               "name": "sourceDirectId",
-              "type": "varint"
+              "type": "optvarint"
             },
             {
               "name": "sourcePosition",
