@@ -119,7 +119,8 @@ packet_disconnect:
    # meaning it will be sent directly to the main menu.
    hide_disconnect_reason: bool
    # An optional message to show when disconnected.
-   message: string
+   message: hide_disconnect_reason ?
+      if false: string
 
 
 packet_resource_packs_info:
@@ -1973,10 +1974,10 @@ packet_update_trade:
    trade_tier: varint
    # VillagerUniqueID is the unique ID of the villager entity that the player is trading with. The
    # TradeTier sent above applies to this villager.
-   villager_unique_id: varint64
+   villager_unique_id: zigzag64
    # EntityUniqueID is the unique ID of the entity (usually a player) for which the trades are updated. The
    # updated trades may apply only to this entity.
-   entity_unique_id: varint64
+   entity_unique_id: zigzag64
    # DisplayName is the name displayed at the top of the trading UI. It is usually used to represent the
    # profession of the villager in the UI.
    display_name: string
@@ -2005,7 +2006,7 @@ packet_update_equipment:
    window_type: WindowType
    # Size is the size of the horse inventory that should be opened. A bigger size does, in fact, change the
    # amount of slots displayed.
-   size: u8
+   size: varint
    # EntityUniqueID is the unique ID of the entity whose equipment was 'updated' to the player. It is
    # typically the horse entity that had its inventory opened.
    entity_id: zigzag64
@@ -2321,7 +2322,7 @@ packet_photo_transfer:
    image_name: string
    # PhotoData is the raw data of the photo image. The format of this data may vary: Formats such as JPEG or
    # PNG work, as long as PhotoName has the correct extension.
-   image_data: string
+   image_data: ["buffer", {"countType": "varint"}]
    # BookID is the ID of the book that the photo is associated with. If the PhotoName in a book with this ID
    # is set to PhotoName, it will display the photo (provided Education Edition is used).
    # The photo image is downloaded to a sub-folder with this book ID.
@@ -2913,7 +2914,6 @@ packet_education_settings:
    has_external_link_settings: bool
    external_link_settings: has_external_link_settings ?
       if true:
-         has: bool
          url: string
          display_name: string
 
@@ -3091,8 +3091,6 @@ packet_player_auth_input:
          data: TransactionUseItem
    item_stack_request: input_data.item_stack_request ?
       if true: ItemStackRequest
-   predicted_vehicle: input_data.client_predicted_vehicle ?
-      if true: zigzag64
    block_action: input_data.block_action ?
       if true: []zigzag32
          action: Action
@@ -3106,6 +3104,8 @@ packet_player_auth_input:
                face: zigzag32
    # AnalogueMoveVector is a Vec2 that specifies the direction in which the player moved, as a combination of X/Z
    # values which are created using an analogue input.
+   predicted_vehicle: input_data.client_predicted_vehicle ?
+      if true: zigzag64
    analogue_move_vector: vec2f
 
 InputFlag: [ "bitflags", {
@@ -3433,6 +3433,9 @@ packet_correct_player_move_prediction:
    on_ground: bool
    # Tick is the tick of the movement which was corrected by this packet.
    tick: varint64
+   prediction_type: u8 =>
+      0: player
+      1: vehicle
 
 # ItemComponent is sent by the server to attach client-side components to a custom item.
 packet_item_component:
@@ -3507,7 +3510,8 @@ packet_remove_volume_entity:
    !id: 0xa7
    !bound: client
    # The Runtime Entity ID
-   entity_id: varint64
+   entity_id: varint
+   dimension: zigzag32
 
 # SimulationType is an in-progress packet. We currently do not know the use case.
 packet_simulation_type:
@@ -3711,7 +3715,7 @@ packet_agent_action:
    !id: 0xb5
    !bound: client
    request_id: string
-   action_type: zigzag32 =>
+   action_type: li32 =>
    - none
    - attack
    - collect
@@ -4059,10 +4063,11 @@ packet_camera_instruction:
       default?: bool
    clear?: bool
    fade?:
-      fade_in_duration: lf32
-      wait_duration: lf32
-      fade_out_duration: lf32
-      color_rgb: vec3f
+      time?:
+         fade_in_duration: lf32
+         wait_duration: lf32
+         fade_out_duration: lf32
+      color_rgb?: vec3f
 
 
 packet_compressed_biome_definitions:
@@ -4074,7 +4079,7 @@ packet_compressed_biome_definitions:
    # generation.
    # 
    # The data is compressed with a cursed home-brewed compression format, and it's a miracle it even works.
-   raw_payload: string
+   raw_payload: ByteArray
 
 packet_trim_data:
    !id: 0x12e

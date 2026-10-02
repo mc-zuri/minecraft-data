@@ -2419,7 +2419,7 @@
         },
         {
           "name": "option_id",
-          "type": "zigzag32"
+          "type": "varint"
         }
       ]
     ],
@@ -2588,7 +2588,29 @@
             {
               "compareTo": "type",
               "fields": {
-                "invalid": "void"
+                "invalid": [
+                  "container",
+                  [
+                    {
+                      "name": "count",
+                      "type": "li16"
+                    },
+                    {
+                      "name": "block_runtime_id",
+                      "type": "varint"
+                    },
+                    {
+                      "name": "extra",
+                      "type": [
+                        "encapsulated",
+                        {
+                          "lengthType": "varint",
+                          "type": "ItemExtraDataWithoutBlockingTick"
+                        }
+                      ]
+                    }
+                  ]
+                ]
               },
               "default": [
                 "container",
@@ -2600,27 +2622,42 @@
                   {
                     "name": "metadata",
                     "type": "zigzag32"
+                  },
+                  {
+                    "name": "count",
+                    "type": "li16"
+                  },
+                  {
+                    "name": "block_runtime_id",
+                    "type": "varint"
+                  },
+                  {
+                    "name": "extra",
+                    "type": [
+                      "switch",
+                      {
+                        "compareTo": "name",
+                        "fields": {
+                          "minecraft:shield": [
+                            "encapsulated",
+                            {
+                              "lengthType": "varint",
+                              "type": "ItemExtraDataWithBlockingTick"
+                            }
+                          ]
+                        },
+                        "default": [
+                          "encapsulated",
+                          {
+                            "lengthType": "varint",
+                            "type": "ItemExtraDataWithoutBlockingTick"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               ]
-            }
-          ]
-        },
-        {
-          "name": "count",
-          "type": "li16"
-        },
-        {
-          "name": "block_runtime_id",
-          "type": "varint"
-        },
-        {
-          "name": "extra",
-          "type": [
-            "encapsulated",
-            {
-              "lengthType": "varint",
-              "type": "ItemExtraDataWithoutBlockingTick"
             }
           ]
         }
@@ -4674,20 +4711,8 @@
           "type": "lf32"
         },
         {
-          "name": "has_ease_type",
-          "type": "bool"
-        },
-        {
           "name": "ease_type",
-          "type": [
-            "switch",
-            {
-              "compareTo": "has_ease_type",
-              "fields": {
-                "true": "string"
-              }
-            }
-          ]
+          "type": "string"
         }
       ]
     ],
@@ -4699,20 +4724,8 @@
           "type": "lf32"
         },
         {
-          "name": "has_spline_type",
-          "type": "bool"
-        },
-        {
           "name": "spline_type",
-          "type": [
-            "switch",
-            {
-              "compareTo": "has_spline_type",
-              "fields": {
-                "true": "string"
-              }
-            }
-          ]
+          "type": "u8"
         },
         {
           "name": "curve",
@@ -4746,17 +4759,11 @@
         },
         {
           "name": "spline_identifier",
-          "type": [
-            "option",
-            "string"
-          ]
+          "type": "string"
         },
         {
           "name": "load_from_json",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         }
       ]
     ],
@@ -4772,20 +4779,8 @@
           "type": "lf32"
         },
         {
-          "name": "has_ease_type",
-          "type": "bool"
-        },
-        {
           "name": "ease_type",
-          "type": [
-            "switch",
-            {
-              "compareTo": "has_ease_type",
-              "fields": {
-                "true": "string"
-              }
-            }
-          ]
+          "type": "string"
         }
       ]
     ],
@@ -5120,20 +5115,6 @@
       "container",
       [
         {
-          "name": "experience_name",
-          "type": [
-            "option",
-            "string"
-          ]
-        },
-        {
-          "name": "world_name",
-          "type": [
-            "option",
-            "string"
-          ]
-        },
-        {
           "name": "rich_presence_id",
           "type": [
             "option",
@@ -5344,7 +5325,7 @@
           "name": "dynamic_container_id",
           "type": [
             "option",
-            "u32"
+            "lu32"
           ]
         }
       ]
@@ -6631,46 +6612,8 @@
           "type": "li32"
         },
         {
-          "name": "weight_type",
-          "type": [
-            "mapper",
-            {
-              "type": "varint",
-              "mappings": {
-                "0": "float",
-                "1": "string"
-              }
-            }
-          ]
-        },
-        {
-          "anon": true,
-          "type": [
-            "switch",
-            {
-              "compareTo": "weight_type",
-              "fields": {
-                "float": [
-                  "container",
-                  [
-                    {
-                      "name": "float_weight",
-                      "type": "lf32"
-                    }
-                  ]
-                ],
-                "string": [
-                  "container",
-                  [
-                    {
-                      "name": "string_weight",
-                      "type": "string"
-                    }
-                  ]
-                ]
-              }
-            }
-          ]
+          "name": "weight",
+          "type": "lf32"
         },
         {
           "name": "enabled",
@@ -7151,6 +7094,57 @@
         {
           "name": "party_leader",
           "type": "bool"
+        }
+      ]
+    ],
+    "SoundEventUpdate": [
+      "container",
+      [
+        {
+          "name": "type",
+          "type": [
+            "mapper",
+            {
+              "type": "varint",
+              "mappings": {
+                "0": "stop",
+                "1": "volume",
+                "2": "pitch",
+                "3": "fade",
+                "4": "seek_to",
+                "5": "pause",
+                "6": "resume"
+              }
+            }
+          ]
+        },
+        {
+          "name": "data",
+          "type": [
+            "switch",
+            {
+              "compareTo": "type",
+              "fields": {
+                "volume": "lf32",
+                "pitch": "lf32",
+                "fade": [
+                  "container",
+                  [
+                    {
+                      "name": "duration",
+                      "type": "lf32"
+                    },
+                    {
+                      "name": "target_volume",
+                      "type": "lf32"
+                    }
+                  ]
+                ],
+                "seek_to": "lf32"
+              },
+              "default": "void"
+            }
+          ]
         }
       ]
     ],
@@ -8369,7 +8363,10 @@
         },
         {
           "name": "experimental_gameplay_override",
-          "type": "bool"
+          "type": [
+            "option",
+            "bool"
+          ]
         },
         {
           "name": "chat_restriction_level",
@@ -9751,7 +9748,7 @@
       [
         {
           "name": "window_id",
-          "type": "WindowIDVarint"
+          "type": "WindowID"
         },
         {
           "name": "slot",
@@ -11085,11 +11082,11 @@
         },
         {
           "name": "villager_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "entity_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "display_name",
@@ -11122,7 +11119,7 @@
         },
         {
           "name": "size",
-          "type": "u8"
+          "type": "varint"
         },
         {
           "name": "entity_id",
@@ -11364,7 +11361,10 @@
         },
         {
           "name": "filtered_structure_name",
-          "type": "string"
+          "type": [
+            "option",
+            "string"
+          ]
         },
         {
           "name": "data_field",
@@ -11663,7 +11663,12 @@
         },
         {
           "name": "image_data",
-          "type": "string"
+          "type": [
+            "buffer",
+            {
+              "countType": "varint"
+            }
+          ]
         },
         {
           "name": "book_id",
@@ -12641,10 +12646,6 @@
                   "container",
                   [
                     {
-                      "name": "has",
-                      "type": "bool"
-                    },
-                    {
                       "name": "url",
                       "type": "string"
                     },
@@ -13567,13 +13568,34 @@
       "container",
       [
         {
-          "name": "shapes",
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "name": "marker",
           "type": [
-            "array",
-            {
-              "countType": "varint",
-              "type": "PrimitiveShape"
-            }
+            "option",
+            [
+              "container",
+              [
+                {
+                  "name": "text",
+                  "type": "string"
+                },
+                {
+                  "name": "position",
+                  "type": "vec3f"
+                },
+                {
+                  "name": "color",
+                  "type": "lu32"
+                },
+                {
+                  "name": "duration",
+                  "type": "lu64"
+                }
+              ]
+            ]
           ]
         }
       ]
@@ -13637,7 +13659,11 @@
       [
         {
           "name": "entity_id",
-          "type": "varint64"
+          "type": "varint"
+        },
+        {
+          "name": "dimension",
+          "type": "zigzag32"
         }
       ]
     ],
@@ -14069,7 +14095,7 @@
           "type": [
             "mapper",
             {
-              "type": "zigzag32",
+              "type": "li32",
               "mappings": {
                 "0": "none",
                 "1": "attack",
@@ -14328,7 +14354,19 @@
         },
         {
           "name": "payload",
-          "type": "nbt"
+          "type": [
+            "container",
+            [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "data",
+                "type": "string"
+              }
+            ]
+          ]
         }
       ]
     ],
@@ -14637,20 +14675,34 @@
               "container",
               [
                 {
-                  "name": "fade_in_duration",
-                  "type": "lf32"
-                },
-                {
-                  "name": "wait_duration",
-                  "type": "lf32"
-                },
-                {
-                  "name": "fade_out_duration",
-                  "type": "lf32"
+                  "name": "time",
+                  "type": [
+                    "option",
+                    [
+                      "container",
+                      [
+                        {
+                          "name": "fade_in_duration",
+                          "type": "lf32"
+                        },
+                        {
+                          "name": "wait_duration",
+                          "type": "lf32"
+                        },
+                        {
+                          "name": "fade_out_duration",
+                          "type": "lf32"
+                        }
+                      ]
+                    ]
+                  ]
                 },
                 {
                   "name": "color_rgb",
-                  "type": "vec3f"
+                  "type": [
+                    "option",
+                    "vec3f"
+                  ]
                 }
               ]
             ]
@@ -14702,7 +14754,7 @@
                 },
                 {
                   "name": "ease_type",
-                  "type": "EaseType"
+                  "type": "string"
                 },
                 {
                   "name": "clear",
@@ -15102,11 +15154,14 @@
         {
           "name": "system_categories",
           "type": [
-            "array",
-            {
-              "countType": "varint",
-              "type": "SystemCategory"
-            }
+            "option",
+            [
+              "array",
+              {
+                "countType": "varint",
+                "type": "SystemCategory"
+              }
+            ]
           ]
         },
         {
@@ -15637,7 +15692,7 @@
       [
         {
           "name": "runtime_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "property_index",
@@ -15659,8 +15714,8 @@
           ]
         },
         {
-          "name": "legacy_type",
-          "type": "u8"
+          "name": "type_name",
+          "type": "string"
         },
         {
           "name": "value",
@@ -15952,19 +16007,19 @@
           "type": "string"
         },
         {
+          "name": "player_id",
+          "type": [
+            "option",
+            "string"
+          ]
+        },
+        {
           "name": "parameter_type",
           "type": "GraphicsOverrideParameterType"
         },
         {
           "name": "reset",
           "type": "bool"
-        },
-        {
-          "name": "player_id",
-          "type": [
-            "option",
-            "string"
-          ]
         }
       ]
     ],
@@ -15988,7 +16043,7 @@
           "type": [
             "mapper",
             {
-              "type": "lu32",
+              "type": "varint",
               "mappings": {
                 "0": "double",
                 "1": "bool",
@@ -16207,10 +16262,7 @@
       [
         {
           "name": "form_id",
-          "type": [
-            "option",
-            "lu32"
-          ]
+          "type": "lu32"
         },
         {
           "name": "close_reason",
@@ -16459,128 +16511,31 @@
         },
         {
           "name": "stop",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundEventUpdate"
         },
         {
           "name": "volume",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                },
-                {
-                  "name": "volume",
-                  "type": "lf32"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundEventUpdate"
         },
         {
           "name": "pitch",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                },
-                {
-                  "name": "pitch",
-                  "type": "lf32"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundEventUpdate"
         },
         {
           "name": "fade",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                },
-                {
-                  "name": "target_volume",
-                  "type": "lf32"
-                },
-                {
-                  "name": "duration",
-                  "type": "lf32"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundEventUpdate"
         },
         {
           "name": "seek_to",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                },
-                {
-                  "name": "seconds",
-                  "type": "lf32"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundEventUpdate"
         },
         {
           "name": "pause",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundEventUpdate"
         },
         {
           "name": "resume",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundEventUpdate"
         }
       ]
     ],

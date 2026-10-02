@@ -43,7 +43,6 @@
     "lnbt": "native",
     "nbtLoop": "native",
     "enum_size_based_on_values_len": "native",
-    "MapInfo": "native",
     "BehaviourPackInfos": [
       "array",
       {
@@ -918,7 +917,7 @@
         },
         {
           "name": "hotbar_slot",
-          "type": "varint"
+          "type": "zigzag32"
         },
         {
           "name": "held_item",
@@ -1221,7 +1220,7 @@
       [
         {
           "name": "stack_id",
-          "type": "varint"
+          "type": "zigzag32"
         },
         {
           "name": "item",
@@ -1686,7 +1685,7 @@
         },
         {
           "name": "data",
-          "type": "string"
+          "type": "ByteArray"
         }
       ]
     ],
@@ -2103,62 +2102,56 @@
         }
       ]
     ],
-    "EnchantOptions": [
-      "array",
-      {
-        "countType": "varint",
-        "type": [
-          "container",
-          [
+    "EnchantOption": [
+      "container",
+      [
+        {
+          "name": "cost",
+          "type": "varint"
+        },
+        {
+          "name": "slot_flags",
+          "type": "li32"
+        },
+        {
+          "name": "equip_enchants",
+          "type": [
+            "array",
             {
-              "name": "cost",
-              "type": "varint"
-            },
-            {
-              "name": "slot_flags",
-              "type": "li32"
-            },
-            {
-              "name": "equip_enchants",
-              "type": [
-                "array",
-                {
-                  "countType": "varint",
-                  "type": "Enchant"
-                }
-              ]
-            },
-            {
-              "name": "held_enchants",
-              "type": [
-                "array",
-                {
-                  "countType": "varint",
-                  "type": "Enchant"
-                }
-              ]
-            },
-            {
-              "name": "self_enchants",
-              "type": [
-                "array",
-                {
-                  "countType": "varint",
-                  "type": "Enchant"
-                }
-              ]
-            },
-            {
-              "name": "name",
-              "type": "string"
-            },
-            {
-              "name": "option_id",
-              "type": "zigzag32"
+              "countType": "varint",
+              "type": "Enchant"
             }
           ]
-        ]
-      }
+        },
+        {
+          "name": "held_enchants",
+          "type": [
+            "array",
+            {
+              "countType": "varint",
+              "type": "Enchant"
+            }
+          ]
+        },
+        {
+          "name": "self_enchants",
+          "type": [
+            "array",
+            {
+              "countType": "varint",
+              "type": "Enchant"
+            }
+          ]
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "option_id",
+          "type": "varint"
+        }
+      ]
     ],
     "Action": [
       "mapper",
@@ -2407,10 +2400,6 @@
                               {
                                 "name": "recipe_network_id",
                                 "type": "varint"
-                              },
-                              {
-                                "name": "times_crafted",
-                                "type": "u8"
                               }
                             ]
                           ],
@@ -2499,7 +2488,7 @@
             },
             {
               "name": "request_id",
-              "type": "varint"
+              "type": "zigzag32"
             },
             {
               "anon": true,
@@ -2547,7 +2536,7 @@
                                             },
                                             {
                                               "name": "item_stack_id",
-                                              "type": "varint"
+                                              "type": "zigzag32"
                                             },
                                             {
                                               "name": "custom_name",
@@ -2950,6 +2939,157 @@
           "113": "panda"
         }
       }
+    ],
+    "TrackedObject": [
+      "container",
+      [
+        {
+          "name": "type",
+          "type": [
+            "mapper",
+            {
+              "type": "li32",
+              "mappings": {
+                "0": "entity",
+                "1": "block"
+              }
+            }
+          ]
+        },
+        {
+          "name": "entity_unique_id",
+          "type": [
+            "switch",
+            {
+              "compareTo": "type",
+              "fields": {
+                "entity": "zigzag64"
+              }
+            }
+          ]
+        },
+        {
+          "name": "block_position",
+          "type": [
+            "switch",
+            {
+              "compareTo": "type",
+              "fields": {
+                "block": "BlockCoordinates"
+              }
+            }
+          ]
+        }
+      ]
+    ],
+    "MapDecoration": [
+      "container",
+      [
+        {
+          "name": "type",
+          "type": [
+            "mapper",
+            {
+              "type": "u8",
+              "mappings": {
+                "0": "marker_white",
+                "1": "marker_green",
+                "2": "marker_red",
+                "3": "marker_blue",
+                "4": "cross_white",
+                "5": "triangle_red",
+                "6": "square_white",
+                "7": "marker_sign",
+                "8": "marker_pink",
+                "9": "marker_orange",
+                "10": "marker_yellow",
+                "11": "marker_teal",
+                "12": "triangle_green",
+                "13": "small_square_white",
+                "14": "mansion",
+                "15": "monument",
+                "16": "no_draw",
+                "17": "village_desert",
+                "18": "village_plains",
+                "19": "village_savanna",
+                "20": "village_snowy",
+                "21": "village_taiga",
+                "22": "jungle_temple",
+                "23": "witch_hut"
+              }
+            }
+          ]
+        },
+        {
+          "name": "rotation",
+          "type": "u8"
+        },
+        {
+          "name": "x",
+          "type": "u8"
+        },
+        {
+          "name": "y",
+          "type": "u8"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "color_abgr",
+          "type": "varint"
+        }
+      ]
+    ],
+    "StructureBlockSettings": [
+      "container",
+      [
+        {
+          "name": "palette_name",
+          "type": "string"
+        },
+        {
+          "name": "ignore_entities",
+          "type": "bool"
+        },
+        {
+          "name": "ignore_blocks",
+          "type": "bool"
+        },
+        {
+          "name": "size",
+          "type": "BlockCoordinates"
+        },
+        {
+          "name": "structure_offset",
+          "type": "BlockCoordinates"
+        },
+        {
+          "name": "last_editing_player_unique_id",
+          "type": "zigzag64"
+        },
+        {
+          "name": "rotation",
+          "type": "u8"
+        },
+        {
+          "name": "mirror",
+          "type": "u8"
+        },
+        {
+          "name": "integrity",
+          "type": "lf32"
+        },
+        {
+          "name": "seed",
+          "type": "lu32"
+        },
+        {
+          "name": "pivot",
+          "type": "vec3f"
+        }
+      ]
     ],
     "mcpe_packet": [
       "container",
@@ -3378,7 +3518,15 @@
         },
         {
           "name": "message",
-          "type": "string"
+          "type": [
+            "switch",
+            {
+              "compareTo": "hide_disconnect_reason",
+              "fields": {
+                "false": "string"
+              }
+            }
+          ]
         }
       ]
     ],
@@ -4314,7 +4462,7 @@
         },
         {
           "name": "coordinates",
-          "type": "BlockCoordinates"
+          "type": "vec3f"
         },
         {
           "name": "direction",
@@ -4772,7 +4920,11 @@
       "container",
       [
         {
-          "name": "health",
+          "name": "cause",
+          "type": "zigzag32"
+        },
+        {
+          "name": "damage",
           "type": "zigzag32"
         }
       ]
@@ -5429,12 +5581,144 @@
         }
       ]
     ],
+    "UpdateMapFlags": [
+      "bitflags",
+      {
+        "type": "varint",
+        "flags": [
+          "void",
+          "texture",
+          "decoration",
+          "initialisation"
+        ]
+      }
+    ],
     "packet_clientbound_map_item_data": [
       "container",
       [
         {
-          "name": "mapinfo",
-          "type": "MapInfo"
+          "name": "map_id",
+          "type": "zigzag64"
+        },
+        {
+          "name": "update_flags",
+          "type": "UpdateMapFlags"
+        },
+        {
+          "name": "dimension",
+          "type": "u8"
+        },
+        {
+          "name": "locked",
+          "type": "bool"
+        },
+        {
+          "name": "included_in",
+          "type": [
+            "switch",
+            {
+              "compareTo": "update_flags.initialisation",
+              "fields": {
+                "true": [
+                  "array",
+                  {
+                    "countType": "varint",
+                    "type": "zigzag64"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "scale",
+          "type": [
+            "switch",
+            {
+              "compareTo": "update_flags.initialisation || update_flags.decoration || update_flags.texture",
+              "fields": {
+                "true": "u8"
+              }
+            }
+          ]
+        },
+        {
+          "name": "tracked",
+          "type": [
+            "switch",
+            {
+              "compareTo": "update_flags.decoration",
+              "fields": {
+                "true": [
+                  "container",
+                  [
+                    {
+                      "name": "objects",
+                      "type": [
+                        "array",
+                        {
+                          "countType": "varint",
+                          "type": "TrackedObject"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "decorations",
+                      "type": [
+                        "array",
+                        {
+                          "countType": "varint",
+                          "type": "MapDecoration"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "texture",
+          "type": [
+            "switch",
+            {
+              "compareTo": "update_flags.texture",
+              "fields": {
+                "true": [
+                  "container",
+                  [
+                    {
+                      "name": "width",
+                      "type": "zigzag32"
+                    },
+                    {
+                      "name": "height",
+                      "type": "zigzag32"
+                    },
+                    {
+                      "name": "x_offset",
+                      "type": "zigzag32"
+                    },
+                    {
+                      "name": "y_offset",
+                      "type": "zigzag32"
+                    },
+                    {
+                      "name": "pixels",
+                      "type": [
+                        "array",
+                        {
+                          "countType": "varint",
+                          "type": "varint"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
         }
       ]
     ],
@@ -5529,6 +5813,31 @@
             {
               "compareTo": "type",
               "fields": {
+                "show_bar": [
+                  "container",
+                  [
+                    {
+                      "name": "title",
+                      "type": "string"
+                    },
+                    {
+                      "name": "progress",
+                      "type": "lf32"
+                    },
+                    {
+                      "name": "screen_darkening",
+                      "type": "li16"
+                    },
+                    {
+                      "name": "color",
+                      "type": "varint"
+                    },
+                    {
+                      "name": "overlay",
+                      "type": "varint"
+                    }
+                  ]
+                ],
                 "register_player": [
                   "container",
                   [
@@ -5547,16 +5856,21 @@
                     }
                   ]
                 ],
-                "show_bar": [
+                "set_bar_progress": [
+                  "container",
+                  [
+                    {
+                      "name": "progress",
+                      "type": "lf32"
+                    }
+                  ]
+                ],
+                "set_bar_title": [
                   "container",
                   [
                     {
                       "name": "title",
                       "type": "string"
-                    },
-                    {
-                      "name": "bar_progress",
-                      "type": "lf32"
                     }
                   ]
                 ],
@@ -5564,8 +5878,16 @@
                   "container",
                   [
                     {
-                      "name": "darkness_factor",
+                      "name": "screen_darkening",
                       "type": "li16"
+                    },
+                    {
+                      "name": "color",
+                      "type": "varint"
+                    },
+                    {
+                      "name": "overlay",
+                      "type": "varint"
                     }
                   ]
                 ],
@@ -5579,24 +5901,6 @@
                     {
                       "name": "overlay",
                       "type": "varint"
-                    }
-                  ]
-                ],
-                "set_bar_progress": [
-                  "container",
-                  [
-                    {
-                      "name": "bar_progress",
-                      "type": "lf32"
-                    }
-                  ]
-                ],
-                "set_bar_title": [
-                  "container",
-                  [
-                    {
-                      "name": "title",
-                      "type": "string"
                     }
                   ]
                 ]
@@ -6096,11 +6400,11 @@
         },
         {
           "name": "villager_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "entity_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "display_name",
@@ -6133,7 +6437,7 @@
         },
         {
           "name": "size",
-          "type": "u8"
+          "type": "varint"
         },
         {
           "name": "entity_id",
@@ -6311,7 +6615,44 @@
     ],
     "packet_structure_block_update": [
       "container",
-      []
+      [
+        {
+          "name": "position",
+          "type": "BlockCoordinates"
+        },
+        {
+          "name": "structure_name",
+          "type": "string"
+        },
+        {
+          "name": "data_field",
+          "type": "string"
+        },
+        {
+          "name": "include_players",
+          "type": "bool"
+        },
+        {
+          "name": "show_bounding_box",
+          "type": "bool"
+        },
+        {
+          "name": "structure_block_type",
+          "type": "zigzag32"
+        },
+        {
+          "name": "settings",
+          "type": "StructureBlockSettings"
+        },
+        {
+          "name": "redstone_save_mode",
+          "type": "zigzag32"
+        },
+        {
+          "name": "should_trigger",
+          "type": "bool"
+        }
+      ]
     ],
     "packet_show_store_offer": [
       "container",
@@ -6538,7 +6879,12 @@
         },
         {
           "name": "image_data",
-          "type": "string"
+          "type": [
+            "buffer",
+            {
+              "countType": "varint"
+            }
+          ]
         },
         {
           "name": "unknown2",
@@ -6705,7 +7051,7 @@
           "type": [
             "mapper",
             {
-              "type": "varint64",
+              "type": "varint",
               "mappings": {
                 "0": "entity",
                 "1": "create",
@@ -7102,19 +7448,94 @@
     ],
     "packet_on_screen_texture_animation": [
       "container",
-      []
+      [
+        {
+          "name": "animation_type",
+          "type": "lu32"
+        }
+      ]
     ],
     "packet_map_create_locked_copy": [
       "container",
-      []
+      [
+        {
+          "name": "original_map_id",
+          "type": "zigzag64"
+        },
+        {
+          "name": "new_map_id",
+          "type": "zigzag64"
+        }
+      ]
     ],
     "packet_structure_template_data_export_request": [
       "container",
-      []
+      [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "position",
+          "type": "BlockCoordinates"
+        },
+        {
+          "name": "settings",
+          "type": "StructureBlockSettings"
+        },
+        {
+          "name": "request_type",
+          "type": [
+            "mapper",
+            {
+              "type": "u8",
+              "mappings": {
+                "1": "export_from_save",
+                "2": "export_from_load",
+                "3": "query_saved_structure"
+              }
+            }
+          ]
+        }
+      ]
     ],
     "packet_structure_template_data_export_response": [
       "container",
-      []
+      [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "success",
+          "type": "bool"
+        },
+        {
+          "name": "nbt",
+          "type": [
+            "switch",
+            {
+              "compareTo": "success",
+              "fields": {
+                "true": "nbt"
+              }
+            }
+          ]
+        },
+        {
+          "name": "response_type",
+          "type": [
+            "mapper",
+            {
+              "type": "u8",
+              "mappings": {
+                "1": "export",
+                "2": "query"
+              }
+            }
+          ]
+        }
+      ]
     ],
     "packet_update_block_properties": [
       "container",
@@ -7603,8 +8024,14 @@
       "container",
       [
         {
-          "name": "enchant_options",
-          "type": "EnchantOptions"
+          "name": "options",
+          "type": [
+            "array",
+            {
+              "countType": "varint",
+              "type": "EnchantOption"
+            }
+          ]
         }
       ]
     ],

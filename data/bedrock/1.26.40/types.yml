@@ -969,7 +969,7 @@ EnchantOption:
    held_enchants: Enchant[]varint
    self_enchants: Enchant[]varint
    name: string
-   option_id: zigzag32
+   option_id: varint
 
 Action: zigzag32 =>
    0: start_break
@@ -1058,14 +1058,19 @@ ItemStackRequestInstanceDescriptor:
       1: name
    # The descriptor kind again, as a byte.
    legacy_type: u8
+   # (count, block_runtime_id and extra are in each case, where the extra data can see the name)
    _: type ?
-      if invalid: void
+      if invalid:
+         count: li16
+         block_runtime_id: varint
+         extra: '["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithoutBlockingTick" }]'
       default:
          name: string
          metadata: zigzag32
-   count: li16
-   block_runtime_id: varint
-   extra: '["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithoutBlockingTick" }]'
+         count: li16
+         block_runtime_id: varint
+         # A shield's extra data has its blocking tick, as an item's has by the ShieldItemID (a live client's shield craft)
+         extra: '["switch", { "compareTo": "name", "fields": { "minecraft:shield": ["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithBlockingTick" }] }, "default": ["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithoutBlockingTick" }] }]'
 
 # ItemStackRequest is sent by the client to change item stacks in an inventory. It is essentially a
 # replacement of the InventoryTransaction packet added in 1.16 for inventory specific actions, such as moving
@@ -2511,36 +2516,23 @@ CameraPresets:
 
 # CameraRotationOption represents a rotation keyframe option for spline instructions.
 CameraRotationOption:
-   # Value is the rotation value for the keyframe.
    value: vec3f
-   # Time is the time of the keyframe within the spline.
    time: lf32
-   has_ease_type: bool
-   ease_type: has_ease_type ?
-      if true: string
+   ease_type: string
 
-# CameraSplineInstruction represents a camera spline instruction definition.
 CameraSplineInstruction:
-   # TotalTime is the total time for the spline animation.
    total_time: lf32
-   has_spline_type: bool
-   spline_type: has_spline_type ?
-      if true: string
-   # Curve is the list of curve points defining the spline.
+   spline_type: u8
    curve: vec3f[]varint
-   # ProgressKeyFrames is a list of key frames for the spline progress.
    progress_key_frames: CameraProgressOption[]varint
-   # RotationOptions is a list of rotation keyframes for the spline.
    rotation_options: CameraRotationOption[]varint
-   spline_identifier?: string
-   load_from_json?: bool
+   spline_identifier: string
+   load_from_json: bool
 
 CameraProgressOption:
    value: lf32
    time: lf32
-   has_ease_type: bool
-   ease_type: has_ease_type ?
-      if true: string
+   ease_type: string
 
 CameraSplineDefinition:
    name: string
@@ -2683,8 +2675,6 @@ StoreEntryPointInfo:
    store_name: string
 
 PresenceInfo:
-   experience_name?: string
-   world_name?: string
    rich_presence_id?: string
 
 ServerJoinInformation:
@@ -2848,7 +2838,7 @@ DisconnectFailReason: zigzag32 =>
 
 FullContainerName:
    container_id: ContainerSlotType
-   dynamic_container_id?: u32
+   dynamic_container_id?: lu32
 
 MovementEffectType: varint =>
    -1: invalid
@@ -3354,14 +3344,7 @@ WorldClockData:
 
 AttributeLayerSettings:
    priority: li32
-   weight_type: varint =>
-      0: float
-      1: string
-   _: weight_type ?
-      if float:
-         float_weight: lf32
-      if string:
-         string_weight: string
+   weight: lf32
    enabled: bool
    transitions_paused: bool
 
@@ -3479,3 +3462,22 @@ ShapeArrow:
 PartyInfo:
    party_id: string
    party_leader: bool
+
+SoundEventUpdate:
+   type: varint =>
+      0: stop
+      1: volume
+      2: pitch
+      3: fade
+      4: seek_to
+      5: pause
+      6: resume
+   data: type ?
+      if volume: lf32
+      if pitch: lf32
+      if fade:
+         duration: lf32
+         target_volume: lf32
+      if seek_to: lf32
+      default: void
+

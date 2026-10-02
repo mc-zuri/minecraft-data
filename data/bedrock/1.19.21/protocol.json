@@ -2217,7 +2217,7 @@
         },
         {
           "name": "option_id",
-          "type": "zigzag32"
+          "type": "varint"
         }
       ]
     ],
@@ -2542,11 +2542,11 @@
                             [
                               {
                                 "name": "recipe_network_id",
-                                "type": "varint"
+                                "type": "zigzag32"
                               },
                               {
                                 "name": "cost",
-                                "type": "varint"
+                                "type": "zigzag32"
                               }
                             ]
                           ],
@@ -4455,7 +4455,15 @@
         },
         {
           "name": "message",
-          "type": "string"
+          "type": [
+            "switch",
+            {
+              "compareTo": "hide_disconnect_reason",
+              "fields": {
+                "false": "string"
+              }
+            }
+          ]
         }
       ]
     ],
@@ -7531,11 +7539,11 @@
         },
         {
           "name": "villager_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "entity_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "display_name",
@@ -7568,7 +7576,7 @@
         },
         {
           "name": "size",
-          "type": "u8"
+          "type": "varint"
         },
         {
           "name": "entity_id",
@@ -8065,7 +8073,12 @@
         },
         {
           "name": "image_data",
-          "type": "string"
+          "type": [
+            "buffer",
+            {
+              "countType": "varint"
+            }
+          ]
         },
         {
           "name": "book_id",
@@ -9085,10 +9098,6 @@
                   "container",
                   [
                     {
-                      "name": "has",
-                      "type": "bool"
-                    },
-                    {
                       "name": "url",
                       "type": "string"
                     },
@@ -10044,7 +10053,11 @@
       [
         {
           "name": "entity_id",
-          "type": "varint64"
+          "type": "varint"
+        },
+        {
+          "name": "dimension",
+          "type": "zigzag32"
         }
       ]
     ],
@@ -10547,7 +10560,7 @@
           "type": [
             "mapper",
             {
-              "type": "zigzag32",
+              "type": "li32",
               "mappings": {
                 "0": "none",
                 "1": "attack",

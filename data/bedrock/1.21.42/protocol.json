@@ -2560,7 +2560,7 @@
         },
         {
           "name": "option_id",
-          "type": "zigzag32"
+          "type": "varint"
         }
       ]
     ],
@@ -2915,11 +2915,15 @@
                             [
                               {
                                 "name": "recipe_network_id",
-                                "type": "varint"
+                                "type": "zigzag32"
+                              },
+                              {
+                                "name": "times_crafted",
+                                "type": "u8"
                               },
                               {
                                 "name": "cost",
-                                "type": "varint"
+                                "type": "zigzag32"
                               }
                             ]
                           ],
@@ -2929,6 +2933,10 @@
                               {
                                 "name": "pattern",
                                 "type": "string"
+                              },
+                              {
+                                "name": "times_crafted",
+                                "type": "u8"
                               }
                             ]
                           ],
@@ -4183,9 +4191,9 @@
           "420": "goat_bass_7",
           "421": "goat_bass_8",
           "422": "goat_bass_9",
-          "423": "_",
-          "424": "_",
-          "425": "_",
+          "423": "undefined_423",
+          "424": "undefined_424",
+          "425": "undefined_425",
           "426": "ImitateWarden",
           "427": "ListeningAngry",
           "428": "ItemGiven",
@@ -4272,7 +4280,7 @@
           "509": "wind_charge_burst",
           "510": "imitate_drowned",
           "511": "bundle_insert_failed",
-          "512": "_",
+          "512": "undefined_512",
           "513": "armor_crack_wolf",
           "514": "armor_break_wolf",
           "515": "armor_repair_wolf",
@@ -4284,7 +4292,7 @@
           "521": "ominous_bottle_end_use",
           "522": "mace_smash_heavy_ground",
           "523": "ominous_item_spawner_spawn_item_begin",
-          "524": "_",
+          "524": "undefined_524",
           "525": "apply_effect_bad_omen",
           "526": "apply_effect_raid_omen",
           "527": "apply_effect_trial_omen",
@@ -4728,7 +4736,7 @@
           "name": "dynamic_container_id",
           "type": [
             "option",
-            "u32"
+            "lu32"
           ]
         }
       ]
@@ -8577,11 +8585,11 @@
         },
         {
           "name": "villager_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "entity_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "display_name",
@@ -8614,7 +8622,7 @@
         },
         {
           "name": "size",
-          "type": "u8"
+          "type": "varint"
         },
         {
           "name": "entity_id",
@@ -9137,7 +9145,12 @@
         },
         {
           "name": "image_data",
-          "type": "string"
+          "type": [
+            "buffer",
+            {
+              "countType": "varint"
+            }
+          ]
         },
         {
           "name": "book_id",
@@ -10137,10 +10150,6 @@
                   "container",
                   [
                     {
-                      "name": "has",
-                      "type": "bool"
-                    },
-                    {
                       "name": "url",
                       "type": "string"
                     },
@@ -10441,30 +10450,6 @@
           ]
         },
         {
-          "anon": true,
-          "type": [
-            "switch",
-            {
-              "compareTo": "input_data.client_predicted_vehicle",
-              "fields": {
-                "true": [
-                  "container",
-                  [
-                    {
-                      "name": "vehicle_rotation",
-                      "type": "vec2f"
-                    },
-                    {
-                      "name": "predicted_vehicle",
-                      "type": "zigzag64"
-                    }
-                  ]
-                ]
-              }
-            }
-          ]
-        },
-        {
           "name": "block_action",
           "type": [
             "switch",
@@ -10561,6 +10546,30 @@
                       ]
                     ]
                   }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "anon": true,
+          "type": [
+            "switch",
+            {
+              "compareTo": "input_data.client_predicted_vehicle",
+              "fields": {
+                "true": [
+                  "container",
+                  [
+                    {
+                      "name": "vehicle_rotation",
+                      "type": "vec2f"
+                    },
+                    {
+                      "name": "predicted_vehicle",
+                      "type": "zigzag64"
+                    }
+                  ]
                 ]
               }
             }
@@ -11245,7 +11254,11 @@
       [
         {
           "name": "entity_id",
-          "type": "varint64"
+          "type": "varint"
+        },
+        {
+          "name": "dimension",
+          "type": "zigzag32"
         }
       ]
     ],
@@ -11761,7 +11774,7 @@
           "type": [
             "mapper",
             {
-              "type": "zigzag32",
+              "type": "li32",
               "mappings": {
                 "0": "none",
                 "1": "attack",
@@ -12368,20 +12381,34 @@
               "container",
               [
                 {
-                  "name": "fade_in_duration",
-                  "type": "lf32"
-                },
-                {
-                  "name": "wait_duration",
-                  "type": "lf32"
-                },
-                {
-                  "name": "fade_out_duration",
-                  "type": "lf32"
+                  "name": "time",
+                  "type": [
+                    "option",
+                    [
+                      "container",
+                      [
+                        {
+                          "name": "fade_in_duration",
+                          "type": "lf32"
+                        },
+                        {
+                          "name": "wait_duration",
+                          "type": "lf32"
+                        },
+                        {
+                          "name": "fade_out_duration",
+                          "type": "lf32"
+                        }
+                      ]
+                    ]
+                  ]
                 },
                 {
                   "name": "color_rgb",
-                  "type": "vec3f"
+                  "type": [
+                    "option",
+                    "vec3f"
+                  ]
                 }
               ]
             ]

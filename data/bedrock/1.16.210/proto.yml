@@ -21,7 +21,6 @@ nbt: native                                           # NBT
 lnbt: native
 nbtLoop: native
 enum_size_based_on_values_len: native                 # Packet-specific custom logic  
-MapInfo: native
 
 # load the packet map file
 !import: packet_map.yml
@@ -110,7 +109,8 @@ packet_disconnect:
    # meaning it will be sent directly to the main menu.
    hide_disconnect_reason: bool
    # An optional message to show when disconnected.
-   message: string
+   message: hide_disconnect_reason ?
+      if false: string
 
 
 packet_resource_packs_info:
@@ -567,7 +567,7 @@ packet_add_painting:
    !bound: client
    entity_id_self: zigzag64
    runtime_entity_id: varint64
-   coordinates: BlockCoordinates
+   coordinates: vec3f
    direction: zigzag32
    title: string
 
@@ -847,7 +847,8 @@ packet_player_action:
 packet_hurt_armor:
    !id: 0x26
    !bound: client
-   health: zigzag32
+   cause: zigzag32
+   damage: zigzag32
 
 packet_set_entity_data:
    !id: 0x27
@@ -1256,10 +1257,75 @@ packet_spawn_experience_orb:
    position: vec3f
    count: zigzag32
 
+UpdateMapFlags: [ "bitflags", {
+   "type": "varint",
+   "flags": [
+      "void",
+      "texture",
+      "decoration",
+      "initialisation"
+   ]
+}]
+
+# ClientBoundMapItemData is sent by the server to the client to update the data of a map shown to the client.
+# It is sent with a combination of flags that specify what data is updated.
+# The ClientBoundMapItemData packet may be used to update specific parts of the map only. It is not required
+# to send the entire map each time when updating one part.
 packet_clientbound_map_item_data:
    !id: 0x43
    !bound: client
-   mapinfo: MapInfo
+   # MapID is the unique identifier that represents the map that is updated over network. It remains
+   # consistent across sessions.
+   map_id: zigzag64
+   # UpdateFlags is a combination of flags found above that indicate what parts of the map should be updated
+   # client-side.
+   update_flags: UpdateMapFlags
+   # Dimension is the dimension of the map that should be updated, for example the overworld (0), the nether
+   # (1) or the end (2).
+   dimension: u8
+   # LockedMap specifies if the map that was updated was a locked map, which may be done using a cartography
+   # table.
+   locked: bool
+   # The following fields apply only for the MapUpdateFlagInitialisation.
+   # MapsIncludedIn holds an array of map IDs that the map updated is included in. This has to do with the
+   # scale of the map: Each map holds its own map ID and all map IDs of maps that include this map and have
+   # a bigger scale. This means that a scale 0 map will have 5 map IDs in this slice, whereas a scale 4 map
+   # will have only 1 (its own).
+   # The actual use of this field remains unknown.
+   included_in: update_flags.initialisation ?
+      if true: zigzag64[]varint
+   # Scale is the scale of the map as it is shown in-game. It is written when any of the MapUpdateFlags are
+   # set to the UpdateFlags field.
+   scale: update_flags.initialisation || update_flags.decoration || update_flags.texture ?
+      if true: u8
+   # The following fields apply only for the MapUpdateFlagDecoration.
+   # TrackedObjects is a list of tracked objects on the map, which may either be entities or blocks. The
+   # client makes sure these tracked objects are actually tracked. (position updated etc.)
+   tracked: update_flags.decoration ?
+      if true:
+         objects: TrackedObject[]varint
+         decorations: MapDecoration[]varint
+   # Updates to the map contents itself (texture)
+   texture: update_flags.texture ?
+      if true:
+         # Width is the width of the texture area that was updated. The width may be a subset of the total width
+         # of the map.
+         width: zigzag32
+         # Height is the height of the texture area that was updated. The height may be a subset of the total
+         # height of the map
+         height: zigzag32
+         # XOffset is the X offset in pixels at which the updated texture area starts. From this X, the updated
+         # texture will extend exactly Width pixels to the right.
+         x_offset: zigzag32
+         # YOffset is the Y offset in pixels at which the updated texture area starts. From this Y, the updated
+         # texture will extend exactly Height pixels up.
+         y_offset: zigzag32
+         # Pixels is a list of pixel colours for the new texture of the map. It is indexed as Pixels[y][x], with
+         # the length of the outer slice having to be exactly Height long and the inner slices exactly Width long.
+         # To access this array, use $width * y + x
+         pixels: varint[]varint
+
+
 
 packet_map_info_request:
    !id: 0x44
@@ -1303,37 +1369,34 @@ packet_boss_event:
    !bound: both
    boss_entity_id: zigzag64
    type: varint =>
-      # S2C: Shows the boss-bar to the player.
       0: show_bar
-      # C2S: Registers a player to a boss fight.
       1: register_player
-      # S2C: Removes the boss-bar from the client.
       2: hide_bar
-      # C2S: Unregisters a player from a boss fight.
       3: unregister_player
-      # S2C: Sets the bar percentage.
       4: set_bar_progress
-      # S2C: Sets title of the bar.
       5: set_bar_title
-      # S2C: darkens the sky
       6: update_properties
-      # S2C: Not implemented :( Intended to alter bar appearance, but these currently produce no effect on client-side whatsoever.
       7: texture
    _: type?
-      if register_player or unregister_player:
-         player_id: zigzag64
       if show_bar:
          title: string
-         bar_progress: lf32
+         progress: lf32
+         screen_darkening: li16
+         color: varint
+         overlay: varint
+      if register_player or unregister_player:
+         player_id: zigzag64
+      if set_bar_progress:
+         progress: lf32
+      if set_bar_title:
+         title: string
       if update_properties:
-         darkness_factor: li16
+         screen_darkening: li16
+         color: varint
+         overlay: varint
       if texture:
          color: varint
          overlay: varint
-      if set_bar_progress:
-         bar_progress: lf32
-      if set_bar_title:
-         title: string
 
 packet_show_credits:
    !id: 0x4b
@@ -1557,10 +1620,10 @@ packet_update_trade:
    trade_tier: varint
    # VillagerUniqueID is the unique ID of the villager entity that the player is trading with. The
    # TradeTier sent above applies to this villager.
-   villager_unique_id: varint64
+   villager_unique_id: zigzag64
    # EntityUniqueID is the unique ID of the entity (usually a player) for which the trades are updated. The
    # updated trades may apply only to this entity.
-   entity_unique_id: varint64
+   entity_unique_id: zigzag64
    # DisplayName is the name displayed at the top of the trading UI. It is usually used to represent the
    # profession of the villager in the UI.
    display_name: string
@@ -1589,7 +1652,7 @@ packet_update_equipment:
    window_type: WindowType
    # Size is the size of the horse inventory that should be opened. A bigger size does, in fact, change the
    # amount of slots displayed.
-   size: u8
+   size: varint
    # EntityUniqueID is the unique ID of the entity whose equipment was 'updated' to the player. It is
    # typically the horse entity that had its inventory opened.
    entity_id: zigzag64
@@ -1681,6 +1744,15 @@ packet_add_behavior_tree:
 packet_structure_block_update:
    !id: 0x5a
    !bound: client
+   position: BlockCoordinates
+   structure_name: string
+   data_field: string
+   include_players: bool
+   show_bounding_box: bool
+   structure_block_type: zigzag32
+   settings: StructureBlockSettings
+   redstone_save_mode: zigzag32
+   should_trigger: bool
 
 packet_show_store_offer:
    !id: 0x5b
@@ -1769,7 +1841,7 @@ packet_photo_transfer:
    !id: 0x63
    !bound: server
    file_name: string
-   image_data: string
+   image_data: ["buffer", {"countType": "varint"}]
    unknown2: string
 
 packet_modal_form_request:
@@ -1872,7 +1944,7 @@ packet_update_block_synced:
    # TransitionType is the type of the transition that happened. It is either BlockToEntityTransition, when
    # a block placed becomes a falling entity, or EntityToBlockTransition, when a falling entity hits the
    # ground and becomes a solid block again.
-   transition_type: varint64 =>
+   transition_type: varint =>
       # For falling sand, when a sand turns to an entity
       0: entity
       # When sand turns back to a new block
@@ -2086,18 +2158,39 @@ packet_client_cache_status:
 packet_on_screen_texture_animation:
    !id: 0x82
    !bound: client
+   animation_type: lu32
 
 packet_map_create_locked_copy:
    !id: 0x83
    !bound: client
+   # OriginalMapID is the ID of the map that is being copied. The locked copy will obtain all content that
+   # is visible on this map, except the content will not change.
+   original_map_id: zigzag64
+   # NewMapID is the ID of the map that holds the locked copy of the map that OriginalMapID points to. Its
+   # contents will be impossible to change.
+   new_map_id: zigzag64
 
 packet_structure_template_data_export_request:
    !id: 0x84
    !bound: server
+   name: string
+   position: BlockCoordinates
+   settings: StructureBlockSettings
+   request_type: u8 =>
+      1: export_from_save
+      2: export_from_load
+      3: query_saved_structure
 
 packet_structure_template_data_export_response:
    !id: 0x85
    !bound: client
+   name: string
+   success: bool
+   nbt: success ?
+      if true: nbt
+   response_type: u8 =>
+      1: export
+      2: query
 
 packet_update_block_properties:
    !id: 0x86
@@ -2357,7 +2450,7 @@ packet_creative_content:
 packet_player_enchant_options:
    !id: 0x92
    !bound: client
-   enchant_options: EnchantOptions
+   options: EnchantOption[]varint
 
 # ItemStackRequest is sent by the client to change item stacks in an inventory. It is essentially a
 # replacement of the InventoryTransaction packet added in 1.16 for inventory specific actions, such as moving

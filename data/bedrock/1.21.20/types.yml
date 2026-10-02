@@ -761,7 +761,7 @@ Recipes: []varint
       8: smithing_transform
       9: smithing_trim
    recipe: type?
-      if shapeless or shulker_box or shapeless_chemistry:
+      if shapeless or shapeless_chemistry:
          recipe_id: LatinString
          input: RecipeIngredient[]varint
          output: ItemLegacy[]varint
@@ -769,6 +769,15 @@ Recipes: []varint
          block: string
          priority: zigzag32
          unlocking_requirement: RecipeUnlockingRequirement
+         network_id: varint
+      # the servers of this version send no unlocking requirement for a user data recipe
+      if shulker_box:
+         recipe_id: LatinString
+         input: RecipeIngredient[]varint
+         output: ItemLegacy[]varint
+         uuid: uuid
+         block: string
+         priority: zigzag32
          network_id: varint
       if shaped or shaped_chemistry:
          recipe_id: LatinString
@@ -905,7 +914,7 @@ EnchantOption:
    held_enchants: Enchant[]varint
    self_enchants: Enchant[]varint
    name: string
-   option_id: zigzag32
+   option_id: varint
 
 Action: zigzag32 =>
    0: start_break
@@ -1101,18 +1110,21 @@ ItemStackRequest:
          if optional:
             # For the cartography table, if a certain MULTI recipe is being called, this points to the network ID that was assigned.
             recipe_network_id: varint
-            times_crafted: u8
             # Most likely the index in the request's filter strings that this action is using
             filtered_string_index: li32
          if craft_grindstone_request:
             # RecipeNetworkID is the network ID of the recipe that is about to be crafted. This network ID matches
             # one of the recipes sent in the CraftingData packet, where each of the recipes have a RecipeNetworkID as
-            recipe_network_id: varint
+            recipe_network_id: zigzag32
+            # NumberOfCrafts is how many times the recipe was crafted.
+            times_crafted: u8
             # Cost is the cost of the recipe that was crafted.
-            cost: varint
+            cost: zigzag32
          if craft_loom_request:
             # Pattern is the pattern identifier for the loom recipe.
             pattern: string
+            # TimesCrafted is how many times the recipe was crafted.
+            times_crafted: u8
          if non_implemented: void
          if results_deprecated:
             result_items: ItemLegacy[]varint
@@ -1990,9 +2002,9 @@ SoundType: varint =>
    - goat_bass_7
    - goat_bass_8
    - goat_bass_9
-   - _
-   - _
-   - _
+   - undefined_423
+   - undefined_424
+   - undefined_425
    - ImitateWarden
    - ListeningAngry
    - ItemGiven
@@ -2077,7 +2089,7 @@ SoundType: varint =>
    - vault_deactivate
    - hurt_reduced
    - wind_charge_burst
-   - _
+   - undefined_510
    - armor_crack_wolf
    - armor_break_wolf
    - armor_repair_wolf
@@ -2089,7 +2101,7 @@ SoundType: varint =>
    - ominous_bottle_end_use
    - mace_smash_heavy_ground
    - ominous_item_spawner_spawn_item_begin
-   - _
+   - undefined_522
    - apply_effect_bad_omen
    - apply_effect_raid_omen
    - apply_effect_trial_omen
@@ -2404,4 +2416,4 @@ DisconnectFailReason: zigzag32 =>
 
 FullContainerName:
    container_id: ContainerSlotType
-   dynamic_container_id: u32
+   dynamic_container_id: lu32

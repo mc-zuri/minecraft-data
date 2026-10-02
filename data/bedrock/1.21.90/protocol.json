@@ -2594,7 +2594,7 @@
         },
         {
           "name": "option_id",
-          "type": "zigzag32"
+          "type": "varint"
         }
       ]
     ],
@@ -2949,7 +2949,7 @@
                             [
                               {
                                 "name": "recipe_network_id",
-                                "type": "varint"
+                                "type": "zigzag32"
                               },
                               {
                                 "name": "times_crafted",
@@ -2957,7 +2957,7 @@
                               },
                               {
                                 "name": "cost",
-                                "type": "varint"
+                                "type": "zigzag32"
                               }
                             ]
                           ],
@@ -4211,9 +4211,9 @@
           "420": "goat_bass_7",
           "421": "goat_bass_8",
           "422": "goat_bass_9",
-          "423": "_",
-          "424": "_",
-          "425": "_",
+          "423": "undefined_423",
+          "424": "undefined_424",
+          "425": "undefined_425",
           "426": "ImitateWarden",
           "427": "ListeningAngry",
           "428": "ItemGiven",
@@ -4302,7 +4302,7 @@
           "511": "imitate_creaking",
           "512": "bundle_insert_failed",
           "513": "sponge_absorb",
-          "514": "_",
+          "514": "undefined_514",
           "515": "block_creaking_heart_trail",
           "516": "creaking_heart_spawn",
           "517": "activate",
@@ -4339,7 +4339,7 @@
           "548": "ominous_bottle_end_use",
           "549": "mace_smash_heavy_ground",
           "550": "ominous_item_spawner_spawn_item_begin",
-          "551": "_",
+          "551": "undefined_551",
           "552": "apply_effect_bad_omen",
           "553": "apply_effect_raid_omen",
           "554": "apply_effect_trial_omen",
@@ -4873,7 +4873,7 @@
           "name": "dynamic_container_id",
           "type": [
             "option",
-            "u32"
+            "lu32"
           ]
         }
       ]
@@ -9418,11 +9418,11 @@
         },
         {
           "name": "villager_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "entity_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "display_name",
@@ -9455,7 +9455,7 @@
         },
         {
           "name": "size",
-          "type": "u8"
+          "type": "varint"
         },
         {
           "name": "entity_id",
@@ -9982,7 +9982,12 @@
         },
         {
           "name": "image_data",
-          "type": "string"
+          "type": [
+            "buffer",
+            {
+              "countType": "varint"
+            }
+          ]
         },
         {
           "name": "book_id",
@@ -11002,10 +11007,6 @@
                   "container",
                   [
                     {
-                      "name": "has",
-                      "type": "bool"
-                    },
-                    {
                       "name": "url",
                       "type": "string"
                     },
@@ -11306,30 +11307,6 @@
           ]
         },
         {
-          "anon": true,
-          "type": [
-            "switch",
-            {
-              "compareTo": "input_data.client_predicted_vehicle",
-              "fields": {
-                "true": [
-                  "container",
-                  [
-                    {
-                      "name": "vehicle_rotation",
-                      "type": "vec2f"
-                    },
-                    {
-                      "name": "predicted_vehicle",
-                      "type": "zigzag64"
-                    }
-                  ]
-                ]
-              }
-            }
-          ]
-        },
-        {
           "name": "block_action",
           "type": [
             "switch",
@@ -11426,6 +11403,30 @@
                       ]
                     ]
                   }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "anon": true,
+          "type": [
+            "switch",
+            {
+              "compareTo": "input_data.client_predicted_vehicle",
+              "fields": {
+                "true": [
+                  "container",
+                  [
+                    {
+                      "name": "vehicle_rotation",
+                      "type": "vec2f"
+                    },
+                    {
+                      "name": "predicted_vehicle",
+                      "type": "zigzag64"
+                    }
+                  ]
                 ]
               }
             }
@@ -12165,7 +12166,11 @@
       [
         {
           "name": "entity_id",
-          "type": "varint64"
+          "type": "varint"
+        },
+        {
+          "name": "dimension",
+          "type": "zigzag32"
         }
       ]
     ],
@@ -12714,7 +12719,7 @@
           "type": [
             "mapper",
             {
-              "type": "zigzag32",
+              "type": "li32",
               "mappings": {
                 "0": "none",
                 "1": "attack",
@@ -13325,20 +13330,34 @@
               "container",
               [
                 {
-                  "name": "fade_in_duration",
-                  "type": "lf32"
-                },
-                {
-                  "name": "wait_duration",
-                  "type": "lf32"
-                },
-                {
-                  "name": "fade_out_duration",
-                  "type": "lf32"
+                  "name": "time",
+                  "type": [
+                    "option",
+                    [
+                      "container",
+                      [
+                        {
+                          "name": "fade_in_duration",
+                          "type": "lf32"
+                        },
+                        {
+                          "name": "wait_duration",
+                          "type": "lf32"
+                        },
+                        {
+                          "name": "fade_out_duration",
+                          "type": "lf32"
+                        }
+                      ]
+                    ]
+                  ]
                 },
                 {
                   "name": "color_rgb",
-                  "type": "vec3f"
+                  "type": [
+                    "option",
+                    "vec3f"
+                  ]
                 }
               ]
             ]

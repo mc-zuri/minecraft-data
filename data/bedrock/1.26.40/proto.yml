@@ -399,7 +399,7 @@ packet_start_game:
    limited_world_length: li32
    is_new_nether: bool
    edu_resource_uri: EducationSharedResourceURI
-   experimental_gameplay_override: bool
+   experimental_gameplay_override?: bool
    # ChatRestrictionLevel specifies the level of restriction on in-game chat.
    chat_restriction_level: u8 =>
       0: none
@@ -1307,7 +1307,7 @@ packet_inventory_slot:
    !bound: both
    # WindowID is the ID of the window that the packet modifies. It must point to one of the windows that the
    # client currently has opened.
-   window_id: WindowIDVarint
+   window_id: WindowID
    # Slot is the index of the slot that the packet modifies. The new item will be set to the slot at this index.
    slot: varint
    # Container is the protocol.FullContainerName that describes the container that the content is for.
@@ -2007,10 +2007,10 @@ packet_update_trade:
    trade_tier: varint
    # VillagerUniqueID is the unique ID of the villager entity that the player is trading with. The
    # TradeTier sent above applies to this villager.
-   villager_unique_id: varint64
+   villager_unique_id: zigzag64
    # EntityUniqueID is the unique ID of the entity (usually a player) for which the trades are updated. The
    # updated trades may apply only to this entity.
-   entity_unique_id: varint64
+   entity_unique_id: zigzag64
    # DisplayName is the name displayed at the top of the trading UI. It is usually used to represent the
    # profession of the villager in the UI.
    display_name: string
@@ -2039,7 +2039,7 @@ packet_update_equipment:
    window_type: WindowType
    # Size is the size of the horse inventory that should be opened. A bigger size does, in fact, change the
    # amount of slots displayed.
-   size: u8
+   size: varint
    # EntityUniqueID is the unique ID of the entity whose equipment was 'updated' to the player. It is
    # typically the horse entity that had its inventory opened.
    entity_id: zigzag64
@@ -2196,7 +2196,7 @@ packet_structure_block_update:
    # FilteredStructureName is a filtered version of StructureName with all the profanity removed. The client
    # will use this over StructureName if this field is not empty and they have the "Filter Profanity"
    # setting enabled.
-   filtered_structure_name: string
+   filtered_structure_name?: string
    # DataField is the name of a function to run, usually used during natural generation. A description can
    # be found here: https://minecraft.wiki/w/Structure_Block#Data.
    data_field: string
@@ -2366,7 +2366,7 @@ packet_photo_transfer:
    image_name: string
    # PhotoData is the raw data of the photo image. The format of this data may vary: Formats such as JPEG or
    # PNG work, as long as PhotoName has the correct extension.
-   image_data: string
+   image_data: ["buffer", {"countType": "varint"}]
    # BookID is the ID of the book that the photo is associated with. If the PhotoName in a book with this ID
    # is set to PhotoName, it will display the photo (provided Education Edition is used).
    # The photo image is downloaded to a sub-folder with this book ID.
@@ -2938,7 +2938,6 @@ packet_education_settings:
    has_external_link_settings: bool
    external_link_settings: has_external_link_settings ?
       if true:
-         has: bool
          url: string
          display_name: string
 
@@ -3524,11 +3523,13 @@ packet_filter_text_packet:
 packet_primitive_shapes:
    !id: 0xa4
    !bound: client
-   shapes: PrimitiveShape[]varint
+   type: string
+   marker?:
+      text: string
+      position: vec3f
+      color: lu32
+      duration: lu64
 
-
-
-# Sent by the server to synchronize/update entity properties as NBT, an alternative to Set Entity Data.
 packet_sync_entity_property:
    !id: 0xa5
    !bound: client
@@ -3557,7 +3558,8 @@ packet_remove_volume_entity:
    !id: 0xa7
    !bound: client
    # The Runtime Entity ID
-   entity_id: varint64
+   entity_id: varint
+   dimension: zigzag32
 
 # SimulationType is an in-progress packet. We currently do not know the use case.
 packet_simulation_type:
@@ -3745,7 +3747,7 @@ packet_agent_action:
    !id: 0xb5
    !bound: client
    request_id: string
-   action_type: zigzag32 =>
+   action_type: li32 =>
    - none
    - attack
    - collect
@@ -3922,12 +3924,10 @@ packet_editor_network:
    !id: 0xbe
    !bound: client
    route_to_manager: bool
-   # Payload is a network little endian compound tag holding data relevant to the editor.
-   payload: nbt
+   payload:
+      name: string
+      data: string
 
-# FeatureRegistry is a packet used to notify the client about the world generation features the server is currently
-# using. This is used in combination with the client-side world generation system introduced in v1.19.20, allowing the
-# client to completely generate the chunks of the world without having to rely on the server.
 packet_feature_registry:
    !id: 0xbf
    !bound: client
@@ -4067,10 +4067,11 @@ packet_camera_instruction:
    clear?: bool
    # Fade is a camera instruction that fades the screen to a specified colour.
    fade?:
-      fade_in_duration: lf32
-      wait_duration: lf32
-      fade_out_duration: lf32
-      color_rgb: vec3f
+      time?:
+         fade_in_duration: lf32
+         wait_duration: lf32
+         fade_out_duration: lf32
+      color_rgb?: vec3f
    # Target is a camera instruction that targets a specific entity.
    target?:
       offset?: vec3f
@@ -4080,7 +4081,7 @@ packet_camera_instruction:
    fov?:
       field_of_view: lf32
       ease_time: lf32
-      ease_type: EaseType
+      ease_type: string
       clear: bool
    spline?: CameraSplineInstruction
    attach_to_entity?: li64
@@ -4258,7 +4259,7 @@ packet_serverbound_diagnostics:
    entity_diagnostics: EntityDiagnosticTimingInfo[]varint
    system_diagnostics: SystemDiagnosticTimingInfo[]varint
    # Added in 1.26.40.
-   system_categories: SystemCategory[]varint
+   system_categories?: SystemCategory[]varint
    whisker_scopes: WhiskerScopeDataSummary[]varint
 
 # CameraAimAssist is sent by the server to the client to set up aim assist for the client's camera.
@@ -4432,17 +4433,16 @@ packet_player_update_entity_overrides:
    !bound: client
    # EntityRuntimeID is the runtime ID of the entity. The runtime ID is unique for each world session, and
    # entities are generally identified in packets using this runtime ID.
-   runtime_id: varint64
+   runtime_id: zigzag64
    # PropertyIndex is the index of the property to modify. The index is unique for each property of an entity.
    property_index: varint
    # Type is the type of action to perform with the property. It is one of the constants above.
-   # As of 1.26.40 it is sent twice: once as an unsigned varint and once as the legacy byte.
    type: varint =>
       - clear_all
       - remove
       - set_int
       - set_float
-   legacy_type: u8
+   type_name: string
    value: type ?
       # IntValue is the new integer value of the property. It is only used when Type is set to
       # PlayerUpdateEntityOverridesTypeInt.
@@ -4529,9 +4529,9 @@ packet_graphics_override_parameter:
    float_value?: lf32
    vec3_value?: vec3f
    biome_identifier: string
+   player_id?: string
    parameter_type: GraphicsOverrideParameterType
    reset: bool
-   player_id?: string
 
 packet_serverbound_data_store:
    !id: 0x14c
@@ -4539,7 +4539,7 @@ packet_serverbound_data_store:
    name: string
    property: string
    path: string
-   data_type: lu32 =>
+   data_type: varint =>
       0: double
       1: bool
       2: string
@@ -4617,7 +4617,7 @@ packet_party_changed:
 packet_serverbound_data_driven_screen_closed:
    !id: 0x157
    !bound: server
-   form_id?: lu32
+   form_id: lu32
    # Options:
 	# "programmaticclose"
 	# "programmaticcloseall"
@@ -4684,27 +4684,13 @@ packet_clientbound_update_sound_data:
    !id: 0x15c
    !bound: client
    server_sound_handle: ServerSoundHandle
-   # As of 1.26.40 the string type identifier is replaced by one optional per update kind. Each optional
-   # payload starts with an unsigned varint that is currently always zero.
-   stop?:
-      unused: varint
-   volume?:
-      unused: varint
-      volume: lf32
-   pitch?:
-      unused: varint
-      pitch: lf32
-   fade?:
-      unused: varint
-      target_volume: lf32
-      duration: lf32
-   seek_to?:
-      unused: varint
-      seconds: lf32
-   pause?:
-      unused: varint
-   resume?:
-      unused: varint
+   stop: SoundEventUpdate
+   volume: SoundEventUpdate
+   pitch: SoundEventUpdate
+   fade: SoundEventUpdate
+   seek_to: SoundEventUpdate
+   pause: SoundEventUpdate
+   resume: SoundEventUpdate
 
 packet_send_party_destination_cookie:
    !id: 0x15d

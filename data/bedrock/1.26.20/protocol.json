@@ -2741,7 +2741,7 @@
         },
         {
           "name": "option_id",
-          "type": "zigzag32"
+          "type": "varint"
         }
       ]
     ],
@@ -3096,7 +3096,7 @@
                             [
                               {
                                 "name": "recipe_network_id",
-                                "type": "varint"
+                                "type": "zigzag32"
                               },
                               {
                                 "name": "times_crafted",
@@ -3104,7 +3104,7 @@
                               },
                               {
                                 "name": "cost",
-                                "type": "varint"
+                                "type": "zigzag32"
                               }
                             ]
                           ],
@@ -4888,20 +4888,8 @@
           "type": "lf32"
         },
         {
-          "name": "has_ease_type",
-          "type": "bool"
-        },
-        {
           "name": "ease_type",
-          "type": [
-            "switch",
-            {
-              "compareTo": "has_ease_type",
-              "fields": {
-                "true": "string"
-              }
-            }
-          ]
+          "type": "string"
         }
       ]
     ],
@@ -4913,20 +4901,8 @@
           "type": "lf32"
         },
         {
-          "name": "has_spline_type",
-          "type": "bool"
-        },
-        {
           "name": "spline_type",
-          "type": [
-            "switch",
-            {
-              "compareTo": "has_spline_type",
-              "fields": {
-                "true": "string"
-              }
-            }
-          ]
+          "type": "u8"
         },
         {
           "name": "curve",
@@ -4960,17 +4936,11 @@
         },
         {
           "name": "spline_identifier",
-          "type": [
-            "option",
-            "string"
-          ]
+          "type": "string"
         },
         {
           "name": "load_from_json",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         }
       ]
     ],
@@ -4986,20 +4956,8 @@
           "type": "lf32"
         },
         {
-          "name": "has_ease_type",
-          "type": "bool"
-        },
-        {
           "name": "ease_type",
-          "type": [
-            "switch",
-            {
-              "compareTo": "has_ease_type",
-              "fields": {
-                "true": "string"
-              }
-            }
-          ]
+          "type": "string"
         }
       ]
     ],
@@ -5519,7 +5477,7 @@
           "name": "dynamic_container_id",
           "type": [
             "option",
-            "u32"
+            "lu32"
           ]
         }
       ]
@@ -6780,46 +6738,8 @@
           "type": "li32"
         },
         {
-          "name": "weight_type",
-          "type": [
-            "mapper",
-            {
-              "type": "varint",
-              "mappings": {
-                "0": "float",
-                "1": "string"
-              }
-            }
-          ]
-        },
-        {
-          "anon": true,
-          "type": [
-            "switch",
-            {
-              "compareTo": "weight_type",
-              "fields": {
-                "float": [
-                  "container",
-                  [
-                    {
-                      "name": "float_weight",
-                      "type": "lf32"
-                    }
-                  ]
-                ],
-                "string": [
-                  "container",
-                  [
-                    {
-                      "name": "string_weight",
-                      "type": "string"
-                    }
-                  ]
-                ]
-              }
-            }
-          ]
+          "name": "weight",
+          "type": "lf32"
         },
         {
           "name": "enabled",
@@ -9821,7 +9741,7 @@
       [
         {
           "name": "window_id",
-          "type": "WindowIDVarint"
+          "type": "WindowID"
         },
         {
           "name": "slot",
@@ -11205,11 +11125,11 @@
         },
         {
           "name": "villager_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "entity_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "display_name",
@@ -11242,7 +11162,7 @@
         },
         {
           "name": "size",
-          "type": "u8"
+          "type": "varint"
         },
         {
           "name": "entity_id",
@@ -11776,7 +11696,12 @@
         },
         {
           "name": "image_data",
-          "type": "string"
+          "type": [
+            "buffer",
+            {
+              "countType": "varint"
+            }
+          ]
         },
         {
           "name": "book_id",
@@ -12803,10 +12728,6 @@
                   "container",
                   [
                     {
-                      "name": "has",
-                      "type": "bool"
-                    },
-                    {
                       "name": "url",
                       "type": "string"
                     },
@@ -13107,30 +13028,6 @@
           ]
         },
         {
-          "anon": true,
-          "type": [
-            "switch",
-            {
-              "compareTo": "input_data.client_predicted_vehicle",
-              "fields": {
-                "true": [
-                  "container",
-                  [
-                    {
-                      "name": "vehicle_rotation",
-                      "type": "vec2f"
-                    },
-                    {
-                      "name": "predicted_vehicle",
-                      "type": "zigzag64"
-                    }
-                  ]
-                ]
-              }
-            }
-          ]
-        },
-        {
           "name": "block_action",
           "type": [
             "switch",
@@ -13227,6 +13124,30 @@
                       ]
                     ]
                   }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "anon": true,
+          "type": [
+            "switch",
+            {
+              "compareTo": "input_data.client_predicted_vehicle",
+              "fields": {
+                "true": [
+                  "container",
+                  [
+                    {
+                      "name": "vehicle_rotation",
+                      "type": "vec2f"
+                    },
+                    {
+                      "name": "predicted_vehicle",
+                      "type": "zigzag64"
+                    }
+                  ]
                 ]
               }
             }
@@ -13790,13 +13711,34 @@
       "container",
       [
         {
-          "name": "shapes",
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "name": "marker",
           "type": [
-            "array",
-            {
-              "countType": "varint",
-              "type": "PrimitiveShape"
-            }
+            "option",
+            [
+              "container",
+              [
+                {
+                  "name": "text",
+                  "type": "string"
+                },
+                {
+                  "name": "position",
+                  "type": "vec3f"
+                },
+                {
+                  "name": "color",
+                  "type": "lu32"
+                },
+                {
+                  "name": "duration",
+                  "type": "lu64"
+                }
+              ]
+            ]
           ]
         }
       ]
@@ -13860,7 +13802,11 @@
       [
         {
           "name": "entity_id",
-          "type": "varint64"
+          "type": "varint"
+        },
+        {
+          "name": "dimension",
+          "type": "zigzag32"
         }
       ]
     ],
@@ -14413,7 +14359,7 @@
           "type": [
             "mapper",
             {
-              "type": "zigzag32",
+              "type": "li32",
               "mappings": {
                 "0": "none",
                 "1": "attack",
@@ -14672,7 +14618,19 @@
         },
         {
           "name": "payload",
-          "type": "nbt"
+          "type": [
+            "container",
+            [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "data",
+                "type": "string"
+              }
+            ]
+          ]
         }
       ]
     ],
@@ -14981,20 +14939,34 @@
               "container",
               [
                 {
-                  "name": "fade_in_duration",
-                  "type": "lf32"
-                },
-                {
-                  "name": "wait_duration",
-                  "type": "lf32"
-                },
-                {
-                  "name": "fade_out_duration",
-                  "type": "lf32"
+                  "name": "time",
+                  "type": [
+                    "option",
+                    [
+                      "container",
+                      [
+                        {
+                          "name": "fade_in_duration",
+                          "type": "lf32"
+                        },
+                        {
+                          "name": "wait_duration",
+                          "type": "lf32"
+                        },
+                        {
+                          "name": "fade_out_duration",
+                          "type": "lf32"
+                        }
+                      ]
+                    ]
+                  ]
                 },
                 {
                   "name": "color_rgb",
-                  "type": "vec3f"
+                  "type": [
+                    "option",
+                    "vec3f"
+                  ]
                 }
               ]
             ]
@@ -15046,7 +15018,7 @@
                 },
                 {
                   "name": "ease_type",
-                  "type": "EaseType"
+                  "type": "string"
                 },
                 {
                   "name": "clear",
@@ -16297,7 +16269,7 @@
           "type": [
             "mapper",
             {
-              "type": "lu32",
+              "type": "varint",
               "mappings": {
                 "0": "double",
                 "1": "bool",
@@ -16516,26 +16488,11 @@
       [
         {
           "name": "form_id",
-          "type": [
-            "option",
-            "lu32"
-          ]
+          "type": "lu32"
         },
         {
           "name": "close_reason",
-          "type": [
-            "mapper",
-            {
-              "type": "u8",
-              "mappings": {
-                "0": "programmatic_close",
-                "1": "programmatic_close_all",
-                "2": "client_canceled",
-                "3": "user_busy",
-                "4": "invalid_form"
-              }
-            }
-          ]
+          "type": "string"
         }
       ]
     ],

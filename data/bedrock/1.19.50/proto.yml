@@ -116,7 +116,8 @@ packet_disconnect:
    # meaning it will be sent directly to the main menu.
    hide_disconnect_reason: bool
    # An optional message to show when disconnected.
-   message: string
+   message: hide_disconnect_reason ?
+      if false: string
 
 
 packet_resource_packs_info:
@@ -1910,10 +1911,10 @@ packet_update_trade:
    trade_tier: varint
    # VillagerUniqueID is the unique ID of the villager entity that the player is trading with. The
    # TradeTier sent above applies to this villager.
-   villager_unique_id: varint64
+   villager_unique_id: zigzag64
    # EntityUniqueID is the unique ID of the entity (usually a player) for which the trades are updated. The
    # updated trades may apply only to this entity.
-   entity_unique_id: varint64
+   entity_unique_id: zigzag64
    # DisplayName is the name displayed at the top of the trading UI. It is usually used to represent the
    # profession of the villager in the UI.
    display_name: string
@@ -1942,7 +1943,7 @@ packet_update_equipment:
    window_type: WindowType
    # Size is the size of the horse inventory that should be opened. A bigger size does, in fact, change the
    # amount of slots displayed.
-   size: u8
+   size: varint
    # EntityUniqueID is the unique ID of the entity whose equipment was 'updated' to the player. It is
    # typically the horse entity that had its inventory opened.
    entity_id: zigzag64
@@ -2255,7 +2256,7 @@ packet_photo_transfer:
    image_name: string
    # PhotoData is the raw data of the photo image. The format of this data may vary: Formats such as JPEG or
    # PNG work, as long as PhotoName has the correct extension.
-   image_data: string
+   image_data: ["buffer", {"countType": "varint"}]
    # BookID is the ID of the book that the photo is associated with. If the PhotoName in a book with this ID
    # is set to PhotoName, it will display the photo (provided Education Edition is used).
    # The photo image is downloaded to a sub-folder with this book ID.
@@ -2867,7 +2868,6 @@ packet_education_settings:
    has_external_link_settings: bool
    external_link_settings: has_external_link_settings ?
       if true:
-         has: bool
          url: string
          display_name: string
 
@@ -3438,7 +3438,8 @@ packet_remove_volume_entity:
    !id: 0xa7
    !bound: client
    # The Runtime Entity ID
-   entity_id: varint64
+   entity_id: varint
+   dimension: zigzag32
 
 # SimulationType is an in-progress packet. We currently do not know the use case.
 packet_simulation_type:
@@ -3642,7 +3643,7 @@ packet_agent_action:
    !id: 0xb5
    !bound: client
    request_id: string
-   action_type: zigzag32 =>
+   action_type: li32 =>
    - none
    - attack
    - collect

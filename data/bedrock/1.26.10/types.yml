@@ -943,7 +943,7 @@ EnchantOption:
    held_enchants: Enchant[]varint
    self_enchants: Enchant[]varint
    name: string
-   option_id: zigzag32
+   option_id: varint
 
 Action: zigzag32 =>
    0: start_break
@@ -1146,12 +1146,12 @@ ItemStackRequest:
          if craft_grindstone_request:
             # RecipeNetworkID is the network ID of the recipe that is about to be crafted. This network ID matches
             # one of the recipes sent in the CraftingData packet, where each of the recipes have a RecipeNetworkID as
-            recipe_network_id: varint
+            recipe_network_id: zigzag32
             # NumberOfCrafts is how many times the recipe was crafted. This field appears to be boilerplate and
             # has no effect.
             times_crafted: u8
             # Cost is the cost of the recipe that was crafted.
-            cost: varint
+            cost: zigzag32
          if craft_loom_request:
             # Pattern is the pattern identifier for the loom recipe.
             pattern: string
@@ -2421,36 +2421,23 @@ CameraPresets:
 
 # CameraRotationOption represents a rotation keyframe option for spline instructions.
 CameraRotationOption:
-   # Value is the rotation value for the keyframe.
    value: vec3f
-   # Time is the time of the keyframe within the spline.
    time: lf32
-   has_ease_type: bool
-   ease_type: has_ease_type ?
-      if true: string
+   ease_type: string
 
-# CameraSplineInstruction represents a camera spline instruction definition.
 CameraSplineInstruction:
-   # TotalTime is the total time for the spline animation.
    total_time: lf32
-   has_spline_type: bool
-   spline_type: has_spline_type ?
-      if true: string
-   # Curve is the list of curve points defining the spline.
+   spline_type: u8
    curve: vec3f[]varint
-   # ProgressKeyFrames is a list of key frames for the spline progress.
    progress_key_frames: CameraProgressOption[]varint
-   # RotationOptions is a list of rotation keyframes for the spline.
    rotation_options: CameraRotationOption[]varint
-   spline_identifier?: string
-   load_from_json?: bool
+   spline_identifier: string
+   load_from_json: bool
 
 CameraProgressOption:
    value: lf32
    time: lf32
-   has_ease_type: bool
-   ease_type: has_ease_type ?
-      if true: string
+   ease_type: string
 
 CameraSplineDefinition:
    name: string
@@ -2742,7 +2729,7 @@ DisconnectFailReason: zigzag32 =>
 
 FullContainerName:
    container_id: ContainerSlotType
-   dynamic_container_id?: u32
+   dynamic_container_id?: lu32
 
 MovementEffectType: varint =>
    -1: invalid

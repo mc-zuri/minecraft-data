@@ -426,7 +426,7 @@ TransactionUseItem:
    face: zigzag32
    # HotBarSlot is the hot bar slot that the player was holding while clicking the block. It should be used
    # to ensure that the hot bar slot and held item are correctly synchronised with the server.
-   hotbar_slot: varint
+   hotbar_slot: zigzag32
    # HeldItem is the item that was held to interact with the block. The server should check if this item
    # is actually present in the HotBarSlot.
    held_item: Item
@@ -567,8 +567,8 @@ Transaction:
 ItemStack:
    # StackNetworkID is the network ID of the item stack. If the stack is empty, 0 is always written for this
    # field. If not, the field should be set to 1 if the server authoritative inventories are disabled in the
-   # StartGame packet, or to a unique stack ID if it is enabled.
-   stack_id: varint
+   # StartGame packet, or to a unique stack ID if it is enabled. A zigzag varint, as the game writes it.
+   stack_id: zigzag32
    # Stack is the actual item stack of the item instance.
    item: Item
 
@@ -645,7 +645,7 @@ Recipes: []varint
 SkinImage:
    width: li32
    height: li32
-   data: string
+   data: ByteArray
 
 Skin:
    skin_id: string
@@ -731,14 +731,14 @@ Enchant:
    id: u8
    level: u8
 
-EnchantOptions: []varint
+EnchantOption:
    cost: varint
    slot_flags: li32
    equip_enchants: Enchant[]varint
    held_enchants: Enchant[]varint
    self_enchants: Enchant[]varint
    name: string
-   option_id: zigzag32
+   option_id: varint
 
 Action: zigzag32 =>
    0: start_break
@@ -902,7 +902,6 @@ ItemStackRequest:
             # RecipeNetworkID is the network ID of the recipe that is about to be crafted. This network ID matches
             # one of the recipes sent in the CraftingData packet, where each of the recipes have a RecipeNetworkID as
             recipe_network_id: varint
-            times_crafted: u8
          if craft_creative:
             # The stack ID of the creative item that is being created. This is one of the
             # creative item stack IDs sent in the CreativeContent packet.
@@ -932,7 +931,7 @@ ItemStackResponses: []varint
       1: error
    # RequestID is the unique ID of the request that this response is in reaction to. If rejected, the client
    # will undo the actions from the request with this ID.
-   request_id: varint
+   request_id: zigzag32
    _: status ?
       if ok:
          # ContainerInfo holds information on the containers that had their contents changed as a result of the
@@ -953,7 +952,7 @@ ItemStackResponses: []varint
                # sent to the client.
                count: u8
                # StackNetworkID is the network ID of the new stack at a specific slot.
-               item_stack_id: varint
+               item_stack_id: zigzag32
                # CustomName is the custom name of the item stack. It is used in relation to text filtering.
                custom_name: string
                # DurabilityCorrection is the current durability of the item stack. This durability will be shown
@@ -1262,3 +1261,72 @@ LegacyEntityType: li32 =>
    111: tropicalfish
    112: cod
    113: panda
+
+TrackedObject:
+   # Type is the type of the tracked object. It is either MapObjectTypeEntity or MapObjectTypeBlock.
+   type: li32 =>
+      0: entity
+      1: block
+   # EntityUniqueID is the unique ID of the entity, if the tracked object was an entity. It needs not to be
+   # filled out if Type is not MapObjectTypeEntity.
+   entity_unique_id: type ?
+      if entity: zigzag64
+   # BlockPosition is the position of the block, if the tracked object was a block. It needs not to be
+   # filled out if Type is not MapObjectTypeBlock.
+   block_position: type ?
+      if block: BlockCoordinates
+
+# MapDecoration is a fixed decoration on a map: Its position or other properties do not change automatically
+# client-side.
+MapDecoration:
+   type: u8 =>
+   - marker_white
+   - marker_green
+   - marker_red
+   - marker_blue
+   - cross_white
+   - triangle_red
+   - square_white
+   - marker_sign
+   - marker_pink
+   - marker_orange
+   - marker_yellow
+   - marker_teal
+   - triangle_green
+   - small_square_white
+   - mansion
+   - monument
+   - no_draw
+   - village_desert
+   - village_plains
+   - village_savanna
+   - village_snowy
+   - village_taiga
+   - jungle_temple
+   - witch_hut
+   # Rotation is the rotation of the map decoration. It is byte due to the 16 fixed directions that the
+   # map decoration may face.
+   rotation: u8
+   # X is the offset on the X axis in pixels of the decoration.
+   x: u8
+   # Y is the offset on the Y axis in pixels of the decoration.
+   y: u8
+   # Label is the name of the map decoration. This name may be of any value.
+   label: string
+   # Colour is the colour of the map decoration. Some map decoration types have a specific colour set
+   # automatically, whereas others may be changed.
+   color_abgr: varint
+
+StructureBlockSettings:
+   palette_name: string
+   ignore_entities: bool
+   ignore_blocks: bool
+   size: BlockCoordinates
+   structure_offset: BlockCoordinates
+   last_editing_player_unique_id: zigzag64
+   rotation: u8
+   mirror: u8
+   integrity: lf32
+   seed: lu32
+   pivot: vec3f
+

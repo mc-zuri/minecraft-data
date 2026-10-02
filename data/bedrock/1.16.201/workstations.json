@@ -1,0 +1,153 @@
+{
+  "loom": {
+    "patterns": [
+      {"id": "", "name": "base", "hidden": true},
+      {"id": "bo", "name": "border", "craft": {"shape": ["###", "# #", "###"]}},
+      {"id": "bri", "name": "bricks", "item": "minecraft:field_masoned_banner_pattern", "craft": {"ingredient": "minecraft:brick"}},
+      {"id": "mc", "name": "circle", "craft": {"shape": ["   ", " # ", "   "]}},
+      {"id": "cre", "name": "creeper", "item": "minecraft:creeper_banner_pattern"},
+      {"id": "sku", "name": "skull", "item": "minecraft:skull_banner_pattern"},
+      {"id": "cr", "name": "cross", "craft": {"shape": ["# #", " # ", "# #"]}},
+      {
+        "id": "cbo",
+        "name": "curly_border",
+        "item": "minecraft:bordure_indented_banner_pattern",
+        "craft": {"ingredient": "minecraft:vine", "ignoreAux": true}
+      },
+      {"id": "ld", "name": "diagonal_left", "craft": {"shape": ["## ", "#  ", "   "]}},
+      {"id": "rud", "name": "diagonal_right", "craft": {"shape": [" ##", "  #", "   "]}},
+      {"id": "lud", "name": "diagonal_up_left", "craft": {"shape": ["   ", "#  ", "## "]}},
+      {"id": "rd", "name": "diagonal_up_right", "craft": {"shape": ["   ", "  #", " ##"]}},
+      {"id": "flo", "name": "flower", "item": "minecraft:flower_banner_pattern"},
+      {"id": "gra", "name": "gradient", "craft": {"shape": ["# #", " # ", " # "]}},
+      {"id": "gru", "name": "gradient_up", "craft": {"shape": [" # ", " # ", "# #"]}},
+      {"id": "hh", "name": "half_horizontal", "craft": {"shape": ["###", "###", "   "]}},
+      {"id": "hhb", "name": "half_horizontal_bottom", "craft": {"shape": ["   ", "###", "###"]}},
+      {"id": "vh", "name": "half_vertical", "craft": {"shape": ["## ", "## ", "## "]}},
+      {"id": "vhr", "name": "half_vertical_right", "craft": {"shape": [" ##", " ##", " ##"]}},
+      {"id": "ill", "name": "illager", "hidden": true},
+      {
+        "id": "moj",
+        "name": "mojang",
+        "item": "minecraft:mojang_banner_pattern",
+        "craft": {"ingredient": "minecraft:enchanted_golden_apple", "ignoreAux": true}
+      },
+      {"id": "mr", "name": "rhombus", "craft": {"shape": [" # ", "# #", " # "]}},
+      {"id": "ss", "name": "small_stripes", "craft": {"shape": ["# #", "# #", "   "]}},
+      {"id": "bl", "name": "square_bottom_left", "craft": {"shape": ["   ", "   ", "#  "]}},
+      {"id": "br", "name": "square_bottom_right", "craft": {"shape": ["   ", "   ", "  #"]}},
+      {"id": "tl", "name": "square_top_left", "craft": {"shape": ["#  ", "   ", "   "]}},
+      {"id": "tr", "name": "square_top_right", "craft": {"shape": ["  #", "   ", "   "]}},
+      {"id": "sc", "name": "straight_cross", "craft": {"shape": [" # ", "###", " # "]}},
+      {"id": "bs", "name": "stripe_bottom", "craft": {"shape": ["   ", "   ", "###"]}},
+      {"id": "cs", "name": "stripe_center", "craft": {"shape": [" # ", " # ", " # "]}},
+      {"id": "dls", "name": "stripe_downleft", "craft": {"shape": ["  #", " # ", "#  "]}},
+      {"id": "drs", "name": "stripe_downright", "craft": {"shape": ["#  ", " # ", "  #"]}},
+      {"id": "ls", "name": "stripe_left", "craft": {"shape": ["#  ", "#  ", "#  "]}},
+      {"id": "ms", "name": "stripe_middle", "craft": {"shape": ["   ", "###", "   "]}},
+      {"id": "rs", "name": "stripe_right", "craft": {"shape": ["  #", "  #", "  #"]}},
+      {"id": "ts", "name": "stripe_top", "craft": {"shape": ["###", "   ", "   "]}},
+      {"id": "bt", "name": "triangle_bottom", "craft": {"shape": ["   ", " # ", "# #"]}},
+      {"id": "tt", "name": "triangle_top", "craft": {"shape": ["# #", " # ", "   "]}},
+      {"id": "bts", "name": "triangles_bottom", "craft": {"shape": ["   ", "# #", " # "]}},
+      {"id": "tts", "name": "triangles_top", "craft": {"shape": [" # ", "# #", "   "]}},
+      {"id": "pig", "name": "piglin", "item": "minecraft:piglin_banner_pattern"}
+    ],
+    "dyes": {
+      "minecraft:black_dye": 0,
+      "minecraft:red_dye": 1,
+      "minecraft:green_dye": 2,
+      "minecraft:brown_dye": 3,
+      "minecraft:blue_dye": 4,
+      "minecraft:purple_dye": 5,
+      "minecraft:cyan_dye": 6,
+      "minecraft:light_gray_dye": 7,
+      "minecraft:gray_dye": 8,
+      "minecraft:pink_dye": 9,
+      "minecraft:lime_dye": 10,
+      "minecraft:yellow_dye": 11,
+      "minecraft:light_blue_dye": 12,
+      "minecraft:magenta_dye": 13,
+      "minecraft:orange_dye": 14,
+      "minecraft:white_dye": 15
+    }
+  },
+  "beacon": {
+    "payments": ["minecraft:iron_ingot", "minecraft:gold_ingot", "minecraft:diamond", "minecraft:emerald", "minecraft:netherite_ingot"],
+    "bases": [
+      "minecraft:iron_block",
+      "minecraft:gold_block",
+      "minecraft:diamond_block",
+      "minecraft:emerald_block",
+      "minecraft:netherite_block"
+    ],
+    "effects": [
+      {"id": 1, "name": "speed", "tier": 1},
+      {"id": 3, "name": "haste", "tier": 1},
+      {"id": 11, "name": "resistance", "tier": 2},
+      {"id": 8, "name": "jump_boost", "tier": 2},
+      {"id": 5, "name": "strength", "tier": 3},
+      {"id": 10, "name": "regeneration", "tier": 4}
+    ]
+  },
+  "cartography": {
+    "inputs": [
+      "minecraft:filled_map",
+      "minecraft:empty_map",
+      "minecraft:paper",
+      "minecraft:lodestone_compass",
+      "minecraft:compass",
+      "minecraft:glass_pane"
+    ]
+  },
+  "fireworks": {
+    "skulls": ["minecraft:skull"],
+    "colors": [
+      1908001,
+      11546150,
+      6192150,
+      8606770,
+      3949738,
+      8991416,
+      1481884,
+      10329495,
+      4673362,
+      15961002,
+      8439583,
+      16701501,
+      3847130,
+      13061821,
+      16351261,
+      15790320
+    ]
+  },
+  "multiRecipes": {
+    "9d4d10ba-5597-9385-c443-e9a8b7efcca4": "map_cloning",
+    "ae40a14b-75b0-92d3-cef6-568d86af8987": "map_extending",
+    "4b43944b-9422-cdae-2793-2cbb99446786": "map_upgrading",
+    "43457282-ed85-2d44-5dd0-de908f41f1a6": "cartography_map_cloning",
+    "3c482918-8c26-368b-f2a8-56713b99f1a0": "cartography_map_extending",
+    "5343c1ca-e434-2260-4b02-70ffebb1b78b": "cartography_map_locking",
+    "bd468510-384b-c898-cce6-59c138ddceb1": "cartography_map_upgrading",
+    "4e4a2ec4-2a74-5a68-5b8e-c93fb85eea88": "decorated_pot",
+    "00000000-0000-0000-0100-000000000000": "repair_item",
+    "00000000-0000-0000-0200-000000000000": "fireworks",
+    "00000000-0000-0000-c800-000000000000": "shield_decoration",
+    "7640a275-05d1-c5b5-f04b-bfa23e922baf": "banner_duplicate",
+    "404472e1-afae-1ad8-7bd2-30f08d862592": "banner_add_pattern",
+    "2f4f8e33-846b-cad1-8dd9-4b8bcc766b9c": "book_cloning"
+  },
+  "smithing": {
+    "upgrades": [
+      {"base": "minecraft:diamond_sword", "addition": "minecraft:netherite_ingot", "output": "minecraft:netherite_sword"},
+      {"base": "minecraft:diamond_shovel", "addition": "minecraft:netherite_ingot", "output": "minecraft:netherite_shovel"},
+      {"base": "minecraft:diamond_pickaxe", "addition": "minecraft:netherite_ingot", "output": "minecraft:netherite_pickaxe"},
+      {"base": "minecraft:diamond_axe", "addition": "minecraft:netherite_ingot", "output": "minecraft:netherite_axe"},
+      {"base": "minecraft:diamond_hoe", "addition": "minecraft:netherite_ingot", "output": "minecraft:netherite_hoe"},
+      {"base": "minecraft:diamond_helmet", "addition": "minecraft:netherite_ingot", "output": "minecraft:netherite_helmet"},
+      {"base": "minecraft:diamond_chestplate", "addition": "minecraft:netherite_ingot", "output": "minecraft:netherite_chestplate"},
+      {"base": "minecraft:diamond_leggings", "addition": "minecraft:netherite_ingot", "output": "minecraft:netherite_leggings"},
+      {"base": "minecraft:diamond_boots", "addition": "minecraft:netherite_ingot", "output": "minecraft:netherite_boots"}
+    ]
+  }
+}

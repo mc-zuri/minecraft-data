@@ -2328,7 +2328,7 @@
         },
         {
           "name": "option_id",
-          "type": "zigzag32"
+          "type": "varint"
         }
       ]
     ],
@@ -2663,11 +2663,11 @@
                             [
                               {
                                 "name": "recipe_network_id",
-                                "type": "varint"
+                                "type": "zigzag32"
                               },
                               {
                                 "name": "cost",
-                                "type": "varint"
+                                "type": "zigzag32"
                               }
                             ]
                           ],
@@ -3898,9 +3898,9 @@
           "420": "goat_bass_7",
           "421": "goat_bass_8",
           "422": "goat_bass_9",
-          "423": "_",
-          "424": "_",
-          "425": "_",
+          "423": "undefined_423",
+          "424": "undefined_424",
+          "425": "undefined_425",
           "426": "ImitateWarden",
           "427": "ListeningAngry",
           "428": "ItemGiven",
@@ -3918,8 +3918,8 @@
           "440": "ConvertToFrog",
           "441": "RecordPlaying",
           "442": "EnchantingTableUse",
-          "443": "_",
-          "444": "_",
+          "443": "undefined_443",
+          "444": "undefined_444",
           "445": "BundleDropContents",
           "446": "BundleInsert",
           "447": "BundleRemoveOne"
@@ -4613,7 +4613,15 @@
         },
         {
           "name": "message",
-          "type": "string"
+          "type": [
+            "switch",
+            {
+              "compareTo": "hide_disconnect_reason",
+              "fields": {
+                "false": "string"
+              }
+            }
+          ]
         }
       ]
     ],
@@ -7712,11 +7720,11 @@
         },
         {
           "name": "villager_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "entity_unique_id",
-          "type": "varint64"
+          "type": "zigzag64"
         },
         {
           "name": "display_name",
@@ -7749,7 +7757,7 @@
         },
         {
           "name": "size",
-          "type": "u8"
+          "type": "varint"
         },
         {
           "name": "entity_id",
@@ -8250,7 +8258,12 @@
         },
         {
           "name": "image_data",
-          "type": "string"
+          "type": [
+            "buffer",
+            {
+              "countType": "varint"
+            }
+          ]
         },
         {
           "name": "book_id",
@@ -9270,10 +9283,6 @@
                   "container",
                   [
                     {
-                      "name": "has",
-                      "type": "bool"
-                    },
-                    {
                       "name": "url",
                       "type": "string"
                     },
@@ -10254,7 +10263,11 @@
       [
         {
           "name": "entity_id",
-          "type": "varint64"
+          "type": "varint"
+        },
+        {
+          "name": "dimension",
+          "type": "zigzag32"
         }
       ]
     ],
@@ -10757,7 +10770,7 @@
           "type": [
             "mapper",
             {
-              "type": "zigzag32",
+              "type": "li32",
               "mappings": {
                 "0": "none",
                 "1": "attack",

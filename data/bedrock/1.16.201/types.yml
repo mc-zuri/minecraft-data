@@ -330,7 +330,8 @@ Transaction:
          100: craft_slot
          99999: craft
       _: source_type?
-         if container or creative:
+         # a creative source has no inventory id (the slot follows at once), as the game writes it
+         if container or craft:
             inventory_id: varint
          if world_interaction:
             flags: varint
@@ -359,10 +360,10 @@ Transaction:
          block_position: BlockCoordinates
          # BlockFace is the face of the block that was interacted with. When clicking the block, it is the face
          # clicked. When breaking the block, it is the face that was last being hit until the block broke.
-         face: varint
+         face: zigzag32
          # HotBarSlot is the hot bar slot that the player was holding while clicking the block. It should be used
          # to ensure that the hot bar slot and held item are correctly synchronised with the server.
-         hotbar_slot: varint
+         hotbar_slot: zigzag32
          # HeldItem is the item that was held to interact with the block. The server should check if this item
          # is actually present in the HotBarSlot.
          held_item: Item
@@ -474,7 +475,7 @@ Recipes: []varint
          uuid: uuid
          block: string
          priority: zigzag32
-         network_id: zigzag32
+         network_id: varint
       if shaped or shaped_chemistry:
          recipe_id: LatinString
          width: zigzag32
@@ -487,7 +488,7 @@ Recipes: []varint
          uuid: uuid
          block: string
          priority: zigzag32
-         network_id: zigzag32
+         network_id: varint
       if furnace:
          input_id: zigzag32
          output: Item
@@ -499,12 +500,12 @@ Recipes: []varint
          block: string
       if multi:
          uuid: uuid
-         network_id: zigzag32
+         network_id: varint
 
 SkinImage:
    width: li32
    height: li32
-   data: string
+   data: ByteArray
 
 Skin:
    skin_id: string
@@ -589,20 +590,83 @@ Enchant:
    id: u8
    level: u8
 
-EnchantOptions: []varint
+EnchantOption:
    cost: varint
    slot_flags: li32
    equip_enchants: Enchant[]varint
    held_enchants: Enchant[]varint
    self_enchants: Enchant[]varint
    name: string
-   option_id: zigzag32
+   option_id: varint
 
 
 StackRequestSlotInfo:
-   container_id: u8
-   slot_id: u8
+   # the container's type (a u8, named as 1.16.210 names it) and the slot within it
+   slot_type: ContainerSlotType
+   slot: u8
    stack_id: zigzag32
+
+ContainerSlotType: u8 =>
+   - anvil_input
+   - anvil_material
+   - anvil_result
+   - smithing_table_input
+   - smithing_table_material
+   - smithing_table_result
+   - armor
+   - container
+   - beacon_payment
+   - brewing_input
+   - brewing_result
+   - brewing_fuel
+   - hotbar_and_inventory
+   - crafting_input
+   - crafting_output
+   - recipe_construction
+   - recipe_nature
+   - recipe_items
+   - recipe_search
+   - recipe_search_bar
+   - recipe_equipment
+   - enchanting_input
+   - enchanting_lapis
+   - furnace_fuel
+   - furnace_ingredient
+   - furnace_output
+   - horse_equip
+   - hotbar
+   - inventory
+   - shulker
+   - trade_ingredient1
+   - trade_ingredient2
+   - trade_result
+   - offhand
+   - compcreate_input
+   - compcreate_output
+   - elemconstruct_output
+   - matreduce_input
+   - matreduce_output
+   - labtable_input
+   - loom_input
+   - loom_dye
+   - loom_material
+   - loom_result
+   - blast_furnace_ingredient
+   - smoker_ingredient
+   - trade2_ingredient1
+   - trade2_ingredient2
+   - trade2_result
+   - grindstone_input
+   - grindstone_additional
+   - grindstone_result
+   - stonecutter_input
+   - stonecutter_result
+   - cartography_input
+   - cartography_additional
+   - cartography_result
+   - barrel
+   - cursor
+   - creative_output
 
 #
 
@@ -709,7 +773,6 @@ ItemStackRequests: []varint
             # RecipeNetworkID is the network ID of the recipe that is about to be crafted. This network ID matches
             # one of the recipes sent in the CraftingData packet, where each of the recipes have a RecipeNetworkID as
             recipe_network_id: varint
-            times_crafted: u8
          if craft_creative:
             # CreativeItemNetworkID is the network ID of the creative item that is being created. This is one of the
             # creative item network IDs sent in the CreativeContent packet.
@@ -729,16 +792,22 @@ ItemStackRequests: []varint
    custom_names: string[]varint
 
 ItemStackResponses: []varint
-   result: u8
-   request_id: varint
-   containers: []varint
-      container_id: u8
-      slots: []varint
-         slot: u8
-         hotbar_slot: u8
-         count: u8
-         item_stack_id: varint
-         custom_name: string
+   # A non-0 status means an error occurred: the response has no containers then.
+   status: u8 =>
+      0: ok
+      1: error
+   # the request id is a zigzag varint, as the client writes it (its ids are negative)
+   request_id: zigzag32
+   _: status ?
+      if ok:
+         containers: []varint
+            slot_type: ContainerSlotType
+            slots: []varint
+               slot: u8
+               hotbar_slot: u8
+               count: u8
+               item_stack_id: zigzag32
+               custom_name: string
 
 ItemComponentList: []varint
    # Name is the name of the item, which is a name like 'minecraft:stick'.
@@ -838,7 +907,9 @@ WindowIDVarint: varint =>
    123: fixed_inventory
    124: ui
 
-WindowType: u8 =>
+WindowType: i8 =>
+   -9: none
+   -1: inventory
    0: container
    1: workbench
    2: furnace
@@ -976,3 +1047,72 @@ LegacyEntityType: li32 =>
    111: tropicalfish
    112: cod
    113: panda
+
+TrackedObject:
+   # Type is the type of the tracked object. It is either MapObjectTypeEntity or MapObjectTypeBlock.
+   type: li32 =>
+      0: entity
+      1: block
+   # EntityUniqueID is the unique ID of the entity, if the tracked object was an entity. It needs not to be
+   # filled out if Type is not MapObjectTypeEntity.
+   entity_unique_id: type ?
+      if entity: zigzag64
+   # BlockPosition is the position of the block, if the tracked object was a block. It needs not to be
+   # filled out if Type is not MapObjectTypeBlock.
+   block_position: type ?
+      if block: BlockCoordinates
+
+# MapDecoration is a fixed decoration on a map: Its position or other properties do not change automatically
+# client-side.
+MapDecoration:
+   type: u8 =>
+   - marker_white
+   - marker_green
+   - marker_red
+   - marker_blue
+   - cross_white
+   - triangle_red
+   - square_white
+   - marker_sign
+   - marker_pink
+   - marker_orange
+   - marker_yellow
+   - marker_teal
+   - triangle_green
+   - small_square_white
+   - mansion
+   - monument
+   - no_draw
+   - village_desert
+   - village_plains
+   - village_savanna
+   - village_snowy
+   - village_taiga
+   - jungle_temple
+   - witch_hut
+   # Rotation is the rotation of the map decoration. It is byte due to the 16 fixed directions that the
+   # map decoration may face.
+   rotation: u8
+   # X is the offset on the X axis in pixels of the decoration.
+   x: u8
+   # Y is the offset on the Y axis in pixels of the decoration.
+   y: u8
+   # Label is the name of the map decoration. This name may be of any value.
+   label: string
+   # Colour is the colour of the map decoration. Some map decoration types have a specific colour set
+   # automatically, whereas others may be changed.
+   color_abgr: varint
+
+StructureBlockSettings:
+   palette_name: string
+   ignore_entities: bool
+   ignore_blocks: bool
+   size: BlockCoordinates
+   structure_offset: BlockCoordinates
+   last_editing_player_unique_id: zigzag64
+   rotation: u8
+   mirror: u8
+   integrity: lf32
+   seed: lu32
+   pivot: vec3f
+

@@ -1,7 +1,7 @@
 # Created from MiNET and gophertunnel docs
 # The version below is the latest version this protocol schema was updated for.
 # The output protocol.json will be in the folder for the version
-!version: 1.26.45
+!version: 1.26.51
 
 # Some ProtoDef aliases
 string: ["pstring",{"countType":"varint"}]            # String / array types
@@ -399,7 +399,7 @@ packet_start_game:
    limited_world_length: li32
    is_new_nether: bool
    edu_resource_uri: EducationSharedResourceURI
-   experimental_gameplay_override: bool
+   experimental_gameplay_override?: bool
    # ChatRestrictionLevel specifies the level of restriction on in-game chat.
    chat_restriction_level: u8 =>
       0: none
@@ -1307,7 +1307,7 @@ packet_inventory_slot:
    !bound: both
    # WindowID is the ID of the window that the packet modifies. It must point to one of the windows that the
    # client currently has opened.
-   window_id: WindowIDVarint
+   window_id: WindowID
    # Slot is the index of the slot that the packet modifies. The new item will be set to the slot at this index.
    slot: varint
    # Container is the protocol.FullContainerName that describes the container that the content is for.
@@ -1708,7 +1708,6 @@ packet_boss_event:
    !id: 0x4a
    !bound: both
    target_entity_id: zigzag64
-   player_id: zigzag64
    type: u8 =>
       # S2C: Shows the boss-bar to the player.
       0: show_bar
@@ -2007,10 +2006,10 @@ packet_update_trade:
    trade_tier: varint
    # VillagerUniqueID is the unique ID of the villager entity that the player is trading with. The
    # TradeTier sent above applies to this villager.
-   villager_unique_id: varint64
+   villager_unique_id: zigzag64
    # EntityUniqueID is the unique ID of the entity (usually a player) for which the trades are updated. The
    # updated trades may apply only to this entity.
-   entity_unique_id: varint64
+   entity_unique_id: zigzag64
    # DisplayName is the name displayed at the top of the trading UI. It is usually used to represent the
    # profession of the villager in the UI.
    display_name: string
@@ -2039,7 +2038,7 @@ packet_update_equipment:
    window_type: WindowType
    # Size is the size of the horse inventory that should be opened. A bigger size does, in fact, change the
    # amount of slots displayed.
-   size: u8
+   size: varint
    # EntityUniqueID is the unique ID of the entity whose equipment was 'updated' to the player. It is
    # typically the horse entity that had its inventory opened.
    entity_id: zigzag64
@@ -2129,7 +2128,9 @@ packet_play_sound:
    volume: lf32
    pitch: lf32
    loop_count: varint
+   bypass_listener_range_check: bool
    handle?: lu64
+   playback_position_seconds?: lf32
 
 packet_stop_sound:
    !id: 0x57
@@ -2196,7 +2197,7 @@ packet_structure_block_update:
    # FilteredStructureName is a filtered version of StructureName with all the profanity removed. The client
    # will use this over StructureName if this field is not empty and they have the "Filter Profanity"
    # setting enabled.
-   filtered_structure_name: string
+   filtered_structure_name?: string
    # DataField is the name of a function to run, usually used during natural generation. A description can
    # be found here: https://minecraft.wiki/w/Structure_Block#Data.
    data_field: string
@@ -2366,7 +2367,7 @@ packet_photo_transfer:
    image_name: string
    # PhotoData is the raw data of the photo image. The format of this data may vary: Formats such as JPEG or
    # PNG work, as long as PhotoName has the correct extension.
-   image_data: string
+   image_data: ByteArray
    # BookID is the ID of the book that the photo is associated with. If the PhotoName in a book with this ID
    # is set to PhotoName, it will display the photo (provided Education Edition is used).
    # The photo image is downloaded to a sub-folder with this book ID.
@@ -2581,6 +2582,7 @@ packet_move_entity_delta:
    force_move: bool
    force_move_local_entity: bool
    force_completion: bool
+   ticks: varint64
 
 # SetScoreboardIdentity is sent by the server to change the identity type of one of the entries on a
 # scoreboard. This is used to change, for example, an entry pointing to a player, to a fake player when it
@@ -2938,7 +2940,6 @@ packet_education_settings:
    has_external_link_settings: bool
    external_link_settings: has_external_link_settings ?
       if true:
-         has: bool
          url: string
          display_name: string
 
@@ -3073,7 +3074,7 @@ packet_player_auth_input:
    head_yaw: lf32
    # InputData specifies the way the player moved last tick. As of 1.26.40 it is an optional list of
    # InputData values instead of a bitfield.
-   input_data?: InputData[]varint
+   input_data: InputData[]varint
    # InputMode specifies the way that the client inputs data to the screen. It is one of the constants that
    # may be found above.
    input_mode: varint =>
@@ -3112,17 +3113,13 @@ packet_player_auth_input:
    delta: vec3f
    # As of 1.26.40 none of the fields below are gated on the input flags any more. Each is preceded by a
    # presence byte (always written as true) and is then written as its own optional.
-   transaction_presence: bool
    transaction?:
       legacy: TransactionLegacy
       # The actions carry their own presence byte and optional, unlike the plain
       # optional the InventoryTransaction packet wraps them in.
-      actions_presence: bool
-      actions?: TransactionActions
+      actions: TransactionActions
       data: TransactionUseItem
-   item_stack_request_presence: bool
    item_stack_request?: ItemStackRequest
-   block_action_presence: bool
    block_action?: []varint
       action: Action
       # As of 1.26.40 the position and face are always written, whatever the action is.
@@ -3132,9 +3129,7 @@ packet_player_auth_input:
       # BlockFace is the face of the target block that was touched. If the action with the ActionType set
       # concerned a block. If not, the face is always 0.
       face: zigzag32
-   vehicle_rotation_presence: bool
    vehicle_rotation?: vec2f
-   predicted_vehicle_presence: bool
    predicted_vehicle?: zigzag64
    # AnalogueMoveVector is a Vec2 that specifies the direction in which the player moved, as a combination of X/Z
    # values which are created using an analogue input.
@@ -3520,11 +3515,17 @@ packet_filter_text_packet:
    # FromServer indicates if the packet was sent by the server or not.
    from_server: bool
 
-# PrimitiveShapes is a packet sent by the server to instruct the client to render one or more shapes in the world.
+# Legacy debug-renderer packet, retained under its existing schema name.
 packet_primitive_shapes:
    !id: 0xa4
    !bound: client
-   shapes: PrimitiveShape[]varint
+   # This legacy packet ID writes a named debug-renderer instruction.
+   type: string
+   marker?:
+      text: string
+      position: vec3f
+      color: lu32
+      duration: lu64
 
 
 
@@ -3557,7 +3558,8 @@ packet_remove_volume_entity:
    !id: 0xa7
    !bound: client
    # The Runtime Entity ID
-   entity_id: varint64
+   entity_id: varint
+   dimension: zigzag32
 
 # SimulationType is an in-progress packet. We currently do not know the use case.
 packet_simulation_type:
@@ -3646,9 +3648,9 @@ SubChunkEntry: []varint
    # Payload has the terrain data, if the chunk isn't empty and caching is disabled
    payload?: ByteArray
    heightmap_type: HeightMapDataType
-   heightmap?: '["buffer", { "count": 256 }]'
+   heightmap?: HeightMap
    render_heightmap_type: HeightMapDataType
-   render_heightmap?: '["buffer", { "count": 256 }]'
+   render_heightmap?: HeightMap
    blob_id?: lu64
 
 # SubChunk sends data about multiple sub-chunks around a center point.
@@ -3727,8 +3729,8 @@ packet_dimension_data:
    !bound: client
    definitions: []varint
       id: string
-      max_height: zigzag32
-      min_height: zigzag32
+      min_y: zigzag32
+      height_range: zigzag32
       generator: zigzag32 =>
          0: legacy
          1: overworld 
@@ -3738,6 +3740,7 @@ packet_dimension_data:
          5: void
       dimension_type: zigzag32
       pack_id: uuid
+      default_biome: string
 
 # AgentAction is an Education Edition packet sent from the server to the client to return a response to a
 # previously requested action.
@@ -3745,7 +3748,7 @@ packet_agent_action:
    !id: 0xb5
    !bound: client
    request_id: string
-   action_type: zigzag32 =>
+   action_type: li32 =>
    - none
    - attack
    - collect
@@ -3922,8 +3925,10 @@ packet_editor_network:
    !id: 0xbe
    !bound: client
    route_to_manager: bool
-   # Payload is a network little endian compound tag holding data relevant to the editor.
-   payload: nbt
+   # Editor payload consists of the variant name and its data strings.
+   payload:
+      name: string
+      data: string
 
 # FeatureRegistry is a packet used to notify the client about the world generation features the server is currently
 # using. This is used in combination with the client-side world generation system introduced in v1.19.20, allowing the
@@ -4067,10 +4072,11 @@ packet_camera_instruction:
    clear?: bool
    # Fade is a camera instruction that fades the screen to a specified colour.
    fade?:
-      fade_in_duration: lf32
-      wait_duration: lf32
-      fade_out_duration: lf32
-      color_rgb: vec3f
+      time?:
+         fade_in_duration: lf32
+         wait_duration: lf32
+         fade_out_duration: lf32
+      color_rgb?: vec3f
    # Target is a camera instruction that targets a specific entity.
    target?:
       offset?: vec3f
@@ -4080,7 +4086,7 @@ packet_camera_instruction:
    fov?:
       field_of_view: lf32
       ease_time: lf32
-      ease_type: EaseType
+      ease_type: string
       clear: bool
    spline?: CameraSplineInstruction
    attach_to_entity?: li64
@@ -4258,7 +4264,7 @@ packet_serverbound_diagnostics:
    entity_diagnostics: EntityDiagnosticTimingInfo[]varint
    system_diagnostics: SystemDiagnosticTimingInfo[]varint
    # Added in 1.26.40.
-   system_categories: SystemCategory[]varint
+   system_categories?: SystemCategory[]varint
    whisker_scopes: WhiskerScopeDataSummary[]varint
 
 # CameraAimAssist is sent by the server to the client to set up aim assist for the client's camera.
@@ -4432,17 +4438,17 @@ packet_player_update_entity_overrides:
    !bound: client
    # EntityRuntimeID is the runtime ID of the entity. The runtime ID is unique for each world session, and
    # entities are generally identified in packets using this runtime ID.
-   runtime_id: varint64
+   runtime_id: zigzag64
    # PropertyIndex is the index of the property to modify. The index is unique for each property of an entity.
    property_index: varint
    # Type is the type of action to perform with the property. It is one of the constants above.
-   # As of 1.26.40 it is sent twice: once as an unsigned varint and once as the legacy byte.
+   # The variant index is followed by its serialized type name.
    type: varint =>
       - clear_all
       - remove
       - set_int
       - set_float
-   legacy_type: u8
+   type_name: string
    value: type ?
       # IntValue is the new integer value of the property. It is only used when Type is set to
       # PlayerUpdateEntityOverridesTypeInt.
@@ -4512,10 +4518,12 @@ packet_serverbound_pack_setting_change:
          - float
          - bool
          - string
+         - string_list
       value: type ?
          if float: lf32
          if bool: bool
          if string: string
+         if string_list: string[]varint
 
 packet_clientbound_data_store:
    !id: 0x14a
@@ -4529,9 +4537,9 @@ packet_graphics_override_parameter:
    float_value?: lf32
    vec3_value?: vec3f
    biome_identifier: string
+   player_id?: string
    parameter_type: GraphicsOverrideParameterType
    reset: bool
-   player_id?: string
 
 packet_serverbound_data_store:
    !id: 0x14c
@@ -4539,7 +4547,7 @@ packet_serverbound_data_store:
    name: string
    property: string
    path: string
-   data_type: lu32 =>
+   data_type: varint =>
       0: double
       1: bool
       2: string
@@ -4617,7 +4625,7 @@ packet_party_changed:
 packet_serverbound_data_driven_screen_closed:
    !id: 0x157
    !bound: server
-   form_id?: lu32
+   form_id: lu32
    # Options:
 	# "programmaticclose"
 	# "programmaticcloseall"
@@ -4684,27 +4692,15 @@ packet_clientbound_update_sound_data:
    !id: 0x15c
    !bound: client
    server_sound_handle: ServerSoundHandle
-   # As of 1.26.40 the string type identifier is replaced by one optional per update kind. Each optional
-   # payload starts with an unsigned varint that is currently always zero.
-   stop?:
-      unused: varint
-   volume?:
-      unused: varint
-      volume: lf32
-   pitch?:
-      unused: varint
-      pitch: lf32
-   fade?:
-      unused: varint
-      target_volume: lf32
-      duration: lf32
-   seek_to?:
-      unused: varint
-      seconds: lf32
-   pause?:
-      unused: varint
-   resume?:
-      unused: varint
+   # The game writes seven tagged sound-event values, in this order.
+   stop: SoundEventUpdate
+   volume: SoundEventUpdate
+   pitch: SoundEventUpdate
+   fade: SoundEventUpdate
+   seek_to: SoundEventUpdate
+   pause: SoundEventUpdate
+   resume: SoundEventUpdate
+
 
 packet_send_party_destination_cookie:
    !id: 0x15d
@@ -4718,3 +4714,22 @@ packet_party_destination_cookie_response:
    !bound: server
    cookie: string
    accepted: bool
+
+# Sent by both sides to update the tabs, filtering and layout a player selected in a furnace-like container UI.
+packet_set_player_furnace_options:
+   !id: 0x15f
+   !bound: both
+   furnace_type: u8 =>
+      - none
+      - furnace
+      - blast_furnace
+      - smoker
+   furnace_options: FurnaceOptions
+
+# Sent by the server when a record starts playing at a block, such as a music disc inserted into a jukebox.
+# The handle can be used with clientbound_update_sound_data afterwards.
+packet_record_started:
+   !id: 0x160
+   !bound: client
+   position: BlockCoordinates
+   handle: lu64

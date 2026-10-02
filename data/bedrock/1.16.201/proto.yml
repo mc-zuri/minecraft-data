@@ -21,7 +21,6 @@ nbt: native                                           # NBT
 lnbt: native
 nbtLoop: native
 enum_size_based_on_values_len: native                 # Packet-specific custom logic  
-MapInfo: native
 
 # load the packet map file
 !import: packet_map.yml
@@ -110,7 +109,8 @@ packet_disconnect:
    # meaning it will be sent directly to the main menu.
    hide_disconnect_reason: bool
    # An optional message to show when disconnected.
-   message: string
+   message: hide_disconnect_reason ?
+      if false: string
 
 
 packet_resource_packs_info:
@@ -224,7 +224,7 @@ packet_start_game:
    player_gamemode: GameMode
    # The spawn position of the player in the world. In servers this is often the same as the 
    # world's spawn position found below.
-   spawn: vec3f
+   player_position: vec3f
    # The pitch and yaw of the player
    rotation: vec2f
    # The seed used to generate the world. Unlike in Java edition, the seed is a 32bit Integer here.
@@ -414,7 +414,7 @@ packet_add_entity:
    !id: 0x0d
    !bound: client
    entity_id_self: zigzag64
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    entity_type: string
    x: lf32
    y: lf32
@@ -438,7 +438,7 @@ packet_add_item_entity:
    !id: 0x0f
    !bound: client
    entity_id_self: zigzag64
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    item: Item
    x: lf32
    y: lf32
@@ -452,13 +452,13 @@ packet_add_item_entity:
 packet_take_item_entity:
    !id: 0x11
    !bound: client
-   runtime_entity_id: varint
-   target: varint
+   runtime_entity_id: varint64
+   target: varint64
 
 packet_move_entity:
    !id: 0x12
    !bound: both
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    flags: u8
    position: vec3f
    rotation: Rotation
@@ -527,8 +527,8 @@ packet_add_painting:
    !id: 0x16
    !bound: client
    entity_id_self: zigzag64
-   runtime_entity_id: varint
-   coordinates: BlockCoordinates
+   runtime_entity_id: varint64
+   coordinates: vec3f
    direction: zigzag32
    title: string
 
@@ -643,7 +643,7 @@ packet_block_event:
 packet_entity_event:
    !id: 0x1b
    !bound: both
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    event_id: u8 =>
       1: jump 
       2: hurt_animation 
@@ -707,7 +707,7 @@ packet_entity_event:
 packet_mob_effect:
    !id: 0x1c
    !bound: client
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    event_id: u8 =>
       1: add
       2: update
@@ -732,7 +732,7 @@ packet_inventory_transaction:
 packet_mob_equipment:
    !id: 0x1f
    !bound: both
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    item: Item
    slot: u8
    selected_slot: u8
@@ -741,7 +741,7 @@ packet_mob_equipment:
 packet_mob_armor_equipment:
    !id: 0x20
    !bound: both
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    helmet: Item
    chestplate: Item
    leggings: Item
@@ -761,7 +761,7 @@ packet_interact:
       6: open_inventory
    # TargetEntityRuntimeID is the runtime ID of the entity that the player interacted with. This is empty
    # for the InteractActionOpenInventory action type.
-   target_runtime_entity_id: varint
+   target_runtime_entity_id: varint64
    # Position associated with the ActionType above. For the InteractActionMouseOverEntity, this is the
    # position relative to the entity moused over over which the player hovered with its mouse/touch. For the
    # InteractActionLeaveVehicle, this is the position that the player spawns at after leaving the vehicle.
@@ -790,7 +790,7 @@ packet_player_action:
    !bound: server
    # EntityRuntimeID is the runtime ID of the player. The runtime ID is unique for each world session, and
    # entities are generally identified in packets using this runtime ID.
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    # ActionType is the ID of the action that was executed by the player. It is one of the constants that may
    # be found above.
    action: zigzag32 =>
@@ -821,7 +821,7 @@ packet_player_action:
       22: stop_swimming
       23: start_spin_attack
       24: stop_spin_attack
-      25: ineract_block
+      25: interact_block
    # BlockPosition is the position of the target block, if the action with the ActionType set concerned a
    # block. If that is not the case, the block position will be zero.
    position: BlockCoordinates
@@ -832,19 +832,20 @@ packet_player_action:
 packet_hurt_armor:
    !id: 0x26
    !bound: client
-   health: zigzag32
+   cause: zigzag32
+   damage: zigzag32
 
 packet_set_entity_data:
    !id: 0x27
    !bound: both
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    metadata: MetadataDictionary
    tick: varint64
 
 packet_set_entity_motion:
    !id: 0x28
    !bound: both
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    velocity: vec3f
 
 # SetActorLink is sent by the server to initiate an entity link client-side, meaning one entity will start
@@ -903,7 +904,7 @@ packet_respawn:
    y: lf32
    z: lf32
    state: u8
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
 
 # ContainerOpen is sent by the server to open a container client-side. This container must be physically
 # present in the world, for the packet to have any effect. Unlike Java Edition, Bedrock Edition requires that
@@ -1028,13 +1029,10 @@ packet_crafting_event:
 packet_gui_data_pick_item:
    !id: 0x36
    !bound: client
+   item_name: string
+   item_effects: string
+   hotbar_slot: li32
 
-# AdventureSettings is sent by the server to update game-play related features, in particular permissions to
-# access these features for the client. It includes allowing the player to fly, build and mine, and attack
-# entities. Most of these flags should be checked server-side instead of using this packet only.
-# The client may also send this packet to the server when it updates one of these settings through the
-# in-game settings interface. The server should verify if the player actually has permission to update those
-# settings.
 packet_adventure_settings:
    !id: 0x37
    !bound: both
@@ -1217,10 +1215,75 @@ packet_spawn_experience_orb:
    position: vec3f
    count: zigzag32
 
+UpdateMapFlags: [ "bitflags", {
+   "type": "varint",
+   "flags": [
+      "void",
+      "texture",
+      "decoration",
+      "initialisation"
+   ]
+}]
+
+# ClientBoundMapItemData is sent by the server to the client to update the data of a map shown to the client.
+# It is sent with a combination of flags that specify what data is updated.
+# The ClientBoundMapItemData packet may be used to update specific parts of the map only. It is not required
+# to send the entire map each time when updating one part.
 packet_clientbound_map_item_data:
    !id: 0x43
    !bound: client
-   mapinfo: MapInfo
+   # MapID is the unique identifier that represents the map that is updated over network. It remains
+   # consistent across sessions.
+   map_id: zigzag64
+   # UpdateFlags is a combination of flags found above that indicate what parts of the map should be updated
+   # client-side.
+   update_flags: UpdateMapFlags
+   # Dimension is the dimension of the map that should be updated, for example the overworld (0), the nether
+   # (1) or the end (2).
+   dimension: u8
+   # LockedMap specifies if the map that was updated was a locked map, which may be done using a cartography
+   # table.
+   locked: bool
+   # The following fields apply only for the MapUpdateFlagInitialisation.
+   # MapsIncludedIn holds an array of map IDs that the map updated is included in. This has to do with the
+   # scale of the map: Each map holds its own map ID and all map IDs of maps that include this map and have
+   # a bigger scale. This means that a scale 0 map will have 5 map IDs in this slice, whereas a scale 4 map
+   # will have only 1 (its own).
+   # The actual use of this field remains unknown.
+   included_in: update_flags.initialisation ?
+      if true: zigzag64[]varint
+   # Scale is the scale of the map as it is shown in-game. It is written when any of the MapUpdateFlags are
+   # set to the UpdateFlags field.
+   scale: update_flags.initialisation || update_flags.decoration || update_flags.texture ?
+      if true: u8
+   # The following fields apply only for the MapUpdateFlagDecoration.
+   # TrackedObjects is a list of tracked objects on the map, which may either be entities or blocks. The
+   # client makes sure these tracked objects are actually tracked. (position updated etc.)
+   tracked: update_flags.decoration ?
+      if true:
+         objects: TrackedObject[]varint
+         decorations: MapDecoration[]varint
+   # Updates to the map contents itself (texture)
+   texture: update_flags.texture ?
+      if true:
+         # Width is the width of the texture area that was updated. The width may be a subset of the total width
+         # of the map.
+         width: zigzag32
+         # Height is the height of the texture area that was updated. The height may be a subset of the total
+         # height of the map
+         height: zigzag32
+         # XOffset is the X offset in pixels at which the updated texture area starts. From this X, the updated
+         # texture will extend exactly Width pixels to the right.
+         x_offset: zigzag32
+         # YOffset is the Y offset in pixels at which the updated texture area starts. From this Y, the updated
+         # texture will extend exactly Height pixels up.
+         y_offset: zigzag32
+         # Pixels is a list of pixel colours for the new texture of the map. It is indexed as Pixels[y][x], with
+         # the length of the outer slice having to be exactly Height long and the inner slices exactly Width long.
+         # To access this array, use $width * y + x
+         pixels: varint[]varint
+
+
 
 packet_map_info_request:
    !id: 0x44
@@ -1264,42 +1327,39 @@ packet_boss_event:
    !bound: both
    boss_entity_id: zigzag64
    type: varint =>
-      # S2C: Shows the boss-bar to the player.
       0: show_bar
-      # C2S: Registers a player to a boss fight.
       1: register_player
-      # S2C: Removes the boss-bar from the client.
       2: hide_bar
-      # C2S: Unregisters a player from a boss fight.
       3: unregister_player
-      # S2C: Sets the bar percentage.
       4: set_bar_progress
-      # S2C: Sets title of the bar.
       5: set_bar_title
-      # S2C: darkens the sky
       6: update_properties
-      # S2C: Not implemented :( Intended to alter bar appearance, but these currently produce no effect on client-side whatsoever.
       7: texture
    _: type?
-      if register_player or unregister_player:
-         player_id: zigzag64
       if show_bar:
          title: string
-         bar_progress: lf32
+         progress: lf32
+         screen_darkening: li16
+         color: varint
+         overlay: varint
+      if register_player or unregister_player:
+         player_id: zigzag64
+      if set_bar_progress:
+         progress: lf32
+      if set_bar_title:
+         title: string
       if update_properties:
-         darkness_factor: li16
+         screen_darkening: li16
+         color: varint
+         overlay: varint
       if texture:
          color: varint
          overlay: varint
-      if set_bar_progress:
-         bar_progress: lf32
-      if set_bar_title:
-         title: string
 
 packet_show_credits:
    !id: 0x4b
    !bound: client
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    status: zigzag32
 
 # This packet sends a list of commands to the client. Commands can have
@@ -1510,10 +1570,10 @@ packet_update_trade:
    trade_tier: varint
    # VillagerUniqueID is the unique ID of the villager entity that the player is trading with. The
    # TradeTier sent above applies to this villager.
-   villager_unique_id: varint64
+   villager_unique_id: zigzag64
    # EntityUniqueID is the unique ID of the entity (usually a player) for which the trades are updated. The
    # updated trades may apply only to this entity.
-   entity_unique_id: varint64
+   entity_unique_id: zigzag64
    # DisplayName is the name displayed at the top of the trading UI. It is usually used to represent the
    # profession of the villager in the UI.
    display_name: string
@@ -1542,7 +1602,7 @@ packet_update_equipment:
    window_type: WindowType
    # Size is the size of the horse inventory that should be opened. A bigger size does, in fact, change the
    # amount of slots displayed.
-   size: u8
+   size: varint
    # EntityUniqueID is the unique ID of the entity whose equipment was 'updated' to the player. It is
    # typically the horse entity that had its inventory opened.
    entity_id: zigzag64
@@ -1613,6 +1673,15 @@ packet_add_behavior_tree:
 packet_structure_block_update:
    !id: 0x5a
    !bound: client
+   position: BlockCoordinates
+   structure_name: string
+   data_field: string
+   include_players: bool
+   show_bounding_box: bool
+   structure_block_type: zigzag32
+   settings: StructureBlockSettings
+   redstone_save_mode: zigzag32
+   should_trigger: bool
 
 packet_show_store_offer:
    !id: 0x5b
@@ -1692,7 +1761,7 @@ packet_book_edit:
 packet_npc_request:
    !id: 0x62
    !bound: both
-   runtime_entity_id: varint
+   runtime_entity_id: varint64
    unknown0: u8
    unknown1: string
    unknown2: u8
@@ -1701,7 +1770,7 @@ packet_photo_transfer:
    !id: 0x63
    !bound: server
    file_name: string
-   image_data: string
+   image_data: ["buffer", {"countType": "varint"}]
    unknown2: string
 
 packet_modal_form_request:
@@ -1786,7 +1855,7 @@ packet_update_block_synced:
    block_runtime_id: varint
    block_priority: varint
    data_layer_id: varint
-   unknown0: varint
+   unknown0: zigzag64
    unknown1: varint
 
 # MoveActorDelta is sent by the server to move an entity. The packet is specifically optimised to save as
@@ -1995,18 +2064,39 @@ packet_client_cache_status:
 packet_on_screen_texture_animation:
    !id: 0x82
    !bound: client
+   animation_type: lu32
 
 packet_map_create_locked_copy:
    !id: 0x83
    !bound: client
+   # OriginalMapID is the ID of the map that is being copied. The locked copy will obtain all content that
+   # is visible on this map, except the content will not change.
+   original_map_id: zigzag64
+   # NewMapID is the ID of the map that holds the locked copy of the map that OriginalMapID points to. Its
+   # contents will be impossible to change.
+   new_map_id: zigzag64
 
 packet_structure_template_data_export_request:
    !id: 0x84
    !bound: server
+   name: string
+   position: BlockCoordinates
+   settings: StructureBlockSettings
+   request_type: u8 =>
+      1: export_from_save
+      2: export_from_load
+      3: query_saved_structure
 
 packet_structure_template_data_export_response:
    !id: 0x85
    !bound: client
+   name: string
+   success: bool
+   nbt: success ?
+      if true: nbt
+   response_type: u8 =>
+      1: export
+      2: query
 
 packet_update_block_properties:
    !id: 0x86
@@ -2235,7 +2325,7 @@ packet_creative_content:
 packet_player_enchant_options:
    !id: 0x92
    !bound: client
-   enchant_options: EnchantOptions
+   options: EnchantOption[]varint
 
 packet_item_stack_request:
    !id: 0x93
@@ -2262,7 +2352,7 @@ packet_player_armor_damage:
       if true: zigzag32
    leggings_damage: type.legs ?
       if true: zigzag32
-   boots_damage: types.feet ?
+   boots_damage: type.feet ?
       if true: zigzag32
 
 ArmorDamageType: [ "bitflags",
