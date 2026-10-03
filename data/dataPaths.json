@@ -2910,7 +2910,7 @@
       "blocksB2J": "bedrock/1.26.30",
       "blocksJ2B": "bedrock/1.26.30",
       "proto": "bedrock/1.26.40",
-      "types": "bedrock/latest",
+      "types": "bedrock/1.26.40",
       "version": "bedrock/1.26.40",
       "language": "bedrock/1.26.40"
     },
@@ -2931,8 +2931,8 @@
       "steve": "bedrock/1.21.70",
       "blocksB2J": "bedrock/1.26.30",
       "blocksJ2B": "bedrock/1.26.30",
-      "proto": "bedrock/latest",
-      "types": "bedrock/latest",
+      "proto": "bedrock/1.26.45",
+      "types": "bedrock/1.26.45",
       "version": "bedrock/1.26.45",
       "language": "bedrock/1.26.40"
     },
