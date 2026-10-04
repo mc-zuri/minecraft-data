@@ -79,7 +79,7 @@
     "has_precipitation": true,
     "dimension": "overworld",
     "displayName": "swampland",
-    "color": 5006681,
+    "color": 6388580,
     "rainfall": 0.8999999761581421,
     "depth": -0.20000000298023224
   },
@@ -567,7 +567,7 @@
     "id": 47,
     "name": "deep_frozen_ocean",
     "category": "ocean",
-    "temperature": 0,
+    "temperature": 0.5,
     "has_precipitation": true,
     "dimension": "overworld",
     "displayName": "deep_frozen_ocean",
@@ -667,7 +667,7 @@
     "has_precipitation": true,
     "dimension": "overworld",
     "displayName": "swampland_mutated",
-    "color": 5006681,
+    "color": 6388580,
     "rainfall": 0.5,
     "depth": -0.10000000149011612
   },

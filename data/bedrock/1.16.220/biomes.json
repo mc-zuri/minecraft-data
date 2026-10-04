@@ -35,7 +35,7 @@
     "category": "extreme_hills",
     "temperature": 0.20000000298023224,
     "dimension": "overworld",
-    "displayName": "Windswept Hills",
+    "displayName": "Mountains",
     "color": 0,
     "rainfall": 0.30000001192092896
   },
@@ -85,7 +85,7 @@
     "category": "nether",
     "temperature": 2,
     "dimension": "nether",
-    "displayName": "Nether Wastes",
+    "displayName": "hell",
     "color": 0,
     "rainfall": 0
   },
@@ -105,7 +105,7 @@
     "category": "ocean",
     "temperature": 0,
     "dimension": "overworld",
-    "displayName": "Frozen Ocean",
+    "displayName": "Legacy Frozen Ocean",
     "color": 0,
     "rainfall": 0.5
   },
@@ -125,7 +125,7 @@
     "category": "plains",
     "temperature": 0,
     "dimension": "overworld",
-    "displayName": "Snowy Plains",
+    "displayName": "Snowy Tundra",
     "color": 0,
     "rainfall": 0.5
   },
@@ -135,7 +135,7 @@
     "category": "plains",
     "temperature": 0,
     "dimension": "overworld",
-    "displayName": "Snowy Plains",
+    "displayName": "Snowy Mountains",
     "color": 0,
     "rainfall": 0.5
   },
@@ -155,7 +155,7 @@
     "category": "mushroom",
     "temperature": 0.8999999761581421,
     "dimension": "overworld",
-    "displayName": "Mushroom Fields",
+    "displayName": "Mushroom Fields Shore",
     "color": 0,
     "rainfall": 1
   },
@@ -175,7 +175,7 @@
     "category": "desert",
     "temperature": 2,
     "dimension": "overworld",
-    "displayName": "Desert",
+    "displayName": "Desert Hills",
     "color": 0,
     "rainfall": 0
   },
@@ -185,7 +185,7 @@
     "category": "forest",
     "temperature": 0.699999988079071,
     "dimension": "overworld",
-    "displayName": "Forest",
+    "displayName": "Wooded Hills",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -195,7 +195,7 @@
     "category": "taiga",
     "temperature": 0.25,
     "dimension": "overworld",
-    "displayName": "Taiga",
+    "displayName": "Taiga Hills",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -205,7 +205,7 @@
     "category": "extreme_hills",
     "temperature": 0.20000000298023224,
     "dimension": "overworld",
-    "displayName": "Windswept Hills",
+    "displayName": "Mountain Edge",
     "color": 0,
     "rainfall": 0.30000001192092896
   },
@@ -225,7 +225,7 @@
     "category": "jungle",
     "temperature": 0.949999988079071,
     "dimension": "overworld",
-    "displayName": "Jungle",
+    "displayName": "Jungle Hills",
     "color": 0,
     "rainfall": 0.8999999761581421
   },
@@ -235,7 +235,7 @@
     "category": "jungle",
     "temperature": 0.949999988079071,
     "dimension": "overworld",
-    "displayName": "Sparse Jungle",
+    "displayName": "Jungle Edge",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -255,7 +255,7 @@
     "category": "beach",
     "temperature": 0.20000000298023224,
     "dimension": "overworld",
-    "displayName": "Stony Shore",
+    "displayName": "Stone Shore",
     "color": 0,
     "rainfall": 0.30000001192092896
   },
@@ -285,7 +285,7 @@
     "category": "forest",
     "temperature": 0.6000000238418579,
     "dimension": "overworld",
-    "displayName": "Birch Forest",
+    "displayName": "Birch Forest Hills",
     "color": 0,
     "rainfall": 0.6000000238418579
   },
@@ -315,7 +315,7 @@
     "category": "taiga",
     "temperature": -0.5,
     "dimension": "overworld",
-    "displayName": "Snowy Taiga",
+    "displayName": "Snowy Taiga Hills",
     "color": 0,
     "rainfall": 0.4000000059604645
   },
@@ -325,7 +325,7 @@
     "category": "taiga",
     "temperature": 0.30000001192092896,
     "dimension": "overworld",
-    "displayName": "Old Growth Pine Taiga",
+    "displayName": "Giant Tree Taiga",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -335,7 +335,7 @@
     "category": "taiga",
     "temperature": 0.30000001192092896,
     "dimension": "overworld",
-    "displayName": "Old Growth Pine Taiga",
+    "displayName": "Giant Tree Taiga Hills",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -345,7 +345,7 @@
     "category": "forest",
     "temperature": 0.20000000298023224,
     "dimension": "overworld",
-    "displayName": "Windswept Forest",
+    "displayName": "Wooded Mountains",
     "color": 0,
     "rainfall": 0.30000001192092896
   },
@@ -385,7 +385,7 @@
     "category": "mesa",
     "temperature": 2,
     "dimension": "overworld",
-    "displayName": "Wooded Badlands",
+    "displayName": "Wooded Badlands Plateau",
     "color": 0,
     "rainfall": 0
   },
@@ -395,7 +395,7 @@
     "category": "mesa",
     "temperature": 2,
     "dimension": "overworld",
-    "displayName": "Badlands",
+    "displayName": "Badlands Plateau",
     "color": 0,
     "rainfall": 0
   },
@@ -415,7 +415,7 @@
     "category": "ocean",
     "temperature": 0.5,
     "dimension": "overworld",
-    "displayName": "Warm Ocean",
+    "displayName": "Deep Warm Ocean",
     "color": 0,
     "rainfall": 0.5
   },
@@ -495,7 +495,7 @@
     "category": "jungle",
     "temperature": 0.949999988079071,
     "dimension": "overworld",
-    "displayName": "Bamboo Jungle",
+    "displayName": "Bamboo Jungle Hills",
     "color": 0,
     "rainfall": 0.8999999761581421
   },
@@ -515,7 +515,7 @@
     "category": "desert",
     "temperature": 2,
     "dimension": "overworld",
-    "displayName": "Desert",
+    "displayName": "Desert Lakes",
     "color": 0,
     "rainfall": 0
   },
@@ -525,7 +525,7 @@
     "category": "extreme_hills",
     "temperature": 0.20000000298023224,
     "dimension": "overworld",
-    "displayName": "Windswept Gravelly Hills",
+    "displayName": "Gravelly Mountains",
     "color": 0,
     "rainfall": 0.30000001192092896
   },
@@ -545,7 +545,7 @@
     "category": "taiga",
     "temperature": 0.25,
     "dimension": "overworld",
-    "displayName": "Taiga",
+    "displayName": "Taiga Mountains",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -555,7 +555,7 @@
     "category": "swamp",
     "temperature": 0.800000011920929,
     "dimension": "overworld",
-    "displayName": "Swamp",
+    "displayName": "Swamp Hills",
     "color": 0,
     "rainfall": 0.5
   },
@@ -575,7 +575,7 @@
     "category": "jungle",
     "temperature": 0.949999988079071,
     "dimension": "overworld",
-    "displayName": "Jungle",
+    "displayName": "Modified Jungle",
     "color": 0,
     "rainfall": 0.8999999761581421
   },
@@ -585,7 +585,7 @@
     "category": "jungle",
     "temperature": 0.949999988079071,
     "dimension": "overworld",
-    "displayName": "Sparse Jungle",
+    "displayName": "Modified Jungle Edge",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -595,7 +595,7 @@
     "category": "forest",
     "temperature": 0.699999988079071,
     "dimension": "overworld",
-    "displayName": "Old Growth Birch Forest",
+    "displayName": "Tall Birch Forest",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -605,7 +605,7 @@
     "category": "forest",
     "temperature": 0.699999988079071,
     "dimension": "overworld",
-    "displayName": "Old Growth Birch Forest",
+    "displayName": "Tall Birch Hills",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -615,7 +615,7 @@
     "category": "forest",
     "temperature": 0.699999988079071,
     "dimension": "overworld",
-    "displayName": "Dark Forest",
+    "displayName": "Dark Forest Hills",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -625,7 +625,7 @@
     "category": "taiga",
     "temperature": -0.5,
     "dimension": "overworld",
-    "displayName": "Snowy Taiga",
+    "displayName": "Snowy Taiga Mountains",
     "color": 0,
     "rainfall": 0.4000000059604645
   },
@@ -635,7 +635,7 @@
     "category": "taiga",
     "temperature": 0.25,
     "dimension": "overworld",
-    "displayName": "Old Growth Spruce Taiga",
+    "displayName": "Giant Spruce Taiga",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -645,7 +645,7 @@
     "category": "taiga",
     "temperature": 0.30000001192092896,
     "dimension": "overworld",
-    "displayName": "Old Growth Spruce Taiga",
+    "displayName": "Giant Spruce Taiga Hills",
     "color": 0,
     "rainfall": 0.800000011920929
   },
@@ -655,7 +655,7 @@
     "category": "extreme_hills",
     "temperature": 0.20000000298023224,
     "dimension": "overworld",
-    "displayName": "Windswept Gravelly Hills",
+    "displayName": "Gravelly Mountains+",
     "color": 0,
     "rainfall": 0.30000001192092896
   },
@@ -665,7 +665,7 @@
     "category": "savanna",
     "temperature": 1.100000023841858,
     "dimension": "overworld",
-    "displayName": "Windswept Savanna",
+    "displayName": "Shattered Savanna",
     "color": 0,
     "rainfall": 0.5
   },
@@ -675,7 +675,7 @@
     "category": "savanna",
     "temperature": 1,
     "dimension": "overworld",
-    "displayName": "Windswept Savanna",
+    "displayName": "Shattered Savanna Plateau",
     "color": 0,
     "rainfall": 0.5
   },
@@ -695,7 +695,7 @@
     "category": "mesa",
     "temperature": 2,
     "dimension": "overworld",
-    "displayName": "Wooded Badlands",
+    "displayName": "Modified Wooded Badlands Plateau",
     "color": 0,
     "rainfall": 0
   },
@@ -705,7 +705,7 @@
     "category": "mesa",
     "temperature": 2,
     "dimension": "overworld",
-    "displayName": "Badlands",
+    "displayName": "Modified Badlands Plateau",
     "color": 0,
     "rainfall": 0
   },
@@ -748,105 +748,5 @@
     "displayName": "Basalt Deltas",
     "color": 0,
     "rainfall": 0
-  },
-  {
-    "id": 182,
-    "name": "jagged_peaks",
-    "category": "mountain",
-    "temperature": -0.699999988079071,
-    "dimension": "overworld",
-    "displayName": "Jagged Peaks",
-    "color": 0,
-    "rainfall": 0.8999999761581421
-  },
-  {
-    "id": 183,
-    "name": "frozen_peaks",
-    "category": "ice",
-    "temperature": -0.699999988079071,
-    "dimension": "overworld",
-    "displayName": "Frozen Peaks",
-    "color": 0,
-    "rainfall": 0.8999999761581421
-  },
-  {
-    "id": 184,
-    "name": "snowy_slopes",
-    "category": "mountain",
-    "temperature": -0.30000001192092896,
-    "dimension": "overworld",
-    "displayName": "Snowy Slopes",
-    "color": 0,
-    "rainfall": 0.8999999761581421
-  },
-  {
-    "id": 185,
-    "name": "grove",
-    "category": "forest",
-    "temperature": -0.20000000298023224,
-    "dimension": "overworld",
-    "displayName": "Grove",
-    "color": 0,
-    "rainfall": 0.800000011920929
-  },
-  {
-    "id": 186,
-    "name": "meadow",
-    "category": "mountain",
-    "temperature": 0.30000001192092896,
-    "dimension": "overworld",
-    "displayName": "Meadow",
-    "color": 0,
-    "rainfall": 0.800000011920929
-  },
-  {
-    "id": 187,
-    "name": "lush_caves",
-    "category": "underground",
-    "temperature": 0.8999999761581421,
-    "dimension": "overworld",
-    "displayName": "Lush Caves",
-    "color": 0,
-    "rainfall": 0
-  },
-  {
-    "id": 188,
-    "name": "dripstone_caves",
-    "category": "underground",
-    "temperature": 0.20000000298023224,
-    "dimension": "overworld",
-    "displayName": "Dripstone Caves",
-    "color": 0,
-    "rainfall": 0
-  },
-  {
-    "id": 189,
-    "name": "stony_peaks",
-    "category": "mountain",
-    "temperature": 1,
-    "dimension": "overworld",
-    "displayName": "Stony Peaks",
-    "color": 0,
-    "rainfall": 0.30000001192092896
-  },
-  {
-    "id": 190,
-    "name": "deep_dark",
-    "category": "underground",
-    "temperature": 0.800000011920929,
-    "dimension": "overworld",
-    "displayName": "Deep Dark",
-    "color": 0,
-    "rainfall": 0.4000000059604645
-  },
-  {
-    "id": 191,
-    "name": "mangrove_swamp",
-    "category": "forest",
-    "temperature": 0.800000011920929,
-    "dimension": "overworld",
-    "displayName": "Mangrove Swamp",
-    "color": 0,
-    "rainfall": 0.8999999761581421
   }
 ]
