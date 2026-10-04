@@ -6,7 +6,7 @@
     "displayName": "Chicken",
     "height": 0.8,
     "width": 0.6,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -16,7 +16,7 @@
     "displayName": "Cow",
     "height": 1.3,
     "width": 0.9,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -26,7 +26,7 @@
     "displayName": "Pig",
     "height": 0.9,
     "width": 0.9,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -36,7 +36,7 @@
     "displayName": "Sheep",
     "height": 1.3,
     "width": 0.9,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -46,7 +46,7 @@
     "displayName": "Wolf",
     "height": 0.8,
     "width": 0.6,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -66,7 +66,7 @@
     "displayName": "Mooshroom",
     "height": 1.3,
     "width": 0.9,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -76,7 +76,7 @@
     "displayName": "Squid",
     "height": 0.95,
     "width": 0.95,
-    "type": "water_creature",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -86,7 +86,7 @@
     "displayName": "Rabbit",
     "height": 0.67,
     "width": 0.67,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -96,7 +96,7 @@
     "displayName": "Bat",
     "height": 0.9,
     "width": 0.5,
-    "type": "ambient",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -126,7 +126,7 @@
     "displayName": "Ocelot",
     "height": 0.7,
     "width": 0.6,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -136,7 +136,7 @@
     "displayName": "Horse",
     "height": 1.6,
     "width": 1.4,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -146,7 +146,7 @@
     "displayName": "Donkey",
     "height": 1.6,
     "width": 1.4,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -156,7 +156,7 @@
     "displayName": "Mule",
     "height": 1.6,
     "width": 1.4,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -166,7 +166,7 @@
     "displayName": "Skeleton Horse",
     "height": 1.6,
     "width": 1.4,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -176,7 +176,7 @@
     "displayName": "Zombie Horse",
     "height": 1.6,
     "width": 1.4,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -186,7 +186,7 @@
     "displayName": "Polar Bear",
     "height": 1.4,
     "width": 1.4,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -196,7 +196,7 @@
     "displayName": "Llama",
     "height": 1.87,
     "width": 0.9,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -206,7 +206,7 @@
     "displayName": "Parrot",
     "height": 1,
     "width": 0.5,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -216,7 +216,7 @@
     "displayName": "Dolphin",
     "height": 0.6,
     "width": 0.9,
-    "type": "water_creature",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -413,7 +413,7 @@
     "id": 41,
     "internalId": 51,
     "name": "npc",
-    "displayName": "npc",
+    "displayName": "Npc",
     "height": 2.1,
     "width": 0.6,
     "type": "passive",
@@ -436,8 +436,8 @@
     "displayName": "Ender Dragon",
     "height": 4,
     "width": 13,
-    "type": "hostile",
-    "category": "Hostile mobs"
+    "type": "mob",
+    "category": "Passive mobs"
   },
   {
     "id": 44,
@@ -463,7 +463,7 @@
     "id": 46,
     "internalId": 56,
     "name": "agent",
-    "displayName": "agent",
+    "displayName": "Agent",
     "height": 0.93,
     "width": 0.6,
     "type": "other",
@@ -616,7 +616,7 @@
     "displayName": "Turtle",
     "height": 0.4,
     "width": 1.2,
-    "type": "water_creature",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -626,7 +626,7 @@
     "displayName": "Cat",
     "height": 0.7,
     "width": 0.6,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -976,7 +976,7 @@
     "displayName": "Panda",
     "height": 1.25,
     "width": 1.3,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -1036,7 +1036,7 @@
     "displayName": "Fox",
     "height": 0.7,
     "width": 0.6,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -1046,7 +1046,7 @@
     "displayName": "Bee",
     "height": 0.5,
     "width": 0.55,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -1066,8 +1066,8 @@
     "displayName": "Hoglin",
     "height": 1.4,
     "width": 1.4,
-    "type": "hostile",
-    "category": "Hostile mobs"
+    "type": "mob",
+    "category": "Passive mobs"
   },
   {
     "id": 107,
@@ -1076,7 +1076,7 @@
     "displayName": "Strider",
     "height": 1.7,
     "width": 0.9,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -1086,8 +1086,8 @@
     "displayName": "Zoglin",
     "height": 1.4,
     "width": 1.4,
-    "type": "hostile",
-    "category": "Hostile mobs"
+    "type": "mob",
+    "category": "Passive mobs"
   },
   {
     "id": 109,
@@ -1116,7 +1116,7 @@
     "displayName": "Glow Squid",
     "height": 0.95,
     "width": 0.95,
-    "type": "water_creature",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -1126,7 +1126,7 @@
     "displayName": "Axolotl",
     "height": 0.42,
     "width": 0.75,
-    "type": "water_creature",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -1146,7 +1146,7 @@
     "displayName": "Frog",
     "height": 0.55,
     "width": 0.5,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -1156,7 +1156,7 @@
     "displayName": "Tadpole",
     "height": 0.6,
     "width": 0.8,
-    "type": "water_creature",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -1166,7 +1166,7 @@
     "displayName": "Allay",
     "height": 0.6,
     "width": 0.35,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -1174,9 +1174,9 @@
     "internalId": 138,
     "name": "camel",
     "displayName": "Camel",
-    "height": 2.375,
-    "width": 1.7,
-    "type": "animal",
+    "height": null,
+    "width": null,
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
@@ -1186,91 +1186,21 @@
     "displayName": "Sniffer",
     "height": 1.75,
     "width": 1.9,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
     "id": 119,
-    "internalId": 140,
-    "name": "breeze",
-    "displayName": "Breeze",
-    "height": 1.77,
-    "width": 0.6,
-    "type": "hostile",
-    "category": "Hostile mobs"
-  },
-  {
-    "id": 120,
-    "internalId": 141,
-    "name": "breeze_wind_charge_projectile",
-    "displayName": "Wind Charge",
-    "height": 0.3125,
-    "width": 0.3125,
-    "type": "projectile",
-    "category": "Projectiles"
-  },
-  {
-    "id": 121,
-    "internalId": 142,
-    "name": "armadillo",
-    "displayName": "Armadillo",
-    "height": 0.65,
-    "width": 0.7,
-    "type": "animal",
-    "category": "Passive mobs"
-  },
-  {
-    "id": 122,
-    "internalId": 143,
-    "name": "wind_charge_projectile",
-    "displayName": "Wind Charge",
-    "height": 0.3125,
-    "width": 0.3125,
-    "type": "projectile",
-    "category": "Projectiles"
-  },
-  {
-    "id": 123,
-    "internalId": 144,
-    "name": "bogged",
-    "displayName": "Bogged",
-    "height": 1.9,
-    "width": 0.6,
-    "type": "hostile",
-    "category": "Hostile mobs"
-  },
-  {
-    "id": 124,
-    "internalId": 145,
-    "name": "ominous_item_spawner",
-    "displayName": "Ominous Item Spawner",
-    "height": null,
-    "width": null,
-    "type": "other",
-    "category": "UNKNOWN"
-  },
-  {
-    "id": 125,
-    "internalId": 146,
-    "name": "creaking",
-    "displayName": "Creaking",
-    "height": 2.7,
-    "width": 0.9,
-    "type": "hostile",
-    "category": "Hostile mobs"
-  },
-  {
-    "id": 126,
     "internalId": 157,
     "name": "trader_llama",
     "displayName": "Trader Llama",
     "height": 1.87,
     "width": 0.9,
-    "type": "animal",
+    "type": "mob",
     "category": "Passive mobs"
   },
   {
-    "id": 127,
+    "id": 120,
     "internalId": 218,
     "name": "chest_boat",
     "displayName": "Boat with Chest",
@@ -1280,7 +1210,7 @@
     "category": "Vehicles"
   },
   {
-    "id": 128,
+    "id": 121,
     "internalId": 257,
     "name": "player",
     "displayName": "Player",

@@ -74,8 +74,8 @@
     "internalId": 17,
     "name": "squid",
     "displayName": "Squid",
-    "height": 0.95,
-    "width": 0.95,
+    "height": 0.8,
+    "width": 0.8,
     "type": "water_creature",
     "category": "Passive mobs"
   },
@@ -176,8 +176,8 @@
     "displayName": "Zombie Horse",
     "height": 1.6,
     "width": 1.4,
-    "type": "animal",
-    "category": "Passive mobs"
+    "type": "hostile",
+    "category": "Hostile mobs"
   },
   {
     "id": 18,
@@ -413,7 +413,7 @@
     "id": 41,
     "internalId": 51,
     "name": "npc",
-    "displayName": "npc",
+    "displayName": "Non Player Character",
     "height": 2.1,
     "width": 0.6,
     "type": "passive",
@@ -1114,8 +1114,8 @@
     "internalId": 129,
     "name": "glow_squid",
     "displayName": "Glow Squid",
-    "height": 0.95,
-    "width": 0.95,
+    "height": 0.8,
+    "width": 0.8,
     "type": "water_creature",
     "category": "Passive mobs"
   },
@@ -1261,6 +1261,66 @@
   },
   {
     "id": 126,
+    "internalId": 147,
+    "name": "happy_ghast",
+    "displayName": "Happy Ghast",
+    "height": 4,
+    "width": 4,
+    "type": "animal",
+    "category": "Passive mobs"
+  },
+  {
+    "id": 127,
+    "internalId": 148,
+    "name": "copper_golem",
+    "displayName": "Copper Golem",
+    "height": 0.98,
+    "width": 0.6,
+    "type": "mob",
+    "category": "Passive mobs"
+  },
+  {
+    "id": 128,
+    "internalId": 149,
+    "name": "nautilus",
+    "displayName": "Nautilus",
+    "height": 0.95,
+    "width": 0.875,
+    "type": "water_creature",
+    "category": "Passive mobs"
+  },
+  {
+    "id": 129,
+    "internalId": 150,
+    "name": "zombie_nautilus",
+    "displayName": "Zombie Nautilus",
+    "height": 0.95,
+    "width": 0.875,
+    "type": "water_creature",
+    "category": "Passive mobs"
+  },
+  {
+    "id": 130,
+    "internalId": 151,
+    "name": "parched",
+    "displayName": "Parched",
+    "height": 1.9,
+    "width": 0.6,
+    "type": "hostile",
+    "category": "Hostile mobs"
+  },
+  {
+    "id": 131,
+    "internalId": 152,
+    "name": "camel_husk",
+    "displayName": "Camel Husk",
+    "height": 2.375,
+    "width": 1.7,
+    "type": "hostile",
+    "category": "Hostile mobs"
+  },
+  {
+    "id": 132,
     "internalId": 157,
     "name": "trader_llama",
     "displayName": "Trader Llama",
@@ -1270,7 +1330,7 @@
     "category": "Passive mobs"
   },
   {
-    "id": 127,
+    "id": 133,
     "internalId": 218,
     "name": "chest_boat",
     "displayName": "Boat with Chest",
@@ -1280,7 +1340,7 @@
     "category": "Vehicles"
   },
   {
-    "id": 128,
+    "id": 134,
     "internalId": 257,
     "name": "player",
     "displayName": "Player",

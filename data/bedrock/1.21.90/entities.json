@@ -1261,6 +1261,16 @@
   },
   {
     "id": 126,
+    "internalId": 147,
+    "name": "happy_ghast",
+    "displayName": "Happy Ghast",
+    "height": 4,
+    "width": 4,
+    "type": "animal",
+    "category": "Passive mobs"
+  },
+  {
+    "id": 127,
     "internalId": 157,
     "name": "trader_llama",
     "displayName": "Trader Llama",
@@ -1270,7 +1280,7 @@
     "category": "Passive mobs"
   },
   {
-    "id": 127,
+    "id": 128,
     "internalId": 218,
     "name": "chest_boat",
     "displayName": "Boat with Chest",
@@ -1280,7 +1290,7 @@
     "category": "Vehicles"
   },
   {
-    "id": 128,
+    "id": 129,
     "internalId": 257,
     "name": "player",
     "displayName": "Player",
