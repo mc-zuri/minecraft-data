@@ -392,7 +392,7 @@
     "drops": [
       {
         "item": "azalea",
-        "dropChance": 0.047852,
+        "dropChance": 0.049316,
         "stackSizeRange": [
           1,
           1
@@ -401,7 +401,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.021484,
+        "dropChance": 0.020996,
         "stackSizeRange": [
           1,
           1
@@ -415,7 +415,7 @@
     "drops": [
       {
         "item": "flowering_azalea",
-        "dropChance": 0.041504,
+        "dropChance": 0.043945,
         "stackSizeRange": [
           1,
           1
@@ -424,7 +424,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.015625,
+        "dropChance": 0.01709,
         "stackSizeRange": [
           1,
           1
@@ -571,7 +571,7 @@
       },
       {
         "item": "beetroot_seeds",
-        "dropChance": 0.890625,
+        "dropChance": 0.910156,
         "stackSizeRange": [
           1,
           3
@@ -884,142 +884,6 @@
     ]
   },
   {
-    "block": "black_candle",
-    "drops": [
-      {
-        "item": "black_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "black_candle",
-    "drops": [
-      {
-        "item": "black_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "black_candle",
-    "drops": [
-      {
-        "item": "black_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "black_candle",
-    "drops": [
-      {
-        "item": "black_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "black_candle",
-    "drops": [
-      {
-        "item": "black_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "black_candle",
-    "drops": [
-      {
-        "item": "black_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "black_candle",
-    "drops": [
-      {
-        "item": "black_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "black_candle_cake",
-    "drops": [
-      {
-        "item": "black_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
     "block": "black_glazed_terracotta",
     "drops": [
       {
@@ -1108,142 +972,6 @@
     "drops": [
       {
         "item": "blast_furnace",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "blue_candle",
-    "drops": [
-      {
-        "item": "blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "blue_candle",
-    "drops": [
-      {
-        "item": "blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "blue_candle",
-    "drops": [
-      {
-        "item": "blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "blue_candle",
-    "drops": [
-      {
-        "item": "blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "blue_candle",
-    "drops": [
-      {
-        "item": "blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "blue_candle",
-    "drops": [
-      {
-        "item": "blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "blue_candle",
-    "drops": [
-      {
-        "item": "blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "blue_candle_cake",
-    "drops": [
-      {
-        "item": "blue_candle",
         "dropChance": 1,
         "stackSizeRange": [
           1,
@@ -1356,142 +1084,6 @@
     ]
   },
   {
-    "block": "brown_candle",
-    "drops": [
-      {
-        "item": "brown_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "brown_candle",
-    "drops": [
-      {
-        "item": "brown_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "brown_candle",
-    "drops": [
-      {
-        "item": "brown_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "brown_candle",
-    "drops": [
-      {
-        "item": "brown_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "brown_candle",
-    "drops": [
-      {
-        "item": "brown_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "brown_candle",
-    "drops": [
-      {
-        "item": "brown_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "brown_candle",
-    "drops": [
-      {
-        "item": "brown_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "brown_candle_cake",
-    "drops": [
-      {
-        "item": "brown_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
     "block": "brown_glazed_terracotta",
     "drops": [
       {
@@ -1524,7 +1116,7 @@
     "drops": [
       {
         "item": "brown_mushroom",
-        "dropChance": 0.226563,
+        "dropChance": 0.212891,
         "stackSizeRange": [
           1,
           2
@@ -1592,142 +1184,6 @@
     "drops": [
       {
         "item": "charcoal",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "candle",
-    "drops": [
-      {
-        "item": "candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "candle",
-    "drops": [
-      {
-        "item": "candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "candle",
-    "drops": [
-      {
-        "item": "candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "candle",
-    "drops": [
-      {
-        "item": "candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "candle",
-    "drops": [
-      {
-        "item": "candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "candle",
-    "drops": [
-      {
-        "item": "candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "candle",
-    "drops": [
-      {
-        "item": "candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "candle_cake",
-    "drops": [
-      {
-        "item": "candle",
         "dropChance": 1,
         "stackSizeRange": [
           1,
@@ -1967,7 +1423,7 @@
     "drops": [
       {
         "item": "chorus_fruit",
-        "dropChance": 0.501221,
+        "dropChance": 0.493774,
         "stackSizeRange": [
           1,
           1
@@ -1989,10 +1445,6 @@
         "metadata": 0
       }
     ]
-  },
-  {
-    "block": "client_request_placeholder_block",
-    "drops": []
   },
   {
     "block": "coal_block",
@@ -2316,7 +1768,7 @@
         "dropChance": 1,
         "stackSizeRange": [
           2,
-          5
+          3
         ],
         "metadata": 0
       }
@@ -2885,142 +2337,6 @@
     ]
   },
   {
-    "block": "cyan_candle",
-    "drops": [
-      {
-        "item": "cyan_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "cyan_candle",
-    "drops": [
-      {
-        "item": "cyan_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "cyan_candle",
-    "drops": [
-      {
-        "item": "cyan_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "cyan_candle",
-    "drops": [
-      {
-        "item": "cyan_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "cyan_candle",
-    "drops": [
-      {
-        "item": "cyan_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "cyan_candle",
-    "drops": [
-      {
-        "item": "cyan_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "cyan_candle",
-    "drops": [
-      {
-        "item": "cyan_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "cyan_candle_cake",
-    "drops": [
-      {
-        "item": "cyan_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
     "block": "cyan_glazed_terracotta",
     "drops": [
       {
@@ -3353,7 +2669,7 @@
     "drops": [
       {
         "item": "stick",
-        "dropChance": 0.671631,
+        "dropChance": 0.664429,
         "stackSizeRange": [
           1,
           2
@@ -3468,7 +2784,7 @@
         "dropChance": 1,
         "stackSizeRange": [
           2,
-          5
+          3
         ],
         "metadata": 0
       }
@@ -3773,7 +3089,7 @@
     "drops": [
       {
         "item": "wheat_seeds",
-        "dropChance": 0.136364,
+        "dropChance": 0.13783,
         "stackSizeRange": [
           1,
           1
@@ -3799,7 +3115,7 @@
     "drops": [
       {
         "item": "wheat_seeds",
-        "dropChance": 0.136364,
+        "dropChance": 0.13783,
         "stackSizeRange": [
           1,
           1
@@ -5975,7 +5291,7 @@
     "drops": [
       {
         "item": "gilded_blackstone",
-        "dropChance": 0.903442,
+        "dropChance": 0.902222,
         "stackSizeRange": [
           1,
           1
@@ -5984,7 +5300,7 @@
       },
       {
         "item": "gold_nugget",
-        "dropChance": 0.096558,
+        "dropChance": 0.097778,
         "stackSizeRange": [
           2,
           5
@@ -6136,7 +5452,7 @@
     "drops": [
       {
         "item": "flint",
-        "dropChance": 0.097168,
+        "dropChance": 0.106934,
         "stackSizeRange": [
           1,
           1
@@ -6145,143 +5461,7 @@
       },
       {
         "item": "gravel",
-        "dropChance": 0.902832,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "gray_candle",
-    "drops": [
-      {
-        "item": "gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "gray_candle",
-    "drops": [
-      {
-        "item": "gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "gray_candle",
-    "drops": [
-      {
-        "item": "gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "gray_candle",
-    "drops": [
-      {
-        "item": "gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "gray_candle",
-    "drops": [
-      {
-        "item": "gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "gray_candle",
-    "drops": [
-      {
-        "item": "gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "gray_candle",
-    "drops": [
-      {
-        "item": "gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "gray_candle_cake",
-    "drops": [
-      {
-        "item": "gray_candle",
-        "dropChance": 1,
+        "dropChance": 0.893066,
         "stackSizeRange": [
           1,
           1
@@ -6295,142 +5475,6 @@
     "drops": [
       {
         "item": "gray_glazed_terracotta",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "green_candle",
-    "drops": [
-      {
-        "item": "green_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "green_candle",
-    "drops": [
-      {
-        "item": "green_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "green_candle",
-    "drops": [
-      {
-        "item": "green_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "green_candle",
-    "drops": [
-      {
-        "item": "green_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "green_candle",
-    "drops": [
-      {
-        "item": "green_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "green_candle",
-    "drops": [
-      {
-        "item": "green_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "green_candle",
-    "drops": [
-      {
-        "item": "green_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "green_candle_cake",
-    "drops": [
-      {
-        "item": "green_candle",
         "dropChance": 1,
         "stackSizeRange": [
           1,
@@ -7269,7 +6313,7 @@
     "drops": [
       {
         "item": "apple",
-        "dropChance": 0.003906,
+        "dropChance": 0.005859,
         "stackSizeRange": [
           1,
           1
@@ -7287,7 +6331,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7310,7 +6354,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7338,7 +6382,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7366,7 +6410,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7394,7 +6438,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7422,7 +6466,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7450,7 +6494,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7478,7 +6522,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7506,7 +6550,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7534,7 +6578,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7562,7 +6606,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7590,7 +6634,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7618,7 +6662,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.037109,
+        "dropChance": 0.039063,
         "stackSizeRange": [
           1,
           1
@@ -7637,7 +6681,7 @@
     "drops": [
       {
         "item": "sapling",
-        "dropChance": 0.039063,
+        "dropChance": 0.041016,
         "stackSizeRange": [
           1,
           1
@@ -7646,7 +6690,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.03125,
+        "dropChance": 0.033203,
         "stackSizeRange": [
           1,
           1
@@ -7660,7 +6704,7 @@
     "drops": [
       {
         "item": "apple",
-        "dropChance": 0.004883,
+        "dropChance": 0.005859,
         "stackSizeRange": [
           1,
           1
@@ -7669,7 +6713,7 @@
       },
       {
         "item": "sapling",
-        "dropChance": 0.039063,
+        "dropChance": 0.040039,
         "stackSizeRange": [
           1,
           1
@@ -7678,7 +6722,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.03125,
+        "dropChance": 0.032227,
         "stackSizeRange": [
           1,
           1
@@ -7697,7 +6741,7 @@
     "drops": [
       {
         "item": "apple",
-        "dropChance": 0.004883,
+        "dropChance": 0.005859,
         "stackSizeRange": [
           1,
           1
@@ -7706,7 +6750,7 @@
       },
       {
         "item": "sapling",
-        "dropChance": 0.039063,
+        "dropChance": 0.040039,
         "stackSizeRange": [
           1,
           1
@@ -7715,7 +6759,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.03125,
+        "dropChance": 0.032227,
         "stackSizeRange": [
           1,
           1
@@ -7734,7 +6778,7 @@
     "drops": [
       {
         "item": "apple",
-        "dropChance": 0.004883,
+        "dropChance": 0.005859,
         "stackSizeRange": [
           1,
           1
@@ -7743,7 +6787,7 @@
       },
       {
         "item": "sapling",
-        "dropChance": 0.039063,
+        "dropChance": 0.040039,
         "stackSizeRange": [
           1,
           1
@@ -7752,7 +6796,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.03125,
+        "dropChance": 0.032227,
         "stackSizeRange": [
           1,
           1
@@ -7771,7 +6815,7 @@
     "drops": [
       {
         "item": "apple",
-        "dropChance": 0.004883,
+        "dropChance": 0.005859,
         "stackSizeRange": [
           1,
           1
@@ -7780,7 +6824,7 @@
       },
       {
         "item": "sapling",
-        "dropChance": 0.039063,
+        "dropChance": 0.040039,
         "stackSizeRange": [
           1,
           1
@@ -7789,7 +6833,7 @@
       },
       {
         "item": "stick",
-        "dropChance": 0.03125,
+        "dropChance": 0.032227,
         "stackSizeRange": [
           1,
           1
@@ -7836,282 +6880,10 @@
     "drops": []
   },
   {
-    "block": "light_blue_candle",
-    "drops": [
-      {
-        "item": "light_blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "light_blue_candle",
-    "drops": [
-      {
-        "item": "light_blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "light_blue_candle",
-    "drops": [
-      {
-        "item": "light_blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "light_blue_candle",
-    "drops": [
-      {
-        "item": "light_blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "light_blue_candle",
-    "drops": [
-      {
-        "item": "light_blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "light_blue_candle",
-    "drops": [
-      {
-        "item": "light_blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "light_blue_candle",
-    "drops": [
-      {
-        "item": "light_blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "light_blue_candle_cake",
-    "drops": [
-      {
-        "item": "light_blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
     "block": "light_blue_glazed_terracotta",
     "drops": [
       {
         "item": "light_blue_glazed_terracotta",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "light_gray_candle",
-    "drops": [
-      {
-        "item": "light_gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "light_gray_candle",
-    "drops": [
-      {
-        "item": "light_gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "light_gray_candle",
-    "drops": [
-      {
-        "item": "light_gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "light_gray_candle",
-    "drops": [
-      {
-        "item": "light_gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "light_gray_candle",
-    "drops": [
-      {
-        "item": "light_gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "light_gray_candle",
-    "drops": [
-      {
-        "item": "light_gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "light_gray_candle",
-    "drops": [
-      {
-        "item": "light_gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "light_gray_candle_cake",
-    "drops": [
-      {
-        "item": "light_gray_candle",
         "dropChance": 1,
         "stackSizeRange": [
           1,
@@ -8140,142 +6912,6 @@
     "drops": [
       {
         "item": "lightning_rod",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "lime_candle",
-    "drops": [
-      {
-        "item": "lime_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "lime_candle",
-    "drops": [
-      {
-        "item": "lime_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "lime_candle",
-    "drops": [
-      {
-        "item": "lime_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "lime_candle",
-    "drops": [
-      {
-        "item": "lime_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "lime_candle",
-    "drops": [
-      {
-        "item": "lime_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "lime_candle",
-    "drops": [
-      {
-        "item": "lime_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "lime_candle",
-    "drops": [
-      {
-        "item": "lime_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "lime_candle_cake",
-    "drops": [
-      {
-        "item": "lime_candle",
         "dropChance": 1,
         "stackSizeRange": [
           1,
@@ -8454,142 +7090,6 @@
     ]
   },
   {
-    "block": "magenta_candle",
-    "drops": [
-      {
-        "item": "magenta_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "magenta_candle",
-    "drops": [
-      {
-        "item": "magenta_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "magenta_candle",
-    "drops": [
-      {
-        "item": "magenta_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "magenta_candle",
-    "drops": [
-      {
-        "item": "magenta_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "magenta_candle",
-    "drops": [
-      {
-        "item": "magenta_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "magenta_candle",
-    "drops": [
-      {
-        "item": "magenta_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "magenta_candle",
-    "drops": [
-      {
-        "item": "magenta_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "magenta_candle_cake",
-    "drops": [
-      {
-        "item": "magenta_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
     "block": "magenta_glazed_terracotta",
     "drops": [
       {
@@ -8654,7 +7154,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.347059,
+        "dropChance": 0.364706,
         "stackSizeRange": [
           1,
           2
@@ -8672,10 +7172,10 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.494118,
+        "dropChance": 0.517647,
         "stackSizeRange": [
           1,
-          2
+          3
         ],
         "metadata": 0
       }
@@ -8690,7 +7190,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.629412,
+        "dropChance": 0.605882,
         "stackSizeRange": [
           1,
           3
@@ -8708,7 +7208,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.752941,
+        "dropChance": 0.723529,
         "stackSizeRange": [
           1,
           3
@@ -8726,7 +7226,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.823529,
+        "dropChance": 0.747059,
         "stackSizeRange": [
           1,
           3
@@ -8744,7 +7244,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.876471,
+        "dropChance": 0.817647,
         "stackSizeRange": [
           1,
           3
@@ -8762,7 +7262,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.929412,
+        "dropChance": 0.882353,
         "stackSizeRange": [
           1,
           3
@@ -8780,7 +7280,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.347059,
+        "dropChance": 0.364706,
         "stackSizeRange": [
           1,
           2
@@ -8798,10 +7298,10 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.494118,
+        "dropChance": 0.517647,
         "stackSizeRange": [
           1,
-          2
+          3
         ],
         "metadata": 0
       }
@@ -8816,7 +7316,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.629412,
+        "dropChance": 0.605882,
         "stackSizeRange": [
           1,
           3
@@ -8834,7 +7334,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.752941,
+        "dropChance": 0.723529,
         "stackSizeRange": [
           1,
           3
@@ -8852,7 +7352,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.823529,
+        "dropChance": 0.747059,
         "stackSizeRange": [
           1,
           3
@@ -8870,7 +7370,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.876471,
+        "dropChance": 0.817647,
         "stackSizeRange": [
           1,
           3
@@ -8888,7 +7388,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.929412,
+        "dropChance": 0.882353,
         "stackSizeRange": [
           1,
           3
@@ -8906,7 +7406,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.347059,
+        "dropChance": 0.364706,
         "stackSizeRange": [
           1,
           2
@@ -8924,10 +7424,10 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.494118,
+        "dropChance": 0.517647,
         "stackSizeRange": [
           1,
-          2
+          3
         ],
         "metadata": 0
       }
@@ -8942,7 +7442,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.629412,
+        "dropChance": 0.605882,
         "stackSizeRange": [
           1,
           3
@@ -8960,7 +7460,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.752941,
+        "dropChance": 0.723529,
         "stackSizeRange": [
           1,
           3
@@ -8978,7 +7478,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.823529,
+        "dropChance": 0.747059,
         "stackSizeRange": [
           1,
           3
@@ -8996,7 +7496,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.876471,
+        "dropChance": 0.817647,
         "stackSizeRange": [
           1,
           3
@@ -9014,7 +7514,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.929412,
+        "dropChance": 0.882353,
         "stackSizeRange": [
           1,
           3
@@ -9032,7 +7532,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.347059,
+        "dropChance": 0.364706,
         "stackSizeRange": [
           1,
           2
@@ -9050,10 +7550,10 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.494118,
+        "dropChance": 0.517647,
         "stackSizeRange": [
           1,
-          2
+          3
         ],
         "metadata": 0
       }
@@ -9068,7 +7568,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.629412,
+        "dropChance": 0.605882,
         "stackSizeRange": [
           1,
           3
@@ -9086,7 +7586,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.752941,
+        "dropChance": 0.723529,
         "stackSizeRange": [
           1,
           3
@@ -9104,7 +7604,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.823529,
+        "dropChance": 0.747059,
         "stackSizeRange": [
           1,
           3
@@ -9122,7 +7622,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.876471,
+        "dropChance": 0.817647,
         "stackSizeRange": [
           1,
           3
@@ -9140,7 +7640,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.929412,
+        "dropChance": 0.882353,
         "stackSizeRange": [
           1,
           3
@@ -9158,7 +7658,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.347059,
+        "dropChance": 0.364706,
         "stackSizeRange": [
           1,
           2
@@ -9176,10 +7676,10 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.494118,
+        "dropChance": 0.517647,
         "stackSizeRange": [
           1,
-          2
+          3
         ],
         "metadata": 0
       }
@@ -9194,7 +7694,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.629412,
+        "dropChance": 0.605882,
         "stackSizeRange": [
           1,
           3
@@ -9212,7 +7712,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.752941,
+        "dropChance": 0.723529,
         "stackSizeRange": [
           1,
           3
@@ -9230,7 +7730,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.823529,
+        "dropChance": 0.747059,
         "stackSizeRange": [
           1,
           3
@@ -9248,7 +7748,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.876471,
+        "dropChance": 0.817647,
         "stackSizeRange": [
           1,
           3
@@ -9266,7 +7766,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.929412,
+        "dropChance": 0.882353,
         "stackSizeRange": [
           1,
           3
@@ -9284,7 +7784,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.347059,
+        "dropChance": 0.364706,
         "stackSizeRange": [
           1,
           2
@@ -9302,10 +7802,10 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.494118,
+        "dropChance": 0.517647,
         "stackSizeRange": [
           1,
-          2
+          3
         ],
         "metadata": 0
       }
@@ -9320,7 +7820,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.629412,
+        "dropChance": 0.605882,
         "stackSizeRange": [
           1,
           3
@@ -9338,7 +7838,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.752941,
+        "dropChance": 0.723529,
         "stackSizeRange": [
           1,
           3
@@ -9356,7 +7856,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.823529,
+        "dropChance": 0.747059,
         "stackSizeRange": [
           1,
           3
@@ -9374,7 +7874,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.876471,
+        "dropChance": 0.817647,
         "stackSizeRange": [
           1,
           3
@@ -9392,7 +7892,7 @@
     "drops": [
       {
         "item": "melon_seeds",
-        "dropChance": 0.929412,
+        "dropChance": 0.882353,
         "stackSizeRange": [
           1,
           3
@@ -9500,14 +8000,6 @@
         "metadata": 0
       }
     ]
-  },
-  {
-    "block": "mysterious_frame",
-    "drops": []
-  },
-  {
-    "block": "mysterious_frame_slot",
-    "drops": []
   },
   {
     "block": "nether_brick",
@@ -9736,142 +8228,6 @@
     ]
   },
   {
-    "block": "orange_candle",
-    "drops": [
-      {
-        "item": "orange_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "orange_candle",
-    "drops": [
-      {
-        "item": "orange_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "orange_candle",
-    "drops": [
-      {
-        "item": "orange_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "orange_candle",
-    "drops": [
-      {
-        "item": "orange_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "orange_candle",
-    "drops": [
-      {
-        "item": "orange_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "orange_candle",
-    "drops": [
-      {
-        "item": "orange_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "orange_candle",
-    "drops": [
-      {
-        "item": "orange_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "orange_candle_cake",
-    "drops": [
-      {
-        "item": "orange_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
     "block": "orange_glazed_terracotta",
     "drops": [
       {
@@ -9958,142 +8314,6 @@
   {
     "block": "packed_ice",
     "drops": []
-  },
-  {
-    "block": "pink_candle",
-    "drops": [
-      {
-        "item": "pink_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "pink_candle",
-    "drops": [
-      {
-        "item": "pink_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "pink_candle",
-    "drops": [
-      {
-        "item": "pink_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "pink_candle",
-    "drops": [
-      {
-        "item": "pink_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "pink_candle",
-    "drops": [
-      {
-        "item": "pink_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "pink_candle",
-    "drops": [
-      {
-        "item": "pink_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "pink_candle",
-    "drops": [
-      {
-        "item": "pink_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "pink_candle_cake",
-    "drops": [
-      {
-        "item": "pink_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
   },
   {
     "block": "pink_glazed_terracotta",
@@ -10496,7 +8716,7 @@
     "drops": [
       {
         "item": "poisonous_potato",
-        "dropChance": 0.024414,
+        "dropChance": 0.018555,
         "stackSizeRange": [
           1,
           1
@@ -10610,7 +8830,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.217647,
+        "dropChance": 0.229412,
         "stackSizeRange": [
           1,
           2
@@ -10624,7 +8844,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.364706,
+        "dropChance": 0.341176,
         "stackSizeRange": [
           1,
           2
@@ -10642,7 +8862,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.488235,
+        "dropChance": 0.529412,
         "stackSizeRange": [
           1,
           3
@@ -10678,7 +8898,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.664706,
+        "dropChance": 0.617647,
         "stackSizeRange": [
           1,
           3
@@ -10714,7 +8934,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.858824,
+        "dropChance": 0.782353,
         "stackSizeRange": [
           1,
           3
@@ -10732,7 +8952,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.9,
+        "dropChance": 0.941176,
         "stackSizeRange": [
           1,
           3
@@ -10750,7 +8970,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.364706,
+        "dropChance": 0.341176,
         "stackSizeRange": [
           1,
           2
@@ -10768,7 +8988,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.488235,
+        "dropChance": 0.529412,
         "stackSizeRange": [
           1,
           3
@@ -10804,7 +9024,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.664706,
+        "dropChance": 0.617647,
         "stackSizeRange": [
           1,
           3
@@ -10840,7 +9060,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.858824,
+        "dropChance": 0.782353,
         "stackSizeRange": [
           1,
           3
@@ -10858,7 +9078,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.9,
+        "dropChance": 0.941176,
         "stackSizeRange": [
           1,
           3
@@ -10876,7 +9096,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.364706,
+        "dropChance": 0.341176,
         "stackSizeRange": [
           1,
           2
@@ -10894,7 +9114,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.488235,
+        "dropChance": 0.529412,
         "stackSizeRange": [
           1,
           3
@@ -10930,7 +9150,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.664706,
+        "dropChance": 0.617647,
         "stackSizeRange": [
           1,
           3
@@ -10966,7 +9186,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.858824,
+        "dropChance": 0.782353,
         "stackSizeRange": [
           1,
           3
@@ -10984,7 +9204,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.9,
+        "dropChance": 0.941176,
         "stackSizeRange": [
           1,
           3
@@ -11002,7 +9222,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.364706,
+        "dropChance": 0.341176,
         "stackSizeRange": [
           1,
           2
@@ -11020,7 +9240,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.488235,
+        "dropChance": 0.529412,
         "stackSizeRange": [
           1,
           3
@@ -11056,7 +9276,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.664706,
+        "dropChance": 0.617647,
         "stackSizeRange": [
           1,
           3
@@ -11092,7 +9312,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.858824,
+        "dropChance": 0.782353,
         "stackSizeRange": [
           1,
           3
@@ -11110,7 +9330,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.9,
+        "dropChance": 0.941176,
         "stackSizeRange": [
           1,
           3
@@ -11128,7 +9348,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.364706,
+        "dropChance": 0.341176,
         "stackSizeRange": [
           1,
           2
@@ -11146,7 +9366,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.488235,
+        "dropChance": 0.529412,
         "stackSizeRange": [
           1,
           3
@@ -11182,7 +9402,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.664706,
+        "dropChance": 0.617647,
         "stackSizeRange": [
           1,
           3
@@ -11218,7 +9438,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.858824,
+        "dropChance": 0.782353,
         "stackSizeRange": [
           1,
           3
@@ -11236,7 +9456,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.9,
+        "dropChance": 0.941176,
         "stackSizeRange": [
           1,
           3
@@ -11254,7 +9474,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.364706,
+        "dropChance": 0.341176,
         "stackSizeRange": [
           1,
           2
@@ -11272,7 +9492,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.488235,
+        "dropChance": 0.529412,
         "stackSizeRange": [
           1,
           3
@@ -11308,7 +9528,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.664706,
+        "dropChance": 0.617647,
         "stackSizeRange": [
           1,
           3
@@ -11344,7 +9564,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.858824,
+        "dropChance": 0.782353,
         "stackSizeRange": [
           1,
           3
@@ -11362,7 +9582,7 @@
     "drops": [
       {
         "item": "pumpkin_seeds",
-        "dropChance": 0.9,
+        "dropChance": 0.941176,
         "stackSizeRange": [
           1,
           3
@@ -11374,142 +9594,6 @@
       "facing_direction": 5,
       "growth": 7
     }
-  },
-  {
-    "block": "purple_candle",
-    "drops": [
-      {
-        "item": "purple_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "purple_candle",
-    "drops": [
-      {
-        "item": "purple_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "purple_candle",
-    "drops": [
-      {
-        "item": "purple_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "purple_candle",
-    "drops": [
-      {
-        "item": "purple_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "purple_candle",
-    "drops": [
-      {
-        "item": "purple_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "purple_candle",
-    "drops": [
-      {
-        "item": "purple_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "purple_candle",
-    "drops": [
-      {
-        "item": "purple_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "purple_candle_cake",
-    "drops": [
-      {
-        "item": "purple_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
   },
   {
     "block": "purple_glazed_terracotta",
@@ -11666,142 +9750,6 @@
     ]
   },
   {
-    "block": "red_candle",
-    "drops": [
-      {
-        "item": "red_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "red_candle",
-    "drops": [
-      {
-        "item": "red_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "red_candle",
-    "drops": [
-      {
-        "item": "red_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "red_candle",
-    "drops": [
-      {
-        "item": "red_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "red_candle",
-    "drops": [
-      {
-        "item": "red_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "red_candle",
-    "drops": [
-      {
-        "item": "red_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "red_candle",
-    "drops": [
-      {
-        "item": "red_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "red_candle_cake",
-    "drops": [
-      {
-        "item": "red_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
     "block": "red_flower",
     "drops": [
       {
@@ -11848,7 +9796,7 @@
     "drops": [
       {
         "item": "red_mushroom",
-        "dropChance": 0.220703,
+        "dropChance": 0.201172,
         "stackSizeRange": [
           1,
           2
@@ -12100,23 +10048,7 @@
     ]
   },
   {
-    "block": "sculk",
-    "drops": []
-  },
-  {
-    "block": "sculk_catalyst",
-    "drops": []
-  },
-  {
     "block": "sculk_sensor",
-    "drops": []
-  },
-  {
-    "block": "sculk_shrieker",
-    "drops": []
-  },
-  {
-    "block": "sculk_vein",
     "drops": []
   },
   {
@@ -13708,7 +11640,7 @@
     "drops": [
       {
         "item": "wheat_seeds",
-        "dropChance": 0.116211,
+        "dropChance": 0.125977,
         "stackSizeRange": [
           1,
           1
@@ -13852,7 +11784,7 @@
     "drops": [
       {
         "item": "twisting_vines",
-        "dropChance": 0.326984,
+        "dropChance": 0.361905,
         "stackSizeRange": [
           1,
           1
@@ -14776,7 +12708,7 @@
     "drops": [
       {
         "item": "weeping_vines",
-        "dropChance": 0.349206,
+        "dropChance": 0.352381,
         "stackSizeRange": [
           1,
           1
@@ -14813,7 +12745,7 @@
       },
       {
         "item": "wheat_seeds",
-        "dropChance": 0.901367,
+        "dropChance": 0.894531,
         "stackSizeRange": [
           1,
           3
@@ -14824,142 +12756,6 @@
     "states": {
       "growth": 7
     }
-  },
-  {
-    "block": "white_candle",
-    "drops": [
-      {
-        "item": "white_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "white_candle",
-    "drops": [
-      {
-        "item": "white_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "white_candle",
-    "drops": [
-      {
-        "item": "white_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "white_candle",
-    "drops": [
-      {
-        "item": "white_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "white_candle",
-    "drops": [
-      {
-        "item": "white_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "white_candle",
-    "drops": [
-      {
-        "item": "white_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "white_candle",
-    "drops": [
-      {
-        "item": "white_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "white_candle_cake",
-    "drops": [
-      {
-        "item": "white_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
   },
   {
     "block": "white_glazed_terracotta",
@@ -15224,142 +13020,6 @@
     "drops": [
       {
         "item": "wool",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "yellow_candle",
-    "drops": [
-      {
-        "item": "yellow_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
-    "block": "yellow_candle",
-    "drops": [
-      {
-        "item": "yellow_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 0
-    }
-  },
-  {
-    "block": "yellow_candle",
-    "drops": [
-      {
-        "item": "yellow_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 0
-    }
-  },
-  {
-    "block": "yellow_candle",
-    "drops": [
-      {
-        "item": "yellow_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 0
-    }
-  },
-  {
-    "block": "yellow_candle",
-    "drops": [
-      {
-        "item": "yellow_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          2
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 1,
-      "lit": 1
-    }
-  },
-  {
-    "block": "yellow_candle",
-    "drops": [
-      {
-        "item": "yellow_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          3,
-          3
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 2,
-      "lit": 1
-    }
-  },
-  {
-    "block": "yellow_candle",
-    "drops": [
-      {
-        "item": "yellow_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          4,
-          4
-        ],
-        "metadata": 0
-      }
-    ],
-    "states": {
-      "candles": 3,
-      "lit": 1
-    }
-  },
-  {
-    "block": "yellow_candle_cake",
-    "drops": [
-      {
-        "item": "yellow_candle",
         "dropChance": 1,
         "stackSizeRange": [
           1,

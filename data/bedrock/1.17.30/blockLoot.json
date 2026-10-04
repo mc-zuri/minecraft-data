@@ -1594,8 +1594,8 @@
         "item": "charcoal",
         "dropChance": 1,
         "stackSizeRange": [
-          2,
-          2
+          1,
+          1
         ],
         "metadata": 0
       }
@@ -1991,10 +1991,6 @@
     ]
   },
   {
-    "block": "client_request_placeholder_block",
-    "drops": []
-  },
-  {
     "block": "coal_block",
     "drops": [
       {
@@ -2316,7 +2312,7 @@
         "dropChance": 1,
         "stackSizeRange": [
           2,
-          5
+          3
         ],
         "metadata": 0
       }
@@ -3468,7 +3464,7 @@
         "dropChance": 1,
         "stackSizeRange": [
           2,
-          5
+          3
         ],
         "metadata": 0
       }
@@ -9500,14 +9496,6 @@
         "metadata": 0
       }
     ]
-  },
-  {
-    "block": "mysterious_frame",
-    "drops": []
-  },
-  {
-    "block": "mysterious_frame_slot",
-    "drops": []
   },
   {
     "block": "nether_brick",

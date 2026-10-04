@@ -2267,7 +2267,7 @@
     ]
   },
   {
-    "block": "concretePowder",
+    "block": "concrete_powder",
     "drops": [
       {
         "item": "concrete_powder",
@@ -3796,17 +3796,23 @@
   },
   {
     "block": "double_plant",
-    "drops": [
-      {
-        "item": "wheat_seeds",
-        "dropChance": 0.136364,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ],
+    "drops": [],
+    "states": {
+      "double_plant_type": "sunflower",
+      "upper_block_bit": 1
+    }
+  },
+  {
+    "block": "double_plant",
+    "drops": [],
+    "states": {
+      "double_plant_type": "syringa",
+      "upper_block_bit": 1
+    }
+  },
+  {
+    "block": "double_plant",
+    "drops": [],
     "states": {
       "double_plant_type": "grass",
       "upper_block_bit": 1
@@ -3817,6 +3823,22 @@
     "drops": [],
     "states": {
       "double_plant_type": "fern",
+      "upper_block_bit": 1
+    }
+  },
+  {
+    "block": "double_plant",
+    "drops": [],
+    "states": {
+      "double_plant_type": "rose",
+      "upper_block_bit": 1
+    }
+  },
+  {
+    "block": "double_plant",
+    "drops": [],
+    "states": {
+      "double_plant_type": "paeonia",
       "upper_block_bit": 1
     }
   },
@@ -5953,6 +5975,10 @@
     ]
   },
   {
+    "block": "frog_spawn",
+    "drops": []
+  },
+  {
     "block": "frosted_ice",
     "drops": []
   },
@@ -6649,7 +6675,7 @@
     ]
   },
   {
-    "block": "invisibleBedrock",
+    "block": "invisible_bedrock",
     "drops": []
   },
   {
@@ -8618,6 +8644,28 @@
     ]
   },
   {
+    "block": "mangrove_leaves",
+    "drops": [
+      {
+        "item": "stick",
+        "dropChance": 0.016602,
+        "stackSizeRange": [
+          1,
+          1
+        ],
+        "metadata": 0
+      }
+    ]
+  },
+  {
+    "block": "mangrove_propagule",
+    "drops": []
+  },
+  {
+    "block": "mangrove_propagule_hanging",
+    "drops": []
+  },
+  {
     "block": "medium_amethyst_bud",
     "drops": []
   },
@@ -9484,7 +9532,31 @@
     ]
   },
   {
-    "block": "movingBlock",
+    "block": "moving_block",
+    "drops": []
+  },
+  {
+    "block": "mud",
+    "drops": []
+  },
+  {
+    "block": "mud_brick_double_slab",
+    "drops": []
+  },
+  {
+    "block": "mud_brick_slab",
+    "drops": []
+  },
+  {
+    "block": "mud_brick_stairs",
+    "drops": []
+  },
+  {
+    "block": "mud_brick_wall",
+    "drops": []
+  },
+  {
+    "block": "mud_bricks",
     "drops": []
   },
   {
@@ -9500,14 +9572,6 @@
         "metadata": 0
       }
     ]
-  },
-  {
-    "block": "mysterious_frame",
-    "drops": []
-  },
-  {
-    "block": "mysterious_frame_slot",
-    "drops": []
   },
   {
     "block": "nether_brick",
@@ -9736,6 +9800,10 @@
     ]
   },
   {
+    "block": "ochre_froglight",
+    "drops": []
+  },
+  {
     "block": "orange_candle",
     "drops": [
       {
@@ -9960,6 +10028,14 @@
     "drops": []
   },
   {
+    "block": "packed_mud",
+    "drops": []
+  },
+  {
+    "block": "pearlescent_froglight",
+    "drops": []
+  },
+  {
     "block": "pink_candle",
     "drops": [
       {
@@ -10124,18 +10200,8 @@
     ]
   },
   {
-    "block": "pistonArmCollision",
-    "drops": [
-      {
-        "item": "piston",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "block": "piston_arm_collision",
+    "drops": []
   },
   {
     "block": "planks",
@@ -11998,6 +12064,10 @@
     ]
   },
   {
+    "block": "reinforced_deepslate",
+    "drops": []
+  },
+  {
     "block": "repeating_command_block",
     "drops": []
   },
@@ -12118,6 +12188,20 @@
   {
     "block": "sculk_vein",
     "drops": []
+  },
+  {
+    "block": "sea_lantern",
+    "drops": [
+      {
+        "item": "prismarine_crystals",
+        "dropChance": 1,
+        "stackSizeRange": [
+          2,
+          3
+        ],
+        "metadata": 0
+      }
+    ]
   },
   {
     "block": "sea_pickle",
@@ -12246,20 +12330,6 @@
     "drops": []
   },
   {
-    "block": "seaLantern",
-    "drops": [
-      {
-        "item": "prismarine_crystals",
-        "dropChance": 1,
-        "stackSizeRange": [
-          2,
-          3
-        ],
-        "metadata": 0
-      }
-    ]
-  },
-  {
     "block": "shroomlight",
     "drops": [
       {
@@ -12314,54 +12384,6 @@
         "metadata": 0
       }
     ]
-  },
-  {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 0,
-      "no_drop_bit": 1
-    }
-  },
-  {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 1,
-      "no_drop_bit": 1
-    }
-  },
-  {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 2,
-      "no_drop_bit": 1
-    }
-  },
-  {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 3,
-      "no_drop_bit": 1
-    }
-  },
-  {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 4,
-      "no_drop_bit": 1
-    }
-  },
-  {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 5,
-      "no_drop_bit": 1
-    }
   },
   {
     "block": "slime",
@@ -13130,18 +13152,8 @@
     ]
   },
   {
-    "block": "stickyPistonArmCollision",
-    "drops": [
-      {
-        "item": "sticky_piston",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "block": "sticky_piston_arm_collision",
+    "drops": []
   },
   {
     "block": "stone",
@@ -13802,7 +13814,7 @@
     ]
   },
   {
-    "block": "tripWire",
+    "block": "trip_wire",
     "drops": [
       {
         "item": "string",
@@ -13944,6 +13956,10 @@
         "metadata": 0
       }
     ]
+  },
+  {
+    "block": "verdant_froglight",
+    "drops": []
   },
   {
     "block": "vine",

@@ -1007,17 +1007,7 @@
   },
   {
     "block": "black_candle_cake",
-    "drops": [
-      {
-        "item": "black_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "black_glazed_terracotta",
@@ -1241,17 +1231,7 @@
   },
   {
     "block": "blue_candle_cake",
-    "drops": [
-      {
-        "item": "blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "blue_glazed_terracotta",
@@ -1479,17 +1459,7 @@
   },
   {
     "block": "brown_candle_cake",
-    "drops": [
-      {
-        "item": "brown_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "brown_glazed_terracotta",
@@ -1594,8 +1564,8 @@
         "item": "charcoal",
         "dropChance": 1,
         "stackSizeRange": [
-          2,
-          2
+          1,
+          1
         ],
         "metadata": 0
       }
@@ -1725,17 +1695,7 @@
   },
   {
     "block": "candle_cake",
-    "drops": [
-      {
-        "item": "candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "carpet",
@@ -1989,10 +1949,6 @@
         "metadata": 0
       }
     ]
-  },
-  {
-    "block": "client_request_placeholder_block",
-    "drops": []
   },
   {
     "block": "coal_block",
@@ -2316,7 +2272,7 @@
         "dropChance": 1,
         "stackSizeRange": [
           2,
-          5
+          3
         ],
         "metadata": 0
       }
@@ -3008,17 +2964,7 @@
   },
   {
     "block": "cyan_candle_cake",
-    "drops": [
-      {
-        "item": "cyan_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "cyan_glazed_terracotta",
@@ -3468,7 +3414,7 @@
         "dropChance": 1,
         "stackSizeRange": [
           2,
-          5
+          3
         ],
         "metadata": 0
       }
@@ -6278,17 +6224,7 @@
   },
   {
     "block": "gray_candle_cake",
-    "drops": [
-      {
-        "item": "gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "gray_glazed_terracotta",
@@ -6428,17 +6364,7 @@
   },
   {
     "block": "green_candle_cake",
-    "drops": [
-      {
-        "item": "green_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "green_glazed_terracotta",
@@ -7959,17 +7885,7 @@
   },
   {
     "block": "light_blue_candle_cake",
-    "drops": [
-      {
-        "item": "light_blue_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "light_blue_glazed_terracotta",
@@ -8109,17 +8025,7 @@
   },
   {
     "block": "light_gray_candle_cake",
-    "drops": [
-      {
-        "item": "light_gray_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "light_weighted_pressure_plate",
@@ -8273,17 +8179,7 @@
   },
   {
     "block": "lime_candle_cake",
-    "drops": [
-      {
-        "item": "lime_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "lime_glazed_terracotta",
@@ -8577,17 +8473,7 @@
   },
   {
     "block": "magenta_candle_cake",
-    "drops": [
-      {
-        "item": "magenta_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "magenta_glazed_terracotta",
@@ -9502,14 +9388,6 @@
     ]
   },
   {
-    "block": "mysterious_frame",
-    "drops": []
-  },
-  {
-    "block": "mysterious_frame_slot",
-    "drops": []
-  },
-  {
     "block": "nether_brick",
     "drops": [
       {
@@ -9859,17 +9737,7 @@
   },
   {
     "block": "orange_candle_cake",
-    "drops": [
-      {
-        "item": "orange_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "orange_glazed_terracotta",
@@ -10083,17 +9951,7 @@
   },
   {
     "block": "pink_candle_cake",
-    "drops": [
-      {
-        "item": "pink_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "pink_glazed_terracotta",
@@ -11499,17 +11357,7 @@
   },
   {
     "block": "purple_candle_cake",
-    "drops": [
-      {
-        "item": "purple_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "purple_glazed_terracotta",
@@ -11789,17 +11637,7 @@
   },
   {
     "block": "red_candle_cake",
-    "drops": [
-      {
-        "item": "red_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "red_flower",
@@ -12100,23 +11938,7 @@
     ]
   },
   {
-    "block": "sculk",
-    "drops": []
-  },
-  {
-    "block": "sculk_catalyst",
-    "drops": []
-  },
-  {
     "block": "sculk_sensor",
-    "drops": []
-  },
-  {
-    "block": "sculk_shrieker",
-    "drops": []
-  },
-  {
-    "block": "sculk_vein",
     "drops": []
   },
   {
@@ -14949,17 +14771,7 @@
   },
   {
     "block": "white_candle_cake",
-    "drops": [
-      {
-        "item": "white_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "white_glazed_terracotta",
@@ -15357,17 +15169,7 @@
   },
   {
     "block": "yellow_candle_cake",
-    "drops": [
-      {
-        "item": "yellow_candle",
-        "dropChance": 1,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ]
+    "drops": []
   },
   {
     "block": "yellow_flower",

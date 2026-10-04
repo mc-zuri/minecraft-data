@@ -1594,8 +1594,8 @@
         "item": "charcoal",
         "dropChance": 1,
         "stackSizeRange": [
-          2,
-          2
+          1,
+          1
         ],
         "metadata": 0
       }
@@ -2316,7 +2316,7 @@
         "dropChance": 1,
         "stackSizeRange": [
           2,
-          5
+          3
         ],
         "metadata": 0
       }
@@ -3468,7 +3468,7 @@
         "dropChance": 1,
         "stackSizeRange": [
           2,
-          5
+          3
         ],
         "metadata": 0
       }

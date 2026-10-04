@@ -3796,17 +3796,23 @@
   },
   {
     "block": "double_plant",
-    "drops": [
-      {
-        "item": "wheat_seeds",
-        "dropChance": 0.136364,
-        "stackSizeRange": [
-          1,
-          1
-        ],
-        "metadata": 0
-      }
-    ],
+    "drops": [],
+    "states": {
+      "double_plant_type": "sunflower",
+      "upper_block_bit": 1
+    }
+  },
+  {
+    "block": "double_plant",
+    "drops": [],
+    "states": {
+      "double_plant_type": "syringa",
+      "upper_block_bit": 1
+    }
+  },
+  {
+    "block": "double_plant",
+    "drops": [],
     "states": {
       "double_plant_type": "grass",
       "upper_block_bit": 1
@@ -3817,6 +3823,22 @@
     "drops": [],
     "states": {
       "double_plant_type": "fern",
+      "upper_block_bit": 1
+    }
+  },
+  {
+    "block": "double_plant",
+    "drops": [],
+    "states": {
+      "double_plant_type": "rose",
+      "upper_block_bit": 1
+    }
+  },
+  {
+    "block": "double_plant",
+    "drops": [],
+    "states": {
+      "double_plant_type": "paeonia",
       "upper_block_bit": 1
     }
   },
@@ -5951,6 +5973,10 @@
         "metadata": 0
       }
     ]
+  },
+  {
+    "block": "frog_egg",
+    "drops": []
   },
   {
     "block": "frosted_ice",
@@ -9736,6 +9762,10 @@
     ]
   },
   {
+    "block": "ochre_froglight",
+    "drops": []
+  },
+  {
     "block": "orange_candle",
     "drops": [
       {
@@ -9957,6 +9987,10 @@
   },
   {
     "block": "packed_ice",
+    "drops": []
+  },
+  {
+    "block": "pearlescent_froglight",
     "drops": []
   },
   {
@@ -12316,54 +12350,6 @@
     ]
   },
   {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 0,
-      "no_drop_bit": 1
-    }
-  },
-  {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 1,
-      "no_drop_bit": 1
-    }
-  },
-  {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 2,
-      "no_drop_bit": 1
-    }
-  },
-  {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 3,
-      "no_drop_bit": 1
-    }
-  },
-  {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 4,
-      "no_drop_bit": 1
-    }
-  },
-  {
-    "block": "skull",
-    "drops": [],
-    "states": {
-      "facing_direction": 5,
-      "no_drop_bit": 1
-    }
-  },
-  {
     "block": "slime",
     "drops": [
       {
@@ -13944,6 +13930,10 @@
         "metadata": 0
       }
     ]
+  },
+  {
+    "block": "verdant_froglight",
+    "drops": []
   },
   {
     "block": "vine",
