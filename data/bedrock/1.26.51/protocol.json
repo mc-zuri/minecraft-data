@@ -2587,7 +2587,29 @@
             {
               "compareTo": "type",
               "fields": {
-                "invalid": "void"
+                "invalid": [
+                  "container",
+                  [
+                    {
+                      "name": "count",
+                      "type": "li16"
+                    },
+                    {
+                      "name": "block_runtime_id",
+                      "type": "varint"
+                    },
+                    {
+                      "name": "extra",
+                      "type": [
+                        "encapsulated",
+                        {
+                          "lengthType": "varint",
+                          "type": "ItemExtraDataWithoutBlockingTick"
+                        }
+                      ]
+                    }
+                  ]
+                ]
               },
               "default": [
                 "container",
@@ -2599,27 +2621,42 @@
                   {
                     "name": "metadata",
                     "type": "zigzag32"
+                  },
+                  {
+                    "name": "count",
+                    "type": "li16"
+                  },
+                  {
+                    "name": "block_runtime_id",
+                    "type": "varint"
+                  },
+                  {
+                    "name": "extra",
+                    "type": [
+                      "switch",
+                      {
+                        "compareTo": "name",
+                        "fields": {
+                          "minecraft:shield": [
+                            "encapsulated",
+                            {
+                              "lengthType": "varint",
+                              "type": "ItemExtraDataWithBlockingTick"
+                            }
+                          ]
+                        },
+                        "default": [
+                          "encapsulated",
+                          {
+                            "lengthType": "varint",
+                            "type": "ItemExtraDataWithoutBlockingTick"
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               ]
-            }
-          ]
-        },
-        {
-          "name": "count",
-          "type": "li16"
-        },
-        {
-          "name": "block_runtime_id",
-          "type": "varint"
-        },
-        {
-          "name": "extra",
-          "type": [
-            "encapsulated",
-            {
-              "lengthType": "varint",
-              "type": "ItemExtraDataWithoutBlockingTick"
             }
           ]
         }

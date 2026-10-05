@@ -1059,13 +1059,18 @@ ItemStackRequestInstanceDescriptor:
    # The descriptor kind again, as a byte.
    legacy_type: u8
    _: type ?
-      if invalid: void
+      if invalid:
+         count: li16
+         block_runtime_id: varint
+         extra: '["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithoutBlockingTick" }]'
       default:
          name: string
          metadata: zigzag32
-   count: li16
-   block_runtime_id: varint
-   extra: '["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithoutBlockingTick" }]'
+         count: li16
+         block_runtime_id: varint
+         # A shield's data ends with its blocking tick, as ItemLegacy's does for the shield's network ID. The
+         # switch compares the name, so the fields after it are in the name's container.
+         extra: '["switch", { "compareTo": "name", "fields": { "minecraft:shield": ["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithBlockingTick" }] }, "default": ["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithoutBlockingTick" }] }]'
 
 # ItemStackRequest is sent by the client to change item stacks in an inventory. It is essentially a
 # replacement of the InventoryTransaction packet added in 1.16 for inventory specific actions, such as moving
