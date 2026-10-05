@@ -6345,12 +6345,22 @@
           "type": "varint"
         },
         {
-          "name": "unknown0",
-          "type": "varint"
+          "name": "entity_unique_id",
+          "type": "zigzag64"
         },
         {
-          "name": "unknown1",
-          "type": "varint"
+          "name": "transition_type",
+          "type": [
+            "mapper",
+            {
+              "type": "varint64",
+              "mappings": {
+                "0": "entity",
+                "1": "create",
+                "2": "destroy"
+              }
+            }
+          ]
         }
       ]
     ],

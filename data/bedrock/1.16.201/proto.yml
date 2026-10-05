@@ -1786,8 +1786,17 @@ packet_update_block_synced:
    block_runtime_id: varint
    block_priority: varint
    data_layer_id: varint
-   unknown0: varint
-   unknown1: varint
+   # EntityUniqueID is the unique ID of the falling block entity that the block transitions to or that the
+   # entity transitions from.
+   entity_unique_id: zigzag64
+   # TransitionType is the type of the transition that happened: a block placed becoming a falling entity, or a
+   # falling entity hitting the ground and becoming a block again.
+   transition_type: varint64 =>
+      # For falling sand, when a sand turns to an entity
+      0: entity
+      # When sand turns back to a new block
+      1: create
+      2: destroy
 
 # MoveActorDelta is sent by the server to move an entity. The packet is specifically optimised to save as
 # much space as possible, by only writing non-zero fields.
