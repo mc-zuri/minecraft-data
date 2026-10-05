@@ -918,7 +918,7 @@
         },
         {
           "name": "hotbar_slot",
-          "type": "varint"
+          "type": "zigzag32"
         },
         {
           "name": "held_item",
