@@ -331,7 +331,7 @@ Transaction:
          99999: craft
       _: source_type?
          if container or craft:
-            inventory_id: varint
+            inventory_id: zigzag32
          if world_interaction:
             flags: varint
          if craft or craft_slot:

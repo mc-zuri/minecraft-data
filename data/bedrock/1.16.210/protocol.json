@@ -983,7 +983,7 @@
                             [
                               {
                                 "name": "inventory_id",
-                                "type": "varint"
+                                "type": "zigzag32"
                               }
                             ]
                           ],
@@ -6701,7 +6701,7 @@
           "type": [
             "mapper",
             {
-              "type": "varint64",
+              "type": "varint",
               "mappings": {
                 "0": "entity",
                 "1": "create",

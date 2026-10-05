@@ -1839,12 +1839,13 @@ packet_available_commands:
 # never shown in the actual usage of the command, but only as auto-completion, like it automatically does
 # with enums that have a big amount of options. To illustrate, it can make
 # <false|true|yes|no> <$Name: bool>.
+# The game sets the lowest bits: collapse_enum 1, has_semantic_constraint 2, as_chained_command 4 (a bitfield
+# names the highest bits first).
 CommandFlags: [ "bitfield", [
-   { "name": "unused", "size": 1, "signed": false },
-   { "name": "collapse_enum", "size": 1, "signed": false },
-   { "name": "has_semantic_constraint", "size": 1, "signed": false },
+   { "name": "unused", "size": 5, "signed": false },
    { "name": "as_chained_command", "size": 1, "signed": false },
-   { "name": "unknown2", "size": 4, "signed": false }, # 4 unused upper bits
+   { "name": "has_semantic_constraint", "size": 1, "signed": false },
+   { "name": "collapse_enum", "size": 1, "signed": false },
 ]]
 
 # enum_size_based_on_values_len: native

@@ -7557,11 +7557,11 @@
       [
         {
           "name": "unused",
-          "size": 1,
+          "size": 5,
           "signed": false
         },
         {
-          "name": "collapse_enum",
+          "name": "as_chained_command",
           "size": 1,
           "signed": false
         },
@@ -7571,13 +7571,8 @@
           "signed": false
         },
         {
-          "name": "as_chained_command",
+          "name": "collapse_enum",
           "size": 1,
-          "signed": false
-        },
-        {
-          "name": "unknown2",
-          "size": 4,
           "signed": false
         }
       ]
