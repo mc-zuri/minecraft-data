@@ -879,11 +879,11 @@
                               }
                             ]
                           ],
-                          "creative": [
+                          "craft": [
                             "container",
                             [
                               {
-                                "name": "inventory_id",
+                                "name": "action",
                                 "type": "varint"
                               }
                             ]
@@ -893,15 +893,6 @@
                             [
                               {
                                 "name": "flags",
-                                "type": "varint"
-                              }
-                            ]
-                          ],
-                          "craft": [
-                            "container",
-                            [
-                              {
-                                "name": "action",
                                 "type": "varint"
                               }
                             ]
