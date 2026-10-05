@@ -4463,7 +4463,7 @@
                 "22": "stop_swimming",
                 "23": "start_spin_attack",
                 "24": "stop_spin_attack",
-                "25": "ineract_block"
+                "25": "interact_block"
               }
             }
           ]
