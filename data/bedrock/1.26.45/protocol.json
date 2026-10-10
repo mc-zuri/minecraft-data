@@ -2582,7 +2582,7 @@
           "type": "u8"
         },
         {
-          "anon": true,
+          "name": "name",
           "type": [
             "switch",
             {
@@ -2590,19 +2590,20 @@
               "fields": {
                 "invalid": "void"
               },
-              "default": [
-                "container",
-                [
-                  {
-                    "name": "name",
-                    "type": "string"
-                  },
-                  {
-                    "name": "metadata",
-                    "type": "zigzag32"
-                  }
-                ]
-              ]
+              "default": "string"
+            }
+          ]
+        },
+        {
+          "name": "metadata",
+          "type": [
+            "switch",
+            {
+              "compareTo": "type",
+              "fields": {
+                "invalid": "void"
+              },
+              "default": "zigzag32"
             }
           ]
         },
@@ -2617,10 +2618,25 @@
         {
           "name": "extra",
           "type": [
-            "encapsulated",
+            "switch",
             {
-              "lengthType": "varint",
-              "type": "ItemExtraDataWithoutBlockingTick"
+              "compareTo": "name",
+              "fields": {
+                "minecraft:shield": [
+                  "encapsulated",
+                  {
+                    "lengthType": "varint",
+                    "type": "ItemExtraDataWithBlockingTick"
+                  }
+                ]
+              },
+              "default": [
+                "encapsulated",
+                {
+                  "lengthType": "varint",
+                  "type": "ItemExtraDataWithoutBlockingTick"
+                }
+              ]
             }
           ]
         }

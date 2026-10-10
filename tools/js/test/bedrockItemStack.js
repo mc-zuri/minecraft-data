@@ -1,6 +1,7 @@
 /* eslint-env mocha */
 const assert = require('assert')
 const { ProtoDef } = require('protodef')
+const { ProtoDefCompiler } = require('protodef').Compiler
 const { readdirSync, existsSync } = require('fs')
 const { join } = require('path')
 
@@ -31,6 +32,41 @@ function stackProto (types) {
 }
 
 describe('Bedrock item stack wire values', () => {
+  // The descriptor-based craft results still carry shield blocking ticks.
+  // Gophertunnel StackRequestItem selects user data by "minecraft:shield".
+  for (const version of ['1.26.40', '1.26.45', '1.26.51']) {
+    it(`${version} retains shield blocking ticks inside deprecated craft results`, () => {
+      const { types } = require(`../../../data/bedrock/${version}/protocol.json`)
+      const proto = stackProto(types)
+      proto.addTypes({ ShortString: types.ShortString, ItemExtraDataWithBlockingTick: types.ItemExtraDataWithBlockingTick, ItemExtraDataWithoutBlockingTick: types.ItemExtraDataWithoutBlockingTick })
+      const extra = JSON.parse(JSON.stringify(field(types.ItemStackRequestInstanceDescriptor, 'extra')))
+      // Test the inner user-data payload independently of its length wrapper.
+      if (extra.type[0] === 'switch') {
+        const args = extra.type[1]
+        for (const key of Object.keys(args.fields)) args.fields[key] = args.fields[key][1].type
+        args.default = args.default[1].type
+      } else extra.type = extra.type[1].type
+      const valueType = ['container', [...types.ItemStackRequestInstanceDescriptor[1].slice(0, -1), extra]]
+      proto.addType('value', valueType)
+      const compiler = new ProtoDefCompiler()
+      compiler.addTypesToCompile({ string: types.string, ShortString: types.ShortString, lnbt: 'void', ItemExtraDataWithBlockingTick: types.ItemExtraDataWithBlockingTick, ItemExtraDataWithoutBlockingTick: types.ItemExtraDataWithoutBlockingTick, value: valueType })
+      compiler.addTypes({ Read: { zigzag32: ['native', proto.types.zigzag32[0]] }, Write: { zigzag32: ['native', proto.types.zigzag32[1]] }, SizeOf: { zigzag32: ['native', proto.types.zigzag32[2]] } })
+      const compiled = compiler.compileProtoDefSync()
+      for (const shield of [false, true]) {
+        const name = shield ? 'minecraft:shield' : 'minecraft:stone'
+        const data = { has_nbt: 'false', can_place_on: [], can_destroy: [] }
+        if (shield) data.blocking_tick = 0x0123456789abcdefn
+        const prefix = Buffer.concat([Buffer.from([1, 1, name.length]), Buffer.from(name), Buffer.from('00010000', 'hex')])
+        const bytes = Buffer.concat([prefix, Buffer.from('00000000000000000000' + (shield ? 'efcdab8967452301' : ''), 'hex')])
+        for (const codec of [proto, compiled]) {
+          assert.deepStrictEqual(codec.createPacketBuffer('value', { type: 'name', legacy_type: 1, name, metadata: 0, count: 1, block_runtime_id: 0, extra: data }), bytes)
+          const decoded = codec.parsePacketBuffer('value', bytes)
+          assert.strictEqual(decoded.metadata.size, bytes.length)
+          if (shield) assert.strictEqual(BigInt(decoded.data.extra.blocking_tick), data.blocking_tick)
+        }
+      }
+    })
+  }
   // Both IDs have used signed Varint32 since gophertunnel cc9a209 (1.16).
   for (const version of ['1.16.201', '1.16.210', '1.16.220']) {
     it(`${version} decodes negative response request IDs and exact stack IDs`, () => {

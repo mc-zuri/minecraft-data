@@ -1058,14 +1058,17 @@ ItemStackRequestInstanceDescriptor:
       1: name
    # The descriptor kind again, as a byte.
    legacy_type: u8
-   _: type ?
+   name: type ?
       if invalid: void
-      default:
-         name: string
-         metadata: zigzag32
+      default: string
+   metadata: type ?
+      if invalid: void
+      default: zigzag32
    count: li16
    block_runtime_id: varint
-   extra: '["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithoutBlockingTick" }]'
+   extra: name ?
+      if minecraft:shield: '["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithBlockingTick" }]'
+      default: '["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithoutBlockingTick" }]'
 
 # ItemStackRequest is sent by the client to change item stacks in an inventory. It is essentially a
 # replacement of the InventoryTransaction packet added in 1.16 for inventory specific actions, such as moving
