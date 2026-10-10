@@ -1148,7 +1148,7 @@ BlockUpdate:
    # entity transitions from.
    # Note that for both possible values for TransitionType, the EntityUniqueID should point to the falling
    # block entity involved.
-   entity_unique_id: zigzag64
+   entity_unique_id: varint64
    # TransitionType is the type of the transition that happened. It is either BlockToEntityTransition, when
    # a block placed becomes a falling entity, or EntityToBlockTransition, when a falling entity hits the
    # ground and becomes a solid block again.

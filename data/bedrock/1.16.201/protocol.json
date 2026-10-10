@@ -6745,7 +6745,7 @@
         },
         {
           "name": "unknown0",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "unknown1",

@@ -3444,7 +3444,7 @@
         },
         {
           "name": "entity_unique_id",
-          "type": "zigzag64"
+          "type": "varint64"
         },
         {
           "name": "transition_type",
@@ -11019,7 +11019,7 @@
         },
         {
           "name": "entity_unique_id",
-          "type": "zigzag64"
+          "type": "varint64"
         },
         {
           "name": "transition_type",
