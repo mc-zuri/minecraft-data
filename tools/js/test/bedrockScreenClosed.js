@@ -10,9 +10,7 @@ describe('Bedrock data-driven screen closed form ID', function () {
     const packet = types.packet_serverbound_data_driven_screen_closed
     if (!packet) continue
     it(`${dir} writes a mandatory unsigned form ID before every close reason`, function () {
-      // Isolate the ID: some versions also have a separate close-reason
-      // encoding defect. The independent string tail detects an extra byte.
-      const definitions = { string: types.string, packet: ['container', [packet[1].find(f => f.name === 'form_id'), { name: 'close_reason', type: 'string' }]] }
+      const definitions = { string: types.string, packet }
       const proto = new ProtoDef(false)
       proto.addTypes(definitions)
       const compiler = new ProtoDefCompiler()
