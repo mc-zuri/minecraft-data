@@ -1883,9 +1883,8 @@ packet_command_request:
    # Internal specifies if the command request internal. Setting it to false seems to work and the usage of
    # this field is not known.
    internal: bool
-   # Specifies the version of the command to run, relative to the current Minecraft version. Should be set
-   # to 52 as of 1.19.62
-   version: varint
+   # Command compatibility version, encoded as a signed ZigZag integer.
+   version: zigzag32
 
 
 # CommandBlockUpdate is sent by the client to update a command block at a specific position. The command

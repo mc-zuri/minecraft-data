@@ -7599,7 +7599,7 @@
         },
         {
           "name": "version",
-          "type": "varint"
+          "type": "zigzag32"
         }
       ]
     ],

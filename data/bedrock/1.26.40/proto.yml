@@ -1901,8 +1901,7 @@ packet_command_request:
    # Internal specifies if the command request internal. Setting it to false seems to work and the usage of
    # this field is not known.
    internal: bool
-   # Specifies the version of the command to run, relative to the current Minecraft version. Should be set
-   # to 52 as of 1.19.62
+   # Command compatibility version as a lowercase enum name, such as 'latest'.
    version: string
 
 
