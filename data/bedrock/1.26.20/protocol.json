@@ -7115,20 +7115,36 @@
           ]
         },
         {
+          "name": "extra_shape_data_type",
+          "type": [
+            "mapper",
+            {
+              "type": "varint",
+              "mappings": {
+                "0": "none",
+                "1": "arrow",
+                "2": "text",
+                "3": "box",
+                "4": "line",
+                "5": "sphere"
+              }
+            }
+          ]
+        },
+        {
           "name": "extra_shape_data",
           "type": [
             "switch",
             {
-              "compareTo": "type",
+              "compareTo": "extra_shape_data_type",
               "fields": {
-                "line": "ShapeLine",
-                "box": "ShapeBox",
-                "sphere": "ShapeSphere",
-                "circle": "ShapeCircle",
+                "none": "void",
+                "arrow": "ShapeArrow",
                 "text": "ShapeText",
-                "arrow": "ShapeArrow"
-              },
-              "default": "void"
+                "box": "ShapeBox",
+                "line": "ShapeLine",
+                "sphere": "ShapeSphere"
+              }
             }
           ]
         }
@@ -7157,10 +7173,7 @@
       [
         {
           "name": "segment_count",
-          "type": [
-            "option",
-            "u8"
-          ]
+          "type": "u8"
         }
       ]
     ],
@@ -7185,10 +7198,7 @@
         },
         {
           "name": "use_rotation",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         },
         {
           "name": "background_color",
@@ -7199,24 +7209,15 @@
         },
         {
           "name": "depth_test",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         },
         {
           "name": "show_backface",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         },
         {
           "name": "show_backface_text",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         }
       ]
     ],
@@ -7225,15 +7226,31 @@
       [
         {
           "name": "end_location",
-          "type": "vec3f"
+          "type": [
+            "option",
+            "vec3f"
+          ]
         },
         {
           "name": "arrow_head_length",
-          "type": "lf32"
+          "type": [
+            "option",
+            "lf32"
+          ]
         },
         {
           "name": "arrow_head_radius",
-          "type": "lf32"
+          "type": [
+            "option",
+            "lf32"
+          ]
+        },
+        {
+          "name": "segment_count",
+          "type": [
+            "option",
+            "u8"
+          ]
         }
       ]
     ],

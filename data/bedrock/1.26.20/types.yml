@@ -3327,14 +3327,21 @@ PrimitiveShape:
    color?: li32
    dimension_id?: zigzag32
    attached_to_entity_id?: zigzag64
-   extra_shape_data: type ?
-      if line: ShapeLine
-      if box: ShapeBox
-      if sphere: ShapeSphere
-      if circle: ShapeCircle
-      if text: ShapeText
+   extra_shape_data_type: varint =>
+      0: none
+      1: arrow
+      2: text
+      3: box
+      4: line
+      5: sphere
+   extra_shape_data: extra_shape_data_type ?
+      if none: void
       if arrow: ShapeArrow
-      default: void
+      if text: ShapeText
+      if box: ShapeBox
+      if line: ShapeLine
+      if sphere: ShapeSphere
+
 
 ShapeLine:
    end_location: vec3f
@@ -3343,23 +3350,25 @@ ShapeBox:
    box_bound: vec3f
 
 ShapeSphere:
-   segment_count?: u8
+   segment_count: u8
 
 ShapeCircle:
    segment_count?: u8
 
 ShapeText:
    text: string
-   use_rotation?: bool
+   use_rotation: bool
    background_color?: li32
-   depth_test?: bool
-   show_backface?: bool
-   show_backface_text?: bool
+   depth_test: bool
+   show_backface: bool
+   show_backface_text: bool
 
 ShapeArrow:
-   end_location: vec3f
-   arrow_head_length: lf32
-   arrow_head_radius: lf32
+   end_location?: vec3f
+   arrow_head_length?: lf32
+   arrow_head_radius?: lf32
+   segment_count?: u8
+
 
 PartyInfo:
    party_id: string

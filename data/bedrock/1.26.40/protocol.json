@@ -7058,7 +7058,11 @@
                   "2": "sphere",
                   "3": "circle",
                   "4": "text",
-                  "5": "arrow"
+                  "5": "arrow",
+                  "6": "cylinder",
+                  "7": "pyramid",
+                  "8": "ellipsoid",
+                  "9": "cone"
                 }
               }
             ]
@@ -7121,20 +7125,44 @@
           ]
         },
         {
+          "name": "extra_shape_data_type",
+          "type": [
+            "mapper",
+            {
+              "type": "varint",
+              "mappings": {
+                "0": "none",
+                "1": "arrow",
+                "2": "text",
+                "3": "box",
+                "4": "line",
+                "5": "sphere",
+                "6": "cylinder",
+                "7": "pyramid",
+                "8": "ellipsoid",
+                "9": "cone"
+              }
+            }
+          ]
+        },
+        {
           "name": "extra_shape_data",
           "type": [
             "switch",
             {
-              "compareTo": "type",
+              "compareTo": "extra_shape_data_type",
               "fields": {
-                "line": "ShapeLine",
-                "box": "ShapeBox",
-                "sphere": "ShapeSphere",
-                "circle": "ShapeCircle",
+                "none": "void",
+                "arrow": "ShapeArrow",
                 "text": "ShapeText",
-                "arrow": "ShapeArrow"
-              },
-              "default": "void"
+                "box": "ShapeBox",
+                "line": "ShapeLine",
+                "sphere": "ShapeSphere",
+                "cylinder": "ShapeCylinder",
+                "pyramid": "ShapePyramid",
+                "ellipsoid": "ShapeEllipsoid",
+                "cone": "ShapeCone"
+              }
             }
           ]
         }
@@ -7163,10 +7191,7 @@
       [
         {
           "name": "segment_count",
-          "type": [
-            "option",
-            "u8"
-          ]
+          "type": "u8"
         }
       ]
     ],
@@ -7191,10 +7216,7 @@
         },
         {
           "name": "use_rotation",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         },
         {
           "name": "background_color",
@@ -7205,24 +7227,15 @@
         },
         {
           "name": "depth_test",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         },
         {
           "name": "show_backface",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         },
         {
           "name": "show_backface_text",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         }
       ]
     ],
@@ -7231,15 +7244,102 @@
       [
         {
           "name": "end_location",
-          "type": "vec3f"
+          "type": [
+            "option",
+            "vec3f"
+          ]
         },
         {
           "name": "arrow_head_length",
-          "type": "lf32"
+          "type": [
+            "option",
+            "lf32"
+          ]
         },
         {
           "name": "arrow_head_radius",
+          "type": [
+            "option",
+            "lf32"
+          ]
+        },
+        {
+          "name": "segment_count",
+          "type": [
+            "option",
+            "u8"
+          ]
+        }
+      ]
+    ],
+    "ShapeCylinder": [
+      "container",
+      [
+        {
+          "name": "radius_x",
+          "type": "vec2f"
+        },
+        {
+          "name": "radius_z",
+          "type": "vec2f"
+        },
+        {
+          "name": "height",
           "type": "lf32"
+        },
+        {
+          "name": "segment_count",
+          "type": "u8"
+        }
+      ]
+    ],
+    "ShapePyramid": [
+      "container",
+      [
+        {
+          "name": "width",
+          "type": "lf32"
+        },
+        {
+          "name": "depth",
+          "type": [
+            "option",
+            "lf32"
+          ]
+        },
+        {
+          "name": "height",
+          "type": "lf32"
+        }
+      ]
+    ],
+    "ShapeEllipsoid": [
+      "container",
+      [
+        {
+          "name": "radii",
+          "type": "vec3f"
+        },
+        {
+          "name": "segments_per_axis",
+          "type": "u8"
+        }
+      ]
+    ],
+    "ShapeCone": [
+      "container",
+      [
+        {
+          "name": "radii",
+          "type": "vec2f"
+        },
+        {
+          "name": "height",
+          "type": "lf32"
+        },
+        {
+          "name": "segment_count",
+          "type": "u8"
         }
       ]
     ],
