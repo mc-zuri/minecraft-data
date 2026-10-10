@@ -2425,9 +2425,7 @@ CameraRotationOption:
 CameraSplineInstruction:
    # TotalTime is the total time for the spline animation.
    total_time: lf32
-   has_spline_type: bool
-   spline_type: has_spline_type ?
-      if true: u8
+   spline_type: u8
    # Curve is the list of curve points defining the spline.
    curve: vec3f[]varint
    # ProgressKeyFrames is a list of key frames for the spline progress.
