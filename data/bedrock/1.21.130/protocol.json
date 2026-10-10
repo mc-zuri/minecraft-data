@@ -5721,6 +5721,72 @@
         }
       ]
     ],
+    "DataStorePropertyValue": [
+      "container",
+      [
+        {
+          "name": "type",
+          "type": [
+            "mapper",
+            {
+              "type": "li32",
+              "mappings": {
+                "0": "none",
+                "1": "bool",
+                "2": "int64",
+                "3": "double",
+                "4": "string",
+                "5": "list",
+                "6": "map"
+              }
+            }
+          ]
+        },
+        {
+          "name": "value",
+          "type": [
+            "switch",
+            {
+              "compareTo": "type",
+              "fields": {
+                "none": "void",
+                "bool": "bool",
+                "int64": "li64",
+                "double": "lf64",
+                "string": "string",
+                "list": [
+                  "array",
+                  {
+                    "countType": "varint",
+                    "type": "DataStorePropertyValue"
+                  }
+                ],
+                "map": [
+                  "array",
+                  {
+                    "countType": "varint",
+                    "type": "DataStoreMapEntry"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    ],
+    "DataStoreMapEntry": [
+      "container",
+      [
+        {
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "DataStorePropertyValue"
+        }
+      ]
+    ],
     "mcpe_packet": [
       "container",
       [
@@ -14795,35 +14861,11 @@
                               },
                               {
                                 "name": "update_count",
-                                "type": "varint"
+                                "type": "lu32"
                               },
                               {
-                                "name": "data_type",
-                                "type": [
-                                  "mapper",
-                                  {
-                                    "type": "varint",
-                                    "mappings": {
-                                      "0": "double",
-                                      "1": "bool",
-                                      "2": "string"
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "name": "data",
-                                "type": [
-                                  "switch",
-                                  {
-                                    "compareTo": "data_type",
-                                    "fields": {
-                                      "double": "lf64",
-                                      "bool": "bool",
-                                      "string": "string"
-                                    }
-                                  }
-                                ]
+                                "name": "new_value",
+                                "type": "DataStorePropertyValue"
                               }
                             ]
                           ],
