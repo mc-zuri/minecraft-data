@@ -3304,7 +3304,7 @@ DataStoreMapEntry:
    value: DataStorePropertyValue
 
 DataStoreChangeEntry:
-   change_type: lu32 =>
+   change_type: varint =>
       0: update
       1: change
       2: removal
@@ -3313,7 +3313,7 @@ DataStoreChangeEntry:
          name: string
          property: string
          path: string
-         data_type: lu32 =>
+         data_type: varint =>
             0: double
             1: bool
             2: string
