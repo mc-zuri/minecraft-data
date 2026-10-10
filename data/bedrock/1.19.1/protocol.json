@@ -3016,17 +3016,23 @@
         {
           "name": "items",
           "type": [
-            "container",
-            [
-              {
-                "name": "network_id",
-                "type": "zigzag32"
-              },
-              {
-                "name": "count",
-                "type": "zigzag32"
-              }
-            ]
+            "array",
+            {
+              "countType": "varint",
+              "type": [
+                "container",
+                [
+                  {
+                    "name": "network_id",
+                    "type": "zigzag32"
+                  },
+                  {
+                    "name": "count",
+                    "type": "zigzag32"
+                  }
+                ]
+              ]
+            }
           ]
         }
       ]

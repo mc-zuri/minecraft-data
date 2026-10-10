@@ -1382,7 +1382,7 @@ TransitionType: =>
 
 MaterialReducer:
    mix: zigzag32
-   items:
+   items: []varint
       network_id: zigzag32
       count: zigzag32
 

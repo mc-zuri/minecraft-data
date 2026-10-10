@@ -1178,7 +1178,7 @@ TransitionType: =>
 
 MaterialReducer:
    mix: varint
-   items:
+   items: []varint
       network_id: varint
       count: varint
 
