@@ -10,7 +10,7 @@
     },
     "maxCost": {
       "a": 11,
-      "b": 1
+      "b": 10
     },
     "treasureOnly": false,
     "curse": false,
@@ -19,7 +19,7 @@
       "blast_protection",
       "projectile_protection"
     ],
-    "category": "armor",
+    "category": "armor_head+armor_torso+armor_feet+armor_legs",
     "weight": 10,
     "tradeable": true,
     "discoverable": true
@@ -35,7 +35,7 @@
     },
     "maxCost": {
       "a": 8,
-      "b": 10
+      "b": 14
     },
     "treasureOnly": false,
     "curse": false,
@@ -44,7 +44,7 @@
       "blast_protection",
       "projectile_protection"
     ],
-    "category": "armor",
+    "category": "armor_head+armor_torso+armor_feet+armor_legs",
     "weight": 5,
     "tradeable": true,
     "discoverable": true
@@ -60,7 +60,7 @@
     },
     "maxCost": {
       "a": 6,
-      "b": 5
+      "b": 9
     },
     "treasureOnly": false,
     "curse": false,
@@ -81,7 +81,7 @@
     },
     "maxCost": {
       "a": 8,
-      "b": 5
+      "b": 9
     },
     "treasureOnly": false,
     "curse": false,
@@ -90,7 +90,7 @@
       "fire_protection",
       "projectile_protection"
     ],
-    "category": "armor",
+    "category": "armor_head+armor_torso+armor_feet+armor_legs",
     "weight": 2,
     "tradeable": true,
     "discoverable": true
@@ -106,7 +106,7 @@
     },
     "maxCost": {
       "a": 6,
-      "b": 3
+      "b": 12
     },
     "treasureOnly": false,
     "curse": false,
@@ -115,7 +115,7 @@
       "fire_protection",
       "blast_protection"
     ],
-    "category": "armor",
+    "category": "armor_head+armor_torso+armor_feet+armor_legs",
     "weight": 5,
     "tradeable": true,
     "discoverable": true
@@ -136,7 +136,7 @@
     "treasureOnly": false,
     "curse": false,
     "exclude": [],
-    "category": "armor_chest",
+    "category": "armor_head+armor_torso+armor_feet+armor_legs",
     "weight": 1,
     "tradeable": true,
     "discoverable": true
@@ -151,8 +151,8 @@
       "b": 0
     },
     "maxCost": {
-      "a": 10,
-      "b": 30
+      "a": 300,
+      "b": 0
     },
     "treasureOnly": false,
     "curse": false,
@@ -172,8 +172,8 @@
       "b": 0
     },
     "maxCost": {
-      "a": 10,
-      "b": 15
+      "a": 100,
+      "b": 0
     },
     "treasureOnly": false,
     "curse": false,
@@ -196,7 +196,7 @@
     },
     "maxCost": {
       "a": 0,
-      "b": 41
+      "b": 40
     },
     "treasureOnly": false,
     "curse": false,
@@ -225,7 +225,7 @@
       "smite",
       "bane_of_arthropods"
     ],
-    "category": "weapon",
+    "category": "sword+axe",
     "weight": 10,
     "tradeable": true,
     "discoverable": true
@@ -249,7 +249,7 @@
       "sharpness",
       "bane_of_arthropods"
     ],
-    "category": "weapon",
+    "category": "sword+axe",
     "weight": 5,
     "tradeable": true,
     "discoverable": true
@@ -273,7 +273,7 @@
       "sharpness",
       "smite"
     ],
-    "category": "weapon",
+    "category": "sword+axe",
     "weight": 5,
     "tradeable": true,
     "discoverable": true
@@ -294,7 +294,7 @@
     "treasureOnly": false,
     "curse": false,
     "exclude": [],
-    "category": "weapon",
+    "category": "sword",
     "weight": 5,
     "tradeable": true,
     "discoverable": true
@@ -315,7 +315,7 @@
     "treasureOnly": false,
     "curse": false,
     "exclude": [],
-    "category": "weapon",
+    "category": "sword",
     "weight": 2,
     "tradeable": true,
     "discoverable": true
@@ -335,10 +335,8 @@
     },
     "treasureOnly": false,
     "curse": false,
-    "exclude": [
-      "silk_touch"
-    ],
-    "category": "weapon",
+    "exclude": [],
+    "category": "sword",
     "weight": 2,
     "tradeable": true,
     "discoverable": true
@@ -359,7 +357,7 @@
     "treasureOnly": false,
     "curse": false,
     "exclude": [],
-    "category": "digger",
+    "category": "hoe+shears+axe+pickaxe+shovel",
     "weight": 10,
     "tradeable": true,
     "discoverable": true
@@ -380,11 +378,9 @@
     "treasureOnly": false,
     "curse": false,
     "exclude": [
-      "looting",
-      "fortune",
-      "luck_of_the_sea"
+      "fortune"
     ],
-    "category": "digger",
+    "category": "hoe+shears+axe+pickaxe+shovel",
     "weight": 1,
     "tradeable": true,
     "discoverable": true
@@ -405,7 +401,7 @@
     "treasureOnly": false,
     "curse": false,
     "exclude": [],
-    "category": "breakable",
+    "category": "armor_head+armor_torso+armor_feet+armor_legs+sword+bow+hoe+shears+flintsteel+axe+pickaxe+shovel+fishing_rod+carrot_stick+elytra+spear+crossbow+shield+warped_fungus_on_a_stick",
     "weight": 5,
     "tradeable": true,
     "discoverable": true
@@ -428,7 +424,7 @@
     "exclude": [
       "silk_touch"
     ],
-    "category": "digger",
+    "category": "hoe+axe+pickaxe+shovel",
     "weight": 2,
     "tradeable": true,
     "discoverable": true
@@ -534,9 +530,7 @@
     },
     "treasureOnly": false,
     "curse": false,
-    "exclude": [
-      "silk_touch"
-    ],
+    "exclude": [],
     "category": "fishing_rod",
     "weight": 2,
     "tradeable": true,
@@ -604,14 +598,14 @@
     "exclude": [
       "infinity"
     ],
-    "category": "breakable",
+    "category": "armor_head+armor_torso+armor_feet+armor_legs+sword+bow+hoe+shears+flintsteel+axe+pickaxe+shovel+fishing_rod+carrot_stick+elytra+spear+crossbow+shield+warped_fungus_on_a_stick",
     "weight": 2,
     "tradeable": true,
     "discoverable": true
   },
   {
     "id": 27,
-    "name": "binding_curse",
+    "name": "binding",
     "displayName": "Curse of Binding",
     "maxLevel": 1,
     "minCost": {
@@ -625,14 +619,14 @@
     "treasureOnly": true,
     "curse": true,
     "exclude": [],
-    "category": "wearable",
+    "category": "armor_head+armor_torso+armor_feet+armor_legs+elytra+cosmetic_head",
     "weight": 1,
-    "tradeable": true,
+    "tradeable": false,
     "discoverable": true
   },
   {
     "id": 28,
-    "name": "vanishing_curse",
+    "name": "vanishing",
     "displayName": "Curse of Vanishing",
     "maxLevel": 1,
     "minCost": {
@@ -646,9 +640,9 @@
     "treasureOnly": true,
     "curse": true,
     "exclude": [],
-    "category": "vanishable",
+    "category": "all",
     "weight": 1,
-    "tradeable": true,
+    "tradeable": false,
     "discoverable": true
   },
   {
@@ -667,8 +661,8 @@
     "treasureOnly": false,
     "curse": false,
     "exclude": [],
-    "category": "trident",
-    "weight": 2,
+    "category": "spear",
+    "weight": 5,
     "tradeable": true,
     "discoverable": true
   },
@@ -691,7 +685,7 @@
       "loyalty",
       "channeling"
     ],
-    "category": "trident",
+    "category": "spear",
     "weight": 2,
     "tradeable": true,
     "discoverable": true
@@ -714,8 +708,8 @@
     "exclude": [
       "riptide"
     ],
-    "category": "trident",
-    "weight": 5,
+    "category": "spear",
+    "weight": 10,
     "tradeable": true,
     "discoverable": true
   },
@@ -737,7 +731,7 @@
     "exclude": [
       "riptide"
     ],
-    "category": "trident",
+    "category": "spear",
     "weight": 1,
     "tradeable": true,
     "discoverable": true
@@ -753,7 +747,7 @@
     },
     "maxCost": {
       "a": 0,
-      "b": 50
+      "b": 70
     },
     "treasureOnly": false,
     "curse": false,
@@ -775,8 +769,8 @@
       "b": -9
     },
     "maxCost": {
-      "a": 0,
-      "b": 50
+      "a": 10,
+      "b": 41
     },
     "treasureOnly": false,
     "curse": false,
@@ -798,8 +792,8 @@
       "b": -8
     },
     "maxCost": {
-      "a": 0,
-      "b": 50
+      "a": 20,
+      "b": 42
     },
     "treasureOnly": false,
     "curse": false,
