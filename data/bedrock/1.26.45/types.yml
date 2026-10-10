@@ -1291,7 +1291,7 @@ ItemStackResponses: []varint
          custom_name: string
          # FilteredCustomName is a filtered version of CustomName with all the profanity removed. The client will
          # use this over CustomName if this field is not empty and they have the "Filter Profanity" setting enabled.
-         filtered_custom_name: string
+         filtered_custom_name?: string
          # DurabilityCorrection is the current durability of the item stack. This durability will be shown
          # client-side after the response is sent to the client.
          durability_correction: zigzag32
