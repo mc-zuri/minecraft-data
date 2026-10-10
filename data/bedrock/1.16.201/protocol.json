@@ -2301,54 +2301,71 @@
               "type": "zigzag32"
             },
             {
-              "name": "containers",
+              "anon": true,
               "type": [
-                "array",
+                "switch",
                 {
-                  "countType": "varint",
-                  "type": [
-                    "container",
-                    [
-                      {
-                        "name": "container_id",
-                        "type": "u8"
-                      },
-                      {
-                        "name": "slots",
-                        "type": [
-                          "array",
-                          {
-                            "countType": "varint",
-                            "type": [
-                              "container",
-                              [
-                                {
-                                  "name": "slot",
-                                  "type": "u8"
-                                },
-                                {
-                                  "name": "hotbar_slot",
-                                  "type": "u8"
-                                },
-                                {
-                                  "name": "count",
-                                  "type": "u8"
-                                },
-                                {
-                                  "name": "item_stack_id",
-                                  "type": "zigzag32"
-                                },
-                                {
-                                  "name": "custom_name",
-                                  "type": "string"
-                                }
+                  "compareTo": "result",
+                  "fields": {
+                    "0": [
+                      "container",
+                      [
+                        {
+                          "name": "containers",
+                          "type": [
+                            "array",
+                            {
+                              "countType": "varint",
+                              "type": [
+                                "container",
+                                [
+                                  {
+                                    "name": "container_id",
+                                    "type": "u8"
+                                  },
+                                  {
+                                    "name": "slots",
+                                    "type": [
+                                      "array",
+                                      {
+                                        "countType": "varint",
+                                        "type": [
+                                          "container",
+                                          [
+                                            {
+                                              "name": "slot",
+                                              "type": "u8"
+                                            },
+                                            {
+                                              "name": "hotbar_slot",
+                                              "type": "u8"
+                                            },
+                                            {
+                                              "name": "count",
+                                              "type": "u8"
+                                            },
+                                            {
+                                              "name": "item_stack_id",
+                                              "type": "zigzag32"
+                                            },
+                                            {
+                                              "name": "custom_name",
+                                              "type": "string"
+                                            }
+                                          ]
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
                               ]
-                            ]
-                          }
-                        ]
-                      }
+                            }
+                          ]
+                        }
+                      ]
                     ]
-                  ]
+                  },
+                  "default": "void"
                 }
               ]
             }

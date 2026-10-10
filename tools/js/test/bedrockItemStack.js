@@ -32,6 +32,33 @@ function stackProto (types) {
 }
 
 describe('Bedrock item stack wire values', () => {
+  // Exact 1.16.201.02 reader/writer and gophertunnel v1.10.0:
+  // rejected responses end after the request ID, without a container count.
+  for (const version of ['1.16.201', '1.16.210', '1.16.220']) {
+    it(`${version} reads rejected responses followed by a successful response`, () => {
+      const { types } = require(`../../../data/bedrock/${version}/protocol.json`)
+      const proto = stackProto(types)
+      if (types.ContainerSlotType) proto.addType('ContainerSlotType', types.ContainerSlotType)
+      proto.addType('responses', types.ItemStackResponses)
+      const compiler = new ProtoDefCompiler()
+      compiler.addTypesToCompile({ string: types.string, ...(types.ContainerSlotType ? { ContainerSlotType: types.ContainerSlotType } : {}), responses: types.ItemStackResponses })
+      compiler.addTypes({ Read: { zigzag32: ['native', proto.types.zigzag32[0]] }, Write: { zigzag32: ['native', proto.types.zigzag32[1]] }, SizeOf: { zigzag32: ['native', proto.types.zigzag32[2]] } })
+      const compiled = compiler.compileProtoDefSync()
+      const status = version === '1.16.201' ? { result: 1 } : { status: 'error' }
+      const success = version === '1.16.201' ? { result: 0 } : { status: 'ok' }
+      const cases = [
+        [[{ ...status, request_id: -1 }], '010101'],
+        [[{ ...status, request_id: -65 }, { ...success, request_id: -3, containers: [] }], '02018101000500']
+      ]
+      for (const [value, hex] of cases) {
+        const bytes = Buffer.from(hex, 'hex')
+        assert.deepStrictEqual(compiled.createPacketBuffer('responses', value), bytes)
+        const decoded = compiled.parsePacketBuffer('responses', bytes)
+        assert.deepStrictEqual(decoded.data, value)
+        assert.strictEqual(decoded.metadata.size, bytes.length)
+      }
+    })
+  }
   // NetworkItemInstanceDescriptorData has the same four descriptor alternatives
   // as the adjacent auto-craft ingredient type (protocols 2168, 2169, 2193).
   for (const version of ['1.26.40', '1.26.45', '1.26.51']) {
