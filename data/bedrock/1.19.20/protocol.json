@@ -9037,7 +9037,15 @@
                     },
                     {
                       "name": "can_modify_blocks",
-                      "type": "bool"
+                      "type": [
+                        "switch",
+                        {
+                          "compareTo": "has",
+                          "fields": {
+                            "true": "bool"
+                          }
+                        }
+                      ]
                     }
                   ]
                 ]

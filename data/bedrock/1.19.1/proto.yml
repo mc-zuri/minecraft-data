@@ -2755,7 +2755,8 @@ packet_education_settings:
    agent_capabilities: has_agent_capabilities ?
       if true:
          has: bool
-         can_modify_blocks: bool
+         can_modify_blocks: has ?
+            if true: bool
    HasOverrideURI: bool
    OverrideURI: HasOverrideURI?
       if true: string
