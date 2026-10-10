@@ -878,15 +878,6 @@
                               }
                             ]
                           ],
-                          "creative": [
-                            "container",
-                            [
-                              {
-                                "name": "inventory_id",
-                                "type": "varint"
-                              }
-                            ]
-                          ],
                           "world_interaction": [
                             "container",
                             [
