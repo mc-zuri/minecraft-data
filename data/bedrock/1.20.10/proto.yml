@@ -3557,7 +3557,7 @@ packet_update_subchunk_blocks:
    !bound: client
    # SubChunkX, SubChunkY, and SubChunkZ help identify the sub chunk.
    x: zigzag32
-   y: zigzag32
+   y: varint
    z: zigzag32
    # Blocks contains each updated block change entry.
    blocks: BlockUpdate[]varint

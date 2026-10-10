@@ -9840,7 +9840,7 @@
         },
         {
           "name": "y",
-          "type": "zigzag32"
+          "type": "varint"
         },
         {
           "name": "z",
