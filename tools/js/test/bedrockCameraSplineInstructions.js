@@ -52,5 +52,15 @@ describe('Bedrock camera spline instructions', function () {
         check(codecs(shape), { progress_key_frames: progress, rotation_options: rotation, sentinel: 0xa5 }, Buffer.concat([...progressBytes, ...rotationBytes, Buffer.from([0xa5])]))
       }
     })
+    it(`${dir} always encodes the spline identifier and load flag`, function () {
+      const shape = fields.filter(f => ['spline_identifier', 'load_from_json'].includes(f.name))
+      assert.strictEqual(shape.length, 2)
+      for (const identifier of ['', 'minecraft:orbit']) {
+        for (const load of [false, true]) {
+          const wire = Buffer.concat([Buffer.from([identifier.length]), Buffer.from(identifier), Buffer.from([Number(load), 0xa5])])
+          check(codecs(shape), { spline_identifier: identifier, load_from_json: load, sentinel: 0xa5 }, wire)
+        }
+      }
+    })
   }
 })

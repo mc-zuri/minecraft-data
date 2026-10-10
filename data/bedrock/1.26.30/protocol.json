@@ -5144,17 +5144,11 @@
         },
         {
           "name": "spline_identifier",
-          "type": [
-            "option",
-            "string"
-          ]
+          "type": "string"
         },
         {
           "name": "load_from_json",
-          "type": [
-            "option",
-            "bool"
-          ]
+          "type": "bool"
         }
       ]
     ],

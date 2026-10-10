@@ -2438,6 +2438,8 @@ CameraSplineInstruction:
       value: vec3f
       time: lf32
       ease_type: u8
+   spline_identifier: string
+   load_from_json: bool
 
 CameraProgressOption:
    value: lf32

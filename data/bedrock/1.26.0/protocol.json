@@ -4875,6 +4875,14 @@
               ]
             }
           ]
+        },
+        {
+          "name": "spline_identifier",
+          "type": "string"
+        },
+        {
+          "name": "load_from_json",
+          "type": "bool"
         }
       ]
     ],
