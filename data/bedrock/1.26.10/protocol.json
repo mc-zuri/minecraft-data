@@ -3538,6 +3538,18 @@
         }
       }
     ],
+    "PermissionLevelZigzag32": [
+      "mapper",
+      {
+        "type": "zigzag32",
+        "mappings": {
+          "0": "visitor",
+          "1": "member",
+          "2": "operator",
+          "3": "custom"
+        }
+      }
+    ],
     "CommandPermissionLevel": [
       "mapper",
       {
@@ -14091,18 +14103,7 @@
         },
         {
           "name": "permission_level",
-          "type": [
-            "mapper",
-            {
-              "type": "zigzag32",
-              "mappings": {
-                "0": "visitor",
-                "1": "member",
-                "2": "operator",
-                "3": "custom"
-              }
-            }
-          ]
+          "type": "PermissionLevelZigzag32"
         },
         {
           "name": "requested_permissions",

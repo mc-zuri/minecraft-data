@@ -1202,11 +1202,14 @@ MaterialReducer:
       network_id: zigzag32
       count: zigzag32
 
-PermissionLevel: varint =>
+PermissionLevel_: =>
    0: visitor
    1: member
    2: operator
    3: custom
+
+PermissionLevel: varint => PermissionLevel_
+PermissionLevelZigzag32: zigzag32 => PermissionLevel_
 
 # List of Window IDs. When a new container is opened (container_open), a new sequential Window ID is created.
 # Below window IDs are hard-coded and created when the game starts and the server does not 

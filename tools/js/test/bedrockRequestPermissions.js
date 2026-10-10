@@ -11,6 +11,10 @@ describe('Bedrock requested permission levels', function () {
     if (!packet) continue
     it(`${dir} reads the requested level as a signed ZigZag enum`, function () {
       const level = packet[1].find(f => f.name === 'permission_level')
+      assert.strictEqual(level.type, 'PermissionLevelZigzag32')
+      assert.strictEqual(types.PermissionLevel[1].type, dir === 'bedrock/1.19.1' ? 'varint' : 'u8')
+      assert.strictEqual(types.PermissionLevelZigzag32[1].type, 'zigzag32')
+      assert.deepStrictEqual(types.PermissionLevelZigzag32[1].mappings, types.PermissionLevel[1].mappings)
       const proto = new ProtoDef(false)
       const [read, write, size] = proto.types.varint
       const encode = n => ((n << 1) ^ (n >> 31)) >>> 0
@@ -19,7 +23,7 @@ describe('Bedrock requested permission levels', function () {
         (value, buffer, offset) => write(encode(value), buffer, offset),
         value => size(encode(value))
       ])
-      const definitions = { PermissionLevel: types.PermissionLevel, probe: ['container', [level, { name: 'flags', type: 'lu16' }]] }
+      const definitions = { PermissionLevel: types.PermissionLevel, PermissionLevelZigzag32: types.PermissionLevelZigzag32, probe: ['container', [level, { name: 'flags', type: 'lu16' }]] }
       proto.addTypes(definitions)
       const compiler = new ProtoDefCompiler()
       compiler.addTypesToCompile(definitions)

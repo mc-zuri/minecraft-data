@@ -1401,11 +1401,14 @@ MaterialReducer:
 ## Permissions
 
 # The permission level of a player, for example whether they are an Server Operator or not.
-PermissionLevel: u8 =>
+PermissionLevel_: =>
    0: visitor
    1: member
    2: operator
    3: custom
+
+PermissionLevel: u8 => PermissionLevel_
+PermissionLevelZigzag32: zigzag32 => PermissionLevel_
 
 # The command permission level, for example if being run by a Player, an Op, or a Command Block.
 CommandPermissionLevel: u8 =>
