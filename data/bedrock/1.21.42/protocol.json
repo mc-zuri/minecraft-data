@@ -2933,6 +2933,10 @@
                               {
                                 "name": "pattern",
                                 "type": "string"
+                              },
+                              {
+                                "name": "times_crafted",
+                                "type": "u8"
                               }
                             ]
                           ],

@@ -31,6 +31,18 @@ function stackProto (types) {
 }
 
 describe('Bedrock item stack wire values', () => {
+  // Recorded 1.21.20/30/42 loom requests and gophertunnel af279425.
+  for (const version of ['1.21.20', '1.21.30', '1.21.42', '1.21.50']) {
+    it(`${version} keeps the loom count after its pattern`, () => {
+      const { types } = require(`../../../data/bedrock/${version}/protocol.json`)
+      const proto = stackProto(types)
+      proto.addType('value', ['container', [...action(types, 'craft_loom_request')[1], { name: 'next', type: 'u8' }]])
+      const value = { pattern: 'bo', times_crafted: 3, next: 6 }
+      const bytes = Buffer.from('02626f0306', 'hex')
+      assert.deepStrictEqual(proto.createPacketBuffer('value', value), bytes)
+      assert.deepStrictEqual(proto.parsePacketBuffer('value', bytes).data, value)
+    })
+  }
   // The count was introduced in 1.21.20 (gophertunnel d9002856).
   for (const version of ['1.21.20', '1.21.30', '1.21.42', '1.21.50']) {
     it(`${version} keeps the grindstone count before its cost and next action`, () => {

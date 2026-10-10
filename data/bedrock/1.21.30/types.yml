@@ -1105,6 +1105,7 @@ ItemStackRequest:
          if craft_loom_request:
             # Pattern is the pattern identifier for the loom recipe.
             pattern: string
+            times_crafted: u8
          if non_implemented: void
          if results_deprecated:
             result_items: ItemLegacy[]varint
