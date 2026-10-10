@@ -8860,7 +8860,7 @@
         },
         {
           "name": "target",
-          "type": "varint"
+          "type": "varint64"
         }
       ]
     ],
