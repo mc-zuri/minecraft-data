@@ -15750,8 +15750,8 @@
           ]
         },
         {
-          "name": "legacy_type",
-          "type": "u8"
+          "name": "type_name",
+          "type": "string"
         },
         {
           "name": "value",

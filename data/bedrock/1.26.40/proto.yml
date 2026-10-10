@@ -4438,13 +4438,13 @@ packet_player_update_entity_overrides:
    # PropertyIndex is the index of the property to modify. The index is unique for each property of an entity.
    property_index: varint
    # Type is the type of action to perform with the property. It is one of the constants above.
-   # As of 1.26.40 it is sent twice: once as an unsigned varint and once as the legacy byte.
+   # As of 1.26.40 the variant tag is followed by the action name string.
    type: varint =>
       - clear_all
       - remove
       - set_int
       - set_float
-   legacy_type: u8
+   type_name: string
    value: type ?
       # IntValue is the new integer value of the property. It is only used when Type is set to
       # PlayerUpdateEntityOverridesTypeInt.
