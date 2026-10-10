@@ -2441,7 +2441,21 @@ CameraProgressOption:
 
 CameraSplineDefinition:
    name: string
-   instruction: CameraSplineInstruction
+   total_time: lf32
+   spline_type: string
+   control_points: vec3f[]varint
+   progress_key_frames: []varint
+      value: lf32
+      time: lf32
+      has_ease_type: bool
+      ease_type: has_ease_type ?
+         if true: string
+   rotation_key_frames: []varint
+      value: vec3f
+      time: lf32
+      has_ease_type: bool
+      ease_type: has_ease_type ?
+         if true: string
 
 CameraAimAssistActorPriorityData:
    preset_index: li32

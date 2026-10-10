@@ -4883,8 +4883,98 @@
           "type": "string"
         },
         {
-          "name": "instruction",
-          "type": "CameraSplineInstruction"
+          "name": "total_time",
+          "type": "lf32"
+        },
+        {
+          "name": "spline_type",
+          "type": "string"
+        },
+        {
+          "name": "control_points",
+          "type": [
+            "array",
+            {
+              "countType": "varint",
+              "type": "vec3f"
+            }
+          ]
+        },
+        {
+          "name": "progress_key_frames",
+          "type": [
+            "array",
+            {
+              "countType": "varint",
+              "type": [
+                "container",
+                [
+                  {
+                    "name": "value",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "time",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "has_ease_type",
+                    "type": "bool"
+                  },
+                  {
+                    "name": "ease_type",
+                    "type": [
+                      "switch",
+                      {
+                        "compareTo": "has_ease_type",
+                        "fields": {
+                          "true": "string"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rotation_key_frames",
+          "type": [
+            "array",
+            {
+              "countType": "varint",
+              "type": [
+                "container",
+                [
+                  {
+                    "name": "value",
+                    "type": "vec3f"
+                  },
+                  {
+                    "name": "time",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "has_ease_type",
+                    "type": "bool"
+                  },
+                  {
+                    "name": "ease_type",
+                    "type": [
+                      "switch",
+                      {
+                        "compareTo": "has_ease_type",
+                        "fields": {
+                          "true": "string"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
         }
       ]
     ],

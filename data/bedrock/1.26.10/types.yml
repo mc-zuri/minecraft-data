@@ -2455,7 +2455,7 @@ CameraProgressOption:
 CameraSplineDefinition:
    name: string
    total_time: lf32
-   spline_type?: string
+   spline_type: string
    control_points: vec3f[]varint
    progress_key_frames: CameraProgressOption[]varint
    rotation_key_frames: CameraRotationOption[]varint

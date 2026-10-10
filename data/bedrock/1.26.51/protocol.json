@@ -4855,10 +4855,7 @@
         },
         {
           "name": "spline_type",
-          "type": [
-            "option",
-            "string"
-          ]
+          "type": "string"
         },
         {
           "name": "control_points",
