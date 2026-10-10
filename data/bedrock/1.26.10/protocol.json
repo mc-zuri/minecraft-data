@@ -4851,7 +4851,23 @@
             "array",
             {
               "countType": "varint",
-              "type": "CameraProgressOption"
+              "type": [
+                "container",
+                [
+                  {
+                    "name": "value",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "time",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "ease_type",
+                    "type": "string"
+                  }
+                ]
+              ]
             }
           ]
         },
@@ -4861,7 +4877,23 @@
             "array",
             {
               "countType": "varint",
-              "type": "CameraRotationOption"
+              "type": [
+                "container",
+                [
+                  {
+                    "name": "value",
+                    "type": "vec3f"
+                  },
+                  {
+                    "name": "time",
+                    "type": "lf32"
+                  },
+                  {
+                    "name": "ease_type",
+                    "type": "string"
+                  }
+                ]
+              ]
             }
           ]
         },

@@ -2541,9 +2541,15 @@ CameraSplineInstruction:
    # Curve is the list of curve points defining the spline.
    curve: vec3f[]varint
    # ProgressKeyFrames is a list of key frames for the spline progress.
-   progress_key_frames: CameraProgressOption[]varint
+   progress_key_frames: []varint
+      value: lf32
+      time: lf32
+      ease_type: string
    # RotationOptions is a list of rotation keyframes for the spline.
-   rotation_options: CameraRotationOption[]varint
+   rotation_options: []varint
+      value: vec3f
+      time: lf32
+      ease_type: string
    spline_identifier?: string
    load_from_json?: bool
 

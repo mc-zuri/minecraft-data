@@ -32,5 +32,25 @@ describe('Bedrock camera spline instructions', function () {
         check(codecs(shape), { spline_type: type, sentinel: 0xa5 }, Buffer.from([type, 0xa5]))
       }
     })
+    it(`${dir} encodes mandatory easing in each instruction keyframe`, function () {
+      const shape = fields.filter(f => ['progress_key_frames', 'rotation_options'].includes(f.name))
+      const byteEase = dir === 'bedrock/1.26.0'
+      const float = n => { const b = Buffer.alloc(4); b.writeFloatLE(n); return b }
+      const ease = n => byteEase ? n : ['linear', 'in_out_elastic'][n === 31 ? 1 : 0]
+      const easeBytes = n => byteEase ? Buffer.from([n]) : Buffer.concat([Buffer.from([ease(n).length]), Buffer.from(ease(n))])
+      for (const count of [0, 1, 2]) {
+        const progress = []
+        const rotation = []
+        const progressBytes = [Buffer.from([count])]
+        const rotationBytes = [Buffer.from([count])]
+        for (let i = 0; i < count; i++) {
+          progress.push({ value: i * 0.5, time: i, ease_type: ease(i * 31) })
+          rotation.push({ value: { x: 0, y: i * 90, z: -5.5 }, time: i, ease_type: ease((1 - i) * 31) })
+          progressBytes.push(float(i * 0.5), float(i), easeBytes(i * 31))
+          rotationBytes.push(float(0), float(i * 90), float(-5.5), float(i), easeBytes((1 - i) * 31))
+        }
+        check(codecs(shape), { progress_key_frames: progress, rotation_options: rotation, sentinel: 0xa5 }, Buffer.concat([...progressBytes, ...rotationBytes, Buffer.from([0xa5])]))
+      }
+    })
   }
 })
