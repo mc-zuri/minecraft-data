@@ -1287,8 +1287,13 @@ packet_boss_event:
       if show_bar:
          title: string
          bar_progress: lf32
+         darkness_factor: li16
+         color: varint
+         overlay: varint
       if update_properties:
          darkness_factor: li16
+         color: varint
+         overlay: varint
       if texture:
          color: varint
          overlay: varint

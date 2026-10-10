@@ -5275,6 +5275,18 @@
                     {
                       "name": "bar_progress",
                       "type": "lf32"
+                    },
+                    {
+                      "name": "darkness_factor",
+                      "type": "li16"
+                    },
+                    {
+                      "name": "color",
+                      "type": "varint"
+                    },
+                    {
+                      "name": "overlay",
+                      "type": "varint"
                     }
                   ]
                 ],
@@ -5284,6 +5296,14 @@
                     {
                       "name": "darkness_factor",
                       "type": "li16"
+                    },
+                    {
+                      "name": "color",
+                      "type": "varint"
+                    },
+                    {
+                      "name": "overlay",
+                      "type": "varint"
                     }
                   ]
                 ],
