@@ -26,7 +26,7 @@ describe('Bedrock material reducer output collections', function () {
         [[{ mix: 0, items: [] }, { mix: 0, items: [{ network_id: 0, count: 0 }, { network_id: 0, count: 0 }] }], '020000000200000000']
       ]
       // Nonzero signed values also match the recorded education recipes.
-      if (types.MaterialReducer[1][0].type === 'zigzag32') cases.push([[{ mix: -1, items: [{ network_id: -27, count: 64 }, { network_id: -12, count: 36 }] }], '0101023580011748'])
+      cases.push([[{ mix: -1, items: [{ network_id: -27, count: 64 }, { network_id: -12, count: 36 }] }], '0101023580011748'])
       for (const codec of [proto, compiler.compileProtoDefSync()]) {
         for (const [reducers, hex] of cases) {
           const data = { reducers, sentinel: 0x12345678 }

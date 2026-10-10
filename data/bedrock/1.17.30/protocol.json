@@ -2932,7 +2932,7 @@
       [
         {
           "name": "mix",
-          "type": "varint"
+          "type": "zigzag32"
         },
         {
           "name": "items",
@@ -2945,11 +2945,11 @@
                 [
                   {
                     "name": "network_id",
-                    "type": "varint"
+                    "type": "zigzag32"
                   },
                   {
                     "name": "count",
-                    "type": "varint"
+                    "type": "zigzag32"
                   }
                 ]
               ]
