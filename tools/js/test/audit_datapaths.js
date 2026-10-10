@@ -6,6 +6,15 @@ const assert = require('assert')
 
 describe('audit dataPaths', function () {
   const dataPaths = require('../../../data/dataPaths.json')
+  for (const [version, paths] of Object.entries(dataPaths.bedrock)) {
+    if (!paths.proto) continue
+    it(`Bedrock ${version} selects matching protocol sources`, function () {
+      const source = join(__dirname, '../../../data', paths.proto, 'proto.yml')
+      const declaredVersion = /^!version: (.+)$/m.exec(fs.readFileSync(source, 'utf8'))[1].trim()
+      assert.strictEqual(`bedrock/${declaredVersion}`, paths.protocol, 'building the mapped source must regenerate this protocol')
+      assert.strictEqual(paths.types, paths.proto, 'types must match the relative types.yml import')
+    })
+  }
   it('should have a dataPath for each file', function () {
     require('./version_iterator')(function (p, versionString) {
       const [type, version] = versionString.split(' ')
