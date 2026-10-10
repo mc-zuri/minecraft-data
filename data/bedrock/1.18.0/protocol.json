@@ -5617,7 +5617,7 @@
         },
         {
           "name": "armor_slots",
-          "type": "zigzag64"
+          "type": "varint64"
         }
       ]
     ],
