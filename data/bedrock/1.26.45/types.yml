@@ -1370,6 +1370,7 @@ MapDecoration:
    - village_taiga
    - jungle_temple
    - witch_hut
+   - trial_chambers
    # Rotation is the rotation of the map decoration. It is byte due to the 16 fixed directions that the
    # map decoration may face.
    rotation: u8

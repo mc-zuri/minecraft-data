@@ -1369,6 +1369,12 @@ MapDecoration:
    - village_taiga
    - jungle_temple
    - witch_hut
+   - trial_chambers
+   - abandoned_camp
+   - buried_ancient_city
+   - buried_mineshaft
+   - desert_pyramid
+   - warm_ocean_ruins
    # Rotation is the rotation of the map decoration. It is byte due to the 16 fixed directions that the
    # map decoration may face.
    rotation: u8

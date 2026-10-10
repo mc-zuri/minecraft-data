@@ -12,6 +12,11 @@ describe('Bedrock map decoration identifiers', function () {
     const { types } = require(`../../../data/${dir}/protocol.json`)
     if (!types.MapDecoration) continue
     it(`${dir} retains each decoration's original ID`, function () {
+      const version = require(`../../../data/${dir}/version.json`).version
+      // Mojang protocol 671 adds TrialChambers; protocol 2193 adds the five later icons.
+      // Count is a sentinel, not a decoration.
+      const expectedNames = [...names, ...(version >= 671 ? ['trial_chambers'] : []), ...(version >= 2193 ? ['abandoned_camp', 'buried_ancient_city', 'buried_mineshaft', 'desert_pyramid', 'warm_ocean_ruins'] : [])]
+      assert.deepStrictEqual(types.MapDecoration[1].find(f => f.name === 'type').type[1].mappings, Object.fromEntries(expectedNames.map((name, id) => [id, name])))
       const definitions = { string: types.string, MapDecoration: types.MapDecoration }
       const proto = new ProtoDef(false)
       proto.addTypes(definitions)
@@ -19,7 +24,7 @@ describe('Bedrock map decoration identifiers', function () {
       compiler.addTypesToCompile(definitions)
       const compiled = compiler.compileProtoDefSync()
       const fixedColor = ['1.26.40', '1.26.45', '1.26.51'].some(v => dir.endsWith('/' + v))
-      for (const [id, type] of names.entries()) {
+      for (const [id, type] of expectedNames.entries()) {
         const value = { type, rotation: 3, x: 127, y: 128, label: 'map', color_abgr: 0x12345678 }
         const wire = Buffer.from([id, 3, 127, 128, 3, 0x6d, 0x61, 0x70, ...(fixedColor ? [0x78, 0x56, 0x34, 0x12] : [0xf8, 0xac, 0xd1, 0x91, 1])])
         for (const codec of [proto, compiled]) {
