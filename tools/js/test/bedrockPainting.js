@@ -33,5 +33,10 @@ describe('Bedrock painting fields', function () {
       assert.strictEqual(field.type, 'vec3f')
       check(field, [[{ x: 1.5, y: -1, z: 1000000 }, '0000c03f000080bf00247449'], [{ x: 0, y: 64, z: -0.5 }, '0000000000008042000000bf']])
     })
+    it(`${dir} preserves the full unsigned runtime ID`, function () {
+      const field = packet[1].find(f => f.name === 'runtime_entity_id')
+      assert.strictEqual(field.type, 'varint64')
+      check(field, [[0n, '00'], [1n, '01'], [127n, '7f'], [128n, '8001'], [4294967295n, 'ffffffff0f'], [4294967296n, '8080808010'], [9007199254740992n, '8080808080808010'], [18446744073709551615n, 'ffffffffffffffffff01']])
+    })
   }
 })
