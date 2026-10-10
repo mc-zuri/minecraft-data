@@ -5860,6 +5860,10 @@
           "type": "PotionTypeRecipes"
         },
         {
+          "name": "potion_container_recipes",
+          "type": "PotionContainerChangeRecipes"
+        },
+        {
           "name": "material_reducers",
           "type": [
             "array",
@@ -5868,10 +5872,6 @@
               "type": "MaterialReducer"
             }
           ]
-        },
-        {
-          "name": "potion_container_recipes",
-          "type": "PotionContainerChangeRecipes"
         },
         {
           "name": "clear_recipes",
