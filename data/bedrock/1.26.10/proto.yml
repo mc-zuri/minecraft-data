@@ -3895,7 +3895,11 @@ packet_request_permissions:
    # often used in packets. Most servers send an EntityUniqueID equal to the EntityRuntimeID.
    entity_unique_id: li64
    # PermissionLevel is the current permission level of the player. Same as constants in AdventureSettings packet.
-   permission_level: PermissionLevel
+   permission_level: zigzag32 =>
+      0: visitor
+      1: member
+      2: operator
+      3: custom
    # RequestedPermissions contains the requested permission flags.
    requested_permissions: RequestPermissions
 
