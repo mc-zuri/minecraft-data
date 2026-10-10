@@ -6633,7 +6633,9 @@
                 "0": "none",
                 "1": "bool",
                 "2": "int64",
+                "3": "double",
                 "4": "string",
+                "5": "list",
                 "6": "map"
               }
             }
@@ -6649,7 +6651,15 @@
                 "none": "void",
                 "bool": "bool",
                 "int64": "li64",
+                "double": "lf64",
                 "string": "string",
+                "list": [
+                  "array",
+                  {
+                    "countType": "varint",
+                    "type": "DataStorePropertyValue"
+                  }
+                ],
                 "map": [
                   "array",
                   {

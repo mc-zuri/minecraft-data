@@ -3231,13 +3231,17 @@ DataStorePropertyValue:
       0: none
       1: bool
       2: int64
+      3: double
       4: string
+      5: list
       6: map
    value: type ?
       if none: void
       if bool: bool
       if int64: li64
+      if double: lf64
       if string: string
+      if list: DataStorePropertyValue[]varint
       if map: DataStoreMapEntry[]varint
 
 DataStoreMapEntry:
