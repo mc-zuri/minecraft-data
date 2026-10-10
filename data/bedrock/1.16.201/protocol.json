@@ -6216,7 +6216,7 @@
         },
         {
           "name": "image_data",
-          "type": "string"
+          "type": "ByteArray"
         },
         {
           "name": "unknown2",

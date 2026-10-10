@@ -8412,7 +8412,7 @@
         },
         {
           "name": "image_data",
-          "type": "string"
+          "type": "ByteArray"
         },
         {
           "name": "book_id",

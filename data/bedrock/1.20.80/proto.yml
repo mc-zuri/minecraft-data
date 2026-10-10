@@ -2330,7 +2330,7 @@ packet_photo_transfer:
    image_name: string
    # PhotoData is the raw data of the photo image. The format of this data may vary: Formats such as JPEG or
    # PNG work, as long as PhotoName has the correct extension.
-   image_data: string
+   image_data: ByteArray
    # BookID is the ID of the book that the photo is associated with. If the PhotoName in a book with this ID
    # is set to PhotoName, it will display the photo (provided Education Edition is used).
    # The photo image is downloaded to a sub-folder with this book ID.

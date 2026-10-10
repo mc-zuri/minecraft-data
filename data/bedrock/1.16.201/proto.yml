@@ -1702,7 +1702,7 @@ packet_photo_transfer:
    !id: 0x63
    !bound: server
    file_name: string
-   image_data: string
+   image_data: ByteArray
    unknown2: string
 
 packet_modal_form_request:
