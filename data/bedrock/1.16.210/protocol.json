@@ -4310,7 +4310,7 @@
         },
         {
           "name": "coordinates",
-          "type": "BlockCoordinates"
+          "type": "vec3f"
         },
         {
           "name": "direction",
