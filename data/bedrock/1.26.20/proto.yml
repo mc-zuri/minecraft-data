@@ -3550,10 +3550,13 @@ packet_filter_text_packet:
    from_server: bool
 
 # PrimitiveShapes is a packet sent by the server to instruct the client to render one or more shapes in the world.
-packet_primitive_shapes:
+packet_debug_renderer:
    !id: 0xa4
    !bound: client
-   shapes: PrimitiveShape[]varint
+   type: string
+   has_data: bool
+   data: has_data ?
+      if true: DebugMarkerData
 
 
 
@@ -4528,29 +4531,12 @@ packet_clientbound_controls_scheme:
       - player_relative_strafe
 
 # ServerScriptDebugDrawer instructs the client to render debug shapes for development visualisations.
-packet_server_script_debug_drawer:
+packet_primitive_shapes:
    !id: 0x148
-   !bound: server
-   shapes: []varint
-      network_id: varint64
-      shape_type?: u8 =>
-         - line
-         - box
-         - sphere
-         - circle
-         - text
-         - arrow
-      location?: vec3f
-      scale?: lf32
-      rotation?: vec3f
-      time_left?: lf32
-      color?: li32
-      text?: string
-      box_bound?: vec3f
-      line_end_location?: vec3f
-      arrow_head_length?: lf32
-      arrow_head_radius?: lf32
-      segment_count?: u8
+   !bound: client
+   shapes: PrimitiveShape[]varint
+
+
 
 # ServerBoundPackSettingChange
 packet_serverbound_pack_setting_change:
