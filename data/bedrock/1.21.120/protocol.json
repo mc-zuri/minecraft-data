@@ -14340,8 +14340,8 @@
       "container",
       [
         {
-          "name": "runtime_id",
-          "type": "varint64"
+          "name": "entity_unique_id",
+          "type": "zigzag64"
         },
         {
           "name": "property_index",
