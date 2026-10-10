@@ -3791,7 +3791,7 @@
         },
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "platform_chat_id",
@@ -3888,7 +3888,7 @@
         },
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "entity_type",
@@ -3962,7 +3962,7 @@
         },
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "item",
@@ -4007,7 +4007,7 @@
       [
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "target",
@@ -4020,7 +4020,7 @@
       [
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "flags",
@@ -4337,7 +4337,7 @@
       [
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "event_id",
@@ -4415,7 +4415,7 @@
       [
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "event_id",
@@ -4480,7 +4480,7 @@
       [
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "item",
@@ -4505,7 +4505,7 @@
       [
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "helmet",
@@ -4545,7 +4545,7 @@
         },
         {
           "name": "target_runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "position",
@@ -4605,7 +4605,7 @@
       [
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "action",
@@ -4672,7 +4672,7 @@
       [
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "metadata",
@@ -4689,7 +4689,7 @@
       [
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "velocity",
@@ -4823,7 +4823,7 @@
         },
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         }
       ]
     ],
@@ -5631,7 +5631,7 @@
       [
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "status",
@@ -6530,7 +6530,7 @@
       [
         {
           "name": "runtime_entity_id",
-          "type": "varint"
+          "type": "varint64"
         },
         {
           "name": "unknown0",
