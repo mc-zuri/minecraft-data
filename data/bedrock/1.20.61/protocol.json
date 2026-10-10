@@ -11989,7 +11989,7 @@
       [
         {
           "name": "raw_payload",
-          "type": "string"
+          "type": "ByteArray"
         }
       ]
     ],

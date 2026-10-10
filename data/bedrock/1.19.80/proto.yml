@@ -3980,7 +3980,7 @@ packet_compressed_biome_definitions:
    # generation.
    # 
    # The data is compressed with a cursed home-brewed compression format, and it's a miracle it even works.
-   raw_payload: string
+   raw_payload: ByteArray
 
 packet_trim_data:
    !id: 0x12e
