@@ -4603,8 +4603,8 @@ packet_clientbound_data_store:
                if double: lf64
                if bool: bool
                if string: string
-            update_count: li32
-            path_update_count: li32
+            update_count: lu32
+            path_update_count: lu32
          if change:
             name: string
             property: string
