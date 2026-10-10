@@ -4525,7 +4525,7 @@ packet_clientbound_controls_scheme:
 # ServerScriptDebugDrawer instructs the client to render debug shapes for development visualisations.
 packet_server_script_debug_drawer:
    !id: 0x148
-   !bound: server
+   !bound: client
    shapes: []varint
       network_id: varint64
       shape_type?: u8 =>

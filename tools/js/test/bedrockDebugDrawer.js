@@ -1,11 +1,15 @@
 /* eslint-env mocha */
 const assert = require('assert')
+const fs = require('fs')
+const path = require('path')
 const { ProtoDef } = require('protodef')
 const { ProtoDefCompiler } = require('protodef').Compiler
 
 describe('Bedrock debug drawer shapes', function () {
   for (const version of ['1.21.120', '1.21.124', '1.21.130', '1.26.0', '1.26.10']) {
     it(`${version} reads the independent extra-data discriminator`, function () {
+      const source = fs.readFileSync(path.join(__dirname, '../../../data/bedrock', version, 'proto.yml'), 'utf8')
+      assert.match(source, /packet_server_script_debug_drawer:\s+!id: 0x148\s+!bound: client/)
       const { types } = require(`../../../data/bedrock/${version}/protocol.json`)
       const proto = new ProtoDef(false)
       const [read, write, size] = proto.types.varint
