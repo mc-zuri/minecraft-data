@@ -75,6 +75,18 @@ describe('Bedrock item stack wire values', () => {
     const file = join(bedrock, version, 'protocol.json')
     if (!existsSync(file)) continue
     const { types } = require(file)
+    const grindstone = types.ItemStackRequest && action(types, 'craft_grindstone_request')
+    if (grindstone) {
+      it(`${version} preserves signed grindstone costs and ZigZag length transitions`, () => {
+        const proto = stackProto(types)
+        proto.addType('cost', field(grindstone, 'cost').type)
+        for (const [value, hex] of [[0, '00'], [1, '02'], [-1, '01'], [63, '7e'], [64, '8001'], [-65, '8101'], [2147483647, 'feffffff0f'], [-2147483648, 'ffffffff0f']]) {
+          const bytes = Buffer.from(hex, 'hex')
+          assert.deepStrictEqual(proto.createPacketBuffer('cost', value), bytes)
+          assert.strictEqual(proto.parsePacketBuffer('cost', bytes).data, value)
+        }
+      })
+    }
     if (!types.FullContainerName) continue
     it(`${version} reads and writes unsigned dynamic container IDs in little endian`, () => {
       const proto = new ProtoDef(false)

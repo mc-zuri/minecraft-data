@@ -1069,7 +1069,7 @@ ItemStackRequest:
             # one of the recipes sent in the CraftingData packet, where each of the recipes have a RecipeNetworkID as
             recipe_network_id: varint
             # Cost is the cost of the recipe that was crafted.
-            cost: varint
+            cost: zigzag32
          if craft_loom_request:
             # Pattern is the pattern identifier for the loom recipe.
             pattern: string

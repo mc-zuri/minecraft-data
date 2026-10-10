@@ -1142,7 +1142,7 @@ ItemStackRequest:
             # has no effect.
             times_crafted: u8
             # Cost is the cost of the recipe that was crafted.
-            cost: varint
+            cost: zigzag32
          if craft_loom_request:
             # Pattern is the pattern identifier for the loom recipe.
             pattern: string
