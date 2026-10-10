@@ -488,7 +488,7 @@ packet_move_player:
    !bound: both
    # EntityRuntimeID is the runtime ID of the player. The runtime ID is unique for each world session, and
    # entities are generally identified in packets using this runtime ID.
-   runtime_id: varint
+   runtime_id: varint64
    # Position is the position to spawn the player on. If the player is on a distance that the viewer cannot
    # see it, the player will still show up if the viewer moves closer.
    position: vec3f
@@ -512,7 +512,7 @@ packet_move_player:
    on_ground: bool
    # RiddenEntityRuntimeID is the runtime ID of the entity that the player might currently be riding. If not
    # riding, this should be left 0.
-   ridden_runtime_id: varint
+   ridden_runtime_id: varint64
    teleport: mode ?
       if teleport:
          # TeleportCause is written only if Mode is MoveModeTeleport. It specifies the cause of the teleportation,
