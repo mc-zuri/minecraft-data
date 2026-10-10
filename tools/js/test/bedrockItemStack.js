@@ -31,6 +31,19 @@ function stackProto (types) {
 }
 
 describe('Bedrock item stack wire values', () => {
+  // Gophertunnel 27724f76 and captured 1.21.20 cartography requests:
+  // optional recipe actions contain no craft count between these fields.
+  for (const version of ['1.21.2', '1.21.20', '1.21.30']) {
+    it(`${version} writes the optional recipe filter index immediately after its ID`, () => {
+      const { types } = require(`../../../data/bedrock/${version}/protocol.json`)
+      const proto = stackProto(types)
+      proto.addType('value', ['container', [...action(types, 'optional')[1], { name: 'next', type: 'u8' }]])
+      const value = { recipe_network_id: 300, filtered_string_index: -1, next: 6 }
+      const bytes = Buffer.from('ac02ffffffff06', 'hex')
+      assert.deepStrictEqual(proto.createPacketBuffer('value', value), bytes)
+      assert.deepStrictEqual(proto.parsePacketBuffer('value', bytes).data, value)
+    })
+  }
   // Recorded 1.21.20/30/42 loom requests and gophertunnel af279425.
   for (const version of ['1.21.20', '1.21.30', '1.21.42', '1.21.50']) {
     it(`${version} keeps the loom count after its pattern`, () => {
