@@ -12689,6 +12689,10 @@
         {
           "name": "entity_id",
           "type": "varint64"
+        },
+        {
+          "name": "dimension",
+          "type": "zigzag32"
         }
       ]
     ],
