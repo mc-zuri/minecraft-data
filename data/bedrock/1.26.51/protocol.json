@@ -7243,6 +7243,10 @@
           ]
         },
         {
+          "name": "line_gap_height",
+          "type": "lf32"
+        },
+        {
           "name": "depth_test",
           "type": "bool"
         },

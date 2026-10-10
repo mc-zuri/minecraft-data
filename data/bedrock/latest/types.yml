@@ -3510,6 +3510,7 @@ ShapeText:
    text: string
    use_rotation: bool
    background_color?: li32
+   line_gap_height: lf32
    depth_test: bool
    show_backface: bool
    show_backface_text: bool

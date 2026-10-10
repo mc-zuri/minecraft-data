@@ -33,8 +33,8 @@ module.exports = function cases (version) {
   for (let mask = 0; mask < 32; mask++) {
     const [rotate, background, depth, back, textBack] = [0, 1, 2, 3, 4].map(i => !!(mask & (1 << i)))
     // Each boolean is one byte; keep the non-symmetric bit patterns visible.
-    const bytes = '03e29c93' + (rotate ? '01' : '00') + (background ? '01ffffffff' : '00') + (depth ? '01' : '00') + (back ? '01' : '00') + (textBack ? '01' : '00')
-    add(`text_${mask}`, 2, { text: '✓', use_rotation: rotate, background_color: background ? -1 : undefined, depth_test: depth, show_backface: back, show_backface_text: textBack }, bytes)
+    const bytes = '03e29c93' + (rotate ? '01' : '00') + (background ? '01ffffffff' : '00') + (version === '1.26.51' ? '00002040' : '') + (depth ? '01' : '00') + (back ? '01' : '00') + (textBack ? '01' : '00')
+    add(`text_${mask}`, 2, { text: '✓', use_rotation: rotate, background_color: background ? -1 : undefined, ...(version === '1.26.51' ? { line_gap_height: 2.5 } : {}), depth_test: depth, show_backface: back, show_backface_text: textBack }, bytes)
   }
   add('box', 3, { box_bound: vector }, vec3)
   add('line', 4, { end_location: vector }, vec3)
