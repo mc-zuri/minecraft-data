@@ -31,6 +31,19 @@ function stackProto (types) {
 }
 
 describe('Bedrock item stack wire values', () => {
+  // Both IDs have used signed Varint32 since gophertunnel cc9a209 (1.16).
+  for (const version of ['1.16.201', '1.16.210', '1.16.220']) {
+    it(`${version} decodes negative response request IDs and exact stack IDs`, () => {
+      const { types } = require(`../../../data/bedrock/${version}/protocol.json`)
+      const proto = stackProto(types)
+      proto.addType('ids', ['container', [field(types.ItemStackResponses, 'request_id'), field(types.ItemStackResponses, 'item_stack_id')]])
+      for (const [value, hex] of [[{ request_id: -65, item_stack_id: 64 }, '81018001'], [{ request_id: -2147483647, item_stack_id: 2147483647 }, 'fdffffff0ffeffffff0f']]) {
+        const bytes = Buffer.from(hex, 'hex')
+        assert.deepStrictEqual(proto.createPacketBuffer('ids', value), bytes)
+        assert.deepStrictEqual(proto.parsePacketBuffer('ids', bytes).data, value)
+      }
+    })
+  }
   // Gophertunnel 27724f76 and captured 1.21.20 cartography requests:
   // optional recipe actions contain no craft count between these fields.
   for (const version of ['1.21.2', '1.21.20', '1.21.30']) {

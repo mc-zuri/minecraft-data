@@ -2302,7 +2302,7 @@
             },
             {
               "name": "request_id",
-              "type": "varint"
+              "type": "zigzag32"
             },
             {
               "name": "containers",
@@ -2340,7 +2340,7 @@
                                 },
                                 {
                                   "name": "item_stack_id",
-                                  "type": "varint"
+                                  "type": "zigzag32"
                                 },
                                 {
                                   "name": "custom_name",

@@ -730,14 +730,14 @@ ItemStackRequests: []varint
 
 ItemStackResponses: []varint
    result: u8
-   request_id: varint
+   request_id: zigzag32
    containers: []varint
       container_id: u8
       slots: []varint
          slot: u8
          hotbar_slot: u8
          count: u8
-         item_stack_id: varint
+         item_stack_id: zigzag32
          custom_name: string
 
 ItemComponentList: []varint
