@@ -4563,12 +4563,30 @@ packet_server_script_debug_drawer:
       rotation?: vec3f
       time_left?: lf32
       color?: li32
-      text?: string
-      box_bound?: vec3f
-      line_end_location?: vec3f
-      arrow_head_length?: lf32
-      arrow_head_radius?: lf32
-      segment_count?: u8
+      dimension_id: zigzag32
+      extra_shape_data_type: varint =>
+         0: none
+         1: arrow
+         2: text
+         3: box
+         4: line
+         5: sphere
+      extra_shape_data: extra_shape_data_type ?
+         if none: void
+         if arrow:
+            end_location?: vec3f
+            head_length?: lf32
+            head_radius?: lf32
+            segment_count?: u8
+         if text:
+            text: string
+         if box:
+            bound: vec3f
+         if line:
+            end_location: vec3f
+         if sphere:
+            segment_count: u8
+
 
 # ServerBoundPackSettingChange
 packet_serverbound_pack_setting_change:
