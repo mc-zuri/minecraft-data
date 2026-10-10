@@ -15216,7 +15216,7 @@
                 },
                 {
                   "name": "ease_type",
-                  "type": "EaseType"
+                  "type": "string"
                 },
                 {
                   "name": "clear",
