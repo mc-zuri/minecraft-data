@@ -5351,7 +5351,7 @@
           "name": "dynamic_container_id",
           "type": [
             "option",
-            "u32"
+            "lu32"
           ]
         }
       ]

@@ -4707,7 +4707,7 @@
         },
         {
           "name": "dynamic_container_id",
-          "type": "u32"
+          "type": "lu32"
         }
       ]
     ],

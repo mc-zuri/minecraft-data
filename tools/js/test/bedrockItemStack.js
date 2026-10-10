@@ -1,6 +1,8 @@
 /* eslint-env mocha */
 const assert = require('assert')
 const { ProtoDef } = require('protodef')
+const { readdirSync, existsSync } = require('fs')
+const { join } = require('path')
 
 function field (value, name) {
   if (!value || typeof value !== 'object') return
@@ -12,6 +14,27 @@ function field (value, name) {
 }
 
 describe('Bedrock item stack wire values', () => {
+  // Gophertunnel introduced FullContainerName in d9002856 (1.21.20).
+  // Uint32 is little endian, including when the value later became optional.
+  const bedrock = join(__dirname, '../../../data/bedrock')
+  for (const version of readdirSync(bedrock)) {
+    const file = join(bedrock, version, 'protocol.json')
+    if (!existsSync(file)) continue
+    const { types } = require(file)
+    if (!types.FullContainerName) continue
+    it(`${version} reads and writes unsigned dynamic container IDs in little endian`, () => {
+      const proto = new ProtoDef(false)
+      proto.addType('ContainerSlotType', types.ContainerSlotType)
+      proto.addType('value', types.FullContainerName)
+      for (const [id, hex] of [[0, '00000000'], [0x12345678, '78563412'], [0x89abcdef, 'efcdab89'], [0xffffffff, 'ffffffff']]) {
+        const value = { container_id: 'inventory', dynamic_container_id: id }
+        const optional = Array.isArray(field(types.FullContainerName, 'dynamic_container_id').type)
+        const bytes = Buffer.from('1d' + (optional ? '01' : '') + hex, 'hex')
+        assert.deepStrictEqual(proto.createPacketBuffer('value', value), bytes)
+        assert.deepStrictEqual(proto.parsePacketBuffer('value', bytes).data, value)
+      }
+    })
+  }
   // Bedrock::Safety::RedactableString (protocols 2168, 2169, 2193), and
   // gophertunnel 283a5a97: the redacted value has its own presence byte.
   for (const version of ['1.26.40', '1.26.45', '1.26.51']) {

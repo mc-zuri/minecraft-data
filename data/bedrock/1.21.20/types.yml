@@ -2404,4 +2404,4 @@ DisconnectFailReason: zigzag32 =>
 
 FullContainerName:
    container_id: ContainerSlotType
-   dynamic_container_id: u32
+   dynamic_container_id: lu32
