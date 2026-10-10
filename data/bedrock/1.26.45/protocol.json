@@ -11484,7 +11484,10 @@
         },
         {
           "name": "filtered_structure_name",
-          "type": "string"
+          "type": [
+            "option",
+            "string"
+          ]
         },
         {
           "name": "data_field",
