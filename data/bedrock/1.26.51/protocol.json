@@ -4332,6 +4332,57 @@
         }
       }
     ],
+    "SoundDataUpdate": [
+      "container",
+      [
+        {
+          "name": "type",
+          "type": [
+            "mapper",
+            {
+              "type": "varint",
+              "mappings": {
+                "0": "stop",
+                "1": "set_volume",
+                "2": "set_pitch",
+                "3": "fade",
+                "4": "seek_to",
+                "5": "pause",
+                "6": "resume"
+              }
+            }
+          ]
+        },
+        {
+          "name": "value",
+          "type": [
+            "switch",
+            {
+              "compareTo": "type",
+              "fields": {
+                "set_volume": "lf32",
+                "set_pitch": "lf32",
+                "fade": [
+                  "container",
+                  [
+                    {
+                      "name": "duration",
+                      "type": "lf32"
+                    },
+                    {
+                      "name": "target_volume",
+                      "type": "lf32"
+                    }
+                  ]
+                ],
+                "seek_to": "lf32"
+              },
+              "default": "void"
+            }
+          ]
+        }
+      ]
+    ],
     "ServerSoundHandle": "lu64",
     "SoundEventIdentifier": "string",
     "LegacyEntityType": [
@@ -16576,128 +16627,31 @@
         },
         {
           "name": "stop",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundDataUpdate"
         },
         {
           "name": "volume",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                },
-                {
-                  "name": "volume",
-                  "type": "lf32"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundDataUpdate"
         },
         {
           "name": "pitch",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                },
-                {
-                  "name": "pitch",
-                  "type": "lf32"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundDataUpdate"
         },
         {
           "name": "fade",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                },
-                {
-                  "name": "target_volume",
-                  "type": "lf32"
-                },
-                {
-                  "name": "duration",
-                  "type": "lf32"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundDataUpdate"
         },
         {
           "name": "seek_to",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                },
-                {
-                  "name": "seconds",
-                  "type": "lf32"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundDataUpdate"
         },
         {
           "name": "pause",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundDataUpdate"
         },
         {
           "name": "resume",
-          "type": [
-            "option",
-            [
-              "container",
-              [
-                {
-                  "name": "unused",
-                  "type": "varint"
-                }
-              ]
-            ]
-          ]
+          "type": "SoundDataUpdate"
         }
       ]
     ],

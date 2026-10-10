@@ -2293,8 +2293,27 @@ SoundType: varint =>
    - StrawBedBreakLeave
    - Undefined
 
-# As of 1.26.30, sounds are now sent as strings with their registry name
+# A tagged sound update, repeated for each field of ClientboundUpdateSoundDataPacket.
+SoundDataUpdate:
+   type: varint =>
+      - stop
+      - set_volume
+      - set_pitch
+      - fade
+      - seek_to
+      - pause
+      - resume
+   value: type ?
+      if set_volume: lf32
+      if set_pitch: lf32
+      if fade:
+         duration: lf32
+         target_volume: lf32
+      if seek_to: lf32
+      default: void
+
 ServerSoundHandle: lu64
+# As of 1.26.30, sounds are now sent as strings with their registry name
 SoundEventIdentifier: string
 
 # TODO: remove?
