@@ -15,7 +15,7 @@ function field (value, name) {
 }
 
 function action (types, name) {
-  return field(types.ItemStackRequest, 'actions').type[1].type[1].find(f => f.anon).type[1].fields[name]
+  return field(types.ItemStackRequest || types.ItemStackRequests, 'actions').type[1].type[1].find(f => f.anon).type[1].fields[name]
 }
 
 function stackProto (types) {
@@ -32,6 +32,19 @@ function stackProto (types) {
 }
 
 describe('Bedrock item stack wire values', () => {
+  // Before 1.17.10, auto-craft contained only the recipe network ID.
+  for (const version of ['1.16.201', '1.16.210', '1.16.220', '1.17.0', '1.17.10']) {
+    it(`${version} places the next action after the version-specific auto-craft payload`, () => {
+      const { types } = require(`../../../data/bedrock/${version}/protocol.json`)
+      const proto = stackProto(types)
+      proto.addType('value', ['container', [...action(types, 'craft_recipe_auto')[1], { name: 'next', type: 'u8' }]])
+      const value = { recipe_network_id: 300, next: 15 }
+      if (version === '1.17.10') value.times_crafted = 2
+      const bytes = Buffer.from(version === '1.17.10' ? 'ac02020f' : 'ac020f', 'hex')
+      assert.deepStrictEqual(proto.createPacketBuffer('value', value), bytes)
+      assert.deepStrictEqual(proto.parsePacketBuffer('value', bytes).data, value)
+    })
+  }
   // The descriptor-based craft results still carry shield blocking ticks.
   // Gophertunnel StackRequestItem selects user data by "minecraft:shield".
   for (const version of ['1.26.40', '1.26.45', '1.26.51']) {
