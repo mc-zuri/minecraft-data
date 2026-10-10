@@ -14863,7 +14863,7 @@
         },
         {
           "name": "update_count",
-          "type": "varint"
+          "type": "lu32"
         }
       ]
     ]
