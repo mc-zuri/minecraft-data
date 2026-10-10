@@ -2571,7 +2571,9 @@
               "type": "varint",
               "mappings": {
                 "0": "invalid",
-                "1": "name"
+                "1": "name",
+                "2": "molang",
+                "3": "item_tag"
               }
             }
           ]
@@ -2587,22 +2589,52 @@
             {
               "compareTo": "type",
               "fields": {
-                "invalid": "void"
+                "name": "string"
               },
-              "default": "string"
+              "default": "void"
             }
           ]
         },
         {
-          "name": "metadata",
+          "anon": true,
           "type": [
             "switch",
             {
               "compareTo": "type",
               "fields": {
-                "invalid": "void"
+                "name": [
+                  "container",
+                  [
+                    {
+                      "name": "metadata",
+                      "type": "zigzag32"
+                    }
+                  ]
+                ],
+                "molang": [
+                  "container",
+                  [
+                    {
+                      "name": "expression",
+                      "type": "string"
+                    },
+                    {
+                      "name": "version",
+                      "type": "li16"
+                    }
+                  ]
+                ],
+                "item_tag": [
+                  "container",
+                  [
+                    {
+                      "name": "tag",
+                      "type": "string"
+                    }
+                  ]
+                ]
               },
-              "default": "zigzag32"
+              "default": "void"
             }
           ]
         },

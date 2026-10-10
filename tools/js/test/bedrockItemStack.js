@@ -32,6 +32,30 @@ function stackProto (types) {
 }
 
 describe('Bedrock item stack wire values', () => {
+  // NetworkItemInstanceDescriptorData has the same four descriptor alternatives
+  // as the adjacent auto-craft ingredient type (protocols 2168, 2169, 2193).
+  for (const version of ['1.26.40', '1.26.45', '1.26.51']) {
+    it(`${version} covers every deprecated craft-result descriptor alternative`, () => {
+      const { types } = require(`../../../data/bedrock/${version}/protocol.json`)
+      const proto = stackProto(types)
+      // The user data is length delimited; keep it empty to isolate descriptors.
+      proto.addType('value', ['container', [...types.ItemStackRequestInstanceDescriptor[1].slice(0, -1), { name: 'extra', type: ['buffer', { countType: 'varint' }] }]])
+      const cases = [
+        [{ type: 'invalid', legacy_type: 0 }, '000001000000'],
+        [{ type: 'name', legacy_type: 1, name: 'minecraft:stone', metadata: 129 }, '01010f6d696e6563726166743a73746f6e65820201000000'],
+        [{ type: 'molang', legacy_type: 2, expression: '1', version: 256 }, '02020131000101000000'],
+        [{ type: 'item_tag', legacy_type: 3, tag: 'wood' }, '030304776f6f6401000000']
+      ]
+      for (const [descriptor, hex] of cases) {
+        const value = { ...descriptor, count: 1, block_runtime_id: 0, extra: Buffer.alloc(0) }
+        const bytes = Buffer.from(hex, 'hex')
+        assert.deepStrictEqual(proto.createPacketBuffer('value', value), bytes)
+        const decoded = proto.parsePacketBuffer('value', bytes)
+        assert.strictEqual(decoded.metadata.size, bytes.length)
+        for (const [key, expected] of Object.entries(value)) assert.deepStrictEqual(decoded.data[key], expected)
+      }
+    })
+  }
   // Before 1.17.10, auto-craft contained only the recipe network ID.
   for (const version of ['1.16.201', '1.16.210', '1.16.220', '1.17.0', '1.17.10']) {
     it(`${version} places the next action after the version-specific auto-craft payload`, () => {

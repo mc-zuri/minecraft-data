@@ -1056,14 +1056,22 @@ ItemStackRequestInstanceDescriptor:
    type: varint =>
       0: invalid
       1: name
+      2: molang
+      3: item_tag
    # The descriptor kind again, as a byte.
    legacy_type: u8
    name: type ?
-      if invalid: void
-      default: string
-   metadata: type ?
-      if invalid: void
-      default: zigzag32
+      if name: string
+      default: void
+   _: type ?
+      if name:
+         metadata: zigzag32
+      if molang:
+         expression: string
+         version: li16
+      if item_tag:
+         tag: string
+      default: void
    count: li16
    block_runtime_id: varint
    extra: name ?
