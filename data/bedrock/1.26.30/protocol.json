@@ -1,5 +1,6 @@
 {
   "types": {
+    "legacyTransactionSlots": "native",
     "string": [
       "pstring",
       {
@@ -1718,13 +1719,29 @@
         {
           "name": "legacy_transactions",
           "type": [
-            "switch",
+            "legacyTransactionSlots",
             {
-              "compareTo": "legacy_request_id",
-              "fields": {
-                "0": "void"
-              },
-              "default": [
+              "requestId": "legacy_request_id",
+              "type": "LegacyTransactionSlots"
+            }
+          ]
+        }
+      ]
+    ],
+    "LegacyTransactionSlots": [
+      "array",
+      {
+        "countType": "varint",
+        "type": [
+          "container",
+          [
+            {
+              "name": "container_id",
+              "type": "u8"
+            },
+            {
+              "name": "changed_slots",
+              "type": [
                 "array",
                 {
                   "countType": "varint",
@@ -1732,26 +1749,8 @@
                     "container",
                     [
                       {
-                        "name": "container_id",
+                        "name": "slot_id",
                         "type": "u8"
-                      },
-                      {
-                        "name": "changed_slots",
-                        "type": [
-                          "array",
-                          {
-                            "countType": "varint",
-                            "type": [
-                              "container",
-                              [
-                                {
-                                  "name": "slot_id",
-                                  "type": "u8"
-                                }
-                              ]
-                            ]
-                          }
-                        ]
                       }
                     ]
                   ]
@@ -1759,8 +1758,8 @@
               ]
             }
           ]
-        }
-      ]
+        ]
+      }
     ],
     "Transaction": [
       "container",

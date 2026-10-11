@@ -613,6 +613,17 @@ TransactionLegacy:
          changed_slots: []varint
             slot_id: u8
 
+# PlayerAuthInput has legacy slots only for even request IDs below -1.
+# InventoryTransaction uses TransactionLegacy and a different presence rule.
+TransactionLegacyAuthInput:
+   legacy_request_id: zigzag32
+   legacy_transactions: '["legacyTransactionSlots", {"requestId": "legacy_request_id", "type": "LegacyTransactionSlots"}]'
+
+LegacyTransactionSlots: []varint
+   container_id: u8
+   changed_slots: []varint
+      slot_id: u8
+
 Transaction:
    # Old transaction system data
    legacy: TransactionLegacy

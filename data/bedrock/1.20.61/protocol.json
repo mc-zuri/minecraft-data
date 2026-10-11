@@ -1,5 +1,6 @@
 {
   "types": {
+    "legacyTransactionSlots": "native",
     "string": [
       "pstring",
       {
@@ -1443,6 +1444,58 @@
           ]
         }
       ]
+    ],
+    "TransactionLegacyAuthInput": [
+      "container",
+      [
+        {
+          "name": "legacy_request_id",
+          "type": "zigzag32"
+        },
+        {
+          "name": "legacy_transactions",
+          "type": [
+            "legacyTransactionSlots",
+            {
+              "requestId": "legacy_request_id",
+              "type": "LegacyTransactionSlots"
+            }
+          ]
+        }
+      ]
+    ],
+    "LegacyTransactionSlots": [
+      "array",
+      {
+        "countType": "varint",
+        "type": [
+          "container",
+          [
+            {
+              "name": "container_id",
+              "type": "u8"
+            },
+            {
+              "name": "changed_slots",
+              "type": [
+                "array",
+                {
+                  "countType": "varint",
+                  "type": [
+                    "container",
+                    [
+                      {
+                        "name": "slot_id",
+                        "type": "u8"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        ]
+      }
     ],
     "Transaction": [
       "container",
@@ -10091,7 +10144,7 @@
                   [
                     {
                       "name": "legacy",
-                      "type": "TransactionLegacy"
+                      "type": "TransactionLegacyAuthInput"
                     },
                     {
                       "name": "actions",

@@ -1,3 +1,4 @@
+legacyTransactionSlots: native
 # Created from MiNET and gophertunnel docs
 # The version below is the latest version this protocol schema was updated for.
 # The output protocol.json will be in the folder for the version
@@ -2900,7 +2901,7 @@ packet_player_auth_input:
    delta: vec3f
    transaction: input_data.item_interact ?
       if true:
-         legacy: TransactionLegacy
+         legacy: TransactionLegacyAuthInput
          actions: TransactionActions
          data: TransactionUseItem
    item_stack_request: input_data.item_stack_request ?

@@ -697,16 +697,16 @@ TransactionActionsAuthInput: []varint
    old_item: Item
    new_item: Item
 
-# Same as `TransactionLegacy`, but `legacy_transactions` is gated on `legacy_request_id` being non-zero
-# instead of carrying its own presence byte.
+# PlayerAuthInput has legacy slots only for even request IDs below -1.
+# InventoryTransaction uses TransactionLegacy and a different presence rule.
 TransactionLegacyAuthInput:
    legacy_request_id: zigzag32
-   legacy_transactions: legacy_request_id?
-      if 0: void
-      default: []varint
-         container_id: u8
-         changed_slots: []varint
-            slot_id: u8
+   legacy_transactions: '["legacyTransactionSlots", {"requestId": "legacy_request_id", "type": "LegacyTransactionSlots"}]'
+
+LegacyTransactionSlots: []varint
+   container_id: u8
+   changed_slots: []varint
+      slot_id: u8
 
 Transaction:
    # Old transaction system data
