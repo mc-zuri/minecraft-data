@@ -708,6 +708,31 @@ LegacyTransactionSlots: []varint
    changed_slots: []varint
       slot_id: u8
 
+# PlayerAuthInput retains the pre-1.26.30 item-use payload as well as its actions.
+TransactionUseItemAuthInput:
+   action_type: varint =>
+      0: click_block
+      1: click_air
+      2: break_block
+      3: attack
+   trigger_type: varint =>
+      0: unknown
+      1: player_input
+      2: simulation_tick
+   block_position: BlockCoordinates
+   face: zigzag32
+   hotbar_slot: zigzag32
+   held_item: Item
+   player_pos: vec3f
+   click_pos: vec3f
+   block_runtime_id: varint
+   client_prediction: varint =>
+      0: failure
+      1: success
+   client_cooldown_state: u8 =>
+      0: off
+      1: on
+
 Transaction:
    # Old transaction system data
    legacy: TransactionLegacy

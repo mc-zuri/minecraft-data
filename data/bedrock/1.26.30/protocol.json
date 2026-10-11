@@ -1761,6 +1761,94 @@
         ]
       }
     ],
+    "TransactionUseItemAuthInput": [
+      "container",
+      [
+        {
+          "name": "action_type",
+          "type": [
+            "mapper",
+            {
+              "type": "varint",
+              "mappings": {
+                "0": "click_block",
+                "1": "click_air",
+                "2": "break_block",
+                "3": "attack"
+              }
+            }
+          ]
+        },
+        {
+          "name": "trigger_type",
+          "type": [
+            "mapper",
+            {
+              "type": "varint",
+              "mappings": {
+                "0": "unknown",
+                "1": "player_input",
+                "2": "simulation_tick"
+              }
+            }
+          ]
+        },
+        {
+          "name": "block_position",
+          "type": "BlockCoordinates"
+        },
+        {
+          "name": "face",
+          "type": "zigzag32"
+        },
+        {
+          "name": "hotbar_slot",
+          "type": "zigzag32"
+        },
+        {
+          "name": "held_item",
+          "type": "Item"
+        },
+        {
+          "name": "player_pos",
+          "type": "vec3f"
+        },
+        {
+          "name": "click_pos",
+          "type": "vec3f"
+        },
+        {
+          "name": "block_runtime_id",
+          "type": "varint"
+        },
+        {
+          "name": "client_prediction",
+          "type": [
+            "mapper",
+            {
+              "type": "varint",
+              "mappings": {
+                "0": "failure",
+                "1": "success"
+              }
+            }
+          ]
+        },
+        {
+          "name": "client_cooldown_state",
+          "type": [
+            "mapper",
+            {
+              "type": "u8",
+              "mappings": {
+                "0": "off",
+                "1": "on"
+              }
+            }
+          ]
+        }
+      ]
+    ],
     "Transaction": [
       "container",
       [
@@ -13330,7 +13418,7 @@
                     },
                     {
                       "name": "data",
-                      "type": "TransactionUseItem"
+                      "type": "TransactionUseItemAuthInput"
                     }
                   ]
                 ]

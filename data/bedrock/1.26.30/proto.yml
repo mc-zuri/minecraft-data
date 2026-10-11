@@ -3142,7 +3142,7 @@ packet_player_auth_input:
       if true:
          legacy: TransactionLegacyAuthInput
          actions: TransactionActionsAuthInput
-         data: TransactionUseItem
+         data: TransactionUseItemAuthInput
    item_stack_request: input_data.item_stack_request ?
       if true: ItemStackRequest
    block_action: input_data.block_action ?
