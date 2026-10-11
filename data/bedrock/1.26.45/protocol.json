@@ -15305,11 +15305,14 @@
         {
           "name": "system_categories",
           "type": [
-            "array",
-            {
-              "countType": "varint",
-              "type": "SystemCategory"
-            }
+            "option",
+            [
+              "array",
+              {
+                "countType": "varint",
+                "type": "SystemCategory"
+              }
+            ]
           ]
         },
         {
