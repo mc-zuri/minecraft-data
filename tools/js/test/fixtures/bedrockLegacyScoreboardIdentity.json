@@ -1,0 +1,63 @@
+[
+  {
+    "name": "empty-register",
+    "action": "register_identity",
+    "body": "0000",
+    "entries": []
+  },
+  {
+    "name": "empty-clear",
+    "action": "clear_identity",
+    "body": "0100",
+    "entries": []
+  },
+  {
+    "name": "single-register",
+    "action": "register_identity",
+    "body": "000181018280808080808020",
+    "entries": [
+      {
+        "scoreboard_id": "-65",
+        "entity_unique_id": "9007199254740993"
+      }
+    ]
+  },
+  {
+    "name": "single-clear",
+    "action": "clear_identity",
+    "body": "01018101",
+    "entries": [
+      {
+        "scoreboard_id": "-65"
+      }
+    ]
+  },
+  {
+    "name": "multiple-register",
+    "action": "register_identity",
+    "body": "0002810182808080808080208001fdffffff1f",
+    "entries": [
+      {
+        "scoreboard_id": "-65",
+        "entity_unique_id": "9007199254740993"
+      },
+      {
+        "scoreboard_id": "64",
+        "entity_unique_id": "-4294967295"
+      }
+    ]
+  },
+  {
+    "name": "multiple-clear",
+    "action": "clear_identity",
+    "body": "010281018001",
+    "entries": [
+      {
+        "scoreboard_id": "-65"
+      },
+      {
+        "scoreboard_id": "64"
+      }
+    ]
+  }
+]
