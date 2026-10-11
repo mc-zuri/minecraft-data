@@ -3408,6 +3408,10 @@ EnvironmentAttributeData:
    ease_type: string
    local_transition_ticks: lu32
    noise_transition: bool
+   noise_alignment:
+      type: u8 =>
+         0: min_local_transition_end
+      value: varint
 
 AttributeLayerData:
    name: string

@@ -6888,6 +6888,30 @@
         {
           "name": "noise_transition",
           "type": "bool"
+        },
+        {
+          "name": "noise_alignment",
+          "type": [
+            "container",
+            [
+              {
+                "name": "type",
+                "type": [
+                  "mapper",
+                  {
+                    "type": "u8",
+                    "mappings": {
+                      "0": "min_local_transition_end"
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "value",
+                "type": "varint"
+              }
+            ]
+          ]
         }
       ]
     ],
