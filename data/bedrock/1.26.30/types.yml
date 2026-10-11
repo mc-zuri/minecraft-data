@@ -3361,7 +3361,7 @@ AttributeData:
          float_constraint_min?: lf32
          float_constraint_max?: lf32
       if colour:
-         colour_value: li32
+         colour_value: '["array", { "count": 4, "type": "li32" }]'
          colour_operation: string
 
 EnvironmentAttributeData:

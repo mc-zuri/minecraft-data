@@ -6815,7 +6815,13 @@
                   [
                     {
                       "name": "colour_value",
-                      "type": "li32"
+                      "type": [
+                        "array",
+                        {
+                          "count": 4,
+                          "type": "li32"
+                        }
+                      ]
                     },
                     {
                       "name": "colour_operation",
