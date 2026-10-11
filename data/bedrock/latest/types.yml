@@ -343,21 +343,19 @@ MetadataDictionary: []varint
       8: vec3f
    # As of 1.26.40 the value type is sent twice: once as an unsigned varint and once as a byte.
    legacy_type: u8
-   value: key ?
-      if flags: MetadataFlags1
-      if flags_extended: MetadataFlags2
-      if seat_third_person_camera_radius: lf32
-      if seat_camera_relax_distance_smoothing: lf32
-      default: type ?
-         if byte: i8
-         if short: li16
-         if int: zigzag32
-         if float: lf32
-         if string: string
-         if compound: nbt
-         if vec3i: vec3i
-         if long: zigzag64
-         if vec3f: vec3f
+   value: type ?
+      if byte: i8
+      if short: li16
+      if int: zigzag32
+      if float: lf32
+      if string: string
+      if compound: nbt
+      if vec3i: vec3i
+      if long: key ?
+         if flags: MetadataFlags1
+         if flags_extended: MetadataFlags2
+         default: zigzag64
+      if vec3f: vec3f
 
 MetadataFlags1: [ "bitflags", {
    "type": "zigzag64", 

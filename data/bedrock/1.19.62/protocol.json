@@ -816,28 +816,28 @@
               "type": [
                 "switch",
                 {
-                  "compareTo": "key",
+                  "compareTo": "type",
                   "fields": {
-                    "flags": "MetadataFlags1",
-                    "flags_extended": "MetadataFlags2"
-                  },
-                  "default": [
-                    "switch",
-                    {
-                      "compareTo": "type",
-                      "fields": {
-                        "byte": "i8",
-                        "short": "li16",
-                        "int": "zigzag32",
-                        "float": "lf32",
-                        "string": "string",
-                        "compound": "nbt",
-                        "vec3i": "vec3i",
-                        "long": "zigzag64",
-                        "vec3f": "vec3f"
+                    "byte": "i8",
+                    "short": "li16",
+                    "int": "zigzag32",
+                    "float": "lf32",
+                    "string": "string",
+                    "compound": "nbt",
+                    "vec3i": "vec3i",
+                    "long": [
+                      "switch",
+                      {
+                        "compareTo": "key",
+                        "fields": {
+                          "flags": "MetadataFlags1",
+                          "flags_extended": "MetadataFlags2"
+                        },
+                        "default": "zigzag64"
                       }
-                    }
-                  ]
+                    ],
+                    "vec3f": "vec3f"
+                  }
                 }
               ]
             }
