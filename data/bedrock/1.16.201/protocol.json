@@ -7542,7 +7542,25 @@
       [
         {
           "name": "items",
-          "type": "ItemStacks"
+          "type": [
+            "array",
+            {
+              "countType": "varint",
+              "type": [
+                "container",
+                [
+                  {
+                    "name": "runtime_id",
+                    "type": "varint"
+                  },
+                  {
+                    "name": "item",
+                    "type": "Item"
+                  }
+                ]
+              ]
+            }
+          ]
         }
       ]
     ],
