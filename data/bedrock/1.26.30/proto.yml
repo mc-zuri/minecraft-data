@@ -1478,12 +1478,14 @@ packet_level_chunk:
    dimension: zigzag32
    # SubChunkCount is the amount of sub chunks that are part of the chunk sent. Depending on if the cache
    # is enabled, a list of blob hashes will be sent, or, if disabled, the sub chunk data.
-   # On newer versions, if this is a negative value it indicates to use the Subchunk Polling mechanism
+   # Values 0xFFFFFFFF and 0xFFFFFFFE request sub-chunk polling (unlimited and limited).
    sub_chunk_count: varint
    # HighestSubChunk is the highest sub-chunk at the position that is not all air. It is only set if the
    # RequestMode is set to protocol.SubChunkRequestModeLimited.
    highest_subchunk_count: sub_chunk_count ?
+      # Accept the legacy signed representation as well as the unsigned wire value.
       if -2: lu16
+      if 4294967294: lu16
    # CacheEnabled specifies if the client blob cache should be enabled. This system is based on hashes of
    # blobs which are consistent and saved by the client in combination with that blob, so that the server
    # does not have to send the same chunk multiple times. If the client does not yet have a blob with the hash sent,

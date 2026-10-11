@@ -6830,6 +6830,7 @@
             {
               "compareTo": "sub_chunk_count",
               "fields": {
+                "4294967294": "lu16",
                 "-2": "lu16"
               }
             }
