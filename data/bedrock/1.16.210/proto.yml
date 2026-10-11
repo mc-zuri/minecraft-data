@@ -2476,7 +2476,10 @@ InputFlag: [ "bitflags", {
 packet_creative_content:
    !id: 0x91
    !bound: client
-   items: ItemStacks
+   items: []varint
+      # Creative catalogue IDs are unsigned, unlike inventory stack IDs.
+      stack_id: varint
+      item: Item
 
 packet_player_enchant_options:
    !id: 0x92

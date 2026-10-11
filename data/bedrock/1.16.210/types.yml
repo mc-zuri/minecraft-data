@@ -579,7 +579,7 @@ ItemStack:
    # StackNetworkID is the network ID of the item stack. If the stack is empty, 0 is always written for this
    # field. If not, the field should be set to 1 if the server authoritative inventories are disabled in the
    # StartGame packet, or to a unique stack ID if it is enabled.
-   stack_id: varint
+   stack_id: zigzag32
    # Stack is the actual item stack of the item instance.
    item: Item
 
