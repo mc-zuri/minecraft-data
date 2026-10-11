@@ -1070,7 +1070,7 @@ ItemStackRequestInstanceDescriptor:
       if item_tag:
          tag: string
       default: void
-   count: li16
+   count: lu16
    block_runtime_id: varint
    extra: name ?
       if minecraft:shield: '["encapsulated", { "lengthType": "varint", "type": "ItemExtraDataWithBlockingTick" }]'

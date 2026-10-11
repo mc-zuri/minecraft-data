@@ -2639,7 +2639,7 @@
         },
         {
           "name": "count",
-          "type": "li16"
+          "type": "lu16"
         },
         {
           "name": "block_runtime_id",
