@@ -2036,9 +2036,9 @@
                     "type": [
                       "switch",
                       {
-                        "compareTo": "type",
+                        "compareTo": "../type",
                         "fields": {
-                          "remove": [
+                          "change": [
                             "container",
                             [
                               {

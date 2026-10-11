@@ -1,0 +1,10 @@
+[
+  { "name": "empty-change", "action": "change", "entries": [], "body": "0000" },
+  { "name": "empty-remove", "action": "remove", "entries": [], "body": "0100" },
+  { "name": "player", "action": "change", "entries": [{ "scoreboard_id": "-65", "objective_name": "obj", "score": -2147483648, "entry_type": "player", "entity_unique_id": "9007199254740993" }], "body": "00018101036f626a00000080018280808080808020" },
+  { "name": "entity", "action": "change", "entries": [{ "scoreboard_id": "64", "objective_name": "obj", "score": 305419896, "entry_type": "entity", "entity_unique_id": "-4294967295" }], "body": "00018001036f626a7856341202fdffffff1f" },
+  { "name": "fake-player", "action": "change", "entries": [{ "scoreboard_id": "1", "objective_name": "obj", "score": -1, "entry_type": "fake_player", "custom_name": "雪" }], "body": "000102036f626affffffff0303e99baa" },
+  { "name": "remove", "action": "remove", "entries": [{ "scoreboard_id": "-65", "objective_name": "obj", "score": -2147483648 }], "body": "01018101036f626a00000080" },
+  { "name": "heterogeneous-change", "action": "change", "entries": [{ "scoreboard_id": "-65", "objective_name": "obj", "score": -2147483648, "entry_type": "player", "entity_unique_id": "9007199254740993" }, { "scoreboard_id": "64", "objective_name": "obj", "score": 305419896, "entry_type": "entity", "entity_unique_id": "-4294967295" }, { "scoreboard_id": "1", "objective_name": "obj", "score": -1, "entry_type": "fake_player", "custom_name": "雪" }], "body": "00038101036f626a000000800182808080808080208001036f626a7856341202fdffffff1f02036f626affffffff0303e99baa" },
+  { "name": "multiple-remove", "action": "remove", "entries": [{ "scoreboard_id": "-65", "objective_name": "obj", "score": -2147483648 }, { "scoreboard_id": "64", "objective_name": "obj", "score": 305419896 }], "body": "01028101036f626a000000808001036f626a78563412" }
+]
