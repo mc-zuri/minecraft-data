@@ -2827,7 +2827,7 @@ DisconnectFailReason: zigzag32 =>
    - deep_link_trying_to_open_demo_world_while_signed_in
    - async_join_task_denied
    - realms_timeline_required
-   - guest_withough_host
+   - guest_without_host
    - failed_to_join_experience
    - nethernet_data_channel_closed
    - discovery_environment_mismatch
