@@ -4418,7 +4418,7 @@ packet_movement_effect:
    # effect_type is the type of movement effect being updated.
    effect_type: MovementEffectType
    # effect_duration is the duration of the effect, measured in ticks.
-   effect_duration: varint
+   effect_duration: zigzag32
    # tick is the server tick at which the packet was sent. It is used in relation to CorrectPlayerMovePrediction.
    tick: varint64
 

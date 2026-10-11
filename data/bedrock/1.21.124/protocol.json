@@ -5047,7 +5047,7 @@
     "MovementEffectType": [
       "mapper",
       {
-        "type": "varint",
+        "type": "zigzag32",
         "mappings": {
           "0": "GLIDE_BOOST",
           "-1": "invalid"
@@ -14045,7 +14045,7 @@
         },
         {
           "name": "effect_duration",
-          "type": "varint"
+          "type": "zigzag32"
         },
         {
           "name": "tick",

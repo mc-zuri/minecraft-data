@@ -2580,7 +2580,7 @@ FullContainerName:
    container_id: ContainerSlotType
    dynamic_container_id?: lu32
 
-MovementEffectType: varint =>
+MovementEffectType: zigzag32 =>
    -1: invalid
    0: GLIDE_BOOST
 
