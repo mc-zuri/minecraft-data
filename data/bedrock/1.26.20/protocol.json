@@ -15364,7 +15364,7 @@
           "type": [
             "mapper",
             {
-              "type": "varint",
+              "type": "zigzag32",
               "mappings": {
                 "0": "hide",
                 "1": "reset"
@@ -15377,7 +15377,7 @@
     "Element": [
       "mapper",
       {
-        "type": "varint",
+        "type": "zigzag32",
         "mappings": {
           "0": "PaperDoll",
           "1": "Armour",

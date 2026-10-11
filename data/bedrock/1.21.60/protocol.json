@@ -12871,7 +12871,7 @@
           "type": [
             "mapper",
             {
-              "type": "varint",
+              "type": "u8",
               "mappings": {
                 "0": "hide",
                 "1": "reset"
@@ -12884,7 +12884,7 @@
     "Element": [
       "mapper",
       {
-        "type": "varint",
+        "type": "u8",
         "mappings": {
           "0": "PaperDoll",
           "1": "Armour",

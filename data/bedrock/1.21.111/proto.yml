@@ -4266,11 +4266,11 @@ packet_set_hud:
    elements: Element[]varint
    # Visibility represents the new visibility of the specified Elements. It can be any of the HudVisibility
    # constants above.
-   visibility: varint =>
+   visibility: zigzag32 =>
       - hide
       - reset
 
-Element: varint =>
+Element: zigzag32 =>
 - PaperDoll
 - Armour
 - ToolTips
