@@ -3379,6 +3379,23 @@
           "122": "hotbar",
           "123": "fixed_inventory",
           "124": "ui",
+          "4294967196": "drop_contents",
+          "4294967272": "beacon",
+          "4294967273": "trading_output",
+          "4294967274": "trading_use_inputs",
+          "4294967275": "trading_input_2",
+          "4294967276": "trading_input_1",
+          "4294967279": "enchant_output",
+          "4294967280": "enchant_material",
+          "4294967281": "enchant_input",
+          "4294967283": "anvil_output",
+          "4294967284": "anvil_result",
+          "4294967285": "anvil_material",
+          "4294967286": "container_input",
+          "4294967291": "crafting_use_ingredient",
+          "4294967292": "crafting_result",
+          "4294967293": "crafting_remove_ingredient",
+          "4294967294": "crafting_add_ingredient",
           "-100": "drop_contents",
           "-24": "beacon",
           "-23": "trading_output",
@@ -3396,7 +3413,8 @@
           "-4": "crafting_result",
           "-3": "crafting_remove_ingredient",
           "-2": "crafting_add_ingredient",
-          "-1": "none"
+          "-1": "none",
+          "4294967295": "none"
         }
       }
     ],
