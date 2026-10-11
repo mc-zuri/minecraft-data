@@ -1783,16 +1783,16 @@ SoundType: varint =>
    - goat_bass_7
    - goat_bass_8
    - goat_bass_9
-   - _
-   - _
-   - _
+   - '423'
+   - '424'
+   - '425'
    - ImitateWarden
    - ListeningAngry
    - ItemGiven
    - ItemTaken
    - Disappeared
    - Reappeared
-   - _
+   - '432'
    - FrogspawnHatched
    - LaySpawn
    - FrogspawnBreak

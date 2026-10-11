@@ -1948,9 +1948,9 @@ SoundType: varint =>
    - goat_bass_7
    - goat_bass_8
    - goat_bass_9
-   - _
-   - _
-   - _
+   - '423'
+   - '424'
+   - '425'
    - ImitateWarden
    - ListeningAngry
    - ItemGiven
@@ -2035,7 +2035,7 @@ SoundType: varint =>
    - vault_deactivate
    - hurt_reduced
    - wind_charge_burst
-   - _
+   - '510'
    - armor_crack_wolf
    - armor_break_wolf
    - armor_repair_wolf

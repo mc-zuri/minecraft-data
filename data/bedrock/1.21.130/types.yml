@@ -1949,7 +1949,7 @@ SoundType: varint =>
    - Listening
    - Heartbeat
    - HornBreak
-   - _
+   - '378'
    - SculkSpread
    - SculkCharge
    - SculkSensorPlace
@@ -1994,9 +1994,9 @@ SoundType: varint =>
    - GoatBass7
    - GoatBass8
    - GoatBass9
-   - _
-   - _
-   - _
+   - '423'
+   - '424'
+   - '425'
    - ImitateWarden
    - ListeningAngry
    - ItemGiven
@@ -2093,7 +2093,7 @@ SoundType: varint =>
    - OminousBottleEndUse
    - MaceHeavySmashGround
    - OminousItemSpawnerSpawnItemBegin
-   - _
+   - '522'
    - ApplyEffectBadOmen
    - ApplyEffectRaidOmen
    - ApplyEffectTrialOmen
@@ -2106,7 +2106,7 @@ SoundType: varint =>
    - ImitateCreaking
    - BundleInsertFailed
    - SpongeAbsorb
-   - _
+   - '535'
    - BlockCreakingHeartTrail
    - CreakingHeartSpawn
    - Activate

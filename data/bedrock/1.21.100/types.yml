@@ -1999,9 +1999,9 @@ SoundType: varint =>
    - goat_bass_7
    - goat_bass_8
    - goat_bass_9
-   - _
-   - _
-   - _
+   - '423'
+   - '424'
+   - '425'
    - ImitateWarden
    - ListeningAngry
    - ItemGiven
@@ -2090,7 +2090,7 @@ SoundType: varint =>
    - imitate_creaking
    - bundle_insert_failed
    - sponge_absorb
-   - _
+   - '514'
    - block_creaking_heart_trail
    - creaking_heart_spawn
    - activate
@@ -2128,7 +2128,7 @@ SoundType: varint =>
    - ominous_bottle_end_use
    - mace_smash_heavy_ground
    - ominous_item_spawner_spawn_item_begin
-   - _
+   - '552'
    - apply_effect_bad_omen
    - apply_effect_raid_omen
    - apply_effect_trial_omen
