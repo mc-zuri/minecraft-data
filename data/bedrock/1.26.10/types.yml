@@ -3250,7 +3250,7 @@ EnvironmentAttributeData:
    to_attribute?: AttributeData
    current_transition_ticks: lu32
    total_transition_ticks: lu32
-   ease_type: li32
+   ease_type: string
 
 AttributeLayerData:
    name: string

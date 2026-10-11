@@ -6984,7 +6984,7 @@
         },
         {
           "name": "ease_type",
-          "type": "li32"
+          "type": "string"
         }
       ]
     ],

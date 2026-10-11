@@ -6870,7 +6870,7 @@
         },
         {
           "name": "ease_type",
-          "type": "li32"
+          "type": "string"
         },
         {
           "name": "local_transition_ticks",
