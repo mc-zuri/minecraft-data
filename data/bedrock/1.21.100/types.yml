@@ -2486,6 +2486,7 @@ DisconnectFailReason: zigzag32 =>
    - realms_timeline_required
    - guest_without_host
    - failed_to_join_experience
+   - nethernet_data_channel_closed
 
 FullContainerName:
    container_id: ContainerSlotType

@@ -4947,7 +4947,8 @@
           "118": "async_join_task_denied",
           "119": "realms_timeline_required",
           "120": "guest_without_host",
-          "121": "failed_to_join_experience"
+          "121": "failed_to_join_experience",
+          "122": "nethernet_data_channel_closed"
         }
       }
     ],

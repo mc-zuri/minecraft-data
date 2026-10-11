@@ -2721,6 +2721,9 @@ DisconnectFailReason: zigzag32 =>
    - realms_timeline_required
    - guest_without_host
    - failed_to_join_experience
+   - nethernet_data_channel_closed
+   - discovery_environment_mismatch
+   - host_without_keys
    - host_signed_out
    - script_watchdog_exception
    - script_memory_limit_exceeded

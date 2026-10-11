@@ -2520,6 +2520,20 @@ DisconnectFailReason: zigzag32 =>
    - realms_timeline_required
    - guest_without_host
    - failed_to_join_experience
+   - nethernet_data_channel_closed
+   - discovery_environment_mismatch
+   - host_without_keys
+   - host_signed_out
+   - script_watchdog_exception
+   - script_memory_limit_exceeded
+   - storage_low_during_gameplay
+   - storage_full_during_gameplay
+   - level_storage_corruption
+   - edition_mismatch_vanilla_to_edu
+   - edition_mismatch_edu_to_vanilla
+   - editor_mismatch_editor_to_vanilla
+   - editor_mismatch_vanilla_to_editor
+   - deny_listed
 
 FullContainerName:
    container_id: ContainerSlotType
