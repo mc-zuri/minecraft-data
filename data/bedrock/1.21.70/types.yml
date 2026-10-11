@@ -2496,3 +2496,4 @@ FullContainerName:
 MovementEffectType: zigzag32 =>
    -1: invalid
    0: GLIDE_BOOST
+   1: DOLPHIN_BOOST

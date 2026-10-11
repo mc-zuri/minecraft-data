@@ -2540,6 +2540,7 @@ FullContainerName:
 MovementEffectType: zigzag32 =>
    -1: invalid
    0: GLIDE_BOOST
+   1: DOLPHIN_BOOST
 
 # BiomeDefinition represents a biome definition in the game. This can be a vanilla biome or a completely
 # custom biome.

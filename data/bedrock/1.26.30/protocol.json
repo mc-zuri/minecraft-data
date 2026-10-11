@@ -5806,7 +5806,8 @@
         "type": "zigzag32",
         "mappings": {
           "0": "GLIDE_BOOST",
-          "1": "GEYSER_BOOST",
+          "1": "DOLPHIN_BOOST",
+          "2": "GEYSER_BOOST",
           "-1": "invalid"
         }
       }
