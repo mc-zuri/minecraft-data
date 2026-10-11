@@ -16108,7 +16108,10 @@
       [
         {
           "name": "party_id",
-          "type": "string"
+          "type": [
+            "option",
+            "string"
+          ]
         }
       ]
     ],
