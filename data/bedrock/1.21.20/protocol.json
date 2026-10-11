@@ -2764,6 +2764,8 @@
                       {
                         "compareTo": "type_id",
                         "fields": {
+                          "place_in_container": "void",
+                          "take_out_container": "void",
                           "take": [
                             "container",
                             [
@@ -2782,40 +2784,6 @@
                             ]
                           ],
                           "place": [
-                            "container",
-                            [
-                              {
-                                "name": "count",
-                                "type": "u8"
-                              },
-                              {
-                                "name": "source",
-                                "type": "StackRequestSlotInfo"
-                              },
-                              {
-                                "name": "destination",
-                                "type": "StackRequestSlotInfo"
-                              }
-                            ]
-                          ],
-                          "place_in_container": [
-                            "container",
-                            [
-                              {
-                                "name": "count",
-                                "type": "u8"
-                              },
-                              {
-                                "name": "source",
-                                "type": "StackRequestSlotInfo"
-                              },
-                              {
-                                "name": "destination",
-                                "type": "StackRequestSlotInfo"
-                              }
-                            ]
-                          ],
-                          "take_out_container": [
                             "container",
                             [
                               {

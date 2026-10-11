@@ -32,6 +32,29 @@ function stackProto (types) {
 }
 
 describe('Bedrock item stack wire values', () => {
+  // Exact BDS action factories: 1.21.2 constructs transfer actions for tags 7/8;
+  // 1.21.20 through 1.26.30 return null without consuming any action payload.
+  // This checks reader framing, not game-writer stability (it drops null actions).
+  for (const version of ['1.21.20', '1.21.30', '1.21.42', '1.21.50', '1.21.60', '1.21.70', '1.21.80',
+    '1.21.90', '1.21.93', '1.21.100', '1.21.111', '1.21.120', '1.21.124', '1.21.130', '1.26.0', '1.26.10', '1.26.20', '1.26.30']) {
+    it(`${version} keeps the next action after deprecated null container actions`, () => {
+      const { types } = require(`../../../data/bedrock/${version}/protocol.json`)
+      const proto = stackProto(types)
+      proto.addType('value', ['container', [field(types.ItemStackRequest, 'actions'), { name: 'next', type: 'u8' }]])
+      const value = { actions: [{ type_id: 'place_in_container' }, { type_id: 'take_out_container' }, { type_id: 'beacon_payment', primary_effect: 1, secondary_effect: 0 }], next: 171 }
+      const bytes = Buffer.from('0307080a0200ab', 'hex')
+      assert.deepStrictEqual(proto.createPacketBuffer('value', value), bytes)
+      const decoded = proto.parsePacketBuffer('value', bytes)
+      assert.deepStrictEqual(decoded.data, value)
+      assert.strictEqual(decoded.metadata.size, bytes.length)
+    })
+  }
+  it('retains transfer payloads for deprecated container actions before 1.21.20', () => {
+    for (const version of ['1.18.11', '1.19.30', '1.21.0', '1.21.2']) {
+      const { types } = require(`../../../data/bedrock/${version}/protocol.json`)
+      for (const name of ['place_in_container', 'take_out_container']) assert.deepStrictEqual(action(types, name), action(types, 'take'))
+    }
+  })
   // Exact 1.16.201.02 reader/writer and gophertunnel v1.10.0:
   // rejected responses end after the request ID, without a container count.
   for (const version of ['1.16.201', '1.16.210', '1.16.220']) {

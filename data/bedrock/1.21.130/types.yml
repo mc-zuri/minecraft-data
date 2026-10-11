@@ -1079,7 +1079,10 @@ ItemStackRequest:
          # crafting, where the old item is consumed.
          - results_deprecated
       _: type_id ?
-         if take or place or place_in_container or take_out_container:
+         # Since 1.21.20 these deprecated tags consume no payload. The game
+         # reader returns a null action; its writer omits it.
+         if place_in_container or take_out_container: void
+         if take or place:
             count: u8
             source: StackRequestSlotInfo
             destination: StackRequestSlotInfo
