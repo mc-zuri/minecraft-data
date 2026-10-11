@@ -6788,10 +6788,7 @@
                     },
                     {
                       "name": "bool_operation",
-                      "type": [
-                        "option",
-                        "li32"
-                      ]
+                      "type": "string"
                     }
                   ]
                 ],
@@ -6804,10 +6801,7 @@
                     },
                     {
                       "name": "float_operation",
-                      "type": [
-                        "option",
-                        "li32"
-                      ]
+                      "type": "string"
                     },
                     {
                       "name": "float_constraint_min",
@@ -6834,10 +6828,7 @@
                     },
                     {
                       "name": "colour_operation",
-                      "type": [
-                        "option",
-                        "li32"
-                      ]
+                      "type": "string"
                     }
                   ]
                 ]

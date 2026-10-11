@@ -3233,15 +3233,15 @@ AttributeData:
    _: type ?
       if bool:
          bool_value: bool
-         bool_operation?: li32
+         bool_operation: string
       if float:
          float_value: lf32
-         float_operation?: li32
+         float_operation: string
          float_constraint_min?: lf32
          float_constraint_max?: lf32
       if colour:
          colour_value: li32
-         colour_operation?: li32
+         colour_operation: string
 
 EnvironmentAttributeData:
    attribute_name: string
