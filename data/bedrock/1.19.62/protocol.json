@@ -10378,7 +10378,7 @@
       [
         {
           "name": "runtime_id",
-          "type": "varint64"
+          "type": "varint"
         },
         {
           "name": "nbt",
@@ -10423,7 +10423,7 @@
       [
         {
           "name": "entity_id",
-          "type": "varint64"
+          "type": "varint"
         },
         {
           "name": "dimension",

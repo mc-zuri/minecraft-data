@@ -3542,7 +3542,7 @@ packet_add_volume_entity:
    !bound: client
    # EntityRuntimeID is the runtime ID of the entity. The runtime ID is unique for each world session, and
    # entities are generally identified in packets using this runtime ID.
-   runtime_id: varint64
+   runtime_id: varint
    # EntityMetadata is a map of entity metadata, which includes flags and data properties that alter in
    # particular the way the entity looks.
    nbt: nbt
@@ -3559,7 +3559,7 @@ packet_remove_volume_entity:
    !id: 0xa7
    !bound: client
    # The Runtime Entity ID
-   entity_id: varint64
+   entity_id: varint
    # Dimension of the volume entity, added in 1.18.30.
    dimension: zigzag32
 
