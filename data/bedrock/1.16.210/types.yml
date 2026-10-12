@@ -656,7 +656,7 @@ Recipes: []varint
 SkinImage:
    width: li32
    height: li32
-   data: string
+   data: ByteArray
 
 Skin:
    skin_id: string
@@ -671,7 +671,7 @@ Skin:
    cape_data: SkinImage
    geometry_data: string
    animation_data: string
-   premium: string
+   premium: bool
    persona: bool
    cape_on_classic: bool
    cape_id: string
