@@ -554,7 +554,8 @@ PlayerRecords:
             is_host: bool
          if remove:
             uuid: uuid
-   verified: bool[]$records_count
+   verified: type ?
+      if add: bool[]$records_count
 
 ScoreEntries:
    type: u8 =>
