@@ -2416,7 +2416,7 @@
         },
         {
           "name": "option_id",
-          "type": "zigzag32"
+          "type": "varint"
         }
       ]
     ],

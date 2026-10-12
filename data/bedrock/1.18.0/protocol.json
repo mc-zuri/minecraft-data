@@ -2220,7 +2220,7 @@
         },
         {
           "name": "option_id",
-          "type": "zigzag32"
+          "type": "varint"
         }
       ]
     ],
@@ -2507,7 +2507,7 @@
                             [
                               {
                                 "name": "recipe_network_id",
-                                "type": "varint"
+                                "type": "zigzag32"
                               },
                               {
                                 "name": "cost",

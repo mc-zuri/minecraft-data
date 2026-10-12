@@ -1861,7 +1861,7 @@
                         }
                       ]
                     ],
-                    "shulker_box": [
+                    "shapeless_chemistry": [
                       "container",
                       [
                         {
@@ -1910,7 +1910,7 @@
                         }
                       ]
                     ],
-                    "shapeless_chemistry": [
+                    "shulker_box": [
                       "container",
                       [
                         {
@@ -1948,10 +1948,6 @@
                         {
                           "name": "priority",
                           "type": "zigzag32"
-                        },
-                        {
-                          "name": "unlocking_requirement",
-                          "type": "RecipeUnlockingRequirement"
                         },
                         {
                           "name": "network_id",
@@ -2605,7 +2601,7 @@
         },
         {
           "name": "option_id",
-          "type": "zigzag32"
+          "type": "varint"
         }
       ]
     ],
@@ -2947,7 +2943,7 @@
                             [
                               {
                                 "name": "recipe_network_id",
-                                "type": "varint"
+                                "type": "zigzag32"
                               },
                               {
                                 "name": "cost",
