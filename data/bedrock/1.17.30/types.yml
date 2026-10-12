@@ -765,7 +765,7 @@ EnchantOption:
    held_enchants: Enchant[]varint
    self_enchants: Enchant[]varint
    name: string
-   option_id: zigzag32
+   option_id: varint
 
 Action: zigzag32 =>
    0: start_break

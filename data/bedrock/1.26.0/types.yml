@@ -946,7 +946,7 @@ EnchantOption:
    held_enchants: Enchant[]varint
    self_enchants: Enchant[]varint
    name: string
-   option_id: zigzag32
+   option_id: varint
 
 Action: zigzag32 =>
    0: start_break
@@ -1152,7 +1152,7 @@ ItemStackRequest:
          if craft_grindstone_request:
             # RecipeNetworkID is the network ID of the recipe that is about to be crafted. This network ID matches
             # one of the recipes sent in the CraftingData packet, where each of the recipes have a RecipeNetworkID as
-            recipe_network_id: varint
+            recipe_network_id: zigzag32
             # NumberOfCrafts is how many times the recipe was crafted. This field appears to be boilerplate and
             # has no effect.
             times_crafted: u8
