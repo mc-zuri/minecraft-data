@@ -3478,7 +3478,7 @@
             },
             {
               "name": "previousGamemode",
-              "type": "i8"
+              "type": "u8"
             },
             {
               "name": "isDebug",

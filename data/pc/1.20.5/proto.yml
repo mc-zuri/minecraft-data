@@ -1322,7 +1322,7 @@
       - creative
       - adventure
       - spectator
-      previousGamemode: i8
+      previousGamemode: u8
       isDebug: bool
       isFlat: bool
       death?:
