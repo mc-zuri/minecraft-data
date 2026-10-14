@@ -1,0 +1,156 @@
+[
+  {
+    "name": "armor",
+    "resource": "generic.armor",
+    "min": 0.0,
+    "max": 30.0,
+    "default": 0.0
+  },
+  {
+    "name": "armorToughness",
+    "resource": "generic.armor_toughness",
+    "min": 0.0,
+    "max": 20.0,
+    "default": 0.0
+  },
+  {
+    "name": "attackDamage",
+    "resource": "generic.attack_damage",
+    "min": 0.0,
+    "max": 2048.0,
+    "default": 2.0
+  },
+  {
+    "name": "attackKnockback",
+    "resource": "generic.attack_knockback",
+    "min": 0.0,
+    "max": 5.0,
+    "default": 0.0
+  },
+  {
+    "name": "attackSpeed",
+    "resource": "generic.attack_speed",
+    "min": 0.0,
+    "max": 1024.0,
+    "default": 4.0
+  },
+  {
+    "name": "playerBlockBreakSpeed",
+    "resource": "player.block_break_speed",
+    "min": 0.0,
+    "max": 1024.0,
+    "default": 1.0
+  },
+  {
+    "name": "playerBlockInteractionRange",
+    "resource": "player.block_interaction_range",
+    "min": 0.0,
+    "max": 64.0,
+    "default": 4.5
+  },
+  {
+    "name": "playerEntityInteractionRange",
+    "resource": "player.entity_interaction_range",
+    "min": 0.0,
+    "max": 64.0,
+    "default": 3.0
+  },
+  {
+    "name": "fallDamageMultiplier",
+    "resource": "generic.fall_damage_multiplier",
+    "min": 0.0,
+    "max": 100.0,
+    "default": 1.0
+  },
+  {
+    "name": "flyingSpeed",
+    "resource": "generic.flying_speed",
+    "min": 0.0,
+    "max": 1024.0,
+    "default": 0.4
+  },
+  {
+    "name": "followRange",
+    "resource": "generic.follow_range",
+    "min": 0.0,
+    "max": 2048.0,
+    "default": 32.0
+  },
+  {
+    "name": "gravity",
+    "resource": "generic.gravity",
+    "min": -1.0,
+    "max": 1.0,
+    "default": 0.08
+  },
+  {
+    "name": "jumpStrength",
+    "resource": "generic.jump_strength",
+    "min": 0.0,
+    "max": 32.0,
+    "default": 0.41999998688697815
+  },
+  {
+    "name": "knockbackResistance",
+    "resource": "generic.knockback_resistance",
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0
+  },
+  {
+    "name": "luck",
+    "resource": "generic.luck",
+    "min": -1024.0,
+    "max": 1024.0,
+    "default": 0.0
+  },
+  {
+    "name": "maxAbsorption",
+    "resource": "generic.max_absorption",
+    "min": 0.0,
+    "max": 2048.0,
+    "default": 0.0
+  },
+  {
+    "name": "maxHealth",
+    "resource": "generic.max_health",
+    "min": 1.0,
+    "max": 1024.0,
+    "default": 20.0
+  },
+  {
+    "name": "movementSpeed",
+    "resource": "generic.movement_speed",
+    "min": 0.0,
+    "max": 1024.0,
+    "default": 0.7
+  },
+  {
+    "name": "safeFallDistance",
+    "resource": "generic.safe_fall_distance",
+    "min": -1024.0,
+    "max": 1024.0,
+    "default": 3.0
+  },
+  {
+    "name": "scale",
+    "resource": "generic.scale",
+    "min": 0.0625,
+    "max": 16.0,
+    "default": 1.0
+  },
+  {
+    "name": "zombieSpawnReinforcements",
+    "resource": "zombie.spawn_reinforcements",
+    "min": 0.0,
+    "max": 1.0,
+    "default": 0.0
+  },
+  {
+    "name": "stepHeight",
+    "resource": "generic.step_height",
+    "min": 0.0,
+    "max": 10.0,
+    "default": 0.6
+  }
+]
