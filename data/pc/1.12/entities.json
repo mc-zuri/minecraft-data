@@ -835,8 +835,8 @@
     "name": "boat",
     "displayName": "Boat",
     "type": "object",
-    "width": 1.5,
-    "height": 0.6,
+    "width": 1.375,
+    "height": 0.5625,
     "category": "Vehicles"
   },
   {
