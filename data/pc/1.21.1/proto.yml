@@ -2249,28 +2249,37 @@
       entityId: varint
       properties: []varint
          key: varint =>
-         - generic.armor
-         - generic.armor_toughness
-         - generic.attack_damage
-         - generic.attack_knockback
-         - generic.attack_speed
-         - player.block_break_speed
-         - player.block_interaction_range
-         - player.entity_interaction_range
-         - generic.fall_damage_multiplier
-         - generic.flying_speed
-         - generic.follow_range
-         - generic.gravity
-         - generic.jump_strength
-         - generic.knockback_resistance
-         - generic.luck
-         - generic.max_absorption
-         - generic.max_health
-         - generic.movement_speed
-         - generic.safe_fall_distance
-         - generic.scale
-         - zombie.spawn_reinforcements
-         - generic.step_height
+         - minecraft:generic.armor
+         - minecraft:generic.armor_toughness
+         - minecraft:generic.attack_damage
+         - minecraft:generic.attack_knockback
+         - minecraft:generic.attack_speed
+         - minecraft:player.block_break_speed
+         - minecraft:player.block_interaction_range
+         - minecraft:generic.burning_time
+         - minecraft:generic.explosion_knockback_resistance
+         - minecraft:player.entity_interaction_range
+         - minecraft:generic.fall_damage_multiplier
+         - minecraft:generic.flying_speed
+         - minecraft:generic.follow_range
+         - minecraft:generic.gravity
+         - minecraft:generic.jump_strength
+         - minecraft:generic.knockback_resistance
+         - minecraft:generic.luck
+         - minecraft:generic.max_absorption
+         - minecraft:generic.max_health
+         - minecraft:player.mining_efficiency
+         - minecraft:generic.movement_efficiency
+         - minecraft:generic.movement_speed
+         - minecraft:generic.oxygen_bonus
+         - minecraft:generic.safe_fall_distance
+         - minecraft:generic.scale
+         - minecraft:player.sneaking_speed
+         - minecraft:zombie.spawn_reinforcements
+         - minecraft:generic.step_height
+         - minecraft:player.submerged_mining_speed
+         - minecraft:player.sweeping_damage_ratio
+         - minecraft:generic.water_movement_efficiency
          value: f64
          modifiers: []varint
             uuid: string
