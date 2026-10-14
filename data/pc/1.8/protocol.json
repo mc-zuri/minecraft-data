@@ -3068,7 +3068,21 @@
             },
             {
               "name": "actionId",
-              "type": "varint"
+              "type": [
+                "mapper",
+                {
+                  "type": "varint",
+                  "mappings": {
+                    "0": "start_sneaking",
+                    "1": "stop_sneaking",
+                    "2": "stop_sleeping",
+                    "3": "start_sprinting",
+                    "4": "stop_sprinting",
+                    "5": "start_riding_jump",
+                    "6": "open_inventory"
+                  }
+                }
+              ]
             },
             {
               "name": "jumpBoost",
