@@ -1221,7 +1221,7 @@
       block_interaction_type: varint
       small_explosion_particle: Particle
       large_explosion_particle: Particle
-      sound: ItemSoundHolder
+      sound: ItemSoundEvent
    # MC: ClientboundForgetLevelChunkPacket
    packet_unload_chunk:
       chunkZ: i32

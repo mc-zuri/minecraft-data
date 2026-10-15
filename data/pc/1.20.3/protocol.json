@@ -3105,7 +3105,7 @@
             },
             {
               "name": "sound",
-              "type": "ItemSoundHolder"
+              "type": "ItemSoundEvent"
             }
           ]
         ],
