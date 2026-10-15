@@ -881,10 +881,10 @@
   },
   {
     "name": "positionUpdateSentEveryTick",
-    "description": "the position is sent every tick",
+    "description": "a movement packet is sent every tick (from 1.9 the ground-only one only when the ground flag changed)",
     "versions": [
       "1.8",
-      "1.11.2"
+      "1.8.9"
     ]
   },
   {
