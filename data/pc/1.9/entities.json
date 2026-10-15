@@ -609,9 +609,9 @@
   },
   {
     "id": 91,
-    "internalId": 10,
-    "name": "Arrow",
-    "displayName": "Shot arrow",
+    "internalId": 24,
+    "name": "SpectralArrow",
+    "displayName": "Shot spectral arrow",
     "type": "object",
     "width": 0.5,
     "height": 0.5,
