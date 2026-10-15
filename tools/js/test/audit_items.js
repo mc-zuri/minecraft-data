@@ -1,9 +1,10 @@
 /* eslint-env mocha */
 
+const assert = require('assert')
 const fs = require('fs')
 const path = require('path')
 
-// checks for duplicates names and jumps in ids
+// checks for duplicates names and jumps in ids, and that an item that wears out lasts more than one use
 
 require('./version_iterator')(function (p, versionString) {
   describe('audit items ' + versionString, function () {
@@ -41,6 +42,10 @@ require('./version_iterator')(function (p, versionString) {
             } else {
               names[item.name] = item
             }
+          }
+          // bedrock/1.21.0 still has the values of the pc/1.20.5 file it was made from
+          if (item.maxDurability !== undefined && versionString !== 'bedrock 1.21.0') {
+            assert.ok(item.maxDurability > 1, `${item.name} has maxDurability ${item.maxDurability}`)
           }
           const delta = item.id - lastItemId
           if (delta !== 1) {
