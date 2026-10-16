@@ -1317,7 +1317,7 @@
       "sounds": "pc/1.20.1"
     },
     "1.20.2": {
-      "attributes": "pc/1.17",
+      "attributes": "pc/1.20.2",
       "blocks": "pc/1.20.2",
       "blockCollisionShapes": "pc/1.20.2",
       "biomes": "pc/1.20.2",
@@ -1344,7 +1344,7 @@
       "proto": "pc/1.20.2"
     },
     "1.20.3": {
-      "attributes": "pc/1.17",
+      "attributes": "pc/1.20.2",
       "blocks": "pc/1.20.3",
       "blockCollisionShapes": "pc/1.20.3",
       "biomes": "pc/1.20.2",
@@ -1370,7 +1370,7 @@
       "proto": "pc/1.20.3"
     },
     "1.20.4": {
-      "attributes": "pc/1.17",
+      "attributes": "pc/1.20.2",
       "blocks": "pc/1.20.4",
       "blockCollisionShapes": "pc/1.20.3",
       "biomes": "pc/1.20.2",

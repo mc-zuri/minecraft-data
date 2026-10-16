@@ -3,7 +3,7 @@
     "name": "maxHealth",
     "resource": "generic.maxHealth",
     "default": 20,
-    "min": 1,
+    "min": 0,
     "max": 1024
   },
   {
