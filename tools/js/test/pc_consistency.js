@@ -161,6 +161,22 @@ for (const version of versions) {
       assert.deepStrictEqual(problems, [], list(problems, 6))
     })
 
+    check('a vehicle has one size', function () {
+      // through 1.13.2 a vehicle (a boat, a minecart) has an entry in the object table too, by the same name: both are
+      // the one entity, of one width and height
+      const entities = load(version, 'entities')
+      if (!entities) return
+      const problems = []
+      const sizes = new Map()
+      for (const e of entities.filter(e => e.category === 'Vehicles')) {
+        const name = e.name.toLowerCase()
+        const seen = sizes.get(name)
+        if (!seen) sizes.set(name, e)
+        else if (seen.width !== e.width || seen.height !== e.height) problems.push(`${e.name}: ${seen.type} ${seen.width}x${seen.height}, ${e.type} ${e.width}x${e.height}`)
+      }
+      assert.deepStrictEqual(problems, [], list(problems, 6))
+    })
+
     check('items repair with items that exist', function () {
       const problems = []
       for (const i of items) if (Array.isArray(i.repairWith)) for (const r of i.repairWith) if (!itemsByName.has(r) && !blocksByName.has(r)) problems.push(`${i.name}: ${r}`)
