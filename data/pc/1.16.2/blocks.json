@@ -720,7 +720,7 @@
     "filterLight": 15,
     "emitLight": 0,
     "boundingBox": "block",
-    "stackSize": 0,
+    "stackSize": 64,
     "material": "dirt",
     "defaultState": 66,
     "resistance": 0.5
@@ -741,7 +741,7 @@
     "filterLight": 15,
     "emitLight": 0,
     "boundingBox": "block",
-    "stackSize": 0,
+    "stackSize": 64,
     "material": "dirt",
     "defaultState": 67,
     "resistance": 0.5
@@ -5767,7 +5767,7 @@
     "transparent": false,
     "filterLight": 15,
     "emitLight": 0,
-    "boundingBox": "block",
+    "boundingBox": "empty",
     "stackSize": 64,
     "material": "dirt",
     "harvestTools": {
@@ -23744,7 +23744,7 @@
     "filterLight": 15,
     "emitLight": 0,
     "boundingBox": "block",
-    "stackSize": 1,
+    "stackSize": 64,
     "material": "wood",
     "defaultState": 14901,
     "resistance": 2
@@ -23792,7 +23792,7 @@
     "filterLight": 15,
     "emitLight": 0,
     "boundingBox": "block",
-    "stackSize": 1,
+    "stackSize": 64,
     "material": "wood",
     "defaultState": 14933,
     "resistance": 2
@@ -26134,7 +26134,7 @@
     "filterLight": 15,
     "emitLight": 0,
     "boundingBox": "block",
-    "stackSize": 0,
+    "stackSize": 64,
     "defaultState": 16261,
     "resistance": 6,
     "material": "rock"
