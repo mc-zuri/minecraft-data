@@ -10,7 +10,7 @@
     "drops": [
       0
     ],
-    "diggable": true,
+    "diggable": false,
     "transparent": true,
     "filterLight": 0,
     "emitLight": 0,
@@ -639,7 +639,7 @@
     "id": 25,
     "displayName": "Bedrock",
     "name": "bedrock",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 33,
     "maxStateId": 33,
     "states": [],
@@ -3626,7 +3626,7 @@
     "id": 118,
     "displayName": "Moving Piston",
     "name": "moving_piston",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 1400,
     "maxStateId": 1411,
     "states": [
@@ -3661,7 +3661,7 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 1400,
-    "resistance": -1
+    "resistance": 0
   },
   {
     "id": 119,
@@ -6228,7 +6228,7 @@
     "id": 201,
     "displayName": "Nether Portal",
     "name": "nether_portal",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 4014,
     "maxStateId": 4015,
     "states": [
@@ -6250,7 +6250,7 @@
     "boundingBox": "empty",
     "stackSize": 0,
     "defaultState": 4014,
-    "resistance": -1
+    "resistance": 0
   },
   {
     "id": 202,
@@ -8356,7 +8356,7 @@
     "id": 262,
     "displayName": "End Portal",
     "name": "end_portal",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 5149,
     "maxStateId": 5149,
     "states": [],
@@ -8374,7 +8374,7 @@
     "id": 263,
     "displayName": "End Portal Frame",
     "name": "end_portal_frame",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 5150,
     "maxStateId": 5157,
     "states": [
@@ -8965,7 +8965,7 @@
     "id": 277,
     "displayName": "Command Block",
     "name": "command_block",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 5648,
     "maxStateId": 5659,
     "states": [
@@ -12415,7 +12415,7 @@
     "id": 378,
     "displayName": "Barrier",
     "name": "barrier",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 7540,
     "maxStateId": 7540,
     "states": [],
@@ -16759,7 +16759,7 @@
     "id": 499,
     "displayName": "End Gateway",
     "name": "end_gateway",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 9228,
     "maxStateId": 9228,
     "states": [],
@@ -16777,7 +16777,7 @@
     "id": 500,
     "displayName": "Repeating Command Block",
     "name": "repeating_command_block",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 9229,
     "maxStateId": 9240,
     "states": [
@@ -16817,7 +16817,7 @@
     "id": 501,
     "displayName": "Chain Command Block",
     "name": "chain_command_block",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 9241,
     "maxStateId": 9252,
     "states": [
@@ -20590,7 +20590,7 @@
     "maxStateId": 9669,
     "states": [],
     "drops": [],
-    "diggable": true,
+    "diggable": false,
     "transparent": true,
     "filterLight": 0,
     "emitLight": 0,
@@ -20608,7 +20608,7 @@
     "maxStateId": 9670,
     "states": [],
     "drops": [],
-    "diggable": true,
+    "diggable": false,
     "transparent": true,
     "filterLight": 0,
     "emitLight": 0,
@@ -25185,7 +25185,7 @@
     "id": 726,
     "displayName": "Structure Block",
     "name": "structure_block",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 15743,
     "maxStateId": 15746,
     "states": [
@@ -25218,7 +25218,7 @@
     "id": 727,
     "displayName": "Jigsaw Block",
     "name": "jigsaw",
-    "hardness": 0,
+    "hardness": -1,
     "minStateId": 15747,
     "maxStateId": 15758,
     "states": [
