@@ -3931,7 +3931,7 @@
             },
             {
               "name": "copyMetadata",
-              "type": "bool"
+              "type": "u8"
             },
             {
               "name": "death",

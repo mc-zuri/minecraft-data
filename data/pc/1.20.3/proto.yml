@@ -1545,7 +1545,7 @@
          dimensionName: string
          location: position
       portalCooldown: varint
-      copyMetadata: bool
+      copyMetadata: u8
    # MC: ClientboundRotateHeadPacket
    packet_entity_head_rotation:
       entityId: varint

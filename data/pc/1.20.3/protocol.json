@@ -4381,7 +4381,7 @@
             },
             {
               "name": "copyMetadata",
-              "type": "bool"
+              "type": "u8"
             }
           ]
         ],

@@ -1251,7 +1251,7 @@
       previousGamemode: u8
       isDebug: bool
       isFlat: bool
-      copyMetadata: bool
+      copyMetadata: u8
       death?:      
          dimensionName: string
          location: position
