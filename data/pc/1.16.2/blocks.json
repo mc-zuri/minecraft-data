@@ -7193,14 +7193,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 4499,
     "resistance": 0.75
   },
@@ -7222,14 +7214,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 4500,
     "resistance": 0.75
   },
@@ -7251,14 +7235,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 4501,
     "resistance": 0.75
   },
@@ -7280,14 +7256,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 4502,
     "resistance": 0.75
   },
@@ -7309,14 +7277,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 4503,
     "resistance": 0.75
   },
@@ -7338,14 +7298,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 4504,
     "resistance": 0.75
   },
@@ -8988,6 +8940,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       285
     ],
@@ -13491,14 +13451,6 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "material": "plant",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 7896,
     "resistance": 0
   },
@@ -14712,14 +14664,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 8307,
     "resistance": 3
   },
@@ -14757,14 +14701,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 8313,
     "resistance": 3
   },
@@ -14802,14 +14738,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 8319,
     "resistance": 3
   },
@@ -14847,14 +14775,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 8325,
     "resistance": 3
   },
@@ -14892,14 +14812,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 8331,
     "resistance": 3
   },
@@ -14937,14 +14849,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 8337,
     "resistance": 3
   },
@@ -16800,6 +16704,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       422
     ],
@@ -16840,6 +16752,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       423
     ],
@@ -19523,6 +19443,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       516
     ],
@@ -19550,6 +19478,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       512
     ],
@@ -19577,6 +19513,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       513
     ],
@@ -19604,6 +19548,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       514
     ],
@@ -19631,6 +19583,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       515
     ],
@@ -19788,6 +19748,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       522
     ],
@@ -19815,6 +19783,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       523
     ],
@@ -19842,6 +19818,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       524
     ],
@@ -19869,6 +19853,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       525
     ],
@@ -19896,6 +19888,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       526
     ],
@@ -20064,6 +20064,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       522
     ],
@@ -20102,6 +20110,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       523
     ],
@@ -20140,6 +20156,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       524
     ],
@@ -20178,6 +20202,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       525
     ],
@@ -20216,6 +20248,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       526
     ],
@@ -20687,6 +20727,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       529
     ],
@@ -20746,6 +20794,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       530
     ],
@@ -20805,6 +20861,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       531
     ],
@@ -20864,6 +20928,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       532
     ],
@@ -20923,6 +20995,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       533
     ],
@@ -20982,6 +21062,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       534
     ],
@@ -21041,6 +21129,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       535
     ],
@@ -21100,6 +21196,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       536
     ],
@@ -21159,6 +21263,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       537
     ],
@@ -21218,6 +21330,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       538
     ],
@@ -21277,6 +21397,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       539
     ],
@@ -21403,6 +21531,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       541
     ],
@@ -21462,6 +21598,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       542
     ],
@@ -23399,6 +23543,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       944
     ],
@@ -23448,6 +23600,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       945
     ],
@@ -23857,7 +24017,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "harvestTools": {},
     "defaultState": 14980,
     "resistance": 1,
     "material": "default"
@@ -24098,7 +24257,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "harvestTools": {},
     "defaultState": 14997,
     "resistance": 1,
     "material": "default"
@@ -24355,14 +24513,6 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 15068,
     "resistance": 0.5
   },
@@ -24390,14 +24540,6 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "585": true,
-      "590": true,
-      "595": true,
-      "600": true,
-      "605": true,
-      "610": true
-    },
     "defaultState": 15070,
     "resistance": 0.5
   },
@@ -25201,6 +25343,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       568
     ],
@@ -25242,6 +25392,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       569
     ],
@@ -25305,7 +25463,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "harvestTools": {},
     "defaultState": 15768,
     "resistance": 0.5,
     "material": "default"
@@ -25720,6 +25877,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       965
     ],
@@ -25837,6 +26002,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       964
     ],
@@ -25945,6 +26118,14 @@
     "minStateId": 16261,
     "maxStateId": 16261,
     "states": [],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       970
     ],
@@ -25982,6 +26163,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       972
     ],
@@ -26041,6 +26230,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       973
     ],
@@ -26209,6 +26406,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       969
     ],
@@ -26246,6 +26451,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "585": true,
+      "590": true,
+      "595": true,
+      "600": true,
+      "605": true,
+      "610": true
+    },
     "drops": [
       968
     ],

@@ -636,6 +636,13 @@
     "minStateId": 33,
     "maxStateId": 33,
     "states": [],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": false,
@@ -6971,13 +6978,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 4485,
     "resistance": 0.75
   },
@@ -6999,13 +6999,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 4486,
     "resistance": 0.75
   },
@@ -7027,13 +7020,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 4487,
     "resistance": 0.75
   },
@@ -7055,13 +7041,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 4488,
     "resistance": 0.75
   },
@@ -7083,13 +7062,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 4489,
     "resistance": 0.75
   },
@@ -7111,13 +7083,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "plant;seagrass",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 4490,
     "resistance": 0.75
   },
@@ -8122,6 +8087,13 @@
         ]
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": true,
@@ -8710,6 +8682,13 @@
         ]
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": false,
@@ -12058,6 +12037,7 @@
     "minStateId": 7000,
     "maxStateId": 7000,
     "states": [],
+    "harvestTools": {},
     "drops": [],
     "diggable": false,
     "transparent": true,
@@ -13116,13 +13096,6 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "material": "plant",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 7356,
     "resistance": 0
   },
@@ -14306,13 +14279,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 7767,
     "resistance": 3
   },
@@ -14350,13 +14316,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 7773,
     "resistance": 3
   },
@@ -14394,13 +14353,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 7779,
     "resistance": 3
   },
@@ -14438,13 +14390,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 7785,
     "resistance": 3
   },
@@ -14482,13 +14427,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 7791,
     "resistance": 3
   },
@@ -14526,13 +14464,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "wood",
-    "harvestTools": {
-      "521": true,
-      "535": true,
-      "539": true,
-      "543": true,
-      "550": true
-    },
     "defaultState": 7797,
     "resistance": 3
   },
@@ -16368,6 +16299,13 @@
         ]
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": false,
@@ -16406,6 +16344,13 @@
         ]
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": false,
@@ -19042,6 +18987,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       465
     ],
@@ -19069,6 +19021,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       461
     ],
@@ -19096,6 +19055,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       462
     ],
@@ -19123,6 +19089,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       463
     ],
@@ -19150,6 +19123,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       464
     ],
@@ -19307,6 +19287,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       471
     ],
@@ -19334,6 +19321,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       472
     ],
@@ -19361,6 +19355,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       473
     ],
@@ -19388,6 +19389,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       474
     ],
@@ -19415,6 +19423,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       475
     ],
@@ -19583,6 +19598,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": true,
     "transparent": true,
@@ -19619,6 +19641,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": true,
     "transparent": true,
@@ -19655,6 +19684,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": true,
     "transparent": true,
@@ -19691,6 +19727,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": true,
     "transparent": true,
@@ -19727,6 +19770,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": true,
     "transparent": true,
@@ -20188,6 +20238,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       478
     ],
@@ -20247,6 +20304,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       479
     ],
@@ -20306,6 +20370,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       480
     ],
@@ -20365,6 +20436,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       481
     ],
@@ -20424,6 +20502,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       482
     ],
@@ -20483,6 +20568,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       483
     ],
@@ -20542,6 +20634,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       484
     ],
@@ -20601,6 +20700,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       485
     ],
@@ -20660,6 +20766,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       486
     ],
@@ -20719,6 +20832,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       487
     ],
@@ -20778,6 +20898,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       488
     ],
@@ -20903,6 +21030,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       490
     ],
@@ -20962,6 +21096,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       491
     ],
@@ -22631,6 +22772,13 @@
         ]
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       873
     ],
@@ -22680,6 +22828,13 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [
       874
     ],
@@ -22823,6 +22978,13 @@
         ]
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": false,
@@ -22856,6 +23018,13 @@
         ]
       }
     ],
+    "harvestTools": {
+      "521": true,
+      "535": true,
+      "539": true,
+      "543": true,
+      "550": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": false,

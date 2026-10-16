@@ -25,6 +25,14 @@
     "minStateId": 1,
     "maxStateId": 1,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       1,
       14
@@ -36,14 +44,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 1,
     "resistance": 6
   },
@@ -55,6 +55,14 @@
     "minStateId": 2,
     "maxStateId": 2,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       2
     ],
@@ -65,14 +73,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 2,
     "resistance": 6
   },
@@ -84,6 +84,14 @@
     "minStateId": 3,
     "maxStateId": 3,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       3
     ],
@@ -94,14 +102,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 3,
     "resistance": 6
   },
@@ -113,6 +113,14 @@
     "minStateId": 4,
     "maxStateId": 4,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       4
     ],
@@ -123,14 +131,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4,
     "resistance": 6
   },
@@ -142,6 +142,14 @@
     "minStateId": 5,
     "maxStateId": 5,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       5
     ],
@@ -152,14 +160,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5,
     "resistance": 6
   },
@@ -171,6 +171,14 @@
     "minStateId": 6,
     "maxStateId": 6,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       6
     ],
@@ -181,14 +189,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6,
     "resistance": 6
   },
@@ -200,6 +200,14 @@
     "minStateId": 7,
     "maxStateId": 7,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       7
     ],
@@ -210,14 +218,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7,
     "resistance": 6
   },
@@ -327,6 +327,14 @@
     "minStateId": 14,
     "maxStateId": 14,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       14
     ],
@@ -337,14 +345,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 14,
     "resistance": 6
   },
@@ -774,6 +774,11 @@
     "minStateId": 69,
     "maxStateId": 69,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "597": true,
+      "608": true
+    },
     "drops": [
       33
     ],
@@ -784,10 +789,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "597": true
-    },
     "defaultState": 69,
     "resistance": 3
   },
@@ -799,6 +800,12 @@
     "minStateId": 70,
     "maxStateId": 70,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "593": true,
+      "597": true,
+      "608": true
+    },
     "drops": [
       34
     ],
@@ -809,11 +816,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "593": true,
-      "597": true
-    },
     "defaultState": 70,
     "resistance": 3
   },
@@ -825,6 +827,14 @@
     "minStateId": 71,
     "maxStateId": 71,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       35,
       579
@@ -836,14 +846,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 71,
     "resistance": 3
   },
@@ -855,6 +857,14 @@
     "minStateId": 72,
     "maxStateId": 72,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       36,
       747
@@ -866,14 +876,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 72,
     "resistance": 3
   },
@@ -1979,6 +1981,12 @@
     "minStateId": 232,
     "maxStateId": 232,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "593": true,
+      "597": true,
+      "608": true
+    },
     "drops": [
       78,
       697
@@ -1990,11 +1998,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "593": true,
-      "597": true
-    },
     "defaultState": 232,
     "resistance": 3
   },
@@ -2006,6 +2009,12 @@
     "minStateId": 233,
     "maxStateId": 233,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "593": true,
+      "597": true,
+      "608": true
+    },
     "drops": [
       79
     ],
@@ -2016,11 +2025,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "593": true,
-      "597": true
-    },
     "defaultState": 233,
     "resistance": 3
   },
@@ -2051,6 +2055,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       80
     ],
@@ -2061,14 +2073,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 235,
     "resistance": 3.5
   },
@@ -2080,6 +2084,14 @@
     "minStateId": 246,
     "maxStateId": 246,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       81
     ],
@@ -2090,14 +2102,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 246,
     "resistance": 0.8
   },
@@ -2109,6 +2113,14 @@
     "minStateId": 247,
     "maxStateId": 247,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       82
     ],
@@ -2119,14 +2131,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 247,
     "resistance": 0.8
   },
@@ -2138,6 +2142,14 @@
     "minStateId": 248,
     "maxStateId": 248,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       83
     ],
@@ -2148,14 +2160,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 248,
     "resistance": 0.8
   },
@@ -3077,6 +3081,15 @@
     "minStateId": 1341,
     "maxStateId": 1341,
     "states": [],
+    "harvestTools": {
+      "586": true,
+      "587": true,
+      "591": true,
+      "595": true,
+      "602": true,
+      "606": true,
+      "734": true
+    },
     "drops": [
       734,
       88,
@@ -3089,14 +3102,6 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "material": "web",
-    "harvestTools": {
-      "586": true,
-      "587": true,
-      "591": true,
-      "595": true,
-      "602": true,
-      "734": true
-    },
     "defaultState": 1341,
     "resistance": 4
   },
@@ -4008,6 +4013,11 @@
     "minStateId": 1427,
     "maxStateId": 1427,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "597": true,
+      "608": true
+    },
     "drops": [
       136
     ],
@@ -4018,10 +4028,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "597": true
-    },
     "defaultState": 1427,
     "resistance": 6
   },
@@ -4033,6 +4039,12 @@
     "minStateId": 1428,
     "maxStateId": 1428,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "593": true,
+      "597": true,
+      "608": true
+    },
     "drops": [
       137
     ],
@@ -4043,11 +4055,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "593": true,
-      "597": true
-    },
     "defaultState": 1428,
     "resistance": 6
   },
@@ -4059,6 +4066,14 @@
     "minStateId": 1429,
     "maxStateId": 1429,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       166
     ],
@@ -4069,14 +4084,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 1429,
     "resistance": 6
   },
@@ -4136,6 +4143,14 @@
     "minStateId": 1433,
     "maxStateId": 1433,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       169
     ],
@@ -4146,14 +4161,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 1433,
     "resistance": 6
   },
@@ -4165,6 +4172,10 @@
     "minStateId": 1434,
     "maxStateId": 1434,
     "states": [],
+    "harvestTools": {
+      "597": true,
+      "608": true
+    },
     "drops": [
       170
     ],
@@ -4175,9 +4186,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "597": true
-    },
     "defaultState": 1434,
     "resistance": 1200
   },
@@ -4306,6 +4314,14 @@
     "minStateId": 1953,
     "maxStateId": 1953,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [],
     "diggable": true,
     "transparent": true,
@@ -4314,14 +4330,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 1953,
     "resistance": 5
   },
@@ -4506,6 +4514,11 @@
     "minStateId": 3354,
     "maxStateId": 3354,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "597": true,
+      "608": true
+    },
     "drops": [
       181,
       581
@@ -4517,10 +4530,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "597": true
-    },
     "defaultState": 3354,
     "resistance": 3
   },
@@ -4532,6 +4541,11 @@
     "minStateId": 3355,
     "maxStateId": 3355,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "597": true,
+      "608": true
+    },
     "drops": [
       182
     ],
@@ -4542,10 +4556,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "597": true
-    },
     "defaultState": 3355,
     "resistance": 6
   },
@@ -4650,6 +4660,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       185
     ],
@@ -4660,14 +4678,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 3374,
     "resistance": 3.5
   },
@@ -5046,6 +5056,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       188
     ],
@@ -5056,14 +5074,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 3666,
     "resistance": 6
   },
@@ -5344,6 +5354,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       190
     ],
@@ -5354,14 +5372,6 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 3808,
     "resistance": 0.5
   },
@@ -5413,6 +5423,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       557
     ],
@@ -5423,14 +5441,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 3820,
     "resistance": 5
   },
@@ -5610,6 +5620,11 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "597": true,
+      "608": true
+    },
     "drops": [
       200,
       665
@@ -5621,10 +5636,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "597": true
-    },
     "defaultState": 3886,
     "resistance": 3
   },
@@ -5761,6 +5772,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "572": true,
+      "588": true,
+      "592": true,
+      "596": true,
+      "603": true,
+      "607": true
+    },
     "drops": [
       202,
       666,
@@ -5773,14 +5792,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "dirt",
-    "harvestTools": {
-      "572": true,
-      "588": true,
-      "592": true,
-      "596": true,
-      "603": true,
-      "608": true
-    },
     "defaultState": 3921,
     "resistance": 0.1
   },
@@ -5813,6 +5824,14 @@
     "minStateId": 3930,
     "maxStateId": 3930,
     "states": [],
+    "harvestTools": {
+      "572": true,
+      "588": true,
+      "592": true,
+      "596": true,
+      "603": true,
+      "607": true
+    },
     "drops": [
       204,
       666
@@ -5824,14 +5843,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "dirt",
-    "harvestTools": {
-      "572": true,
-      "588": true,
-      "592": true,
-      "596": true,
-      "603": true,
-      "608": true
-    },
     "defaultState": 3930,
     "resistance": 0.2
   },
@@ -6014,6 +6025,14 @@
     "minStateId": 3999,
     "maxStateId": 3999,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       218
     ],
@@ -6024,14 +6043,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 3999,
     "resistance": 0.4
   },
@@ -6096,6 +6107,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       221
     ],
@@ -6106,14 +6125,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4003,
     "resistance": 4.2
   },
@@ -6136,6 +6147,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       222
     ],
@@ -6146,14 +6165,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4006,
     "resistance": 4.2
   },
@@ -7069,6 +7080,14 @@
     "minStateId": 4495,
     "maxStateId": 4495,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       240
     ],
@@ -7079,14 +7098,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4495,
     "resistance": 6
   },
@@ -7098,6 +7109,14 @@
     "minStateId": 4496,
     "maxStateId": 4496,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       241
     ],
@@ -7108,14 +7127,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4496,
     "resistance": 6
   },
@@ -7127,6 +7138,14 @@
     "minStateId": 4497,
     "maxStateId": 4497,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       242
     ],
@@ -7137,14 +7156,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4497,
     "resistance": 6
   },
@@ -7156,6 +7167,14 @@
     "minStateId": 4498,
     "maxStateId": 4498,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       243
     ],
@@ -7166,14 +7185,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4498,
     "resistance": 6
   },
@@ -7195,14 +7206,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4499,
     "resistance": 0.75
   },
@@ -7224,14 +7227,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4500,
     "resistance": 0.75
   },
@@ -7253,14 +7248,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4501,
     "resistance": 0.75
   },
@@ -7282,14 +7269,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4502,
     "resistance": 0.75
   },
@@ -7311,14 +7290,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4503,
     "resistance": 0.75
   },
@@ -7340,14 +7311,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4504,
     "resistance": 0.75
   },
@@ -7543,6 +7506,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       247
     ],
@@ -7553,14 +7524,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4728,
     "resistance": 6
   },
@@ -7578,6 +7541,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       248
     ],
@@ -7588,14 +7559,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4730,
     "resistance": 6
   },
@@ -7929,6 +7892,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       260
     ],
@@ -7939,14 +7910,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4863,
     "resistance": 6
   },
@@ -7996,6 +7959,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       261
     ],
@@ -8006,14 +7977,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 4943,
     "resistance": 6
   },
@@ -8074,6 +8037,14 @@
     "minStateId": 5015,
     "maxStateId": 5015,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       264
     ],
@@ -8084,14 +8055,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5015,
     "resistance": 6
   },
@@ -8129,6 +8092,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       267
     ],
@@ -8139,14 +8110,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5047,
     "resistance": 6
   },
@@ -8196,6 +8159,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       268
     ],
@@ -8206,14 +8177,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5059,
     "resistance": 6
   },
@@ -8252,6 +8215,14 @@
     "minStateId": 5132,
     "maxStateId": 5132,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       269
     ],
@@ -8262,14 +8233,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5132,
     "resistance": 1200
   },
@@ -8297,6 +8260,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       755
     ],
@@ -8307,14 +8278,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5140,
     "resistance": 0.5
   },
@@ -8332,6 +8295,14 @@
         "num_values": 4
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       756
     ],
@@ -8342,14 +8313,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5141,
     "resistance": 2
   },
@@ -8414,6 +8377,14 @@
     "minStateId": 5154,
     "maxStateId": 5154,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       271
     ],
@@ -8424,14 +8395,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5154,
     "resistance": 9
   },
@@ -8565,6 +8528,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       275
     ],
@@ -8575,14 +8546,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5181,
     "resistance": 0.8
   },
@@ -8594,6 +8557,11 @@
     "minStateId": 5250,
     "maxStateId": 5250,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "597": true,
+      "608": true
+    },
     "drops": [
       276,
       826
@@ -8605,10 +8573,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "597": true
-    },
     "defaultState": 5250,
     "resistance": 3
   },
@@ -8637,6 +8601,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       277,
       170
@@ -8648,14 +8620,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5252,
     "resistance": 600
   },
@@ -8765,6 +8729,11 @@
     "minStateId": 5403,
     "maxStateId": 5403,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "597": true,
+      "608": true
+    },
     "drops": [
       279
     ],
@@ -8775,10 +8744,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "597": true
-    },
     "defaultState": 5403,
     "resistance": 6
   },
@@ -8986,6 +8951,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": false,
@@ -9075,6 +9048,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       287
     ],
@@ -9085,14 +9066,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5660,
     "resistance": 6
   },
@@ -9155,6 +9128,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       288
     ],
@@ -9165,14 +9146,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 5984,
     "resistance": 6
   },
@@ -10400,6 +10373,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       314
     ],
@@ -10410,14 +10391,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6610,
     "resistance": 1200
   },
@@ -10441,6 +10414,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       315
     ],
@@ -10451,14 +10432,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6614,
     "resistance": 1200
   },
@@ -10482,6 +10455,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       316
     ],
@@ -10492,14 +10473,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6618,
     "resistance": 1200
   },
@@ -10565,6 +10538,14 @@
         "num_values": 16
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       318
     ],
@@ -10575,14 +10556,6 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6646,
     "resistance": 0.5
   },
@@ -10600,6 +10573,14 @@
         "num_values": 16
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       319
     ],
@@ -10610,14 +10591,6 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6662,
     "resistance": 0.5
   },
@@ -10707,6 +10680,14 @@
     "minStateId": 6726,
     "maxStateId": 6726,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       321
     ],
@@ -10717,14 +10698,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6726,
     "resistance": 6
   },
@@ -10736,6 +10709,14 @@
     "minStateId": 6727,
     "maxStateId": 6727,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       322,
       849
@@ -10747,14 +10728,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6727,
     "resistance": 3
   },
@@ -10784,6 +10757,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       323
     ],
@@ -10794,14 +10775,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6728,
     "resistance": 4.8
   },
@@ -10813,6 +10786,14 @@
     "minStateId": 6738,
     "maxStateId": 6738,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       325
     ],
@@ -10823,14 +10804,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6738,
     "resistance": 0.8
   },
@@ -10842,6 +10815,14 @@
     "minStateId": 6739,
     "maxStateId": 6739,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       324
     ],
@@ -10852,14 +10833,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6739,
     "resistance": 0.8
   },
@@ -10882,6 +10855,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       327
     ],
@@ -10892,14 +10873,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6741,
     "resistance": 0.8
   },
@@ -10949,6 +10922,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       328
     ],
@@ -10959,14 +10940,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6754,
     "resistance": 0.8
   },
@@ -11037,6 +11010,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       330
     ],
@@ -11047,14 +11028,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6836,
     "resistance": 3.5
   },
@@ -11066,6 +11039,14 @@
     "minStateId": 6847,
     "maxStateId": 6847,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       331
     ],
@@ -11076,14 +11057,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6847,
     "resistance": 4.2
   },
@@ -11095,6 +11068,14 @@
     "minStateId": 6848,
     "maxStateId": 6848,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       332
     ],
@@ -11105,14 +11086,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6848,
     "resistance": 4.2
   },
@@ -11124,6 +11097,14 @@
     "minStateId": 6849,
     "maxStateId": 6849,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       333
     ],
@@ -11134,14 +11115,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6849,
     "resistance": 4.2
   },
@@ -11153,6 +11126,14 @@
     "minStateId": 6850,
     "maxStateId": 6850,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       334
     ],
@@ -11163,14 +11144,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6850,
     "resistance": 4.2
   },
@@ -11182,6 +11155,14 @@
     "minStateId": 6851,
     "maxStateId": 6851,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       335
     ],
@@ -11192,14 +11173,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6851,
     "resistance": 4.2
   },
@@ -11211,6 +11184,14 @@
     "minStateId": 6852,
     "maxStateId": 6852,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       336
     ],
@@ -11221,14 +11202,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6852,
     "resistance": 4.2
   },
@@ -11240,6 +11213,14 @@
     "minStateId": 6853,
     "maxStateId": 6853,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       337
     ],
@@ -11250,14 +11231,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6853,
     "resistance": 4.2
   },
@@ -11269,6 +11242,14 @@
     "minStateId": 6854,
     "maxStateId": 6854,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       338
     ],
@@ -11279,14 +11260,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6854,
     "resistance": 4.2
   },
@@ -11298,6 +11271,14 @@
     "minStateId": 6855,
     "maxStateId": 6855,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       339
     ],
@@ -11308,14 +11289,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6855,
     "resistance": 4.2
   },
@@ -11327,6 +11300,14 @@
     "minStateId": 6856,
     "maxStateId": 6856,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       340
     ],
@@ -11337,14 +11318,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6856,
     "resistance": 4.2
   },
@@ -11356,6 +11329,14 @@
     "minStateId": 6857,
     "maxStateId": 6857,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       341
     ],
@@ -11366,14 +11347,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6857,
     "resistance": 4.2
   },
@@ -11385,6 +11358,14 @@
     "minStateId": 6858,
     "maxStateId": 6858,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       342
     ],
@@ -11395,14 +11376,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6858,
     "resistance": 4.2
   },
@@ -11414,6 +11387,14 @@
     "minStateId": 6859,
     "maxStateId": 6859,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       343
     ],
@@ -11424,14 +11405,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6859,
     "resistance": 4.2
   },
@@ -11443,6 +11416,14 @@
     "minStateId": 6860,
     "maxStateId": 6860,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       344
     ],
@@ -11453,14 +11434,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6860,
     "resistance": 4.2
   },
@@ -11472,6 +11445,14 @@
     "minStateId": 6861,
     "maxStateId": 6861,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       345
     ],
@@ -11482,14 +11463,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6861,
     "resistance": 4.2
   },
@@ -11501,6 +11474,14 @@
     "minStateId": 6862,
     "maxStateId": 6862,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       346
     ],
@@ -11511,14 +11492,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 6862,
     "resistance": 4.2
   },
@@ -12458,6 +12431,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       348
     ],
@@ -12468,14 +12449,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7552,
     "resistance": 5
   },
@@ -12487,6 +12460,14 @@
     "minStateId": 7601,
     "maxStateId": 7601,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       411
     ],
@@ -12497,14 +12478,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7601,
     "resistance": 6
   },
@@ -12516,6 +12489,14 @@
     "minStateId": 7602,
     "maxStateId": 7602,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       412
     ],
@@ -12526,14 +12507,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7602,
     "resistance": 6
   },
@@ -12545,6 +12518,14 @@
     "minStateId": 7603,
     "maxStateId": 7603,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       413
     ],
@@ -12555,14 +12536,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7603,
     "resistance": 6
   },
@@ -12612,6 +12585,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       414
     ],
@@ -12622,14 +12603,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7615,
     "resistance": 6
   },
@@ -12679,6 +12652,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       415
     ],
@@ -12689,14 +12670,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7695,
     "resistance": 6
   },
@@ -12746,6 +12719,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       416
     ],
@@ -12756,14 +12737,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7775,
     "resistance": 6
   },
@@ -12791,6 +12764,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       159
     ],
@@ -12801,14 +12782,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7847,
     "resistance": 6
   },
@@ -12836,6 +12809,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       160
     ],
@@ -12846,14 +12827,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7853,
     "resistance": 6
   },
@@ -12881,6 +12854,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       161
     ],
@@ -12891,14 +12872,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7859,
     "resistance": 6
   },
@@ -13282,6 +13255,14 @@
     "minStateId": 7882,
     "maxStateId": 7882,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       366
     ],
@@ -13292,14 +13273,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7882,
     "resistance": 4.2
   },
@@ -13311,6 +13284,14 @@
     "minStateId": 7883,
     "maxStateId": 7883,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       367
     ],
@@ -13321,14 +13302,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7883,
     "resistance": 6
   },
@@ -13474,14 +13447,6 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 7892,
     "resistance": 0
   },
@@ -14489,6 +14454,14 @@
     "minStateId": 8217,
     "maxStateId": 8217,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       418
     ],
@@ -14499,14 +14472,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8217,
     "resistance": 0.8
   },
@@ -14518,6 +14483,14 @@
     "minStateId": 8218,
     "maxStateId": 8218,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       419
     ],
@@ -14528,14 +14501,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8218,
     "resistance": 0.8
   },
@@ -14547,6 +14512,14 @@
     "minStateId": 8219,
     "maxStateId": 8219,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       420
     ],
@@ -14557,14 +14530,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8219,
     "resistance": 0.8
   },
@@ -14614,6 +14579,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       421
     ],
@@ -14624,14 +14597,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8231,
     "resistance": 0.8
   },
@@ -14669,14 +14634,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8303,
     "resistance": 3
   },
@@ -14714,14 +14671,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8309,
     "resistance": 3
   },
@@ -14759,14 +14708,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8315,
     "resistance": 3
   },
@@ -14804,14 +14745,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8321,
     "resistance": 3
   },
@@ -14849,14 +14782,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8327,
     "resistance": 3
   },
@@ -14894,14 +14819,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8333,
     "resistance": 3
   },
@@ -14929,6 +14846,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       146
     ],
@@ -14939,14 +14864,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8339,
     "resistance": 6
   },
@@ -14974,6 +14891,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       147
     ],
@@ -14984,14 +14909,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8345,
     "resistance": 6
   },
@@ -15019,6 +14936,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       148
     ],
@@ -15029,14 +14954,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8351,
     "resistance": 6
   },
@@ -15064,6 +14981,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       149
     ],
@@ -15074,14 +14999,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8357,
     "resistance": 6
   },
@@ -15109,6 +15026,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       150
     ],
@@ -15119,14 +15044,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8363,
     "resistance": 6
   },
@@ -15154,6 +15071,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       151
     ],
@@ -15164,14 +15089,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8369,
     "resistance": 6
   },
@@ -15199,6 +15116,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       152
     ],
@@ -15209,14 +15134,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8375,
     "resistance": 6
   },
@@ -15244,6 +15161,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       153
     ],
@@ -15254,14 +15179,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8381,
     "resistance": 6
   },
@@ -15289,6 +15206,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       154
     ],
@@ -15299,14 +15224,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8387,
     "resistance": 6
   },
@@ -15334,6 +15251,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       155
     ],
@@ -15344,14 +15269,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8393,
     "resistance": 6
   },
@@ -15379,6 +15296,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       156
     ],
@@ -15389,14 +15314,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8399,
     "resistance": 6
   },
@@ -15424,6 +15341,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       157
     ],
@@ -15434,14 +15359,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8405,
     "resistance": 6
   },
@@ -15469,6 +15386,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       158
     ],
@@ -15479,14 +15404,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8411,
     "resistance": 6
   },
@@ -15498,6 +15415,14 @@
     "minStateId": 8414,
     "maxStateId": 8414,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       165
     ],
@@ -15508,14 +15433,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8414,
     "resistance": 6
   },
@@ -15527,6 +15444,14 @@
     "minStateId": 8415,
     "maxStateId": 8415,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       164
     ],
@@ -15537,14 +15462,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8415,
     "resistance": 6
   },
@@ -15556,6 +15473,14 @@
     "minStateId": 8416,
     "maxStateId": 8416,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       162
     ],
@@ -15566,14 +15491,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8416,
     "resistance": 6
   },
@@ -15585,6 +15502,14 @@
     "minStateId": 8417,
     "maxStateId": 8417,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       163
     ],
@@ -15595,14 +15520,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 8417,
     "resistance": 6
   },
@@ -16505,6 +16422,14 @@
     "minStateId": 9134,
     "maxStateId": 9134,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       175
     ],
@@ -16514,14 +16439,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9134,
     "resistance": 6
   },
@@ -16544,6 +16461,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       176
     ],
@@ -16553,14 +16478,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9136,
     "resistance": 6
   },
@@ -16610,6 +16527,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       177
     ],
@@ -16620,14 +16545,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9149,
     "resistance": 6
   },
@@ -16639,6 +16556,14 @@
     "minStateId": 9218,
     "maxStateId": 9218,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       272
     ],
@@ -16649,14 +16574,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9218,
     "resistance": 9
   },
@@ -16753,6 +16670,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": false,
@@ -16790,6 +16715,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": false,
@@ -16832,6 +16765,14 @@
     "minStateId": 9253,
     "maxStateId": 9253,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       424
     ],
@@ -16841,14 +16782,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9253,
     "resistance": 0.5
   },
@@ -16880,6 +16813,14 @@
     "minStateId": 9255,
     "maxStateId": 9255,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       427
     ],
@@ -16889,14 +16830,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9255,
     "resistance": 6
   },
@@ -16919,6 +16852,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       428
     ],
@@ -16928,14 +16869,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9257,
     "resistance": 2
   },
@@ -16984,6 +16917,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       430
     ],
@@ -16993,14 +16934,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9265,
     "resistance": 3
   },
@@ -17602,6 +17535,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       448
     ],
@@ -17612,14 +17553,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9374,
     "resistance": 1.4
   },
@@ -17643,6 +17576,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       449
     ],
@@ -17653,14 +17594,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9378,
     "resistance": 1.4
   },
@@ -17684,6 +17617,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       450
     ],
@@ -17694,14 +17635,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9382,
     "resistance": 1.4
   },
@@ -17725,6 +17658,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       451
     ],
@@ -17735,14 +17676,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9386,
     "resistance": 1.4
   },
@@ -17766,6 +17699,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       452
     ],
@@ -17776,14 +17717,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9390,
     "resistance": 1.4
   },
@@ -17807,6 +17740,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       453
     ],
@@ -17817,14 +17758,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9394,
     "resistance": 1.4
   },
@@ -17848,6 +17781,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       454
     ],
@@ -17858,14 +17799,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9398,
     "resistance": 1.4
   },
@@ -17889,6 +17822,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       455
     ],
@@ -17899,14 +17840,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9402,
     "resistance": 1.4
   },
@@ -17930,6 +17863,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       456
     ],
@@ -17940,14 +17881,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9406,
     "resistance": 1.4
   },
@@ -17971,6 +17904,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       457
     ],
@@ -17981,14 +17922,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9410,
     "resistance": 1.4
   },
@@ -18012,6 +17945,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       458
     ],
@@ -18022,14 +17963,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9414,
     "resistance": 1.4
   },
@@ -18053,6 +17986,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       459
     ],
@@ -18063,14 +18004,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9418,
     "resistance": 1.4
   },
@@ -18094,6 +18027,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       460
     ],
@@ -18104,14 +18045,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9422,
     "resistance": 1.4
   },
@@ -18135,6 +18068,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       461
     ],
@@ -18145,14 +18086,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9426,
     "resistance": 1.4
   },
@@ -18176,6 +18109,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       462
     ],
@@ -18186,14 +18127,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9430,
     "resistance": 1.4
   },
@@ -18217,6 +18150,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       463
     ],
@@ -18227,14 +18168,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9434,
     "resistance": 1.4
   },
@@ -18246,6 +18179,14 @@
     "minStateId": 9438,
     "maxStateId": 9438,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       464
     ],
@@ -18256,14 +18197,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9438,
     "resistance": 1.8
   },
@@ -18275,6 +18208,14 @@
     "minStateId": 9439,
     "maxStateId": 9439,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       465
     ],
@@ -18285,14 +18226,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9439,
     "resistance": 1.8
   },
@@ -18304,6 +18237,14 @@
     "minStateId": 9440,
     "maxStateId": 9440,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       466
     ],
@@ -18314,14 +18255,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9440,
     "resistance": 1.8
   },
@@ -18333,6 +18266,14 @@
     "minStateId": 9441,
     "maxStateId": 9441,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       467
     ],
@@ -18343,14 +18284,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9441,
     "resistance": 1.8
   },
@@ -18362,6 +18295,14 @@
     "minStateId": 9442,
     "maxStateId": 9442,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       468
     ],
@@ -18372,14 +18313,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9442,
     "resistance": 1.8
   },
@@ -18391,6 +18324,14 @@
     "minStateId": 9443,
     "maxStateId": 9443,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       469
     ],
@@ -18401,14 +18342,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9443,
     "resistance": 1.8
   },
@@ -18420,6 +18353,14 @@
     "minStateId": 9444,
     "maxStateId": 9444,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       470
     ],
@@ -18430,14 +18371,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9444,
     "resistance": 1.8
   },
@@ -18449,6 +18382,14 @@
     "minStateId": 9445,
     "maxStateId": 9445,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       471
     ],
@@ -18459,14 +18400,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9445,
     "resistance": 1.8
   },
@@ -18478,6 +18411,14 @@
     "minStateId": 9446,
     "maxStateId": 9446,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       472
     ],
@@ -18488,14 +18429,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9446,
     "resistance": 1.8
   },
@@ -18507,6 +18440,14 @@
     "minStateId": 9447,
     "maxStateId": 9447,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       473
     ],
@@ -18517,14 +18458,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9447,
     "resistance": 1.8
   },
@@ -18536,6 +18469,14 @@
     "minStateId": 9448,
     "maxStateId": 9448,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       474
     ],
@@ -18546,14 +18487,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9448,
     "resistance": 1.8
   },
@@ -18565,6 +18498,14 @@
     "minStateId": 9449,
     "maxStateId": 9449,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       475
     ],
@@ -18575,14 +18516,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9449,
     "resistance": 1.8
   },
@@ -18594,6 +18527,14 @@
     "minStateId": 9450,
     "maxStateId": 9450,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       476
     ],
@@ -18604,14 +18545,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9450,
     "resistance": 1.8
   },
@@ -18623,6 +18556,14 @@
     "minStateId": 9451,
     "maxStateId": 9451,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       477
     ],
@@ -18633,14 +18574,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9451,
     "resistance": 1.8
   },
@@ -18652,6 +18585,14 @@
     "minStateId": 9452,
     "maxStateId": 9452,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       478
     ],
@@ -18662,14 +18603,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9452,
     "resistance": 1.8
   },
@@ -18681,6 +18614,14 @@
     "minStateId": 9453,
     "maxStateId": 9453,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       479
     ],
@@ -18691,14 +18632,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9453,
     "resistance": 1.8
   },
@@ -19149,6 +19082,14 @@
     "minStateId": 9510,
     "maxStateId": 9510,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       497
     ],
@@ -19159,14 +19100,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9510,
     "resistance": 6
   },
@@ -19178,6 +19111,14 @@
     "minStateId": 9511,
     "maxStateId": 9511,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       498
     ],
@@ -19188,14 +19129,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9511,
     "resistance": 6
   },
@@ -19207,6 +19140,14 @@
     "minStateId": 9512,
     "maxStateId": 9512,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       499
     ],
@@ -19217,14 +19158,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9512,
     "resistance": 6
   },
@@ -19236,6 +19169,14 @@
     "minStateId": 9513,
     "maxStateId": 9513,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       500
     ],
@@ -19246,14 +19187,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9513,
     "resistance": 6
   },
@@ -19265,6 +19198,14 @@
     "minStateId": 9514,
     "maxStateId": 9514,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       501
     ],
@@ -19275,14 +19216,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9514,
     "resistance": 6
   },
@@ -19294,6 +19227,14 @@
     "minStateId": 9515,
     "maxStateId": 9515,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       502,
       497
@@ -19305,14 +19246,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9515,
     "resistance": 6
   },
@@ -19324,6 +19257,14 @@
     "minStateId": 9516,
     "maxStateId": 9516,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       503,
       498
@@ -19335,14 +19276,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9516,
     "resistance": 6
   },
@@ -19354,6 +19287,14 @@
     "minStateId": 9517,
     "maxStateId": 9517,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       504,
       499
@@ -19365,14 +19306,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9517,
     "resistance": 6
   },
@@ -19384,6 +19317,14 @@
     "minStateId": 9518,
     "maxStateId": 9518,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       505,
       500
@@ -19395,14 +19336,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9518,
     "resistance": 6
   },
@@ -19414,6 +19347,14 @@
     "minStateId": 9519,
     "maxStateId": 9519,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       506,
       501
@@ -19425,14 +19366,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 9519,
     "resistance": 6
   },
@@ -19450,6 +19383,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       516
     ],
@@ -19476,6 +19417,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       512
     ],
@@ -19502,6 +19451,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       513
     ],
@@ -19528,6 +19485,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       514
     ],
@@ -19554,6 +19519,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       515
     ],
@@ -19710,6 +19683,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       522
     ],
@@ -19736,6 +19717,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       523
     ],
@@ -19762,6 +19751,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       524
     ],
@@ -19788,6 +19785,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       525
     ],
@@ -19814,6 +19819,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       526
     ],
@@ -19981,6 +19994,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [],
     "diggable": true,
     "transparent": true,
@@ -20016,6 +20037,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [],
     "diggable": true,
     "transparent": true,
@@ -20051,6 +20080,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [],
     "diggable": true,
     "transparent": true,
@@ -20086,6 +20123,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [],
     "diggable": true,
     "transparent": true,
@@ -20121,6 +20166,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [],
     "diggable": true,
     "transparent": true,
@@ -20580,6 +20633,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       529
     ],
@@ -20639,6 +20700,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       530
     ],
@@ -20698,6 +20767,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       531
     ],
@@ -20757,6 +20834,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       532
     ],
@@ -20816,6 +20901,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       533
     ],
@@ -20875,6 +20968,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       534
     ],
@@ -20934,6 +21035,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       535
     ],
@@ -20993,6 +21102,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       536
     ],
@@ -21052,6 +21169,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       537
     ],
@@ -21111,6 +21236,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       538
     ],
@@ -21170,6 +21303,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       539
     ],
@@ -21229,6 +21370,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       540
     ],
@@ -21239,14 +21388,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10560,
     "resistance": 6
   },
@@ -21296,6 +21437,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       541
     ],
@@ -21355,6 +21504,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       542
     ],
@@ -21392,6 +21549,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       543
     ],
@@ -21402,14 +21567,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10792,
     "resistance": 6
   },
@@ -21437,6 +21594,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       544
     ],
@@ -21447,14 +21612,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10798,
     "resistance": 6
   },
@@ -21482,6 +21639,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       545
     ],
@@ -21492,14 +21657,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10804,
     "resistance": 6
   },
@@ -21527,6 +21684,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       546
     ],
@@ -21537,14 +21702,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10810,
     "resistance": 6
   },
@@ -21572,6 +21729,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       547
     ],
@@ -21582,14 +21747,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10816,
     "resistance": 6
   },
@@ -21617,6 +21774,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       548
     ],
@@ -21627,14 +21792,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10822,
     "resistance": 9
   },
@@ -21662,6 +21819,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       549
     ],
@@ -21672,14 +21837,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10828,
     "resistance": 6
   },
@@ -21707,6 +21864,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       550
     ],
@@ -21717,14 +21882,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10834,
     "resistance": 6
   },
@@ -21752,6 +21909,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       551
     ],
@@ -21762,14 +21927,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10840,
     "resistance": 6
   },
@@ -21797,6 +21954,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       552
     ],
@@ -21807,14 +21972,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10846,
     "resistance": 6
   },
@@ -21842,6 +21999,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       553
     ],
@@ -21852,14 +22017,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10852,
     "resistance": 6
   },
@@ -21887,6 +22044,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       554
     ],
@@ -21897,14 +22062,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10858,
     "resistance": 6
   },
@@ -21932,6 +22089,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       555
     ],
@@ -21942,14 +22107,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10864,
     "resistance": 6
   },
@@ -22012,6 +22169,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       289
     ],
@@ -22022,14 +22187,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 10870,
     "resistance": 6
   },
@@ -22092,6 +22249,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       290
     ],
@@ -22102,14 +22267,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 11194,
     "resistance": 6
   },
@@ -22172,6 +22329,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       291
     ],
@@ -22182,14 +22347,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 11518,
     "resistance": 0.8
   },
@@ -22252,6 +22409,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       292
     ],
@@ -22262,14 +22427,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 11842,
     "resistance": 6
   },
@@ -22332,6 +22489,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       293
     ],
@@ -22342,14 +22507,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 12166,
     "resistance": 6
   },
@@ -22412,6 +22569,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       294
     ],
@@ -22422,14 +22587,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 12490,
     "resistance": 6
   },
@@ -22492,6 +22649,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       295
     ],
@@ -22502,14 +22667,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 12814,
     "resistance": 6
   },
@@ -22572,6 +22729,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       296
     ],
@@ -22582,14 +22747,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 13138,
     "resistance": 6
   },
@@ -22652,6 +22809,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       297
     ],
@@ -22662,14 +22827,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 13462,
     "resistance": 6
   },
@@ -22732,6 +22889,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       298
     ],
@@ -22742,14 +22907,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 13786,
     "resistance": 0.8
   },
@@ -22812,6 +22969,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       299
     ],
@@ -22822,14 +22987,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 14110,
     "resistance": 9
   },
@@ -22892,6 +23049,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       300
     ],
@@ -22902,14 +23067,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 14434,
     "resistance": 6
   },
@@ -23047,6 +23204,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       936
     ],
@@ -23057,14 +23222,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 14804,
     "resistance": 3.5
   },
@@ -23093,6 +23250,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       937
     ],
@@ -23103,14 +23268,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 14812,
     "resistance": 3.5
   },
@@ -23186,6 +23343,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       940
     ],
@@ -23196,14 +23361,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 14825,
     "resistance": 6
   },
@@ -23291,6 +23448,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       943
     ],
@@ -23340,6 +23505,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       944
     ],
@@ -23367,6 +23540,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       945
     ],
@@ -23377,14 +23558,6 @@
     "boundingBox": "block",
     "stackSize": 64,
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 14887,
     "resistance": 3.5
   },
@@ -23402,6 +23575,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       946
     ],
@@ -23412,14 +23593,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 14889,
     "resistance": 3.5
   },
@@ -23683,6 +23856,14 @@
     "minStateId": 14970,
     "maxStateId": 14970,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       13,
       218
@@ -23694,14 +23875,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 14970,
     "resistance": 0.4
   },
@@ -23742,7 +23915,6 @@
     "filterLight": 15,
     "emitLight": 0,
     "boundingBox": "block",
-    "harvestTools": {},
     "defaultState": 14972,
     "resistance": 1
   },
@@ -23924,6 +24096,14 @@
     "minStateId": 14987,
     "maxStateId": 14987,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       12,
       218
@@ -23935,14 +24115,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 14987,
     "resistance": 0.4
   },
@@ -23983,7 +24155,6 @@
     "filterLight": 15,
     "emitLight": 0,
     "boundingBox": "block",
-    "harvestTools": {},
     "defaultState": 14989,
     "resistance": 1
   },
@@ -24243,14 +24414,6 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 15060,
     "resistance": 0.5
   },
@@ -24278,14 +24441,6 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 15062,
     "resistance": 0.5
   },
@@ -25083,6 +25238,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": false,
@@ -25121,6 +25284,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [],
     "diggable": false,
     "transparent": false,
@@ -25182,7 +25353,6 @@
     "filterLight": 15,
     "emitLight": 0,
     "boundingBox": "block",
-    "harvestTools": {},
     "defaultState": 15760,
     "resistance": 0.5
   },
@@ -25310,6 +25480,10 @@
     "minStateId": 15826,
     "maxStateId": 15826,
     "states": [],
+    "harvestTools": {
+      "597": true,
+      "608": true
+    },
     "drops": [
       958
     ],
@@ -25320,9 +25494,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "597": true
-    },
     "defaultState": 15826,
     "resistance": 1200
   },
@@ -25334,6 +25505,10 @@
     "minStateId": 15827,
     "maxStateId": 15827,
     "states": [],
+    "harvestTools": {
+      "597": true,
+      "608": true
+    },
     "drops": [
       959
     ],
@@ -25344,9 +25519,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "597": true
-    },
     "defaultState": 15827,
     "resistance": 1200
   },
@@ -25358,6 +25530,10 @@
     "minStateId": 15828,
     "maxStateId": 15828,
     "states": [],
+    "harvestTools": {
+      "597": true,
+      "608": true
+    },
     "drops": [
       961
     ],
@@ -25368,9 +25544,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "597": true
-    },
     "defaultState": 15828,
     "resistance": 1200
   },
@@ -25388,6 +25561,10 @@
         "num_values": 5
       }
     ],
+    "harvestTools": {
+      "597": true,
+      "608": true
+    },
     "drops": [
       974
     ],
@@ -25398,9 +25575,6 @@
     "emitLight": 2,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "597": true
-    },
     "defaultState": 15829,
     "resistance": 1200
   },
@@ -25496,6 +25670,14 @@
     "minStateId": 15838,
     "maxStateId": 15838,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       957
     ],
@@ -25506,14 +25688,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 15838,
     "resistance": 3.5
   },
@@ -25525,6 +25699,14 @@
     "minStateId": 15839,
     "maxStateId": 15839,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       962
     ],
@@ -25535,14 +25717,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 15839,
     "resistance": 6
   },
@@ -25592,6 +25766,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       964
     ],
@@ -25664,6 +25846,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       301
     ],
@@ -25674,14 +25864,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 15923,
     "resistance": 6
   },
@@ -25709,6 +25891,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       963
     ],
@@ -25730,6 +25920,14 @@
     "minStateId": 16250,
     "maxStateId": 16250,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       966
     ],
@@ -25740,14 +25938,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 16250,
     "resistance": 6
   },
@@ -25759,6 +25949,14 @@
     "minStateId": 16251,
     "maxStateId": 16251,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       970
     ],
@@ -25769,14 +25967,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 16251,
     "resistance": 6
   },
@@ -25788,6 +25978,14 @@
     "minStateId": 16252,
     "maxStateId": 16252,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       973
     ],
@@ -25798,14 +25996,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 16252,
     "resistance": 6
   },
@@ -25817,6 +26007,14 @@
     "minStateId": 16253,
     "maxStateId": 16253,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       969
     ],
@@ -25853,6 +26051,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       971
     ],
@@ -25912,6 +26118,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       972
     ],
@@ -25984,6 +26198,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       303
     ],
@@ -25994,14 +26216,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 16343,
     "resistance": 6
   },
@@ -26013,6 +26227,14 @@
     "minStateId": 16664,
     "maxStateId": 16664,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       965,
       747
@@ -26024,14 +26246,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 16664,
     "resistance": 6
   },
@@ -26081,6 +26295,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       968
     ],
@@ -26118,6 +26340,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       967
     ],
@@ -26145,6 +26375,14 @@
         "num_values": 2
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       199
     ],
@@ -26155,14 +26393,6 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 16752,
     "resistance": 0.5
   },
@@ -26272,6 +26502,14 @@
         ]
       }
     ],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       302
     ],
@@ -26282,14 +26520,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 16780,
     "resistance": 6
   },
@@ -26301,6 +26531,14 @@
     "minStateId": 17101,
     "maxStateId": 17101,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       266
     ],
@@ -26311,14 +26549,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 17101,
     "resistance": 6
   },
@@ -26330,6 +26560,14 @@
     "minStateId": 17102,
     "maxStateId": 17102,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       265
     ],
@@ -26340,14 +26578,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 17102,
     "resistance": 6
   },
@@ -26359,6 +26589,14 @@
     "minStateId": 17103,
     "maxStateId": 17103,
     "states": [],
+    "harvestTools": {
+      "573": true,
+      "589": true,
+      "593": true,
+      "597": true,
+      "604": true,
+      "608": true
+    },
     "drops": [
       326
     ],
@@ -26369,14 +26607,6 @@
     "emitLight": 0,
     "boundingBox": "block",
     "material": "rock",
-    "harvestTools": {
-      "573": true,
-      "589": true,
-      "593": true,
-      "597": true,
-      "604": true,
-      "609": true
-    },
     "defaultState": 17103,
     "resistance": 0.8
   }
