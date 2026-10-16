@@ -177,6 +177,23 @@ for (const version of versions) {
       assert.deepStrictEqual(problems, [], list(problems, 6))
     })
 
+    check('an entity size has all its digits', function () {
+      // a size is a float constant of the game (a horse's 1.3964844F): the same entity in the next version's data, within
+      // 1.0E-4 of it but another float, is the one constant written with fewer digits in one of the two
+      const entities = load(version, 'entities')
+      const later = versions.slice(order.get(version) + 1).find(v => dataPaths[v] && dataPaths[v].entities && dataPaths[v].entities !== dataPaths[version].entities)
+      const next = later && load(later, 'entities')
+      if (!entities || !next) return
+      const nextByName = new Map(next.map(e => [e.name, e]))
+      const close = (a, b) => Math.fround(a) !== Math.fround(b) && Math.abs(a - b) < 1.0e-4
+      const problems = []
+      for (const e of entities) {
+        const n = nextByName.get(e.name)
+        if (n && (close(e.width, n.width) || close(e.height, n.height))) problems.push(`${e.name}: ${e.width}x${e.height}, ${later} ${n.width}x${n.height}`)
+      }
+      assert.deepStrictEqual(problems, [], list(problems, 6))
+    })
+
     check('items repair with items that exist', function () {
       const problems = []
       for (const i of items) if (Array.isArray(i.repairWith)) for (const r of i.repairWith) if (!itemsByName.has(r) && !blocksByName.has(r)) problems.push(`${i.name}: ${r}`)

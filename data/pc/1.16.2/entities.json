@@ -144,7 +144,7 @@
     "internalId": 14,
     "name": "donkey",
     "displayName": "Donkey",
-    "width": 1.39648,
+    "width": 1.3964844,
     "height": 1.5,
     "type": "mob",
     "category": "Passive mobs"
@@ -324,7 +324,7 @@
     "internalId": 32,
     "name": "hoglin",
     "displayName": "Hoglin",
-    "width": 1.39648,
+    "width": 1.3964844,
     "height": 1.4,
     "type": "UNKNOWN",
     "category": "UNKNOWN"
@@ -334,7 +334,7 @@
     "internalId": 33,
     "name": "horse",
     "displayName": "Horse",
-    "width": 1.39648,
+    "width": 1.3964844,
     "height": 1.6,
     "type": "mob",
     "category": "Passive mobs"
@@ -524,7 +524,7 @@
     "internalId": 52,
     "name": "mule",
     "displayName": "Mule",
-    "width": 1.39648,
+    "width": 1.3964844,
     "height": 1.6,
     "type": "mob",
     "category": "Passive mobs"
@@ -744,7 +744,7 @@
     "internalId": 74,
     "name": "skeleton_horse",
     "displayName": "Skeleton Horse",
-    "width": 1.39648,
+    "width": 1.3964844,
     "height": 1.6,
     "type": "mob",
     "category": "Passive mobs"
@@ -1014,7 +1014,7 @@
     "internalId": 101,
     "name": "zoglin",
     "displayName": "Zoglin",
-    "width": 1.39648,
+    "width": 1.3964844,
     "height": 1.4,
     "type": "UNKNOWN",
     "category": "UNKNOWN"
@@ -1034,7 +1034,7 @@
     "internalId": 103,
     "name": "zombie_horse",
     "displayName": "Zombie Horse",
-    "width": 1.39648,
+    "width": 1.3964844,
     "height": 1.6,
     "type": "mob",
     "category": "Passive mobs"
