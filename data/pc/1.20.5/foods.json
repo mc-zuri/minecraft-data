@@ -15,8 +15,8 @@
     "stackSize": 1,
     "displayName": "Mushroom Stew",
     "foodPoints": 6,
-    "saturation": 7.2,
-    "effectiveQuality": 13.2,
+    "saturation": 7.2000003,
+    "effectiveQuality": 13.200001,
     "saturationRatio": 1.2
   },
   {
@@ -35,7 +35,7 @@
     "stackSize": 64,
     "displayName": "Raw Porkchop",
     "foodPoints": 3,
-    "saturation": 1.8,
+    "saturation": 1.8000001,
     "effectiveQuality": 4.8,
     "saturationRatio": 0.6
   },
@@ -165,7 +165,7 @@
     "stackSize": 64,
     "displayName": "Raw Beef",
     "foodPoints": 3,
-    "saturation": 1.8,
+    "saturation": 1.8000001,
     "effectiveQuality": 4.8,
     "saturationRatio": 0.6
   },
@@ -195,8 +195,8 @@
     "stackSize": 64,
     "displayName": "Cooked Chicken",
     "foodPoints": 6,
-    "saturation": 7.2,
-    "effectiveQuality": 13.2,
+    "saturation": 7.2000003,
+    "effectiveQuality": 13.200001,
     "saturationRatio": 1.2
   },
   {
@@ -225,8 +225,8 @@
     "stackSize": 64,
     "displayName": "Carrot",
     "foodPoints": 3,
-    "saturation": 3.6,
-    "effectiveQuality": 6.6,
+    "saturation": 3.6000001,
+    "effectiveQuality": 6.6000004,
     "saturationRatio": 1.2
   },
   {
@@ -265,8 +265,8 @@
     "stackSize": 64,
     "displayName": "Golden Carrot",
     "foodPoints": 6,
-    "saturation": 14.4,
-    "effectiveQuality": 20.4,
+    "saturation": 14.400001,
+    "effectiveQuality": 20.400002,
     "saturationRatio": 2.4
   },
   {
@@ -285,7 +285,7 @@
     "stackSize": 64,
     "displayName": "Raw Rabbit",
     "foodPoints": 3,
-    "saturation": 1.8,
+    "saturation": 1.8000001,
     "effectiveQuality": 4.8,
     "saturationRatio": 0.6
   },
@@ -355,8 +355,8 @@
     "stackSize": 1,
     "displayName": "Beetroot Soup",
     "foodPoints": 6,
-    "saturation": 7.2,
-    "effectiveQuality": 13.2,
+    "saturation": 7.2000003,
+    "effectiveQuality": 13.200001,
     "saturationRatio": 1.2
   },
   {
@@ -365,8 +365,8 @@
     "stackSize": 1,
     "displayName": "Suspicious Stew",
     "foodPoints": 6,
-    "saturation": 7.2,
-    "effectiveQuality": 13.2,
+    "saturation": 7.2000003,
+    "effectiveQuality": 13.200001,
     "saturationRatio": 1.2
   },
   {
