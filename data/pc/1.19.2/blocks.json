@@ -32531,7 +32531,7 @@
     "resistance": 0.1,
     "stackSize": 64,
     "diggable": true,
-    "material": "plant",
+    "material": "plant;mineable/hoe",
     "transparent": false,
     "emitLight": 0,
     "filterLight": 0,

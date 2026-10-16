@@ -644,7 +644,8 @@
     "boundingBox": "block",
     "stackSize": 64,
     "defaultState": 33,
-    "resistance": 3600000
+    "resistance": 3600000,
+    "material": "rock"
   },
   {
     "id": 26,
@@ -1647,7 +1648,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "plant",
+    "material": "plant;leaves",
     "defaultState": 157,
     "resistance": 0.2
   },
@@ -1691,7 +1692,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "plant",
+    "material": "plant;leaves",
     "defaultState": 171,
     "resistance": 0.2
   },
@@ -1735,7 +1736,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "plant",
+    "material": "plant;leaves",
     "defaultState": 185,
     "resistance": 0.2
   },
@@ -1779,7 +1780,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "plant",
+    "material": "plant;leaves",
     "defaultState": 199,
     "resistance": 0.2
   },
@@ -1823,7 +1824,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "plant",
+    "material": "plant;leaves",
     "defaultState": 213,
     "resistance": 0.2
   },
@@ -1868,7 +1869,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "plant",
+    "material": "plant;leaves",
     "defaultState": 227,
     "resistance": 0.2
   },
@@ -3144,7 +3145,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant",
+    "material": "plant;seagrass",
     "defaultState": 1344,
     "resistance": 0
   },
@@ -3176,7 +3177,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant",
+    "material": "plant;seagrass",
     "defaultState": 1346,
     "resistance": 0
   },
@@ -4894,7 +4895,8 @@
     "boundingBox": "block",
     "stackSize": 64,
     "defaultState": 3636,
-    "resistance": 0.4
+    "resistance": 0.4,
+    "material": "wood"
   },
   {
     "id": 161,
@@ -5788,7 +5790,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "plant",
+    "material": "plant;seagrass",
     "defaultState": 3929,
     "resistance": 0.4
   },
@@ -6968,7 +6970,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "plant;seagrass",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -6996,7 +6998,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "plant;seagrass",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -7024,7 +7026,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "plant;seagrass",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -7052,7 +7054,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "plant;seagrass",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -7080,7 +7082,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "plant;seagrass",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -7108,7 +7110,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "plant;seagrass",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -8124,7 +8126,8 @@
     "boundingBox": "block",
     "stackSize": 64,
     "defaultState": 5134,
-    "resistance": 3600000
+    "resistance": 3600000,
+    "material": "rock"
   },
   {
     "id": 256,
@@ -8711,7 +8714,8 @@
     "boundingBox": "block",
     "stackSize": 64,
     "defaultState": 5634,
-    "resistance": 3600000
+    "resistance": 3600000,
+    "material": "rock"
   },
   {
     "id": 270,
@@ -9035,7 +9039,7 @@
     "filterLight": 0,
     "emitLight": 0,
     "boundingBox": "block",
-    "material": "plant",
+    "material": "plant;seagrass",
     "stackSize": 64,
     "defaultState": 5777,
     "resistance": 0
@@ -13107,7 +13111,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "rock",
+    "material": "plant",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -14295,7 +14299,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "wood",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -14339,7 +14343,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "wood",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -14383,7 +14387,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "wood",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -14427,7 +14431,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "wood",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -14471,7 +14475,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "wood",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -14515,7 +14519,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "wood",
     "harvestTools": {
       "521": true,
       "535": true,
@@ -16073,7 +16077,8 @@
     "boundingBox": "block",
     "stackSize": 64,
     "defaultState": 8591,
-    "resistance": 0.4
+    "resistance": 0.4,
+    "material": "plant"
   },
   {
     "id": 484,
@@ -16099,7 +16104,8 @@
     "boundingBox": "block",
     "stackSize": 64,
     "defaultState": 8592,
-    "resistance": 0.4
+    "resistance": 0.4,
+    "material": "plant"
   },
   {
     "id": 485,
@@ -16126,7 +16132,8 @@
       "550": true
     },
     "defaultState": 8598,
-    "resistance": 6
+    "resistance": 6,
+    "material": "rock"
   },
   {
     "id": 486,
@@ -16164,7 +16171,8 @@
       "550": true
     },
     "defaultState": 8600,
-    "resistance": 6
+    "resistance": 6,
+    "material": "rock"
   },
   {
     "id": 487,
@@ -16285,7 +16293,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 8683,
-    "resistance": 0
+    "resistance": 0,
+    "material": "plant"
   },
   {
     "id": 490,
@@ -16361,7 +16370,8 @@
     "boundingBox": "block",
     "stackSize": 64,
     "defaultState": 8695,
-    "resistance": 3600000
+    "resistance": 3600000,
+    "material": "rock"
   },
   {
     "id": 493,
@@ -16398,7 +16408,8 @@
     "boundingBox": "block",
     "stackSize": 64,
     "defaultState": 8707,
-    "resistance": 3600000
+    "resistance": 3600000,
+    "material": "rock"
   },
   {
     "id": 494,
@@ -16449,7 +16460,8 @@
       "550": true
     },
     "defaultState": 8717,
-    "resistance": 0.5
+    "resistance": 0.5,
+    "material": "rock"
   },
   {
     "id": 496,
@@ -16496,7 +16508,8 @@
       "550": true
     },
     "defaultState": 8719,
-    "resistance": 6
+    "resistance": 6,
+    "material": "rock"
   },
   {
     "id": 498,
@@ -16534,7 +16547,8 @@
       "550": true
     },
     "defaultState": 8721,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 499,
@@ -16598,7 +16612,8 @@
       "550": true
     },
     "defaultState": 8729,
-    "resistance": 3
+    "resistance": 3,
+    "material": "rock"
   },
   {
     "id": 501,
@@ -16632,7 +16647,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8740,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 502,
@@ -16666,7 +16682,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8746,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 503,
@@ -16700,7 +16717,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8752,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 504,
@@ -16734,7 +16752,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8758,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 505,
@@ -16768,7 +16787,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8764,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 506,
@@ -16802,7 +16822,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8770,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 507,
@@ -16836,7 +16857,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8776,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 508,
@@ -16870,7 +16892,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8782,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 509,
@@ -16904,7 +16927,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8788,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 510,
@@ -16938,7 +16962,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8794,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 511,
@@ -16972,7 +16997,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8800,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 512,
@@ -17006,7 +17032,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8806,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 513,
@@ -17040,7 +17067,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8812,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 514,
@@ -17074,7 +17102,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8818,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 515,
@@ -17108,7 +17137,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8824,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 516,
@@ -17142,7 +17172,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8830,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 517,
@@ -17176,7 +17207,8 @@
     "boundingBox": "block",
     "stackSize": 1,
     "defaultState": 8836,
-    "resistance": 2
+    "resistance": 2,
+    "material": "rock"
   },
   {
     "id": 518,
@@ -19014,7 +19046,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 8984,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 581,
@@ -19040,7 +19073,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 8986,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 582,
@@ -19066,7 +19100,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 8988,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 583,
@@ -19092,7 +19127,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 8990,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 584,
@@ -19118,7 +19154,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 8992,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 585,
@@ -19274,7 +19311,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 9004,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 591,
@@ -19300,7 +19338,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 9006,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 592,
@@ -19326,7 +19365,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 9008,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 593,
@@ -19352,7 +19392,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 9010,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 594,
@@ -19378,7 +19419,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 9012,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 595,
@@ -19543,7 +19585,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 9024,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 601,
@@ -19578,7 +19621,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 9032,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 602,
@@ -19613,7 +19657,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 9040,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 603,
@@ -19648,7 +19693,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 9048,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 604,
@@ -19683,7 +19729,8 @@
     "boundingBox": "empty",
     "stackSize": 64,
     "defaultState": 9056,
-    "resistance": 0
+    "resistance": 0,
+    "material": "rock"
   },
   {
     "id": 605,
@@ -19915,7 +19962,8 @@
     "boundingBox": "block",
     "stackSize": 64,
     "defaultState": 9112,
-    "resistance": 2.8
+    "resistance": 2.8,
+    "material": "rock"
   },
   {
     "id": 612,
@@ -19940,7 +19988,7 @@
     "emitLight": 0,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "rock",
+    "material": "plant;seagrass",
     "defaultState": 9113,
     "resistance": 3
   },
@@ -20003,7 +20051,7 @@
     "filterLight": 15,
     "emitLight": 0,
     "boundingBox": "block",
-    "material": "UNKNOWN_MATERIAL",
+    "material": "wood",
     "defaultState": 9116,
     "resistance": 1
   },
@@ -22235,7 +22283,8 @@
     "emitLight": 0,
     "boundingBox": "block",
     "defaultState": 11130,
-    "resistance": 0
+    "resistance": 0,
+    "material": "wood"
   },
   {
     "id": 659,
@@ -22740,7 +22789,8 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "defaultState": 11248,
-    "resistance": 0
+    "resistance": 0,
+    "material": "plant"
   },
   {
     "id": 673,
@@ -22770,7 +22820,8 @@
     "boundingBox": "block",
     "stackSize": 64,
     "defaultState": 11252,
-    "resistance": 3600000
+    "resistance": 3600000,
+    "material": "rock"
   },
   {
     "id": 674,
@@ -22802,7 +22853,8 @@
     "emitLight": 0,
     "boundingBox": "block",
     "defaultState": 11260,
-    "resistance": 3600000
+    "resistance": 3600000,
+    "material": "rock"
   },
   {
     "id": 675,

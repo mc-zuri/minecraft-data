@@ -3659,7 +3659,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1468
   },
   {
@@ -3678,7 +3678,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1469
   },
   {
@@ -3697,7 +3697,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1470
   },
   {
@@ -3716,7 +3716,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1471
   },
   {
@@ -3735,7 +3735,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1472
   },
   {
@@ -3754,7 +3754,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1473
   },
   {
@@ -3773,7 +3773,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1474
   },
   {
@@ -3792,7 +3792,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1475
   },
   {
@@ -3811,7 +3811,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1476
   },
   {
@@ -3830,7 +3830,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1477
   },
   {
@@ -3849,7 +3849,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1478
   },
   {
@@ -3868,7 +3868,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1479
   },
   {
@@ -3887,7 +3887,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 1480
   },
   {
@@ -13115,7 +13115,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 8136
   },
   {
@@ -13144,7 +13144,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 8138
   },
   {
@@ -13173,7 +13173,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 8140
   },
   {
@@ -13202,7 +13202,7 @@
     "emitLight": 0,
     "boundingBox": "empty",
     "stackSize": 64,
-    "material": "plant;mineable/axe",
+    "material": "gourd",
     "defaultState": 8142
   },
   {
@@ -19886,7 +19886,7 @@
     "emitLight": 15,
     "boundingBox": "block",
     "stackSize": 64,
-    "material": "default",
+    "material": "mineable/pickaxe",
     "defaultState": 9899
   },
   {
