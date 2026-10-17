@@ -18,7 +18,10 @@ const FACTS = [
   { block: 'ladder', folders: ['pc/1.8'], metadata: 3, shape: [[0, 0, 0, 1, 1, 0.125]] },
   { block: 'ladder', folders: ['pc/1.8'], metadata: 4, shape: [[0.875, 0, 0, 1, 1, 1]] },
   { block: 'ladder', folders: ['pc/1.8'], metadata: 5, shape: [[0, 0, 0, 0.125, 1, 1]] },
-  { block: 'ladder', folders: ['pc/1.9', 'pc/1.12'], metadata: 2, shape: [[0, 0, 0.8125, 1, 1, 1]] }
+  { block: 'ladder', folders: ['pc/1.9', 'pc/1.12'], metadata: 2, shape: [[0, 0, 0.8125, 1, 1, 1]] },
+  // BlockLilyPad: the whole square 1/64 high on 1.8; from 1.9 1/16 in from each side and 3/32 high
+  { block: 'waterlily', folders: ['pc/1.8'], shape: [[0, 0, 0, 1, 0.015625, 1]] },
+  { block: 'waterlily', folders: ['pc/1.9', 'pc/1.12'], shape: [[0.0625, 0, 0.0625, 0.9375, 0.09375, 0.9375]] }
 ]
 
 describe('pc collision shapes the client has', function () {
