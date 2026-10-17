@@ -280,43 +280,19 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
+          5,
           331,
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ]
       ],
       "result": {
@@ -399,18 +375,9 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ],
         [
           4,
@@ -533,18 +500,9 @@
     {
       "inShape": [
         [
-          {
-            "id": 24,
-            "metadata": 2
-          },
-          {
-            "id": 24,
-            "metadata": 2
-          },
-          {
-            "id": 24,
-            "metadata": 2
-          }
+          24,
+          24,
+          24
         ]
       ],
       "result": {
@@ -584,18 +542,9 @@
     {
       "inShape": [
         [
-          {
-            "id": 98,
-            "metadata": 3
-          },
-          {
-            "id": 98,
-            "metadata": 3
-          },
-          {
-            "id": 98,
-            "metadata": 3
-          }
+          98,
+          98,
+          98
         ]
       ],
       "result": {
@@ -621,18 +570,9 @@
     {
       "inShape": [
         [
-          {
-            "id": 155,
-            "metadata": 0
-          },
-          {
-            "id": 155,
-            "metadata": 0
-          },
-          {
-            "id": 155,
-            "metadata": 0
-          }
+          155,
+          155,
+          155
         ]
       ],
       "result": {
@@ -691,18 +631,9 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ],
         [
           340,
@@ -710,18 +641,9 @@
           340
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ]
       ],
       "result": {
@@ -765,43 +687,19 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
+          5,
           null,
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ]
       ],
       "result": {
@@ -841,24 +739,12 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5
         ]
       ],
       "result": {
@@ -1008,14 +894,8 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5
         ]
       ],
       "result": {
@@ -1114,43 +994,19 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
+          5,
           264,
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ]
       ],
       "result": {
@@ -1253,32 +1109,14 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ]
       ],
       "result": {
@@ -1439,35 +1277,17 @@
         [
           null,
           null,
-          {
-            "id": 98,
-            "metadata": 3
-          }
+          98
         ],
         [
           null,
-          {
-            "id": 98,
-            "metadata": 3
-          },
-          {
-            "id": 98,
-            "metadata": 3
-          }
+          98,
+          98
         ],
         [
-          {
-            "id": 98,
-            "metadata": 3
-          },
-          {
-            "id": 98,
-            "metadata": 3
-          },
-          {
-            "id": 98,
-            "metadata": 3
-          }
+          98,
+          98,
+          98
         ]
       ],
       "result": {
@@ -1607,35 +1427,17 @@
         [
           null,
           null,
-          {
-            "id": 24,
-            "metadata": 2
-          }
+          24
         ],
         [
           null,
-          {
-            "id": 24,
-            "metadata": 2
-          },
-          {
-            "id": 24,
-            "metadata": 2
-          }
+          24,
+          24
         ],
         [
-          {
-            "id": 24,
-            "metadata": 2
-          },
-          {
-            "id": 24,
-            "metadata": 2
-          },
-          {
-            "id": 24,
-            "metadata": 2
-          }
+          24,
+          24,
+          24
         ]
       ],
       "result": {
@@ -1681,10 +1483,7 @@
           280
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ]
       ],
       "result": {
@@ -1790,10 +1589,7 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ]
       ],
       "result": {
@@ -1901,18 +1697,9 @@
           406
         ],
         [
-          {
-            "id": 126,
-            "metadata": 5
-          },
-          {
-            "id": 126,
-            "metadata": 5
-          },
-          {
-            "id": 126,
-            "metadata": 5
-          }
+          126,
+          126,
+          126
         ]
       ],
       "result": {
@@ -2041,35 +1828,17 @@
         [
           null,
           null,
-          {
-            "id": 155,
-            "metadata": 0
-          }
+          155
         ],
         [
           null,
-          {
-            "id": 155,
-            "metadata": 0
-          },
-          {
-            "id": 155,
-            "metadata": 0
-          }
+          155,
+          155
         ],
         [
-          {
-            "id": 155,
-            "metadata": 0
-          },
-          {
-            "id": 155,
-            "metadata": 0
-          },
-          {
-            "id": 155,
-            "metadata": 0
-          }
+          155,
+          155,
+          155
         ]
       ],
       "result": {
@@ -2522,35 +2291,17 @@
         [
           null,
           null,
-          {
-            "id": 179,
-            "metadata": 2
-          }
+          179
         ],
         [
           null,
-          {
-            "id": 179,
-            "metadata": 2
-          },
-          {
-            "id": 179,
-            "metadata": 2
-          }
+          179,
+          179
         ],
         [
-          {
-            "id": 179,
-            "metadata": 2
-          },
-          {
-            "id": 179,
-            "metadata": 2
-          },
-          {
-            "id": 179,
-            "metadata": 2
-          }
+          179,
+          179,
+          179
         ]
       ],
       "result": {
@@ -2564,18 +2315,9 @@
     {
       "inShape": [
         [
-          {
-            "id": 179,
-            "metadata": 2
-          },
-          {
-            "id": 179,
-            "metadata": 2
-          },
-          {
-            "id": 179,
-            "metadata": 2
-          }
+          179,
+          179,
+          179
         ]
       ],
       "result": {
@@ -3232,16 +2974,10 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ],
         [
           280
@@ -3269,10 +3005,7 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ],
         [
           280
@@ -3303,18 +3036,9 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ],
         [
           null,
@@ -3349,20 +3073,11 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
+          5,
           280
         ],
         [
@@ -3658,16 +3373,10 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ]
       ],
       "result": {
@@ -3681,22 +3390,13 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
+          5,
           null,
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ],
         [
           null,
-          {
-            "id": 5,
-            "metadata": 5
-          },
+          5,
           null
         ]
       ],
@@ -3858,14 +3558,8 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5
         ],
         [
           null,
@@ -4720,32 +4414,14 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ],
         [
           null,
@@ -5572,18 +5248,9 @@
           35
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ]
       ],
       "result": {
@@ -7609,36 +7276,18 @@
     {
       "inShape": [
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
+          5,
           265,
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5
         ],
         [
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          },
-          {
-            "id": 5,
-            "metadata": 5
-          }
+          5,
+          5,
+          5
         ],
         [
           null,
-          {
-            "id": 5,
-            "metadata": 5
-          },
+          5,
           null
         ]
       ],
@@ -7674,26 +7323,17 @@
       "inShape": [
         [
           35,
-          {
-            "id": 5,
-            "metadata": 5
-          },
+          5,
           null
         ],
         [
           35,
-          {
-            "id": 5,
-            "metadata": 5
-          },
+          5,
           265
         ],
         [
           35,
-          {
-            "id": 5,
-            "metadata": 5
-          },
+          5,
           null
         ]
       ],
