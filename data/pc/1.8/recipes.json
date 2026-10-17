@@ -2756,27 +2756,6 @@
         "id": 143,
         "metadata": 0
       }
-    },
-    {
-      "inShape": [
-        [
-          {
-            "id": 1,
-            "metadata": 0
-          }
-        ],
-        [
-          {
-            "id": 1,
-            "metadata": 0
-          }
-        ]
-      ],
-      "result": {
-        "count": 1,
-        "id": 143,
-        "metadata": 0
-      }
     }
   ],
   "145": [

@@ -1031,30 +1031,6 @@
         "id": 89,
         "metadata": 0
       }
-    },
-    {
-      "inShape": [
-        [
-          348,
-          348,
-          348
-        ],
-        [
-          348,
-          348,
-          348
-        ],
-        [
-          348,
-          348,
-          348
-        ]
-      ],
-      "result": {
-        "count": 1,
-        "id": 89,
-        "metadata": 0
-      }
     }
   ],
   "91": [
@@ -1622,21 +1598,6 @@
       "inShape": [
         [
           5
-        ]
-      ],
-      "result": {
-        "count": 1,
-        "id": 143,
-        "metadata": 0
-      }
-    },
-    {
-      "inShape": [
-        [
-          1
-        ],
-        [
-          1
         ]
       ],
       "result": {
@@ -2720,23 +2681,6 @@
       "ingredients": [
         259,
         259
-      ],
-      "result": {
-        "count": 1,
-        "id": 259,
-        "metadata": 0
-      }
-    },
-    {
-      "inShape": [
-        [
-          265,
-          null
-        ],
-        [
-          null,
-          318
-        ]
       ],
       "result": {
         "count": 1,
@@ -4478,42 +4422,6 @@
       "result": {
         "count": 9,
         "id": 331,
-        "metadata": 0
-      }
-    }
-  ],
-  "333": [
-    {
-      "inShape": [
-        [
-          {
-            "id": 5,
-            "metadata": 0
-          },
-          269,
-          {
-            "id": 5,
-            "metadata": 0
-          }
-        ],
-        [
-          {
-            "id": 5,
-            "metadata": 0
-          },
-          {
-            "id": 5,
-            "metadata": 0
-          },
-          {
-            "id": 5,
-            "metadata": 0
-          }
-        ]
-      ],
-      "result": {
-        "count": 1,
-        "id": 333,
         "metadata": 0
       }
     }
@@ -7254,30 +7162,6 @@
       "ingredients": [
         442,
         425
-      ],
-      "result": {
-        "count": 1,
-        "id": 442,
-        "metadata": 0
-      }
-    },
-    {
-      "inShape": [
-        [
-          35,
-          5,
-          null
-        ],
-        [
-          35,
-          5,
-          265
-        ],
-        [
-          35,
-          5,
-          null
-        ]
       ],
       "result": {
         "count": 1,

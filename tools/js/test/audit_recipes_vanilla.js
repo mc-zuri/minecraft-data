@@ -73,6 +73,14 @@ const RESULTS = [
     [[404, 0, 1], { inShape: [[null, 76, null], [76, 406, 76], Array(3).fill({ id: 1, metadata: 0 })] }]
   ], []]
 ]
+// [versions, what, [[result, form]]]: recipes no client has (snapshots' recipes, or none's)
+const NONE = [
+  [all, 'the wooden button from two stone', [[[143, 0, 1], { inShape: [[1], [1]] }]]],
+  [['1.9.4', '1.10.2', '1.11.2', '1.12.2'], 'the glowstone from nine glowstone dust (four make it)', [[[89, 0, 1], { inShape: Array(3).fill([348, 348, 348]) }]]],
+  [['1.9.4', '1.10.2', '1.11.2', '1.12.2'], 'the flint and steel shaped (it is shapeless)', [[[259, 0, 1], { inShape: [[265, null], [null, 318]] }]]],
+  [['1.9.4', '1.10.2', '1.11.2', '1.12.2'], 'the boat with a wooden shovel', [[[333, 0, 1], { inShape: [[5, 269, 5], [5, 5, 5]] }]]],
+  [['1.9.4', '1.10.2', '1.11.2', '1.12.2'], 'the shield of wool and planks', [[[442, 0, 1], { inShape: [[35, 5, null], [35, 5, 265], [35, 5, null]] }]]]
+]
 // [ingredient, the results whose recipes take it]
 const TAKEN = [
   [75, []], // the unlit redstone torch
@@ -87,6 +95,12 @@ for (const version of all) {
       it(what, function () {
         assert.deepStrictEqual(expected.filter(([result, form]) => !gives(recipes, result, form)).map(([result]) => result.join(':')), [])
         assert.deepStrictEqual(none.filter(id => recipes[id]), [])
+      })
+    }
+    for (const [versions, what, recipesNone] of NONE) {
+      if (!versions.includes(version)) continue
+      it('no ' + what, function () {
+        assert.deepStrictEqual(recipesNone.filter(([result, form]) => gives(recipes, result, form)).map(([result]) => result.join(':')), [])
       })
     }
     for (const [ingredient, results] of TAKEN) {
