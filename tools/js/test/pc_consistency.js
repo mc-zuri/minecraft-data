@@ -135,6 +135,14 @@ for (const version of versions) {
       assert.deepStrictEqual(problems, [], list(problems, 6))
     })
 
+    check('items below 256 are blocks', function () {
+      // before the flattening an item id below 256 is the id of its block
+      if (flattened) return
+      const blockIds = new Set(blocks.map(b => b.id))
+      const problems = items.filter(i => i.id > 0 && i.id < 256 && !blockIds.has(i.id)).map(i => `${i.name}#${i.id}: no block`)
+      assert.deepStrictEqual(problems, [], list(problems))
+    })
+
     check('blocks point at existing items', function () {
       const problems = []
       for (const b of blocks) {
