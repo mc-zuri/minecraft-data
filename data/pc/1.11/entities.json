@@ -275,7 +275,7 @@
     "name": "skeleton_horse",
     "displayName": "Skeleton horse",
     "type": "mob",
-    "width": 1.396484,
+    "width": 1.3964844,
     "height": 1.6,
     "category": "Passive mobs"
   },
@@ -285,7 +285,7 @@
     "name": "zombie_horse",
     "displayName": "Zombie horse",
     "type": "mob",
-    "width": 1.396484,
+    "width": 1.3964844,
     "height": 1.6,
     "category": "Passive mobs"
   },
@@ -305,7 +305,7 @@
     "name": "donkey",
     "displayName": "Donkey",
     "type": "mob",
-    "width": 1.396484,
+    "width": 1.3964844,
     "height": 1.6,
     "category": "Passive mobs"
   },
@@ -315,7 +315,7 @@
     "name": "mule",
     "displayName": "Mule",
     "type": "mob",
-    "width": 1.396484,
+    "width": 1.3964844,
     "height": 1.6,
     "category": "Passive mobs"
   },
@@ -745,7 +745,7 @@
     "name": "horse",
     "displayName": "Horse",
     "type": "mob",
-    "width": 1.396484,
+    "width": 1.3964844,
     "height": 1.6,
     "category": "Passive mobs"
   },

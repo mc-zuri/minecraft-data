@@ -325,7 +325,7 @@
     "name": "EntityHorse",
     "displayName": "Horse",
     "type": "mob",
-    "width": 1.4,
+    "width": 1.3964844,
     "height": 1.6,
     "category": "Passive mobs"
   },

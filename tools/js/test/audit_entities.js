@@ -26,6 +26,13 @@ for (const [file, version] of files) {
         assert.deepStrictEqual(entities.filter(e => e.type !== 'object' && !/^[a-z0-9_]+$/.test(e.name)).map(e => e.name), [])
       })
     }
+    // from 1.9 the horses (AbstractHorse: setSize, then EntityType.sized), the hoglin and the zoglin are 1.3964844F wide
+    if (since(version) >= since('1.9')) {
+      it('the horse family, the hoglin and the zoglin are 1.3964844F wide', function () {
+        const family = /^(EntityHorse|horse|donkey|mule|skeleton_horse|zombie_horse|hoglin|zoglin)$/
+        assert.deepStrictEqual(entities.filter(e => family.test(e.name) && e.width !== 1.3964844).map(e => `${e.name} ${e.width}`), [])
+      })
+    }
     if (since(version) >= since('1.13')) {
       it('the command block minecart, the firework rocket and the iron golem are named as EntityType registers them', function () {
         const names = new Set(entities.filter(e => e.type !== 'object').map(e => e.name))
