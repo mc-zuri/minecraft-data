@@ -26,6 +26,10 @@ for (const [file, version] of files) {
         assert.deepStrictEqual(entities.filter(e => e.type !== 'object' && !/^[a-z0-9_]+$/.test(e.name)).map(e => e.name), [])
       })
     }
+    // (the crosshair picks a living entity by its type: a mob of none is never picked)
+    it('every entity has a type', function () {
+      assert.deepStrictEqual(entities.filter(e => !e.type || e.type === 'UNKNOWN').map(e => e.name), [])
+    })
     // from 1.9 the horses (AbstractHorse: setSize, then EntityType.sized), the hoglin and the zoglin are 1.3964844F wide
     if (since(version) >= since('1.9')) {
       it('the horse family, the hoglin and the zoglin are 1.3964844F wide', function () {

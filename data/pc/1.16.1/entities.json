@@ -46,7 +46,7 @@
     "displayName": "Bee",
     "width": 0.7,
     "height": 0.6,
-    "type": "UNKNOWN",
+    "type": "mob",
     "category": "UNKNOWN"
   },
   {
@@ -326,7 +326,7 @@
     "displayName": "Hoglin",
     "width": 1.3964844,
     "height": 1.4,
-    "type": "UNKNOWN",
+    "type": "mob",
     "category": "UNKNOWN"
   },
   {
@@ -606,7 +606,7 @@
     "displayName": "Piglin",
     "width": 0.6,
     "height": 1.95,
-    "type": "UNKNOWN",
+    "type": "mob",
     "category": "UNKNOWN"
   },
   {
@@ -826,7 +826,7 @@
     "displayName": "Strider",
     "width": 0.9,
     "height": 1.7,
-    "type": "UNKNOWN",
+    "type": "mob",
     "category": "UNKNOWN"
   },
   {
@@ -1006,7 +1006,7 @@
     "displayName": "Zoglin",
     "width": 1.3964844,
     "height": 1.4,
-    "type": "UNKNOWN",
+    "type": "mob",
     "category": "UNKNOWN"
   },
   {
@@ -1046,7 +1046,7 @@
     "displayName": "Zombified Piglin",
     "width": 0.6,
     "height": 1.95,
-    "type": "UNKNOWN",
+    "type": "mob",
     "category": "UNKNOWN"
   },
   {
