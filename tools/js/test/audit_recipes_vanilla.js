@@ -60,7 +60,23 @@ const RESULTS = [
     [[77, 0, 1], { inShape: [[{ id: 1, metadata: 0 }]] }],
     [[70, 0, 1], { inShape: [[{ id: 1, metadata: 0 }, { id: 1, metadata: 0 }]] }]
   ], []],
-  [['1.11.2'], 'the stone slab from stone (1:0)', [[[44, 0, 6], { inShape: [Array(3).fill({ id: 1, metadata: 0 })] }]], []]
+  [['1.11.2'], 'the stone slab from stone (1:0)', [[[44, 0, 6], { inShape: [Array(3).fill({ id: 1, metadata: 0 })] }]], []],
+  // the ingredients' ids
+  [all, 'the nether brick fence, stairs and slab from the nether bricks block (112), not the item', [
+    [[113, 0, 6], { inShape: Array(2).fill([112, 112, 112]) }],
+    [[114, 0, 4], { inShape: [[112, null, null], [112, 112, null], [112, 112, 112]] }],
+    [[44, 6, 6], { inShape: [[112, 112, 112]] }]
+  ], []],
+  [all, 'the activator rail, the repeater and the comparator from redstone torches (76), not unlit ones', [
+    [[157, 0, 6], { inShape: [[265, 280, 265], [265, 76, 265], [265, 280, 265]] }],
+    [[356, 0, 1], { inShape: [[76, 331, 76], Array(3).fill({ id: 1, metadata: 0 })] }],
+    [[404, 0, 1], { inShape: [[null, 76, null], [76, 406, 76], Array(3).fill({ id: 1, metadata: 0 })] }]
+  ], []]
+]
+// [ingredient, the results whose recipes take it]
+const TAKEN = [
+  [75, []], // the unlit redstone torch
+  [405, [112, 215]] // the nether brick item: the nether bricks block, 1.10's red nether bricks
 ]
 
 for (const version of all) {
@@ -71,6 +87,12 @@ for (const version of all) {
       it(what, function () {
         assert.deepStrictEqual(expected.filter(([result, form]) => !gives(recipes, result, form)).map(([result]) => result.join(':')), [])
         assert.deepStrictEqual(none.filter(id => recipes[id]), [])
+      })
+    }
+    for (const [ingredient, results] of TAKEN) {
+      it(`only ${results.join(', ') || 'no recipe'} take${results.length === 1 ? 's' : ''} ${ingredient}`, function () {
+        const taking = Object.values(recipes).flat().filter(r => (r.inShape ? r.inShape.flat() : r.ingredients).some(c => c != null && idOf(c) === ingredient))
+        assert.deepStrictEqual([...new Set(taking.map(r => r.result.id))].filter(id => !results.includes(id)), [])
       })
     }
   })
