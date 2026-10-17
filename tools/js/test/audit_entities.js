@@ -26,6 +26,20 @@ for (const [file, version] of files) {
         assert.deepStrictEqual(entities.filter(e => e.type !== 'object' && !/^[a-z0-9_]+$/.test(e.name)).map(e => e.name), [])
       })
     }
+    // before 1.14 an object (spawn_entity's type) is named as the entity the client spawns for it is registered
+    // (EntityList, EntityType); the fishing hook, which none registers before 1.13, keeps its name
+    const objectNames = [
+      ['1.7', '1.9', { 62: 'ThrownEgg' }],
+      ['1.9', '1.11', { 3: 'AreaEffectCloud', 62: 'ThrownEgg', 93: 'DragonFireball' }],
+      ['1.13', '1.14', { 2: 'item', 3: 'area_effect_cloud', 50: 'tnt', 51: 'end_crystal', 60: 'arrow', 64: 'small_fireball', 65: 'ender_pearl', 70: 'falling_block', 71: 'item_frame', 72: 'eye_of_ender', 73: 'potion', 75: 'experience_bottle', 78: 'armor_stand', 79: 'evoker_fangs', 90: 'fishing_bobber' }]
+    ]
+    for (const [from, until, names] of objectNames) {
+      if (since(version) < since(from) || since(version) >= since(until)) continue
+      it('the objects are named as the entities they spawn', function () {
+        const wrong = Object.entries(names).filter(([id, name]) => !entities.some(e => e.type === 'object' && e.id === Number(id) && e.name === name))
+        assert.deepStrictEqual(wrong.map(([id, name]) => `${id} ${name}`), [])
+      })
+    }
     it('every entity has a width and a height', function () {
       assert.deepStrictEqual(entities.filter(e => typeof e.width !== 'number' || typeof e.height !== 'number').map(e => e.name), [])
     })

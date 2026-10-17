@@ -940,7 +940,7 @@
   {
     "id": 2,
     "internalId": 2,
-    "name": "item_stack",
+    "name": "item",
     "displayName": "Item Stack ([[Slot]])",
     "width": 0.25,
     "height": 0.25,
@@ -949,7 +949,7 @@
   {
     "id": 3,
     "internalId": 3,
-    "name": "area_effect cloud",
+    "name": "area_effect_cloud",
     "displayName": "Area Effect Cloud",
     "width": 6,
     "height": 0.5,
@@ -968,7 +968,7 @@
   {
     "id": 50,
     "internalId": 50,
-    "name": "activated_tnt",
+    "name": "tnt",
     "displayName": "Activated TNT",
     "width": 0.98,
     "height": 0.98,
@@ -977,7 +977,7 @@
   {
     "id": 51,
     "internalId": 51,
-    "name": "endercrystal",
+    "name": "end_crystal",
     "displayName": "EnderCrystal",
     "width": 2,
     "height": 2,
@@ -986,7 +986,7 @@
   {
     "id": 60,
     "internalId": 60,
-    "name": "tipped_arrow",
+    "name": "arrow",
     "displayName": "Tipped arrow (projectile; also used for regular arrows)",
     "width": 0.5,
     "height": 0.5,
@@ -1025,7 +1025,7 @@
   {
     "id": 64,
     "internalId": 64,
-    "name": "firecharge",
+    "name": "small_fireball",
     "displayName": "FireCharge (blaze projectile)",
     "width": 0.3125,
     "height": 0.3125,
@@ -1034,7 +1034,7 @@
   {
     "id": 65,
     "internalId": 65,
-    "name": "thrown_enderpearl",
+    "name": "ender_pearl",
     "displayName": "Thrown Enderpearl",
     "width": 0.25,
     "height": 0.25,
@@ -1073,7 +1073,7 @@
   {
     "id": 70,
     "internalId": 70,
-    "name": "falling_objects",
+    "name": "falling_block",
     "displayName": "Falling Objects",
     "width": 0.98,
     "height": 0.98,
@@ -1082,7 +1082,7 @@
   {
     "id": 71,
     "internalId": 71,
-    "name": "item_frames",
+    "name": "item_frame",
     "displayName": "Item frames",
     "width": 0.75,
     "height": 0.75,
@@ -1091,7 +1091,7 @@
   {
     "id": 72,
     "internalId": 72,
-    "name": "eye_of ender",
+    "name": "eye_of_ender",
     "displayName": "Eye of Ender",
     "width": 0.25,
     "height": 0.25,
@@ -1100,7 +1100,7 @@
   {
     "id": 73,
     "internalId": 73,
-    "name": "thrown_potion",
+    "name": "potion",
     "displayName": "Thrown Potion",
     "width": 0.25,
     "height": 0.25,
@@ -1109,7 +1109,7 @@
   {
     "id": 75,
     "internalId": 75,
-    "name": "thrown_exp bottle",
+    "name": "experience_bottle",
     "displayName": "Thrown Exp Bottle",
     "width": 0.25,
     "height": 0.25,
@@ -1137,7 +1137,7 @@
   {
     "id": 78,
     "internalId": 78,
-    "name": "armorstand",
+    "name": "armor_stand",
     "displayName": "ArmorStand",
     "width": 0.5,
     "height": 1.975,
@@ -1146,7 +1146,7 @@
   {
     "id": 79,
     "internalId": 79,
-    "name": "evocation_fangs",
+    "name": "evoker_fangs",
     "displayName": "Evocation Fangs",
     "width": 0.5,
     "height": 0.8,
@@ -1156,7 +1156,7 @@
   {
     "id": 90,
     "internalId": 90,
-    "name": "fishing_hook",
+    "name": "fishing_bobber",
     "displayName": "Fishing Hook",
     "width": 0.25,
     "height": 0.25,

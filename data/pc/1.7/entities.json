@@ -381,13 +381,13 @@
   },
   {
     "id": 62,
-    "internalId": 90,
-    "name": "Pig",
-    "displayName": "Pig",
+    "internalId": 7,
+    "name": "ThrownEgg",
+    "displayName": "Thrown egg",
     "type": "object",
     "width": 0.25,
     "height": 0.25,
-    "category": "Passive mobs"
+    "category": "Projectiles"
   },
   {
     "id": 63,

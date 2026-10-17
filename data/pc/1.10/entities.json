@@ -371,13 +371,13 @@
   },
   {
     "id": 3,
-    "internalId": 2,
-    "name": "XPOrb",
-    "displayName": "Experience Orb",
+    "internalId": 3,
+    "name": "AreaEffectCloud",
+    "displayName": "Area Effect Cloud",
     "type": "object",
-    "width": 0.5,
+    "width": 6,
     "height": 0.5,
-    "category": "Drops"
+    "category": "Immobile"
   },
   {
     "id": 10,
@@ -629,10 +629,11 @@
   },
   {
     "id": 93,
-    "name": "Dragon Fireball",
+    "name": "DragonFireball",
     "displayName": "Dragon Fireball",
     "type": "object",
     "width": 0.3125,
-    "height": 0.3125
+    "height": 0.3125,
+    "internalId": 26
   }
 ]
