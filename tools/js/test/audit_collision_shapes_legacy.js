@@ -39,8 +39,29 @@ const CLIENT = [
   [['1.9.4', '1.12.2'], 'glass_pane', [0], [[0.4375, 0, 0.4375, 0.5625, 1, 0.5625]], 'the lone glass pane from 1.9, its post'],
   // BlockCocoa's boxes of age 2 are age 1's in 1.9 and 1.10
   [['1.9.4', '1.10.2'], 'cocoa', [4, 8], [[0.3125, 0.3125, 0.5625, 0.6875, 0.75, 0.9375]], "1.9 and 1.10's cocoa of age 1 and 2 facing south"],
-  [['1.11.2', '1.12.2'], 'cocoa', [8], [[0.25, 0.1875, 0.4375, 0.75, 0.75, 0.9375]], 'the cocoa of age 2 facing south from 1.11']
+  [['1.11.2', '1.12.2'], 'cocoa', [8], [[0.25, 0.1875, 0.4375, 0.75, 0.75, 0.9375]], 'the cocoa of age 2 facing south from 1.11'],
+  // the blocks 1.10 added (Block.registerBlocks: 213 - 217)
+  [['1.10.2', '1.11.2'], 'magma', [0], FULL, 'the magma block from 1.10'],
+  [['1.10.2', '1.11.2'], 'nether_wart_block', [0], FULL, 'the nether wart block from 1.10'],
+  [['1.10.2', '1.11.2'], 'red_nether_brick', [0], FULL, 'the red nether brick from 1.10'],
+  [['1.10.2', '1.11.2'], 'bone_block', [0, 4, 8], FULL, 'the bone block from 1.10'],
+  [['1.10.2', '1.11.2'], 'structure_void', [0], [], 'the structure void from 1.10, no box']
 ]
+
+// the blocks of 1.10 (Block.registerBlocks of the 1.10.2 client): id, name
+const BLOCKS = [
+  [['1.10.2'], [[213, 'magma'], [214, 'nether_wart_block'], [215, 'red_nether_brick'], [216, 'bone_block'], [217, 'structure_void']]]
+]
+for (const [versions, blocks] of BLOCKS) {
+  for (const version of versions) {
+    describe(`audit legacy blocks pc ${version}`, function () {
+      it(`has ${blocks.map(([id, name]) => `${name} (${id})`).join(', ')}`, function () {
+        const list = require(path.join(data, dataPaths[version].blocks, 'blocks.json'))
+        for (const [id, name] of blocks) assert.strictEqual(list.find(b => b.id === id)?.name, name, `block ${id}`)
+      })
+    })
+  }
+}
 
 for (const [versions, name, metadatas, boxes, why] of CLIENT) {
   for (const version of versions) {
