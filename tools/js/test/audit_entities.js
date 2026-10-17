@@ -40,6 +40,23 @@ for (const [file, version] of files) {
         assert.deepStrictEqual(wrong.map(([id, name]) => `${id} ${name}`), [])
       })
     }
+    // before 1.11 the entities' list holds what EntityList registers that is not spawned as an object (the living, the
+    // experience orb and the painting), by its EntityList id
+    const listed = [
+      ['1.7', '1.11', ['XPOrb', 'Painting', 'Mob', 'Monster']],
+      ['1.10', '1.11', ['PolarBear']]
+    ]
+    for (const [from, until, names] of listed) {
+      if (since(version) < since(from) || since(version) >= since(until)) continue
+      it(`${names.join(', ')} are listed`, function () {
+        assert.deepStrictEqual(names.filter(name => !entities.some(e => e.type === 'mob' && e.name === name)), [])
+      })
+    }
+    if (since(version) >= since('1.7') && since(version) < since('1.8')) {
+      it('the firework rocket (76) and the leash knot (77) are objects', function () {
+        assert.deepStrictEqual([76, 77].filter(id => !entities.some(e => e.type === 'object' && e.id === id)), [])
+      })
+    }
     it('every entity has a width and a height', function () {
       assert.deepStrictEqual(entities.filter(e => typeof e.width !== 'number' || typeof e.height !== 'number').map(e => e.name), [])
     })

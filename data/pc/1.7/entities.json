@@ -1,5 +1,45 @@
 [
   {
+    "id": 2,
+    "internalId": 2,
+    "name": "XPOrb",
+    "displayName": "Experience Orb",
+    "type": "mob",
+    "width": 0.5,
+    "height": 0.5,
+    "category": "Drops"
+  },
+  {
+    "id": 9,
+    "internalId": 9,
+    "name": "Painting",
+    "displayName": "Painting",
+    "type": "mob",
+    "width": 0.5,
+    "height": 0.5,
+    "category": "Immobile"
+  },
+  {
+    "id": 48,
+    "internalId": 48,
+    "name": "Mob",
+    "displayName": "Mob",
+    "type": "mob",
+    "width": 0.6,
+    "height": 1.8,
+    "category": "Generic"
+  },
+  {
+    "id": 49,
+    "internalId": 49,
+    "name": "Monster",
+    "displayName": "Monster",
+    "type": "mob",
+    "width": 0.6,
+    "height": 1.8,
+    "category": "Generic"
+  },
+  {
     "id": 50,
     "internalId": 50,
     "name": "Creeper",
@@ -488,6 +528,26 @@
     "width": 0.25,
     "height": 0.25,
     "category": "Projectiles"
+  },
+  {
+    "id": 76,
+    "internalId": 22,
+    "name": "FireworksRocketEntity",
+    "displayName": "Firework Rocket",
+    "type": "object",
+    "width": 0.25,
+    "height": 0.25,
+    "category": "Projectiles"
+  },
+  {
+    "id": 77,
+    "internalId": 8,
+    "name": "LeashKnot",
+    "displayName": "Lead knot",
+    "type": "object",
+    "width": 0.5,
+    "height": 0.5,
+    "category": "Immobile"
   },
   {
     "id": 90,

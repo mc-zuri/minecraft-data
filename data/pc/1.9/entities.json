@@ -1,5 +1,25 @@
 [
   {
+    "id": 2,
+    "internalId": 2,
+    "name": "XPOrb",
+    "displayName": "Experience Orb",
+    "type": "mob",
+    "width": 0.5,
+    "height": 0.5,
+    "category": "Drops"
+  },
+  {
+    "id": 9,
+    "internalId": 9,
+    "name": "Painting",
+    "displayName": "Painting",
+    "type": "mob",
+    "width": 0.5,
+    "height": 0.5,
+    "category": "Immobile"
+  },
+  {
     "id": 48,
     "internalId": 48,
     "name": "Mob",
