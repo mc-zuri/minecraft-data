@@ -47,7 +47,20 @@ const RESULTS = [
   [['1.8', '1.9.4', '1.10.2'], 'the dyed wool (35:n) from the dye of its color (351:15 - n) and white wool', range(1, 15).map(n => [[35, n, 1], { ingredients: [35, { id: 351, metadata: 15 - n }] }]), []],
   [['1.11.2', '1.12.2'], 'the black wool from black dye and white wool', [[[35, 15, 1], { ingredients: [35, { id: 351, metadata: 0 }] }]], []],
   [['1.8', '1.9.4', '1.10.2'], 'the stained clay (159:n) from hardened clay (172, smelted) and the dye', range(0, 15).map(n => [[159, n, 8], { inShape: [[172, 172, 172], [172, { id: 351, metadata: 15 - n }, 172], [172, 172, 172]] }]), [172]],
-  [['1.11.2'], 'the black stained clay from hardened clay and black dye', [[[159, 15, 8], { inShape: [[172, 172, 172], [172, { id: 351, metadata: 0 }, 172], [172, 172, 172]] }]], [172]]
+  [['1.11.2'], 'the black stained clay from hardened clay and black dye', [[[159, 15, 8], { inShape: [[172, 172, 172], [172, { id: 351, metadata: 0 }, 172], [172, 172, 172]] }]], [172]],
+  // the data values of the ingredients: the one vanilla's takes, or the bare id where it takes any
+  [all, 'the mossy stone bricks from stone bricks (98:0) and a vine', [[[98, 1, 1], { ingredients: [{ id: 98, metadata: 0 }, 106] }]], []],
+  [all, 'the light gray dye from an azure bluet (38:3)', [[[351, 7, 1], { inShape: [[{ id: 38, metadata: 3 }]] }]], []],
+  [all, 'the black banner from black wool (35:15)', [[[425, 0, 1], { inShape: [Array(3).fill({ id: 35, metadata: 15 }), Array(3).fill({ id: 35, metadata: 15 }), [null, 280, null]] }]], []],
+  [['1.8', '1.9.4', '1.10.2'], 'the dyed wool from white wool (35:0)', range(1, 15).map(n => [[35, n, 1], { ingredients: [{ id: 35, metadata: 0 }, { id: 351, metadata: 15 - n }] }]), []],
+  [['1.8', '1.9.4', '1.10.2'], 'the carpets from the wool of their color', range(0, 15).map(n => [[171, n, 3], { inShape: [[{ id: 35, metadata: n }, { id: 35, metadata: n }]] }]), []],
+  [['1.11.2', '1.12.2'], 'the black wool from white wool, the black carpet from black wool', [[[35, 15, 1], { ingredients: [{ id: 35, metadata: 0 }, { id: 351, metadata: 0 }] }], [[171, 15, 3], { inShape: [[{ id: 35, metadata: 15 }, { id: 35, metadata: 15 }]] }]], []],
+  [['1.11.2', '1.12.2'], 'the stone bricks, the stone button and the stone pressure plate from stone (1:0)', [
+    [[98, 0, 4], { inShape: Array(2).fill([{ id: 1, metadata: 0 }, { id: 1, metadata: 0 }]) }],
+    [[77, 0, 1], { inShape: [[{ id: 1, metadata: 0 }]] }],
+    [[70, 0, 1], { inShape: [[{ id: 1, metadata: 0 }, { id: 1, metadata: 0 }]] }]
+  ], []],
+  [['1.11.2'], 'the stone slab from stone (1:0)', [[[44, 0, 6], { inShape: [Array(3).fill({ id: 1, metadata: 0 })] }]], []]
 ]
 
 for (const version of all) {

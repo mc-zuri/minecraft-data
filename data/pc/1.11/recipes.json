@@ -417,7 +417,10 @@
     },
     {
       "ingredients": [
-        35,
+        {
+          "id": 35,
+          "metadata": 0
+        },
         {
           "id": 351,
           "metadata": 0
@@ -486,9 +489,18 @@
     {
       "inShape": [
         [
-          1,
-          1,
-          1
+          {
+            "id": 1,
+            "metadata": 0
+          },
+          {
+            "id": 1,
+            "metadata": 0
+          },
+          {
+            "id": 1,
+            "metadata": 0
+          }
         ]
       ],
       "result": {
@@ -879,8 +891,14 @@
     {
       "inShape": [
         [
-          1,
-          1
+          {
+            "id": 1,
+            "metadata": 0
+          },
+          {
+            "id": 1,
+            "metadata": 0
+          }
         ]
       ],
       "result": {
@@ -926,7 +944,10 @@
     {
       "inShape": [
         [
-          1
+          {
+            "id": 1,
+            "metadata": 0
+          }
         ]
       ],
       "result": {
@@ -1130,12 +1151,24 @@
     {
       "inShape": [
         [
-          1,
-          1
+          {
+            "id": 1,
+            "metadata": 0
+          },
+          {
+            "id": 1,
+            "metadata": 0
+          }
         ],
         [
-          1,
-          1
+          {
+            "id": 1,
+            "metadata": 0
+          },
+          {
+            "id": 1,
+            "metadata": 0
+          }
         ]
       ],
       "result": {
@@ -1146,7 +1179,10 @@
     },
     {
       "ingredients": [
-        98,
+        {
+          "id": 98,
+          "metadata": 0
+        },
         106
       ],
       "result": {
@@ -2159,8 +2195,14 @@
     {
       "inShape": [
         [
-          35,
-          35
+          {
+            "id": 35,
+            "metadata": 15
+          },
+          {
+            "id": 35,
+            "metadata": 15
+          }
         ]
       ],
       "result": {
@@ -5117,7 +5159,10 @@
     {
       "inShape": [
         [
-          38
+          {
+            "id": 38,
+            "metadata": 3
+          }
         ]
       ],
       "result": {
@@ -6021,14 +6066,32 @@
     {
       "inShape": [
         [
-          35,
-          35,
-          35
+          {
+            "id": 35,
+            "metadata": 15
+          },
+          {
+            "id": 35,
+            "metadata": 15
+          },
+          {
+            "id": 35,
+            "metadata": 15
+          }
         ],
         [
-          35,
-          35,
-          35
+          {
+            "id": 35,
+            "metadata": 15
+          },
+          {
+            "id": 35,
+            "metadata": 15
+          },
+          {
+            "id": 35,
+            "metadata": 15
+          }
         ],
         [
           null,
