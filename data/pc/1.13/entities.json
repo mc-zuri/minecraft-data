@@ -244,7 +244,7 @@
   {
     "id": 25,
     "internalId": 25,
-    "name": "fireworks_rocket",
+    "name": "firework_rocket",
     "displayName": "FireworksRocketEntity",
     "width": 0.25,
     "height": 0.25,
@@ -403,7 +403,7 @@
   {
     "id": 41,
     "internalId": 41,
-    "name": "commandblock_minecart",
+    "name": "command_block_minecart",
     "displayName": "MinecartCommandBlock",
     "width": 0.98,
     "height": 0.7,
@@ -787,7 +787,7 @@
   {
     "id": 80,
     "internalId": 80,
-    "name": "iron_golem}",
+    "name": "iron_golem",
     "displayName": "VillagerGolem (Iron Golem)",
     "width": 1.4,
     "height": 2.7,
