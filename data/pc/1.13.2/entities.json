@@ -4,7 +4,7 @@
     "internalId": 0,
     "name": "area_effect_cloud",
     "displayName": "AreaEffectCloud",
-    "width": null,
+    "width": 6,
     "height": 0.5,
     "type": "mob",
     "category": "Immobile"
@@ -14,8 +14,8 @@
     "internalId": 1,
     "name": "armor_stand",
     "displayName": "ArmorStand",
-    "width": null,
-    "height": null,
+    "width": 0.5,
+    "height": 1.975,
     "type": "mob",
     "category": "Immobile"
   },
@@ -84,8 +84,8 @@
     "internalId": 8,
     "name": "cod",
     "displayName": "Cod",
-    "width": 0.9,
-    "height": 1.4,
+    "width": 0.5,
+    "height": 0.3,
     "type": "mob"
   },
   {
@@ -142,8 +142,8 @@
     "internalId": 14,
     "name": "drowned",
     "displayName": "Drowned",
-    "width": null,
-    "height": null,
+    "width": 0.6,
+    "height": 1.95,
     "type": "mob"
   },
   {
@@ -151,8 +151,8 @@
     "internalId": 15,
     "name": "elder_guardian",
     "displayName": "ElderGuardian",
-    "width": null,
-    "height": null,
+    "width": 1.9975,
+    "height": 1.9975,
     "type": "mob",
     "category": "Hostile mobs"
   },
@@ -266,8 +266,8 @@
     "internalId": 27,
     "name": "giant",
     "displayName": "Giant",
-    "width": 3.6,
-    "height": 10.8,
+    "width": 3.6000001,
+    "height": 10.799999,
     "type": "mob",
     "category": "Hostile mobs"
   },
@@ -325,8 +325,8 @@
     "internalId": 33,
     "name": "item_frame",
     "displayName": "ItemFrame",
-    "width": 0.75,
-    "height": 0.75,
+    "width": 0.5,
+    "height": 0.5,
     "type": "mob",
     "category": "Immobile"
   },
@@ -345,7 +345,7 @@
     "internalId": 35,
     "name": "leash_knot",
     "displayName": "LeashKnot",
-    "width": 0.375,
+    "width": 0.5,
     "height": 0.5,
     "type": "mob",
     "category": "Immobile"
@@ -485,8 +485,8 @@
     "internalId": 49,
     "name": "painting",
     "displayName": "Painting",
-    "width": null,
-    "height": null,
+    "width": 0.5,
+    "height": 0.5,
     "type": "mob",
     "category": "Immobile"
   },
@@ -515,8 +515,8 @@
     "internalId": 52,
     "name": "pufferfish",
     "displayName": "Pufferfish",
-    "width": null,
-    "height": null,
+    "width": 0.7,
+    "height": 0.7,
     "type": "mob"
   },
   {
@@ -564,8 +564,8 @@
     "internalId": 57,
     "name": "salmon",
     "displayName": "Salmon",
-    "width": null,
-    "height": null,
+    "width": 0.7,
+    "height": 0.4,
     "type": "mob"
   },
   {
@@ -896,8 +896,8 @@
     "internalId": 91,
     "name": "lightning_bolt",
     "displayName": "Lightning Bolt",
-    "width": null,
-    "height": null,
+    "width": 0.6,
+    "height": 1.8,
     "type": "mob"
   },
   {
@@ -905,8 +905,8 @@
     "internalId": 92,
     "name": "player",
     "displayName": "Player",
-    "width": null,
-    "height": null,
+    "width": 0.6,
+    "height": 1.8,
     "type": "mob"
   },
   {
@@ -914,8 +914,8 @@
     "internalId": 93,
     "name": "fishing_bobber",
     "displayName": "Fishing bobber",
-    "width": null,
-    "height": null,
+    "width": 0.25,
+    "height": 0.25,
     "type": "mob"
   },
   {
@@ -923,8 +923,8 @@
     "internalId": 94,
     "name": "trident",
     "displayName": "Trident",
-    "width": null,
-    "height": null,
+    "width": 0.5,
+    "height": 0.5,
     "type": "mob"
   },
   {
@@ -951,7 +951,7 @@
     "internalId": 3,
     "name": "area_effect cloud",
     "displayName": "Area Effect Cloud",
-    "width": null,
+    "width": 6,
     "height": 0.5,
     "type": "object"
   },
@@ -1129,7 +1129,7 @@
     "internalId": 77,
     "name": "leash_knot",
     "displayName": "Leash Knot",
-    "width": 0.375,
+    "width": 0.5,
     "height": 0.5,
     "type": "object",
     "category": "Immobile"
@@ -1139,8 +1139,8 @@
     "internalId": 78,
     "name": "armorstand",
     "displayName": "ArmorStand",
-    "width": null,
-    "height": null,
+    "width": 0.5,
+    "height": 1.975,
     "type": "object"
   },
   {
@@ -1187,8 +1187,8 @@
     "internalId": 94,
     "name": "trident",
     "displayName": "Trident",
-    "width": null,
-    "height": null,
+    "width": 0.5,
+    "height": 0.5,
     "type": "object"
   }
 ]

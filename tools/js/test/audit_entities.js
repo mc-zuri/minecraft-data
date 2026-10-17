@@ -26,6 +26,30 @@ for (const [file, version] of files) {
         assert.deepStrictEqual(entities.filter(e => e.type !== 'object' && !/^[a-z0-9_]+$/.test(e.name)).map(e => e.name), [])
       })
     }
+    it('every entity has a width and a height', function () {
+      assert.deepStrictEqual(entities.filter(e => typeof e.width !== 'number' || typeof e.height !== 'number').map(e => e.name), [])
+    })
+    // sizes the clients before 1.14 give, from their entity classes' setSize, as floats (the jars' EntityType.sized since)
+    const sizes = [
+      [/^(Zombie|zombie|PigZombie|zombie_pigman|Witch|witch)$/, '1.8', '1.14', [0.6, 1.95]],
+      [/^(ArmorStand|armor_stand|armorstand)$/, '1.8', '1.14', [0.5, 1.975]],
+      [/^(Creeper|creeper)$/, '1.9', '1.14', [0.6, 1.7]],
+      [/^(Skeleton|skeleton|stray)$/, '1.9', '1.14', [0.6, 1.99]],
+      [/^(Villager|villager)$/, '1.9', '1.14', [0.6, 1.95]],
+      [/^(Squid|squid)$/, '1.9', '1.14', [0.8, 0.8]],
+      [/^(VillagerGolem|villager_golem|iron_golem)$/, '1.9', '1.14', [1.4, 2.7]],
+      [/^(Rabbit|rabbit)$/, '1.9', '1.14', [0.4, 0.5]],
+      [/^(AreaEffectCloud|area_effect_cloud|area_effect cloud)$/, '1.9', '1.14', [6, 0.5]],
+      // GiantEntity: setSize(width * 6.0F, height * 6.0F) of the 0.6F x 1.8F it starts with
+      [/^(Giant|giant)$/, '1.7', '1.14', [3.6000001, 10.799999]],
+      [/^cod$/, '1.13', '1.14', [0.5, 0.3]]
+    ]
+    for (const [names, from, until, [width, height]] of sizes) {
+      if (since(version) < since(from) || (until && since(version) >= since(until))) continue
+      it(`${names.source} is ${width} x ${height}`, function () {
+        assert.deepStrictEqual(entities.filter(e => names.test(e.name) && (e.width !== width || e.height !== height)).map(e => `${e.name} ${e.width} x ${e.height}`), [])
+      })
+    }
     // (the crosshair picks a living entity by its type: a mob of none is never picked)
     it('every entity has a type', function () {
       assert.deepStrictEqual(entities.filter(e => !e.type || e.type === 'UNKNOWN').map(e => e.name), [])

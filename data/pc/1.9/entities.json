@@ -5,8 +5,8 @@
     "name": "Mob",
     "displayName": "Mob",
     "type": "mob",
-    "width": null,
-    "height": null,
+    "width": 0.6,
+    "height": 1.8,
     "category": "Generic"
   },
   {
@@ -15,8 +15,8 @@
     "name": "Monster",
     "displayName": "Monster",
     "type": "mob",
-    "width": null,
-    "height": null,
+    "width": 0.6,
+    "height": 1.8,
     "category": "Generic"
   },
   {
@@ -26,7 +26,7 @@
     "displayName": "Creeper",
     "type": "mob",
     "width": 0.6,
-    "height": 1.8,
+    "height": 1.7,
     "category": "Hostile mobs"
   },
   {
@@ -36,7 +36,7 @@
     "displayName": "Skeleton",
     "type": "mob",
     "width": 0.6,
-    "height": 1.95,
+    "height": 1.99,
     "category": "Hostile mobs"
   },
   {
@@ -55,8 +55,8 @@
     "name": "Giant",
     "displayName": "Giant",
     "type": "mob",
-    "width": 3.5999999999999996,
-    "height": 10.8,
+    "width": 3.6000001,
+    "height": 10.799999,
     "category": "Hostile mobs"
   },
   {
@@ -66,7 +66,7 @@
     "displayName": "Zombie",
     "type": "mob",
     "width": 0.6,
-    "height": 1.8,
+    "height": 1.95,
     "category": "Hostile mobs"
   },
   {
@@ -96,7 +96,7 @@
     "displayName": "Zombie Pigman",
     "type": "mob",
     "width": 0.6,
-    "height": 1.8,
+    "height": 1.95,
     "category": "Hostile mobs"
   },
   {
@@ -186,7 +186,7 @@
     "displayName": "Witch",
     "type": "mob",
     "width": 0.6,
-    "height": 1.8,
+    "height": 1.95,
     "category": "Hostile mobs"
   },
   {
@@ -265,8 +265,8 @@
     "name": "Squid",
     "displayName": "Squid",
     "type": "mob",
-    "width": 0.95,
-    "height": 0.95,
+    "width": 0.8,
+    "height": 0.8,
     "category": "Passive mobs"
   },
   {
@@ -276,7 +276,7 @@
     "displayName": "Wolf",
     "type": "mob",
     "width": 0.6,
-    "height": 0.8,
+    "height": 0.85,
     "category": "Passive mobs"
   },
   {
@@ -306,7 +306,7 @@
     "displayName": "Ocelot",
     "type": "mob",
     "width": 0.6,
-    "height": 0.8,
+    "height": 0.7,
     "category": "Passive mobs"
   },
   {
@@ -316,7 +316,7 @@
     "displayName": "Iron Golem",
     "type": "mob",
     "width": 1.4,
-    "height": 2.9,
+    "height": 2.7,
     "category": "Passive mobs"
   },
   {
@@ -335,8 +335,8 @@
     "name": "Rabbit",
     "displayName": "Rabbit",
     "type": "mob",
-    "width": 0.6,
-    "height": 0.7,
+    "width": 0.4,
+    "height": 0.5,
     "category": "Passive mobs"
   },
   {
@@ -346,7 +346,7 @@
     "displayName": "Villager",
     "type": "mob",
     "width": 0.6,
-    "height": 1.8,
+    "height": 1.95,
     "category": "NPCs"
   },
   {
@@ -375,8 +375,8 @@
     "name": "XPOrb",
     "displayName": "Experience Orb",
     "type": "object",
-    "width": null,
-    "height": null,
+    "width": 0.5,
+    "height": 0.5,
     "category": "Drops"
   },
   {
@@ -525,8 +525,8 @@
     "name": "ItemFrame",
     "displayName": "Item Frame",
     "type": "object",
-    "width": null,
-    "height": null,
+    "width": 0.5,
+    "height": 0.5,
     "category": "Immobile"
   },
   {
@@ -596,7 +596,7 @@
     "displayName": "Armor Stand",
     "type": "object",
     "width": 0.5,
-    "height": 2,
+    "height": 1.975,
     "category": "Immobile"
   },
   {
