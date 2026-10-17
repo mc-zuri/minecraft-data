@@ -410,26 +410,6 @@
     "category": "Vehicles"
   },
   {
-    "id": 11,
-    "internalId": 42,
-    "name": "MinecartRideable",
-    "displayName": "Minecart",
-    "type": "object",
-    "width": 0.98,
-    "height": 0.7,
-    "category": "Vehicles"
-  },
-  {
-    "id": 12,
-    "internalId": 42,
-    "name": "MinecartRideable",
-    "displayName": "Minecart",
-    "type": "object",
-    "width": 0.98,
-    "height": 0.7,
-    "category": "Vehicles"
-  },
-  {
     "id": 50,
     "internalId": 20,
     "name": "PrimedTnt",
@@ -570,16 +550,6 @@
     "category": "Projectiles"
   },
   {
-    "id": 74,
-    "internalId": 21,
-    "name": "FallingSand",
-    "displayName": "Falling block",
-    "type": "object",
-    "width": 0.98,
-    "height": 0.98,
-    "category": "Blocks"
-  },
-  {
     "id": 75,
     "internalId": 17,
     "name": "ThrownExpBottle",
@@ -632,16 +602,6 @@
     "internalId": 24,
     "name": "SpectralArrow",
     "displayName": "Shot spectral arrow",
-    "type": "object",
-    "width": 0.5,
-    "height": 0.5,
-    "category": "Projectiles"
-  },
-  {
-    "id": 92,
-    "internalId": 10,
-    "name": "Arrow",
-    "displayName": "Shot arrow",
     "type": "object",
     "width": 0.5,
     "height": 0.5,

@@ -13,7 +13,8 @@ const since = version => versions.indexOf(version)
 const files = new Map()
 for (const version of versions) {
   const entities = dataPaths[version] && dataPaths[version].entities
-  if (entities && !files.has(entities)) files.set(entities, version)
+  // (a file is the version it is named for, else the first that uses it)
+  if (entities && !files.has(entities)) files.set(entities, versions.includes(path.basename(entities)) ? path.basename(entities) : version)
 }
 
 for (const [file, version] of files) {
@@ -38,6 +39,20 @@ for (const [file, version] of files) {
       it('the objects are named as the entities they spawn', function () {
         const wrong = Object.entries(names).filter(([id, name]) => !entities.some(e => e.type === 'object' && e.id === Number(id) && e.name === name))
         assert.deepStrictEqual(wrong.map(([id, name]) => `${id} ${name}`), [])
+      })
+    }
+    // the objects are the object types the client's onEntitySpawn takes before 1.14, no other
+    const objects = [
+      ['1.7', '1.8', [1, 2, 10, 50, 51, 60, 61, 62, 63, 64, 65, 66, 70, 71, 72, 73, 75, 76, 77, 90]],
+      ['1.8', '1.9', [1, 2, 10, 50, 51, 60, 61, 62, 63, 64, 65, 66, 70, 71, 72, 73, 75, 76, 77, 78, 90]],
+      ['1.9', '1.11', [1, 2, 3, 10, 50, 51, 60, 61, 62, 63, 64, 65, 66, 67, 70, 71, 72, 73, 75, 76, 77, 78, 90, 91, 93]],
+      ['1.11', '1.13', [1, 2, 3, 10, 50, 51, 60, 61, 62, 63, 64, 65, 66, 67, 68, 70, 71, 72, 73, 75, 76, 77, 78, 79, 90, 91, 93]],
+      ['1.13', '1.14', [1, 2, 3, 10, 50, 51, 60, 61, 62, 63, 64, 65, 66, 67, 68, 70, 71, 72, 73, 75, 76, 77, 78, 79, 90, 91, 93, 94]]
+    ]
+    for (const [from, until, ids] of objects) {
+      if (since(version) < since(from) || since(version) >= since(until)) continue
+      it('the objects are the object types vanilla spawns', function () {
+        assert.deepStrictEqual(entities.filter(e => e.type === 'object').map(e => e.id).sort((a, b) => a - b), ids)
       })
     }
     // before 1.11 the entities' list holds what EntityList registers that is not spawned as an object (the living, the

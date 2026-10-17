@@ -360,26 +360,6 @@
     "category": "Vehicles"
   },
   {
-    "id": 11,
-    "internalId": 42,
-    "name": "MinecartRideable",
-    "displayName": "Minecart",
-    "type": "object",
-    "width": 0.98,
-    "height": 0.7,
-    "category": "Vehicles"
-  },
-  {
-    "id": 12,
-    "internalId": 42,
-    "name": "MinecartRideable",
-    "displayName": "Minecart",
-    "type": "object",
-    "width": 0.98,
-    "height": 0.7,
-    "category": "Vehicles"
-  },
-  {
     "id": 50,
     "internalId": 20,
     "name": "PrimedTnt",
@@ -508,16 +488,6 @@
     "width": 0.25,
     "height": 0.25,
     "category": "Projectiles"
-  },
-  {
-    "id": 74,
-    "internalId": 21,
-    "name": "FallingSand",
-    "displayName": "Falling block",
-    "type": "object",
-    "width": 0.98,
-    "height": 0.98,
-    "category": "Blocks"
   },
   {
     "id": 75,
