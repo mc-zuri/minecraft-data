@@ -1771,6 +1771,7 @@
     },
     "1.16.201": {
       "attributes": "bedrock/1.16.201",
+      "blockCollisionShapes": "bedrock/1.16.201",
       "protocol": "bedrock/1.16.201",
       "steve": "bedrock/1.16.201",
       "proto": "bedrock/1.16.201",
@@ -1782,6 +1783,7 @@
     },
     "1.16.210": {
       "attributes": "bedrock/1.16.201",
+      "blockCollisionShapes": "bedrock/1.16.210",
       "protocol": "bedrock/1.16.210",
       "steve": "bedrock/1.16.201",
       "proto": "bedrock/1.16.210",
@@ -1794,6 +1796,7 @@
       "attributes": "bedrock/1.16.201",
       "blocks": "bedrock/1.16.220",
       "blockStates": "bedrock/1.16.220",
+      "blockCollisionShapes": "bedrock/1.16.210",
       "biomes": "bedrock/1.17.0",
       "entities": "bedrock/1.18.11",
       "enchantments": "bedrock/1.16.201",
@@ -1852,7 +1855,7 @@
       "attributes": "bedrock/1.16.201",
       "blocks": "bedrock/1.17.10",
       "blockStates": "bedrock/1.17.10",
-      "blockCollisionShapes": "bedrock/1.17.10",
+      "blockCollisionShapes": "bedrock/1.17.30",
       "biomes": "bedrock/1.17.0",
       "entities": "bedrock/1.18.11",
       "items": "bedrock/1.17.10",
@@ -2016,7 +2019,7 @@
       "attributes": "bedrock/1.16.201",
       "blocks": "bedrock/1.19.1",
       "blockStates": "bedrock/1.19.1",
-      "blockCollisionShapes": "bedrock/1.19.1",
+      "blockCollisionShapes": "bedrock/1.19.20",
       "biomes": "bedrock/1.19.1",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.19.10",
@@ -2039,7 +2042,7 @@
       "attributes": "bedrock/1.16.201",
       "blocks": "bedrock/1.19.1",
       "blockStates": "bedrock/1.19.1",
-      "blockCollisionShapes": "bedrock/1.19.1",
+      "blockCollisionShapes": "bedrock/1.19.20",
       "biomes": "bedrock/1.19.1",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.19.10",
@@ -2062,7 +2065,7 @@
       "attributes": "bedrock/1.16.201",
       "blocks": "bedrock/1.19.1",
       "blockStates": "bedrock/1.19.1",
-      "blockCollisionShapes": "bedrock/1.19.1",
+      "blockCollisionShapes": "bedrock/1.19.20",
       "biomes": "bedrock/1.19.1",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.19.10",
@@ -2085,7 +2088,7 @@
       "attributes": "bedrock/1.16.201",
       "blocks": "bedrock/1.19.1",
       "blockStates": "bedrock/1.19.1",
-      "blockCollisionShapes": "bedrock/1.19.1",
+      "blockCollisionShapes": "bedrock/1.19.20",
       "biomes": "bedrock/1.19.1",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.19.10",
@@ -2108,7 +2111,7 @@
       "attributes": "bedrock/1.16.201",
       "blocks": "bedrock/1.19.1",
       "blockStates": "bedrock/1.19.1",
-      "blockCollisionShapes": "bedrock/1.19.1",
+      "blockCollisionShapes": "bedrock/1.19.50",
       "biomes": "bedrock/1.19.1",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.19.10",
@@ -2131,7 +2134,7 @@
       "attributes": "bedrock/1.16.201",
       "blocks": "bedrock/1.19.1",
       "blockStates": "bedrock/1.19.1",
-      "blockCollisionShapes": "bedrock/1.19.1",
+      "blockCollisionShapes": "bedrock/1.19.60",
       "biomes": "bedrock/1.19.1",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.19.10",
@@ -2154,7 +2157,7 @@
       "attributes": "bedrock/1.16.201",
       "blocks": "bedrock/1.19.1",
       "blockStates": "bedrock/1.19.1",
-      "blockCollisionShapes": "bedrock/1.19.1",
+      "blockCollisionShapes": "bedrock/1.19.60",
       "biomes": "bedrock/1.19.1",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.19.10",
@@ -2177,7 +2180,7 @@
       "attributes": "bedrock/1.16.201",
       "blocks": "bedrock/1.19.1",
       "blockStates": "bedrock/1.19.1",
-      "blockCollisionShapes": "bedrock/1.19.1",
+      "blockCollisionShapes": "bedrock/1.19.60",
       "biomes": "bedrock/1.19.1",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.19.10",
@@ -2199,7 +2202,7 @@
     "1.19.70": {
       "blocks": "bedrock/1.19.1",
       "blockStates": "bedrock/1.19.1",
-      "blockCollisionShapes": "bedrock/1.19.1",
+      "blockCollisionShapes": "bedrock/1.19.70",
       "biomes": "bedrock/1.19.1",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.19.10",
@@ -2221,7 +2224,7 @@
     "1.19.80": {
       "blocks": "bedrock/1.19.80",
       "blockStates": "bedrock/1.19.80",
-      "blockCollisionShapes": "bedrock/1.19.1",
+      "blockCollisionShapes": "bedrock/1.19.80",
       "biomes": "bedrock/1.19.1",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.19.10",
@@ -2265,7 +2268,7 @@
     "1.20.10": {
       "blocks": "bedrock/1.20.10",
       "blockStates": "bedrock/1.20.10",
-      "blockCollisionShapes": "bedrock/1.20.0",
+      "blockCollisionShapes": "bedrock/1.20.10",
       "biomes": "bedrock/1.20.0",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.20.0",
@@ -2287,7 +2290,7 @@
     "1.20.15": {
       "blocks": "bedrock/1.20.10",
       "blockStates": "bedrock/1.20.10",
-      "blockCollisionShapes": "bedrock/1.20.0",
+      "blockCollisionShapes": "bedrock/1.20.10",
       "biomes": "bedrock/1.20.0",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.20.0",
@@ -2309,7 +2312,7 @@
     "1.20.30": {
       "blocks": "bedrock/1.20.30",
       "blockStates": "bedrock/1.20.30",
-      "blockCollisionShapes": "bedrock/1.20.0",
+      "blockCollisionShapes": "bedrock/1.20.30",
       "biomes": "bedrock/1.20.0",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.20.0",
@@ -2326,12 +2329,12 @@
       "proto": "bedrock/1.20.30",
       "types": "bedrock/1.20.30",
       "version": "bedrock/1.20.30",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.30"
     },
     "1.20.40": {
       "blocks": "bedrock/1.20.40",
       "blockStates": "bedrock/1.20.40",
-      "blockCollisionShapes": "bedrock/1.20.0",
+      "blockCollisionShapes": "bedrock/1.20.40",
       "biomes": "bedrock/1.20.0",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.20.0",
@@ -2348,7 +2351,7 @@
       "proto": "bedrock/1.20.40",
       "types": "bedrock/1.20.40",
       "version": "bedrock/1.20.40",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.40"
     },
     "1.20.50": {
       "blocks": "bedrock/1.20.50",
@@ -2370,7 +2373,7 @@
       "proto": "bedrock/1.20.50",
       "types": "bedrock/1.20.50",
       "version": "bedrock/1.20.50",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.50"
     },
     "1.20.61": {
       "blocks": "bedrock/1.20.61",
@@ -2392,7 +2395,7 @@
       "proto": "bedrock/1.20.61",
       "types": "bedrock/1.20.61",
       "version": "bedrock/1.20.61",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.61"
     },
     "1.20.71": {
       "blocks": "bedrock/1.20.71",
@@ -2414,12 +2417,12 @@
       "proto": "bedrock/1.20.71",
       "types": "bedrock/1.20.71",
       "version": "bedrock/1.20.71",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.71"
     },
     "1.20.80": {
       "blocks": "bedrock/1.20.71",
       "blockStates": "bedrock/1.20.71",
-      "blockCollisionShapes": "bedrock/1.20.71",
+      "blockCollisionShapes": "bedrock/1.20.80",
       "biomes": "bedrock/1.20.0",
       "entities": "bedrock/1.19.1",
       "items": "bedrock/1.20.0",
@@ -2436,7 +2439,7 @@
       "proto": "bedrock/1.20.80",
       "types": "bedrock/1.20.80",
       "version": "bedrock/1.20.80",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.80"
     },
     "1.21.0": {
       "blocks": "bedrock/1.21.0",
@@ -2458,7 +2461,7 @@
       "proto": "bedrock/1.21.0",
       "types": "bedrock/1.21.0",
       "version": "bedrock/1.21.0",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.21.0"
     },
     "1.21.2": {
       "blocks": "bedrock/1.21.0",
@@ -2480,12 +2483,12 @@
       "proto": "bedrock/1.21.2",
       "types": "bedrock/1.21.2",
       "version": "bedrock/1.21.2",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.21.2"
     },
     "1.21.20": {
       "blocks": "bedrock/1.21.20",
       "blockStates": "bedrock/1.21.20",
-      "blockCollisionShapes": "bedrock/1.21.0",
+      "blockCollisionShapes": "bedrock/1.21.20",
       "biomes": "bedrock/1.20.0",
       "entities": "bedrock/1.21.0",
       "items": "bedrock/1.21.0",
@@ -2502,12 +2505,12 @@
       "proto": "bedrock/1.21.20",
       "types": "bedrock/1.21.20",
       "version": "bedrock/1.21.20",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.21.20"
     },
     "1.21.30": {
       "blocks": "bedrock/1.21.30",
       "blockStates": "bedrock/1.21.30",
-      "blockCollisionShapes": "bedrock/1.21.0",
+      "blockCollisionShapes": "bedrock/1.21.30",
       "biomes": "bedrock/1.20.0",
       "entities": "bedrock/1.21.0",
       "items": "bedrock/1.21.0",
@@ -2524,7 +2527,7 @@
       "proto": "bedrock/1.21.30",
       "types": "bedrock/1.21.30",
       "version": "bedrock/1.21.30",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.21.30"
     },
     "1.21.42": {
       "blocks": "bedrock/1.21.42",
@@ -2546,12 +2549,12 @@
       "proto": "bedrock/1.21.42",
       "types": "bedrock/1.21.42",
       "version": "bedrock/1.21.42",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.21.42"
     },
     "1.21.50": {
       "blocks": "bedrock/1.21.50",
       "blockStates": "bedrock/1.21.50",
-      "blockCollisionShapes": "bedrock/1.21.42",
+      "blockCollisionShapes": "bedrock/1.21.50",
       "biomes": "bedrock/1.20.0",
       "entities": "bedrock/1.21.42",
       "items": "bedrock/1.21.0",
@@ -2568,7 +2571,7 @@
       "proto": "bedrock/1.21.50",
       "types": "bedrock/1.21.50",
       "version": "bedrock/1.21.50",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.21.50"
     },
     "1.21.60": {
       "blocks": "bedrock/1.21.60",
@@ -2634,12 +2637,12 @@
       "proto": "bedrock/1.21.80",
       "types": "bedrock/1.21.80",
       "version": "bedrock/1.21.80",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.80"
     },
     "1.21.90": {
       "blocks": "bedrock/1.21.90",
       "blockStates": "bedrock/1.21.80",
-      "blockCollisionShapes": "bedrock/1.21.90",
+      "blockCollisionShapes": "bedrock/1.21.80",
       "biomes": "bedrock/1.21.60",
       "entities": "bedrock/1.21.80",
       "items": "bedrock/1.21.90",
@@ -2656,12 +2659,12 @@
       "proto": "bedrock/1.21.90",
       "types": "bedrock/latest",
       "version": "bedrock/1.21.90",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.90"
     },
     "1.21.93": {
       "blocks": "bedrock/1.21.90",
       "blockStates": "bedrock/1.21.80",
-      "blockCollisionShapes": "bedrock/1.21.90",
+      "blockCollisionShapes": "bedrock/1.21.80",
       "biomes": "bedrock/1.21.60",
       "entities": "bedrock/1.21.80",
       "items": "bedrock/1.21.90",
@@ -2678,7 +2681,7 @@
       "proto": "bedrock/1.21.93",
       "types": "bedrock/latest",
       "version": "bedrock/1.21.93",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.93"
     },
     "1.21.100": {
       "blocks": "bedrock/1.21.100",
@@ -2700,7 +2703,7 @@
       "proto": "bedrock/1.21.100",
       "types": "bedrock/1.21.100",
       "version": "bedrock/1.21.100",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.100"
     },
     "1.21.111": {
       "blocks": "bedrock/1.21.111",
@@ -2722,12 +2725,12 @@
       "proto": "bedrock/1.21.111",
       "types": "bedrock/latest",
       "version": "bedrock/1.21.111",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.111"
     },
     "1.21.120": {
       "blocks": "bedrock/1.21.111",
       "blockStates": "bedrock/1.21.111",
-      "blockCollisionShapes": "bedrock/1.21.111",
+      "blockCollisionShapes": "bedrock/1.21.120",
       "biomes": "bedrock/1.21.60",
       "entities": "bedrock/1.21.80",
       "items": "bedrock/1.21.111",
@@ -2744,12 +2747,12 @@
       "proto": "bedrock/1.21.120",
       "types": "bedrock/latest",
       "version": "bedrock/1.21.120",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.120"
     },
     "1.21.124": {
       "blocks": "bedrock/1.21.111",
       "blockStates": "bedrock/1.21.111",
-      "blockCollisionShapes": "bedrock/1.21.111",
+      "blockCollisionShapes": "bedrock/1.21.120",
       "biomes": "bedrock/1.21.60",
       "entities": "bedrock/1.21.80",
       "items": "bedrock/1.21.111",
@@ -2766,12 +2769,12 @@
       "proto": "bedrock/1.21.124",
       "types": "bedrock/latest",
       "version": "bedrock/1.21.124",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.120"
     },
     "1.21.130": {
       "blocks": "bedrock/1.21.111",
       "blockStates": "bedrock/1.21.111",
-      "blockCollisionShapes": "bedrock/1.21.111",
+      "blockCollisionShapes": "bedrock/1.21.120",
       "biomes": "bedrock/1.21.60",
       "entities": "bedrock/1.21.80",
       "items": "bedrock/1.21.111",
@@ -2788,12 +2791,12 @@
       "proto": "bedrock/1.21.130",
       "types": "bedrock/latest",
       "version": "bedrock/1.21.130",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.130"
     },
     "1.26.0": {
       "blocks": "bedrock/1.26.0",
       "blockStates": "bedrock/1.26.0",
-      "blockCollisionShapes": "bedrock/1.26.0",
+      "blockCollisionShapes": "bedrock/1.21.120",
       "biomes": "bedrock/1.21.60",
       "entities": "bedrock/1.21.80",
       "items": "bedrock/1.26.0",
@@ -2810,7 +2813,7 @@
       "proto": "bedrock/1.26.0",
       "types": "bedrock/latest",
       "version": "bedrock/1.26.0",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.26.0"
     },
     "1.26.10": {
       "blocks": "bedrock/1.26.10",
@@ -2832,7 +2835,7 @@
       "proto": "bedrock/1.26.10",
       "types": "bedrock/latest",
       "version": "bedrock/1.26.10",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.26.10"
     },
     "1.26.20": {
       "blocks": "bedrock/1.26.20",
@@ -2854,7 +2857,7 @@
       "proto": "bedrock/1.26.20",
       "types": "bedrock/latest",
       "version": "bedrock/1.26.20",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.26.20"
     },
     "1.26.30": {
       "blocks": "bedrock/1.26.30",
@@ -2876,12 +2879,12 @@
       "proto": "bedrock/1.26.30",
       "types": "bedrock/1.26.30",
       "version": "bedrock/1.26.30",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.26.30"
     },
     "1.26.40": {
       "blocks": "bedrock/1.26.30",
       "blockStates": "bedrock/1.26.30",
-      "blockCollisionShapes": "bedrock/1.26.30",
+      "blockCollisionShapes": "bedrock/1.26.40",
       "biomes": "bedrock/1.21.60",
       "entities": "bedrock/1.21.80",
       "items": "bedrock/1.26.30",
@@ -2898,12 +2901,12 @@
       "proto": "bedrock/1.26.40",
       "types": "bedrock/latest",
       "version": "bedrock/1.26.40",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.26.40"
     },
     "1.26.45": {
       "blocks": "bedrock/1.26.30",
       "blockStates": "bedrock/1.26.30",
-      "blockCollisionShapes": "bedrock/1.26.30",
+      "blockCollisionShapes": "bedrock/1.26.40",
       "biomes": "bedrock/1.21.60",
       "entities": "bedrock/1.21.80",
       "items": "bedrock/1.26.30",
@@ -2920,12 +2923,12 @@
       "proto": "bedrock/latest",
       "types": "bedrock/latest",
       "version": "bedrock/1.26.45",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.26.40"
     },
     "1.26.51": {
       "blocks": "bedrock/1.26.30",
       "blockStates": "bedrock/1.26.30",
-      "blockCollisionShapes": "bedrock/1.26.30",
+      "blockCollisionShapes": "bedrock/1.26.51",
       "biomes": "bedrock/1.21.60",
       "entities": "bedrock/1.21.80",
       "items": "bedrock/1.26.30",
@@ -2942,7 +2945,7 @@
       "proto": "bedrock/latest",
       "types": "bedrock/latest",
       "version": "bedrock/1.26.51",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.26.51"
     }
   }
 }
