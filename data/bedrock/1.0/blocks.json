@@ -197,7 +197,7 @@
   {
     "id": 8,
     "displayName": "Water",
-    "name": "water",
+    "name": "flowing_water",
     "hardness": 100,
     "stackSize": 0,
     "diggable": false,
@@ -223,7 +223,7 @@
   {
     "id": 10,
     "displayName": "Lava",
-    "name": "lava",
+    "name": "flowing_lava",
     "hardness": 100,
     "stackSize": 0,
     "diggable": false,
@@ -1611,7 +1611,7 @@
   {
     "id": 62,
     "displayName": "Burning Furnace",
-    "name": "furnace",
+    "name": "lit_furnace",
     "hardness": 3.5,
     "stackSize": 64,
     "diggable": true,
@@ -1636,7 +1636,7 @@
   {
     "id": 63,
     "displayName": "Sign",
-    "name": "sign",
+    "name": "standing_sign",
     "hardness": 1,
     "stackSize": 16,
     "diggable": true,
@@ -1732,7 +1732,7 @@
   {
     "id": 68,
     "displayName": "Wall Sign",
-    "name": "sign",
+    "name": "wall_sign",
     "hardness": 1,
     "stackSize": 16,
     "diggable": true,
@@ -1859,7 +1859,7 @@
   {
     "id": 74,
     "displayName": "Glowing Redstone Ore",
-    "name": "redstone_ore",
+    "name": "lit_redstone_ore",
     "hardness": 3,
     "stackSize": 64,
     "diggable": true,
@@ -1883,7 +1883,7 @@
   {
     "id": 75,
     "displayName": "Redstone Torch (inactive)",
-    "name": "redstone_torch",
+    "name": "unlit_redstone_torch",
     "hardness": 0,
     "stackSize": 64,
     "diggable": true,
@@ -2246,7 +2246,7 @@
   {
     "id": 93,
     "displayName": "Redstone Repeater (inactive)",
-    "name": "redstone_repeater",
+    "name": "unpowered_repeater",
     "hardness": 0,
     "stackSize": 64,
     "diggable": true,
@@ -2263,7 +2263,7 @@
   {
     "id": 94,
     "displayName": "Redstone Repeater (active)",
-    "name": "redstone_repeater",
+    "name": "powered_repeater",
     "hardness": 0,
     "stackSize": 64,
     "diggable": true,
@@ -2397,7 +2397,7 @@
   {
     "id": 99,
     "displayName": "Brown Mushroom",
-    "name": "brown_mushroom",
+    "name": "brown_mushroom_block",
     "hardness": 0,
     "stackSize": 64,
     "diggable": true,
@@ -2471,7 +2471,7 @@
   {
     "id": 100,
     "displayName": "Red Mushroom",
-    "name": "red_mushroom",
+    "name": "red_mushroom_block",
     "hardness": 0,
     "stackSize": 64,
     "diggable": true,
@@ -3030,7 +3030,7 @@
   {
     "id": 124,
     "displayName": "Redstone Lamp (active)",
-    "name": "redstone_lamp",
+    "name": "lit_redstone_lamp",
     "hardness": 0.3,
     "stackSize": 64,
     "diggable": true,
@@ -3626,7 +3626,7 @@
   {
     "id": 147,
     "displayName": "Weighted Pressure Plate (Light)",
-    "name": "weighted_pressure_plate",
+    "name": "light_weighted_pressure_plate",
     "hardness": 0.5,
     "stackSize": 64,
     "diggable": true,
@@ -3651,7 +3651,7 @@
   {
     "id": 148,
     "displayName": "Weighted Pressure Plate (Heavy)",
-    "name": "weighted_pressure_plate",
+    "name": "heavy_weighted_pressure_plate",
     "hardness": 0.5,
     "stackSize": 64,
     "diggable": true,
@@ -3676,7 +3676,7 @@
   {
     "id": 149,
     "displayName": "Redstone Comparator (unpowered)",
-    "name": "redstone_comparator",
+    "name": "unpowered_comparator",
     "hardness": 0,
     "stackSize": 64,
     "diggable": true,
@@ -3693,7 +3693,7 @@
   {
     "id": 150,
     "displayName": "Redstone Comparator (powered)",
-    "name": "redstone_comparator",
+    "name": "powered_comparator",
     "hardness": 0,
     "stackSize": 64,
     "diggable": true,
@@ -5299,7 +5299,7 @@
   {
     "id": 248,
     "displayName": "Update Game Block (update!)",
-    "name": "update_game_block",
+    "name": "info_update",
     "hardness": 0,
     "stackSize": 0,
     "diggable": true,
@@ -5316,7 +5316,7 @@
   {
     "id": 249,
     "displayName": "Update Game Block (ate!upd)",
-    "name": "update_game_block",
+    "name": "info_update2",
     "hardness": 0,
     "stackSize": 0,
     "diggable": true,
