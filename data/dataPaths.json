@@ -1785,7 +1785,8 @@
       "version": "bedrock/1.16.201",
       "language": "bedrock/1.16.201",
       "biomes": "bedrock/1.16.201",
-      "entities": "bedrock/1.16.201"
+      "entities": "bedrock/1.16.201",
+      "blockSelectionShapes": "bedrock/1.16.201"
     },
     "1.16.210": {
       "materials": "bedrock/1.16.201",
@@ -1802,7 +1803,8 @@
       "version": "bedrock/1.16.210",
       "language": "bedrock/1.16.210",
       "biomes": "bedrock/1.16.201",
-      "entities": "bedrock/1.16.201"
+      "entities": "bedrock/1.16.201",
+      "blockSelectionShapes": "bedrock/1.16.210"
     },
     "1.16.220": {
       "materials": "bedrock/1.16.201",
@@ -1819,7 +1821,8 @@
       "proto": "bedrock/1.16.220",
       "types": "bedrock/1.16.220",
       "version": "bedrock/1.16.220",
-      "language": "bedrock/1.16.220"
+      "language": "bedrock/1.16.220",
+      "blockSelectionShapes": "bedrock/1.16.220"
     },
     "1.17.0": {
       "attributes": "bedrock/1.16.201",
@@ -1841,7 +1844,8 @@
       "proto": "bedrock/1.17.0",
       "types": "bedrock/1.17.0",
       "version": "bedrock/1.17.0",
-      "language": "bedrock/1.17.0"
+      "language": "bedrock/1.17.0",
+      "blockSelectionShapes": "bedrock/1.17.0"
     },
     "1.17.10": {
       "attributes": "bedrock/1.16.201",
@@ -1864,7 +1868,8 @@
       "proto": "bedrock/1.17.10",
       "types": "bedrock/1.17.10",
       "version": "bedrock/1.17.10",
-      "language": "bedrock/1.17.10"
+      "language": "bedrock/1.17.10",
+      "blockSelectionShapes": "bedrock/1.17.10"
     },
     "1.17.30": {
       "attributes": "bedrock/1.16.201",
@@ -1887,7 +1892,8 @@
       "proto": "bedrock/1.17.30",
       "types": "bedrock/1.17.30",
       "version": "bedrock/1.17.30",
-      "language": "bedrock/1.17.30"
+      "language": "bedrock/1.17.30",
+      "blockSelectionShapes": "bedrock/1.17.30"
     },
     "1.17.40": {
       "attributes": "bedrock/1.16.201",
@@ -1910,7 +1916,8 @@
       "proto": "bedrock/1.17.40",
       "types": "bedrock/1.17.40",
       "version": "bedrock/1.17.40",
-      "language": "bedrock/1.17.40"
+      "language": "bedrock/1.17.40",
+      "blockSelectionShapes": "bedrock/1.17.40"
     },
     "1.18.0": {
       "attributes": "bedrock/1.16.201",
@@ -1935,7 +1942,8 @@
       "version": "bedrock/1.18.0",
       "entityLoot": "bedrock/1.18.0",
       "blockLoot": "bedrock/1.18.0",
-      "language": "bedrock/1.18.0"
+      "language": "bedrock/1.18.0",
+      "blockSelectionShapes": "bedrock/1.17.40"
     },
     "1.18.11": {
       "attributes": "bedrock/1.16.201",
@@ -1958,7 +1966,8 @@
       "proto": "bedrock/1.18.11",
       "types": "bedrock/1.18.11",
       "version": "bedrock/1.18.11",
-      "language": "bedrock/1.18.11"
+      "language": "bedrock/1.18.11",
+      "blockSelectionShapes": "bedrock/1.18.11"
     },
     "1.18.30": {
       "attributes": "bedrock/1.16.201",
@@ -1981,7 +1990,8 @@
       "proto": "bedrock/1.18.30",
       "types": "bedrock/1.18.30",
       "version": "bedrock/1.18.30",
-      "language": "bedrock/1.18.30"
+      "language": "bedrock/1.18.30",
+      "blockSelectionShapes": "bedrock/1.18.30"
     },
     "1.19.1": {
       "attributes": "bedrock/1.16.201",
@@ -2005,7 +2015,8 @@
       "proto": "bedrock/1.19.1",
       "types": "bedrock/1.19.1",
       "version": "bedrock/1.19.1",
-      "language": "bedrock/1.19.1"
+      "language": "bedrock/1.19.1",
+      "blockSelectionShapes": "bedrock/1.19.1"
     },
     "1.19.10": {
       "attributes": "bedrock/1.16.201",
@@ -2028,7 +2039,8 @@
       "proto": "bedrock/1.19.10",
       "types": "bedrock/1.19.10",
       "version": "bedrock/1.19.10",
-      "language": "bedrock/1.19.10"
+      "language": "bedrock/1.19.10",
+      "blockSelectionShapes": "bedrock/1.19.10"
     },
     "1.19.20": {
       "attributes": "bedrock/1.16.201",
@@ -2051,7 +2063,8 @@
       "proto": "bedrock/1.19.20",
       "types": "bedrock/1.19.20",
       "version": "bedrock/1.19.20",
-      "language": "bedrock/1.19.20"
+      "language": "bedrock/1.19.20",
+      "blockSelectionShapes": "bedrock/1.19.20"
     },
     "1.19.21": {
       "attributes": "bedrock/1.16.201",
@@ -2074,7 +2087,8 @@
       "proto": "bedrock/1.19.21",
       "types": "bedrock/1.19.21",
       "version": "bedrock/1.19.21",
-      "language": "bedrock/1.19.20"
+      "language": "bedrock/1.19.20",
+      "blockSelectionShapes": "bedrock/1.19.20"
     },
     "1.19.30": {
       "attributes": "bedrock/1.16.201",
@@ -2097,7 +2111,8 @@
       "proto": "bedrock/1.19.30",
       "types": "bedrock/1.19.30",
       "version": "bedrock/1.19.30",
-      "language": "bedrock/1.19.30"
+      "language": "bedrock/1.19.30",
+      "blockSelectionShapes": "bedrock/1.19.20"
     },
     "1.19.40": {
       "attributes": "bedrock/1.16.201",
@@ -2120,7 +2135,8 @@
       "proto": "bedrock/1.19.40",
       "types": "bedrock/1.19.40",
       "version": "bedrock/1.19.40",
-      "language": "bedrock/1.19.40"
+      "language": "bedrock/1.19.40",
+      "blockSelectionShapes": "bedrock/1.19.20"
     },
     "1.19.50": {
       "attributes": "bedrock/1.16.201",
@@ -2143,7 +2159,8 @@
       "proto": "bedrock/1.19.50",
       "types": "bedrock/1.19.50",
       "version": "bedrock/1.19.50",
-      "language": "bedrock/1.19.50"
+      "language": "bedrock/1.19.50",
+      "blockSelectionShapes": "bedrock/1.19.50"
     },
     "1.19.60": {
       "attributes": "bedrock/1.16.201",
@@ -2166,7 +2183,8 @@
       "proto": "bedrock/1.19.60",
       "types": "bedrock/1.19.60",
       "version": "bedrock/1.19.60",
-      "language": "bedrock/1.19.60"
+      "language": "bedrock/1.19.60",
+      "blockSelectionShapes": "bedrock/1.19.60"
     },
     "1.19.62": {
       "attributes": "bedrock/1.16.201",
@@ -2189,7 +2207,8 @@
       "proto": "bedrock/1.19.62",
       "types": "bedrock/1.19.62",
       "version": "bedrock/1.19.62",
-      "language": "bedrock/1.19.60"
+      "language": "bedrock/1.19.60",
+      "blockSelectionShapes": "bedrock/1.19.60"
     },
     "1.19.63": {
       "attributes": "bedrock/1.16.201",
@@ -2212,7 +2231,8 @@
       "proto": "bedrock/1.19.62",
       "types": "bedrock/1.19.62",
       "version": "bedrock/1.19.63",
-      "language": "bedrock/1.19.60"
+      "language": "bedrock/1.19.60",
+      "blockSelectionShapes": "bedrock/1.19.60"
     },
     "1.19.70": {
       "blocks": "bedrock/1.19.70",
@@ -2234,7 +2254,8 @@
       "proto": "bedrock/1.19.70",
       "types": "bedrock/1.19.70",
       "version": "bedrock/1.19.70",
-      "language": "bedrock/1.19.70"
+      "language": "bedrock/1.19.70",
+      "blockSelectionShapes": "bedrock/1.19.70"
     },
     "1.19.80": {
       "blocks": "bedrock/1.19.80",
@@ -2256,7 +2277,8 @@
       "proto": "bedrock/1.19.80",
       "types": "bedrock/1.19.80",
       "version": "bedrock/1.19.80",
-      "language": "bedrock/1.19.80"
+      "language": "bedrock/1.19.80",
+      "blockSelectionShapes": "bedrock/1.19.80"
     },
     "1.20.0": {
       "blocks": "bedrock/1.20.0",
@@ -2278,7 +2300,8 @@
       "proto": "bedrock/1.20.0",
       "types": "bedrock/1.20.0",
       "version": "bedrock/1.20.0",
-      "language": "bedrock/1.20.0"
+      "language": "bedrock/1.20.0",
+      "blockSelectionShapes": "bedrock/1.20.0"
     },
     "1.20.10": {
       "blocks": "bedrock/1.20.10",
@@ -2300,7 +2323,8 @@
       "proto": "bedrock/1.20.10",
       "types": "bedrock/1.20.10",
       "version": "bedrock/1.20.10",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.20.10"
     },
     "1.20.15": {
       "blocks": "bedrock/1.20.10",
@@ -2322,7 +2346,8 @@
       "proto": "bedrock/1.20.10",
       "types": "bedrock/1.20.10",
       "version": "bedrock/1.20.15",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.20.10"
     },
     "1.20.30": {
       "blocks": "bedrock/1.20.30",
@@ -2344,7 +2369,8 @@
       "proto": "bedrock/1.20.30",
       "types": "bedrock/1.20.30",
       "version": "bedrock/1.20.30",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.20.30"
     },
     "1.20.40": {
       "blocks": "bedrock/1.20.40",
@@ -2366,7 +2392,8 @@
       "proto": "bedrock/1.20.40",
       "types": "bedrock/1.20.40",
       "version": "bedrock/1.20.40",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.20.40"
     },
     "1.20.50": {
       "blocks": "bedrock/1.20.50",
@@ -2388,7 +2415,8 @@
       "proto": "bedrock/1.20.50",
       "types": "bedrock/1.20.50",
       "version": "bedrock/1.20.50",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.20.50"
     },
     "1.20.61": {
       "blocks": "bedrock/1.20.61",
@@ -2410,7 +2438,8 @@
       "proto": "bedrock/1.20.61",
       "types": "bedrock/1.20.61",
       "version": "bedrock/1.20.61",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.20.61"
     },
     "1.20.71": {
       "blocks": "bedrock/1.20.71",
@@ -2432,7 +2461,8 @@
       "proto": "bedrock/1.20.71",
       "types": "bedrock/1.20.71",
       "version": "bedrock/1.20.71",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.20.71"
     },
     "1.20.80": {
       "blocks": "bedrock/1.20.80",
@@ -2454,7 +2484,8 @@
       "proto": "bedrock/1.20.80",
       "types": "bedrock/1.20.80",
       "version": "bedrock/1.20.80",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.20.80"
     },
     "1.21.0": {
       "blocks": "bedrock/1.21.0",
@@ -2476,7 +2507,8 @@
       "proto": "bedrock/1.21.0",
       "types": "bedrock/1.21.0",
       "version": "bedrock/1.21.0",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.21.0"
     },
     "1.21.2": {
       "blocks": "bedrock/1.21.0",
@@ -2498,7 +2530,8 @@
       "proto": "bedrock/1.21.2",
       "types": "bedrock/1.21.2",
       "version": "bedrock/1.21.2",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.21.0"
     },
     "1.21.20": {
       "blocks": "bedrock/1.21.20",
@@ -2520,7 +2553,8 @@
       "proto": "bedrock/1.21.20",
       "types": "bedrock/1.21.20",
       "version": "bedrock/1.21.20",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.21.20"
     },
     "1.21.30": {
       "blocks": "bedrock/1.21.30",
@@ -2542,7 +2576,8 @@
       "proto": "bedrock/1.21.30",
       "types": "bedrock/1.21.30",
       "version": "bedrock/1.21.30",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.21.30"
     },
     "1.21.42": {
       "blocks": "bedrock/1.21.42",
@@ -2564,7 +2599,8 @@
       "proto": "bedrock/1.21.42",
       "types": "bedrock/1.21.42",
       "version": "bedrock/1.21.42",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.21.42"
     },
     "1.21.50": {
       "blocks": "bedrock/1.21.50",
@@ -2586,7 +2622,8 @@
       "proto": "bedrock/1.21.50",
       "types": "bedrock/1.21.50",
       "version": "bedrock/1.21.50",
-      "language": "bedrock/1.20.10"
+      "language": "bedrock/1.20.10",
+      "blockSelectionShapes": "bedrock/1.21.50"
     },
     "1.21.60": {
       "blocks": "bedrock/1.21.60",
@@ -2608,7 +2645,8 @@
       "proto": "bedrock/1.21.60",
       "types": "bedrock/1.21.60",
       "version": "bedrock/1.21.60",
-      "language": "bedrock/1.21.60"
+      "language": "bedrock/1.21.60",
+      "blockSelectionShapes": "bedrock/1.21.60"
     },
     "1.21.70": {
       "blocks": "bedrock/1.21.70",
@@ -2630,7 +2668,8 @@
       "proto": "bedrock/1.21.70",
       "types": "bedrock/1.21.70",
       "version": "bedrock/1.21.70",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.21.70"
     },
     "1.21.80": {
       "blocks": "bedrock/1.21.80",
@@ -2652,7 +2691,8 @@
       "proto": "bedrock/1.21.80",
       "types": "bedrock/1.21.80",
       "version": "bedrock/1.21.80",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.21.80"
     },
     "1.21.90": {
       "blocks": "bedrock/1.21.90",
@@ -2674,7 +2714,8 @@
       "proto": "bedrock/1.21.90",
       "types": "bedrock/1.21.90",
       "version": "bedrock/1.21.90",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.21.80"
     },
     "1.21.93": {
       "blocks": "bedrock/1.21.93",
@@ -2696,7 +2737,8 @@
       "proto": "bedrock/1.21.93",
       "types": "bedrock/1.21.93",
       "version": "bedrock/1.21.93",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.21.80"
     },
     "1.21.100": {
       "blocks": "bedrock/1.21.100",
@@ -2718,7 +2760,8 @@
       "proto": "bedrock/1.21.100",
       "types": "bedrock/1.21.100",
       "version": "bedrock/1.21.100",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.21.100"
     },
     "1.21.111": {
       "blocks": "bedrock/1.21.111",
@@ -2740,7 +2783,8 @@
       "proto": "bedrock/1.21.111",
       "types": "bedrock/1.21.111",
       "version": "bedrock/1.21.111",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.21.111"
     },
     "1.21.120": {
       "blocks": "bedrock/1.21.120",
@@ -2762,7 +2806,8 @@
       "proto": "bedrock/1.21.120",
       "types": "bedrock/1.21.120",
       "version": "bedrock/1.21.120",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.21.120"
     },
     "1.21.124": {
       "blocks": "bedrock/1.21.120",
@@ -2784,7 +2829,8 @@
       "proto": "bedrock/1.21.124",
       "types": "bedrock/1.21.124",
       "version": "bedrock/1.21.124",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.21.120"
     },
     "1.21.130": {
       "blocks": "bedrock/1.21.130",
@@ -2806,7 +2852,8 @@
       "proto": "bedrock/1.21.130",
       "types": "bedrock/1.21.130",
       "version": "bedrock/1.21.130",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.21.120"
     },
     "1.26.0": {
       "blocks": "bedrock/1.26.0",
@@ -2828,7 +2875,8 @@
       "proto": "bedrock/1.26.0",
       "types": "bedrock/1.26.0",
       "version": "bedrock/1.26.0",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.21.120"
     },
     "1.26.10": {
       "blocks": "bedrock/1.26.10",
@@ -2850,7 +2898,8 @@
       "proto": "bedrock/1.26.10",
       "types": "bedrock/1.26.10",
       "version": "bedrock/1.26.10",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.26.10"
     },
     "1.26.20": {
       "blocks": "bedrock/1.26.20",
@@ -2872,7 +2921,8 @@
       "proto": "bedrock/1.26.20",
       "types": "bedrock/1.26.20",
       "version": "bedrock/1.26.20",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.26.20"
     },
     "1.26.30": {
       "blocks": "bedrock/1.26.30",
@@ -2894,7 +2944,8 @@
       "proto": "bedrock/1.26.30",
       "types": "bedrock/1.26.30",
       "version": "bedrock/1.26.30",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.26.30"
     },
     "1.26.40": {
       "blocks": "bedrock/1.26.40",
@@ -2916,7 +2967,8 @@
       "proto": "bedrock/1.26.40",
       "types": "bedrock/1.26.40",
       "version": "bedrock/1.26.40",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.26.40"
     },
     "1.26.45": {
       "blocks": "bedrock/1.26.40",
@@ -2938,7 +2990,8 @@
       "proto": "bedrock/1.26.45",
       "types": "bedrock/1.26.45",
       "version": "bedrock/1.26.45",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.26.40"
     },
     "1.26.51": {
       "blocks": "bedrock/1.26.51",
@@ -2960,7 +3013,8 @@
       "proto": "bedrock/latest",
       "types": "bedrock/latest",
       "version": "bedrock/1.26.51",
-      "language": "bedrock/1.21.70"
+      "language": "bedrock/1.21.70",
+      "blockSelectionShapes": "bedrock/1.26.51"
     }
   }
 }
